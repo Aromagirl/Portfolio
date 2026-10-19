@@ -1,0 +1,38 @@
+[
+  {
+    "slug": "home",
+    "sourceTextBlocks": 15,
+    "matchedTextBlocks": 15,
+    "sourceImages": 4,
+    "renderedImages": 4,
+    "missingBlocks": [],
+    "brokenLocalReferences": []
+  },
+  {
+    "slug": "tickeron",
+    "sourceTextBlocks": 37,
+    "matchedTextBlocks": 37,
+    "sourceImages": 19,
+    "renderedImages": 19,
+    "missingBlocks": [],
+    "brokenLocalReferences": []
+  },
+  {
+    "slug": "myhospital",
+    "sourceTextBlocks": 84,
+    "matchedTextBlocks": 84,
+    "sourceImages": 14,
+    "renderedImages": 14,
+    "missingBlocks": [],
+    "brokenLocalReferences": []
+  },
+  {
+    "slug": "kidswearcycle",
+    "sourceTextBlocks": 81,
+    "matchedTextBlocks": 81,
+    "sourceImages": 13,
+    "renderedImages": 13,
+    "missingBlocks": [],
+    "brokenLocalReferences": []
+  }
+]

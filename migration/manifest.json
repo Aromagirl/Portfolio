@@ -1,0 +1,1840 @@
+{
+  "createdAt": "2026-10-19T15:01:49.770Z",
+  "pages": [
+    {
+      "slug": "home",
+      "sourceUrl": "https://sites.google.com/view/natalia-isakova",
+      "target": "src/content/home/home.mdx",
+      "newPath": "/",
+      "status": "complete",
+      "sourceSha256": "81bdf5dc26ed2c60299cff439004cf7a804d0139df5eb44aac4026cc575fd19b",
+      "sourceBlocks": [
+        {
+          "tag": "h1",
+          "text": "Natalia Isakova"
+        },
+        {
+          "tag": "h3",
+          "text": "UX/UI & Interactive designer"
+        },
+        {
+          "tag": "p",
+          "text": "👋 Hi, I’m Natalia Isakova, and I’m passionate about creating intuitive and engaging user experiences."
+        },
+        {
+          "tag": "p",
+          "text": "With more than ten years of experience in UX/UI design, I’ve honed my skills in both interactive and visual design, working on projects ranging from online games and responsive websites to mobile apps."
+        },
+        {
+          "tag": "p",
+          "text": "📬 Contact me to see my full portfolio: nisakova.info@gmail.com"
+        },
+        {
+          "tag": "p",
+          "text": "Here you can see short review of the latest projects from my portfolio 👇"
+        },
+        {
+          "tag": "h2",
+          "text": "Online resale platform"
+        },
+        {
+          "tag": "p",
+          "text": "KidswearCycle is an online resale platform for parents to purchase and resell children's clothing. The typical users are families with several children. KidswearCycle's goal is to provide a way to sell used children's clothing quickly and cheaply while protecting nature and the environment."
+        },
+        {
+          "tag": "p",
+          "text": "Read more"
+        },
+        {
+          "tag": "h2",
+          "text": "medical service aggregator"
+        },
+        {
+          "tag": "p",
+          "text": "MyHospital is a medical service aggregator located in the capital of the region. MyHospital aggregates public hospitals and private consultations, making it easier for clients to find the right specialist. Their target customers are families with children, mid-level workers, newly arrived immigrants and students."
+        },
+        {
+          "tag": "p",
+          "text": "Read more"
+        },
+        {
+          "tag": "h2",
+          "text": "financial marketplace"
+        },
+        {
+          "tag": "p",
+          "text": "Tickeron is a web-based, interactive Financial Marketplace. The company has developed state-of-the-art Artificial Intelligence (A.I.) that can optimize portfolios based on asset allocation and stock selection. Additionally it can identify dozens of technical trading patterns for thousands of stocks."
+        },
+        {
+          "tag": "p",
+          "text": "Read more"
+        }
+      ],
+      "sourceCounts": {
+        "textBlocks": 15,
+        "images": 4,
+        "sections": 11
+      },
+      "assets": [
+        {
+          "position": 1,
+          "sourceUrl": "https://sites.google.com/sitesv-images-rt/AMxu72uFfLfEYlQ-DnxO3rxpyZSw0P14dFzyc7XA9GaYPDSGIRQ45E5MiKDN2QuNMmFgPTlNJDlWNxxLPdh8N82ZBeXXQiOcaVhLbqsi0JH6upad4MozJMxPgdwLpKVrUwua4qz91WJbpoblnZLGHB5kVHjPROr6UCkAKjojI0SoE-MIvmMOHqavK50gX1eRLqUuCNTF-n3BTcVXqn2PAmJbweEZqooHXdUe7E3JS_iU99g=w1280",
+          "requestedUrl": "https://sites.google.com/sitesv-images-rt/AMxu72uFfLfEYlQ-DnxO3rxpyZSw0P14dFzyc7XA9GaYPDSGIRQ45E5MiKDN2QuNMmFgPTlNJDlWNxxLPdh8N82ZBeXXQiOcaVhLbqsi0JH6upad4MozJMxPgdwLpKVrUwua4qz91WJbpoblnZLGHB5kVHjPROr6UCkAKjojI0SoE-MIvmMOHqavK50gX1eRLqUuCNTF-n3BTcVXqn2PAmJbweEZqooHXdUe7E3JS_iU99g=w16383",
+          "status": "complete",
+          "original": "migration/assets-original/home/01.jpeg",
+          "sha256": "208fe6af6dc24032f144af64c397811b2c98ace0387551d89e7f5de081d76651",
+          "width": 1536,
+          "height": 1515,
+          "localPath": "/images/projects/home/01.webp",
+          "animated": false,
+          "poster": null,
+          "outputWidth": 1536,
+          "outputHeight": 1515,
+          "alt": "Natalia Isakova — 01"
+        },
+        {
+          "position": 2,
+          "sourceUrl": "https://sites.google.com/sitesv-images-rt/AMxu72uPm4m9dd7xHyZWupad1ZK5tuewXgdTlEZpCmogiAoGHopOIpW-NXs8ko0DDZ4gh4235eFj1uoPrpOPG0GQ3vIQlva97k1_NHlcTHccNAppf4gbgPSUz6UmDCxQAPp-p-wE_-bruQm9lsbk40VarVV28uqwKgLhYXmIrE7P7BcyDHDdf84dB9dU8YaaipjcFMwmTE3T6tSnAltkmwp2ETKQ3ERAAxCEwYQXUQ=w1280",
+          "requestedUrl": "https://sites.google.com/sitesv-images-rt/AMxu72uPm4m9dd7xHyZWupad1ZK5tuewXgdTlEZpCmogiAoGHopOIpW-NXs8ko0DDZ4gh4235eFj1uoPrpOPG0GQ3vIQlva97k1_NHlcTHccNAppf4gbgPSUz6UmDCxQAPp-p-wE_-bruQm9lsbk40VarVV28uqwKgLhYXmIrE7P7BcyDHDdf84dB9dU8YaaipjcFMwmTE3T6tSnAltkmwp2ETKQ3ERAAxCEwYQXUQ=w16383",
+          "status": "complete",
+          "original": "migration/assets-original/home/02.png",
+          "sha256": "e1e22b5c65d87c8eb57bb37d27ab41ca72e16f2d1b2e06d77b10148abf8ef147",
+          "width": 2048,
+          "height": 1939,
+          "localPath": "/images/projects/home/02.webp",
+          "animated": false,
+          "poster": null,
+          "outputWidth": 2048,
+          "outputHeight": 1939,
+          "alt": "Natalia Isakova — 02"
+        },
+        {
+          "position": 3,
+          "sourceUrl": "https://sites.google.com/sitesv-images-rt/AMxu72vmtgQK6c9nBKu2IppOotDkyOAV5mvQsHzyQFsJ0n2aqspmoiVPU9MjOOHxfKdgqnPqC3Xzy6BVFQoWaDxRCPUJoDpIBptbmlKWEhPlp3b9hRdPynKLaG27jxkhVKXnt4AGTn0QBZBit9Ngvitl9OQtS4yle5S4YMQKFi3vXAdFIOWImAv7Xvq3LlpCCwhxnzY6KEOKT9XGzJ3BIcg2Dz6vUFOYmapgXC8BY2YajrA=w1280",
+          "requestedUrl": "https://sites.google.com/sitesv-images-rt/AMxu72vmtgQK6c9nBKu2IppOotDkyOAV5mvQsHzyQFsJ0n2aqspmoiVPU9MjOOHxfKdgqnPqC3Xzy6BVFQoWaDxRCPUJoDpIBptbmlKWEhPlp3b9hRdPynKLaG27jxkhVKXnt4AGTn0QBZBit9Ngvitl9OQtS4yle5S4YMQKFi3vXAdFIOWImAv7Xvq3LlpCCwhxnzY6KEOKT9XGzJ3BIcg2Dz6vUFOYmapgXC8BY2YajrA=w16383",
+          "status": "complete",
+          "original": "migration/assets-original/home/03.png",
+          "sha256": "3f2215a2fd76bfe84b322f1178bec4cfcdd1b6c084d8254ebf9ec6b9f2d4a26e",
+          "width": 1538,
+          "height": 1229,
+          "localPath": "/images/projects/home/03.webp",
+          "animated": false,
+          "poster": null,
+          "outputWidth": 1538,
+          "outputHeight": 1229,
+          "alt": "Natalia Isakova — 03"
+        },
+        {
+          "position": 4,
+          "sourceUrl": "https://sites.google.com/sitesv-images-rt/AMxu72uPoaD6viKV1V6oOzd3iK8fv8xCZlKW76SJstw8C3JUQP6anQROtA_wqfchmKa24DjICgKIiDODg1gfX0Eq8p2BdMjyNIuHTZyJMR1QWupa0GpoJAw0PKr5QjYLwi4Zpnuhd79PAd0TtWQbKVx97oiHAXieTB2DqHOWBrxFngPj8yt8C3fIL9Y1ZqHp7ddjPwz5uB7I0h1G7BRFI1LQU60YY0Q7UP0luXBMn41E=w1280",
+          "requestedUrl": "https://sites.google.com/sitesv-images-rt/AMxu72uPoaD6viKV1V6oOzd3iK8fv8xCZlKW76SJstw8C3JUQP6anQROtA_wqfchmKa24DjICgKIiDODg1gfX0Eq8p2BdMjyNIuHTZyJMR1QWupa0GpoJAw0PKr5QjYLwi4Zpnuhd79PAd0TtWQbKVx97oiHAXieTB2DqHOWBrxFngPj8yt8C3fIL9Y1ZqHp7ddjPwz5uB7I0h1G7BRFI1LQU60YY0Q7UP0luXBMn41E=w16383",
+          "status": "complete",
+          "original": "migration/assets-original/home/04.png",
+          "sha256": "91489afd096112acc2b0af65d8bcf9014d1a72b31fb7d50e427791cb279adf80",
+          "width": 2048,
+          "height": 1562,
+          "localPath": "/images/projects/home/04.webp",
+          "animated": false,
+          "poster": null,
+          "outputWidth": 2048,
+          "outputHeight": 1562,
+          "alt": "Natalia Isakova — 04"
+        }
+      ],
+      "links": [
+        {
+          "text": "nisakova.info@gmail.com",
+          "sourceUrl": "mailto:nisakova.info@gmail.com",
+          "href": "mailto:nisakova.info@gmail.com"
+        },
+        {
+          "text": "Read more",
+          "sourceUrl": "https://sites.google.com/view/natalia-isakova/user-research/kidswearcycle",
+          "href": "/work/kidswearcycle/"
+        },
+        {
+          "text": "Read more",
+          "sourceUrl": "https://sites.google.com/view/natalia-isakova/user-research/myhospital",
+          "href": "/work/myhospital/"
+        },
+        {
+          "text": "Read more",
+          "sourceUrl": "https://sites.google.com/view/natalia-isakova/uxui-design/tickeron",
+          "href": "/work/tickeron/"
+        }
+      ],
+      "gaps": []
+    },
+    {
+      "slug": "tickeron",
+      "sourceUrl": "https://sites.google.com/view/natalia-isakova/uxui-design/tickeron",
+      "target": "src/content/projects/tickeron.mdx",
+      "newPath": "/work/tickeron/",
+      "status": "complete",
+      "sourceSha256": "0352f6836b2e6aa7fd7d707c95857721d13e65d345f239ddc3cfa425f2d019de",
+      "sourceBlocks": [
+        {
+          "tag": "h1",
+          "text": "Tickeron"
+        },
+        {
+          "tag": "h3",
+          "text": "Financial Marketplace"
+        },
+        {
+          "tag": "h2",
+          "text": "Tickeron responsive website"
+        },
+        {
+          "tag": "p",
+          "text": "Tickeron is a web-based, interactive Financial Marketplace. The company has developed state-of-the-art Artificial Intelligence (A.I.) that can optimize portfolios based on asset allocation and stock selection. Additionally it can also identify dozens of technical trading patterns for thousands of stocks. Their A.I. can be used to generate investment ideas or to recommend changes to investment strategies."
+        },
+        {
+          "tag": "p",
+          "text": "For investors and those interested in learning more about investing in the stock market, the Tickeron website provides endless resources. Users can access (and create) webcasts, newsletters, investment clubs/groups, informative blog posts, and a comprehensive library of investment terms."
+        },
+        {
+          "tag": "p",
+          "text": "For advisors and thought leaders in the investment community, Tickeron provides a platform on which you can share, broadcast, and/or sell your ideas. You can connect with clients or users seeking advice and use online tools to manage your relationships."
+        },
+        {
+          "tag": "p",
+          "text": "Tickeron"
+        },
+        {
+          "tag": "h3",
+          "text": "My role as UI Designer:"
+        },
+        {
+          "tag": "p",
+          "text": "🔍 Designing mockups for the platform parts"
+        },
+        {
+          "tag": "p",
+          "text": "📱 Responsive design for tablet & mobile versions"
+        },
+        {
+          "tag": "p",
+          "text": "🔗 High-fidelity prototyping"
+        },
+        {
+          "tag": "p",
+          "text": "✒️ Icons design"
+        },
+        {
+          "tag": "p",
+          "text": "🖼️ Landing pages & banners design"
+        },
+        {
+          "tag": "p",
+          "text": "🤝 Сollaborating with the development team"
+        },
+        {
+          "tag": "h2",
+          "text": "Mockups & prototypes"
+        },
+        {
+          "tag": "h3",
+          "text": "Newsfeed / banners"
+        },
+        {
+          "tag": "p",
+          "text": "(desktop, tablet, mobile versions)"
+        },
+        {
+          "tag": "h3",
+          "text": "Articles & Blogs"
+        },
+        {
+          "tag": "p",
+          "text": "(tablet, mobile versions)"
+        },
+        {
+          "tag": "h3",
+          "text": "Levels Pages"
+        },
+        {
+          "tag": "p",
+          "text": "(desktop, tablet, mobile versions)"
+        },
+        {
+          "tag": "h3",
+          "text": "MALL / My Listings / filters"
+        },
+        {
+          "tag": "p",
+          "text": "(desktop, mobile versions)"
+        },
+        {
+          "tag": "h3",
+          "text": "List of Portfolios / filters"
+        },
+        {
+          "tag": "p",
+          "text": "(mobile version)"
+        },
+        {
+          "tag": "h3",
+          "text": "Personal profile / levels"
+        },
+        {
+          "tag": "p",
+          "text": "(tablet, mobile versions)"
+        },
+        {
+          "tag": "h3",
+          "text": "Contact us, About us, FAQ"
+        },
+        {
+          "tag": "p",
+          "text": "(desktop, tablet, mobile versions)"
+        },
+        {
+          "tag": "h2",
+          "text": "Landing pages"
+        },
+        {
+          "tag": "p",
+          "text": "(desktop, mobile versions)"
+        },
+        {
+          "tag": "h2",
+          "text": "icons & Banners"
+        },
+        {
+          "tag": "h3",
+          "text": "Icons for Levels Pages"
+        },
+        {
+          "tag": "p",
+          "text": "(vector graphics)"
+        },
+        {
+          "tag": "h3",
+          "text": "Banners"
+        },
+        {
+          "tag": "p",
+          "text": "(desktop versions)"
+        },
+        {
+          "tag": "p",
+          "text": "Next project"
+        }
+      ],
+      "sourceCounts": {
+        "textBlocks": 37,
+        "images": 19,
+        "sections": 43
+      },
+      "assets": [
+        {
+          "position": 1,
+          "sourceUrl": "https://sites.google.com/sitesv-images-rt/AMxu72sm2aiMSJfECxdoLVUarG476kR2CeuvuRNCsFWAjAs2yQ5sybI7ztWkEsk1eNqOiK8nMBhxQysZmEoZ8AacZskF2h3BUKaSldoN68wLl9r6J0nfw-WWbXEkvQkpU68kgdyeZfHhvatQGGrYSXA_JJHhuWEJspI_ZFhibnHJtpeG18qZNTqMPnK7gxYgvs-5OXbKvdsRMHp0oWy5-BDfKjAZQis3QYKP6sH5vrE8i9U=w1280",
+          "requestedUrl": "https://sites.google.com/sitesv-images-rt/AMxu72sm2aiMSJfECxdoLVUarG476kR2CeuvuRNCsFWAjAs2yQ5sybI7ztWkEsk1eNqOiK8nMBhxQysZmEoZ8AacZskF2h3BUKaSldoN68wLl9r6J0nfw-WWbXEkvQkpU68kgdyeZfHhvatQGGrYSXA_JJHhuWEJspI_ZFhibnHJtpeG18qZNTqMPnK7gxYgvs-5OXbKvdsRMHp0oWy5-BDfKjAZQis3QYKP6sH5vrE8i9U=w16383",
+          "status": "complete",
+          "original": "migration/assets-original/tickeron/01.png",
+          "sha256": "739e7f61c14bfee6114fce51a2328004f91e9bc4c48714c36e0adf5d5004a050",
+          "width": 200,
+          "height": 189,
+          "localPath": "/images/projects/tickeron/01.webp",
+          "animated": false,
+          "poster": null,
+          "outputWidth": 200,
+          "outputHeight": 189,
+          "alt": "Tickeron — 01"
+        },
+        {
+          "position": 2,
+          "sourceUrl": "https://sites.google.com/sitesv-images-rt/AMxu72tVz7A9uj5POI_sVWdzUmS67t-TznrUKSshbosOiqXRbcOOND_wy2BeO8b4TIPk-w4YMeYIqABRIIjECTNv2CdAlbzeDpLQta1UnerL8iszoo1W00G2VDpGCytrbQxHB2NS4eXWaQhsgLpHF4qKPpeZ16ga-v1StvC57ZvdaBjaSAuHlbw6z1pnOy3amTgNPcwtDe0YI0Qu9mSe7BY52mitSoLmRjjbuf1uNpnvv_A=w1280",
+          "requestedUrl": "https://sites.google.com/sitesv-images-rt/AMxu72tVz7A9uj5POI_sVWdzUmS67t-TznrUKSshbosOiqXRbcOOND_wy2BeO8b4TIPk-w4YMeYIqABRIIjECTNv2CdAlbzeDpLQta1UnerL8iszoo1W00G2VDpGCytrbQxHB2NS4eXWaQhsgLpHF4qKPpeZ16ga-v1StvC57ZvdaBjaSAuHlbw6z1pnOy3amTgNPcwtDe0YI0Qu9mSe7BY52mitSoLmRjjbuf1uNpnvv_A=w16383",
+          "status": "complete",
+          "original": "migration/assets-original/tickeron/02.png",
+          "sha256": "250a2e9f989a9d4e03286ac82cf5feb83c98c6a6c1ac227f17502c5b7a37de7a",
+          "width": 1718,
+          "height": 1649,
+          "localPath": "/images/projects/tickeron/02.webp",
+          "animated": false,
+          "poster": null,
+          "outputWidth": 1718,
+          "outputHeight": 1649,
+          "alt": "Tickeron — 02"
+        },
+        {
+          "position": 3,
+          "sourceUrl": "https://sites.google.com/sitesv-images-rt/AMxu72sDVcpXvGvaPh24Ibot6361TIpJbxl4uhiO_K-XxqVRu3S-68SiwCNmtraUiKYm95UFWzQWf2RKUpY0k4d98iBbXtrEDooWR_ZnAbUCf8OG9vrNpuDNc0fZ4XGFT5G4EpK1Ah8FKNAGcpiobHKn59aWg8Lsv1oHvbiefLWHN47a7L5Sow0J4n8Kvc-VxcgqtZJ8zkSaaiTxYjkwKhW9VVG54vkVktLQqAs7a_5V=w1280",
+          "requestedUrl": "https://sites.google.com/sitesv-images-rt/AMxu72sDVcpXvGvaPh24Ibot6361TIpJbxl4uhiO_K-XxqVRu3S-68SiwCNmtraUiKYm95UFWzQWf2RKUpY0k4d98iBbXtrEDooWR_ZnAbUCf8OG9vrNpuDNc0fZ4XGFT5G4EpK1Ah8FKNAGcpiobHKn59aWg8Lsv1oHvbiefLWHN47a7L5Sow0J4n8Kvc-VxcgqtZJ8zkSaaiTxYjkwKhW9VVG54vkVktLQqAs7a_5V=w16383",
+          "status": "complete",
+          "original": "migration/assets-original/tickeron/03.jpeg",
+          "sha256": "681eb9017dae8b64884c58cd8173f1da6a31aa99adfa5eee4365a07a958e3b13",
+          "width": 1389,
+          "height": 886,
+          "localPath": "/images/projects/tickeron/03.webp",
+          "animated": false,
+          "poster": null,
+          "outputWidth": 1389,
+          "outputHeight": 886,
+          "alt": "Tickeron — 03"
+        },
+        {
+          "position": 4,
+          "sourceUrl": "https://sites.google.com/sitesv-images-rt/AMxu72tmG52J170Iz5q_ftnNWm0-bNCFSk-moY16SwHpPPfED9Rm0dbrqjtVD1iYmvPAyivpI--FcoiC-v8uceiPPxVzt2bH8mxY2LK2ovEQV-OxUiBgqANLHlMZrjJ1XffcwaxpUVKh4NDKYqWWLcKxKTTlcD_GcYTIz0nSKSLgg7JaH7mQb644-hyiue5npepMtENRhUU4GUxD-6AwyDMIyC2OSc8XLIWtibd_rvpGWhQ=w1280",
+          "requestedUrl": "https://sites.google.com/sitesv-images-rt/AMxu72tmG52J170Iz5q_ftnNWm0-bNCFSk-moY16SwHpPPfED9Rm0dbrqjtVD1iYmvPAyivpI--FcoiC-v8uceiPPxVzt2bH8mxY2LK2ovEQV-OxUiBgqANLHlMZrjJ1XffcwaxpUVKh4NDKYqWWLcKxKTTlcD_GcYTIz0nSKSLgg7JaH7mQb644-hyiue5npepMtENRhUU4GUxD-6AwyDMIyC2OSc8XLIWtibd_rvpGWhQ=w16383",
+          "status": "complete",
+          "original": "migration/assets-original/tickeron/04.jpeg",
+          "sha256": "6b614ab9749fbbdc4883509810dcb6156fc52b60d6cf9b99517c24d6170b15be",
+          "width": 1261,
+          "height": 898,
+          "localPath": "/images/projects/tickeron/04.webp",
+          "animated": false,
+          "poster": null,
+          "outputWidth": 1261,
+          "outputHeight": 898,
+          "alt": "Tickeron — 04"
+        },
+        {
+          "position": 5,
+          "sourceUrl": "https://sites.google.com/sitesv-images-rt/AMxu72u9pbtSMo5diid--NQ6NtTT9IETGd6FAzDDU06kYd7KFX7gRBnKUcDjrgdz6yKEjP844CsbXFTdBRqzzdxn1Nic8em5CRcdh2GBBdwiTjqQsok7c-S4mQcGi48ZDeAydoVi63UsT7h-CQHF-5-dxHjvbiqi8eMVbHPlD7RKqij8dH0CcWzT5o003sB7ROGONLTaHctbYyMYnVaqph88ScXtsXmmrkxNIpCcjRn-J14=w1280",
+          "requestedUrl": "https://sites.google.com/sitesv-images-rt/AMxu72u9pbtSMo5diid--NQ6NtTT9IETGd6FAzDDU06kYd7KFX7gRBnKUcDjrgdz6yKEjP844CsbXFTdBRqzzdxn1Nic8em5CRcdh2GBBdwiTjqQsok7c-S4mQcGi48ZDeAydoVi63UsT7h-CQHF-5-dxHjvbiqi8eMVbHPlD7RKqij8dH0CcWzT5o003sB7ROGONLTaHctbYyMYnVaqph88ScXtsXmmrkxNIpCcjRn-J14=w16383",
+          "status": "complete",
+          "original": "migration/assets-original/tickeron/05.jpeg",
+          "sha256": "e2bc8359f6fc5f61b9bfa2ccf8c1b308758ee2aa6e3696cfacdd01c8f525431e",
+          "width": 1071,
+          "height": 903,
+          "localPath": "/images/projects/tickeron/05.webp",
+          "animated": false,
+          "poster": null,
+          "outputWidth": 1071,
+          "outputHeight": 903,
+          "alt": "Tickeron — 05"
+        },
+        {
+          "position": 6,
+          "sourceUrl": "https://sites.google.com/sitesv-images-rt/AMxu72vBqXOauryb_6NXM0cDZMcpAK1LXnydTSR0tanC91vX-XwLc-9GYFF3wc4wKu8RCfArqXg3CgQ0GVrT7YY56fj9sR0mYNDz8-VJqias7ZzJr3Ped1ookffz1c5C7fzQ_cwysEzSDm90KbzaI0f10XOFMyWXg9ubJU9LT-RjhJ3KMb2nrYZKj5c3TcOhNGPYwTOPr3wH66OYpKNkqSbIHJ-UfDxKebO7e9Am6_0lz3I=w1280",
+          "requestedUrl": "https://sites.google.com/sitesv-images-rt/AMxu72vBqXOauryb_6NXM0cDZMcpAK1LXnydTSR0tanC91vX-XwLc-9GYFF3wc4wKu8RCfArqXg3CgQ0GVrT7YY56fj9sR0mYNDz8-VJqias7ZzJr3Ped1ookffz1c5C7fzQ_cwysEzSDm90KbzaI0f10XOFMyWXg9ubJU9LT-RjhJ3KMb2nrYZKj5c3TcOhNGPYwTOPr3wH66OYpKNkqSbIHJ-UfDxKebO7e9Am6_0lz3I=w16383",
+          "status": "complete",
+          "original": "migration/assets-original/tickeron/06.jpeg",
+          "sha256": "1fffa2934c956c55866084ff666e804ca3cfe2b088030e5ab5a8bc68b80a2d29",
+          "width": 1221,
+          "height": 881,
+          "localPath": "/images/projects/tickeron/06.webp",
+          "animated": false,
+          "poster": null,
+          "outputWidth": 1221,
+          "outputHeight": 881,
+          "alt": "Tickeron — 06"
+        },
+        {
+          "position": 7,
+          "sourceUrl": "https://sites.google.com/sitesv-images-rt/AMxu72tHLDDUZlJ-8RKmQ4bortdjbTpSXeNR6ocQsbolvh5rb57TXwJjevxr5F67-GLK7Gorch0mRBlHKLDMuhFfBKtIkTD17JFUNhBQwl6Uq6YprYt38bSG1Om7FedtTnejWrTGlza_3LzV--4IRdJw9bHpv8CGMjLwuCU_h0Kr2vo-17YHTT1v5E5Po0vk0YbBnirJjuNOKhtuRt7mSZaBHBSSv9-DxHxfL8mDsped=w1280",
+          "requestedUrl": "https://sites.google.com/sitesv-images-rt/AMxu72tHLDDUZlJ-8RKmQ4bortdjbTpSXeNR6ocQsbolvh5rb57TXwJjevxr5F67-GLK7Gorch0mRBlHKLDMuhFfBKtIkTD17JFUNhBQwl6Uq6YprYt38bSG1Om7FedtTnejWrTGlza_3LzV--4IRdJw9bHpv8CGMjLwuCU_h0Kr2vo-17YHTT1v5E5Po0vk0YbBnirJjuNOKhtuRt7mSZaBHBSSv9-DxHxfL8mDsped=w16383",
+          "status": "complete",
+          "original": "migration/assets-original/tickeron/07.jpeg",
+          "sha256": "342e19ba249f39ff50c0ef03dde5150e4145a104829e407caece55cf4d940c36",
+          "width": 1420,
+          "height": 666,
+          "localPath": "/images/projects/tickeron/07.webp",
+          "animated": false,
+          "poster": null,
+          "outputWidth": 1420,
+          "outputHeight": 666,
+          "alt": "Tickeron — 07"
+        },
+        {
+          "position": 8,
+          "sourceUrl": "https://sites.google.com/sitesv-images-rt/AMxu72v4HDFhZbmtKuULQMLW77Ptw6TLtzj7hjVCwxYUJ1u6fpTRpP8ElzpxsHnmc-9ODbh3FNYr8CpTYXlg1-8GmgR3YUblkX3ogNa5uuLLzhGRH4hcyi9JFnD5P3kBRYhgsCXWqU9wFSqSt85NbIiMIW4gVCsh5l1ySMK3NzIid8WHyFZEkSICvAlE4VaVAT3eVK5jyJ29Xlvky1z3G-JFfnOBnWFdEIPTyBGtu078PMo=w1280",
+          "requestedUrl": "https://sites.google.com/sitesv-images-rt/AMxu72v4HDFhZbmtKuULQMLW77Ptw6TLtzj7hjVCwxYUJ1u6fpTRpP8ElzpxsHnmc-9ODbh3FNYr8CpTYXlg1-8GmgR3YUblkX3ogNa5uuLLzhGRH4hcyi9JFnD5P3kBRYhgsCXWqU9wFSqSt85NbIiMIW4gVCsh5l1ySMK3NzIid8WHyFZEkSICvAlE4VaVAT3eVK5jyJ29Xlvky1z3G-JFfnOBnWFdEIPTyBGtu078PMo=w16383",
+          "status": "complete",
+          "original": "migration/assets-original/tickeron/08.jpeg",
+          "sha256": "81f036e6c64bffaa9a343928704376622d5f6839d62ebd8377f6504dc75d589e",
+          "width": 1578,
+          "height": 445,
+          "localPath": "/images/projects/tickeron/08.webp",
+          "animated": false,
+          "poster": null,
+          "outputWidth": 1578,
+          "outputHeight": 445,
+          "alt": "Tickeron — 08"
+        },
+        {
+          "position": 9,
+          "sourceUrl": "https://sites.google.com/sitesv-images-rt/AMxu72sWv0P20ILlxjXKAungZ4EICpsAfYtf2k67vDRw_EYJXICaML7nvoN9qf7_UjKK8UHYBv_9Cno9ob7W6W5RUkyXBJGJOUCHtqxSAOz6FvMFZK5T14FtJdAcleIawFlL34ezy62EDrzTrLpFwBhxEi1WmXSn3NnOVFkXR8qVTp9U_WOtgstoew0zAB5zycq687H0YN3KmGLqs9w4dI_4bDhbOW5ZS-QbshhCpKUa=w1280",
+          "requestedUrl": "https://sites.google.com/sitesv-images-rt/AMxu72sWv0P20ILlxjXKAungZ4EICpsAfYtf2k67vDRw_EYJXICaML7nvoN9qf7_UjKK8UHYBv_9Cno9ob7W6W5RUkyXBJGJOUCHtqxSAOz6FvMFZK5T14FtJdAcleIawFlL34ezy62EDrzTrLpFwBhxEi1WmXSn3NnOVFkXR8qVTp9U_WOtgstoew0zAB5zycq687H0YN3KmGLqs9w4dI_4bDhbOW5ZS-QbshhCpKUa=w16383",
+          "status": "complete",
+          "original": "migration/assets-original/tickeron/09.jpeg",
+          "sha256": "414cabd86c3b738bcc115461bb60d320f0430979a421b089f79eaefaebae1438",
+          "width": 919,
+          "height": 869,
+          "localPath": "/images/projects/tickeron/09.webp",
+          "animated": false,
+          "poster": null,
+          "outputWidth": 919,
+          "outputHeight": 869,
+          "alt": "Tickeron — 09"
+        },
+        {
+          "position": 10,
+          "sourceUrl": "https://sites.google.com/sitesv-images-rt/AMxu72sIYDVgQgJRIkc9iEvJaYUDviYS_5ZpbEMURqZpErcfO6TayyPt33KrigODEXRRHx2atvcCa2v7T1LApqHOmUP6XFW8gBuo23B7HnC99PBK3G3EE5DSh1sFkAs21XP4PLbgx7zHHU55b5ZLgPnlXlgOII4_5GmAFaylTGe8zpfGIk-wv0KLJoGOM7QZC1O8PNlCxn3vniWdab6gOacloa97RBj_RX0z34enRaSorvk=w1280",
+          "requestedUrl": "https://sites.google.com/sitesv-images-rt/AMxu72sIYDVgQgJRIkc9iEvJaYUDviYS_5ZpbEMURqZpErcfO6TayyPt33KrigODEXRRHx2atvcCa2v7T1LApqHOmUP6XFW8gBuo23B7HnC99PBK3G3EE5DSh1sFkAs21XP4PLbgx7zHHU55b5ZLgPnlXlgOII4_5GmAFaylTGe8zpfGIk-wv0KLJoGOM7QZC1O8PNlCxn3vniWdab6gOacloa97RBj_RX0z34enRaSorvk=w16383",
+          "status": "complete",
+          "original": "migration/assets-original/tickeron/10.jpeg",
+          "sha256": "b05141227e16558966c959f469d8e71cdfc782f02a3649ea8f78488df7fd2958",
+          "width": 1388,
+          "height": 665,
+          "localPath": "/images/projects/tickeron/10.webp",
+          "animated": false,
+          "poster": null,
+          "outputWidth": 1388,
+          "outputHeight": 665,
+          "alt": "Tickeron — 10"
+        },
+        {
+          "position": 11,
+          "sourceUrl": "https://sites.google.com/sitesv-images-rt/AMxu72u3mFDLbbiiDqqu5XMkBmx6BfTaj5jRkRyKp2ibdT_a4hGAmHx33ZfAtCP3c4laXT7WpDHlUWaylJEC4P7ZkmK4ZMtFIuA8-yGg2rc0We27A9iv0B_232iH1S8Wm7Bfaee9zUVM0Wx7s9CwIcfx2dCGV9kn2lJb8yRE_jOMeogQdB4LsCp1i3tfGk5Hqj5DVglcDi8QitNLOls_2S2ZkfskYYW5Krls6JtRKd-m=w1280",
+          "requestedUrl": "https://sites.google.com/sitesv-images-rt/AMxu72u3mFDLbbiiDqqu5XMkBmx6BfTaj5jRkRyKp2ibdT_a4hGAmHx33ZfAtCP3c4laXT7WpDHlUWaylJEC4P7ZkmK4ZMtFIuA8-yGg2rc0We27A9iv0B_232iH1S8Wm7Bfaee9zUVM0Wx7s9CwIcfx2dCGV9kn2lJb8yRE_jOMeogQdB4LsCp1i3tfGk5Hqj5DVglcDi8QitNLOls_2S2ZkfskYYW5Krls6JtRKd-m=w16383",
+          "status": "complete",
+          "original": "migration/assets-original/tickeron/11.jpeg",
+          "sha256": "30bca5417f98ff7cd5499ed3ca6877330f4cdc266f6dc2a3fa6c6d17510be491",
+          "width": 1075,
+          "height": 873,
+          "localPath": "/images/projects/tickeron/11.webp",
+          "animated": false,
+          "poster": null,
+          "outputWidth": 1075,
+          "outputHeight": 873,
+          "alt": "Tickeron — 11"
+        },
+        {
+          "position": 12,
+          "sourceUrl": "https://sites.google.com/sitesv-images-rt/AMxu72tHGSPOG8sQU-n353mgnygFlTSo8KjkW7ivli8pXyE_loNW4cfm6BUHVtLG-8yALu5WElOKysSnukOqaAf9GOOJ7qV3GE_-FH7xdZJVzvxJ8zwZbI4TteZ1MCn5fPQsUd5hMp1Pf6yRsZMXUm9XfYDFMarnA89LTUeu_UVciuBlP9MZkAgWQg1BXMsish0zbaWKyWolwq8G0HSBYI3o5K0n3XbbqBuT63eCGL_GhO8=w1280",
+          "requestedUrl": "https://sites.google.com/sitesv-images-rt/AMxu72tHGSPOG8sQU-n353mgnygFlTSo8KjkW7ivli8pXyE_loNW4cfm6BUHVtLG-8yALu5WElOKysSnukOqaAf9GOOJ7qV3GE_-FH7xdZJVzvxJ8zwZbI4TteZ1MCn5fPQsUd5hMp1Pf6yRsZMXUm9XfYDFMarnA89LTUeu_UVciuBlP9MZkAgWQg1BXMsish0zbaWKyWolwq8G0HSBYI3o5K0n3XbbqBuT63eCGL_GhO8=w16383",
+          "status": "complete",
+          "original": "migration/assets-original/tickeron/12.png",
+          "sha256": "171a80e3eb6504b0fca1c425b0e87c54bcef88442ad1f59e530807c1ed598637",
+          "width": 1112,
+          "height": 692,
+          "localPath": "/images/projects/tickeron/12.webp",
+          "animated": false,
+          "poster": null,
+          "outputWidth": 1112,
+          "outputHeight": 692,
+          "alt": "Tickeron — 12"
+        },
+        {
+          "position": 13,
+          "sourceUrl": "https://sites.google.com/sitesv-images-rt/AMxu72sr2FarPhFJomyc1GE4f0ec40h6PR_c8DzAt4mkwWsoLzxP7VTbjic82-bEYaSIZEkFZc32dU2ow1XhsAW7zrAWTqlZJbyyByAxxeGw1cQRCXB7AcoQbTwSJyIvY2xVFsOrmNgmpTy6-AlN9c-YVxDsH8KfBCgxeEKOD6X0ergpXiSVbCsVB2txjIQuAPVT3MyJEe3zT7_dkjs0hmJmVdxP8ksHjiTB6f9nVCBLBxM=w1280",
+          "requestedUrl": "https://sites.google.com/sitesv-images-rt/AMxu72sahP8-Tq7q3Ck1NdU-_ulMHaai3yYPhkPZD8Y2am7mx3UJQp3N84xArNATMPm5Eh6UBp4_0UamDjHct7hiyZJPOIbvvHglJnzwV-aw1qFeuR5iXx7jE4L2htxxu1bw7eNk9DZCmwhGhSHeR35_YnfnZ5JhCYGhT0GkS2HQ43RiSAARprsNZOcciiDkyuYbPryeA5uTIWTCiDLA9myLWCE2iCu_itJBozlvxjVcOlw=w16383",
+          "status": "complete",
+          "original": "migration/assets-original/tickeron/13.jpeg",
+          "sha256": "0c46e2129b9ea50bf4ce429e92f8198601b797269329ad7c4e8c6584af5f87e1",
+          "width": 846,
+          "height": 958,
+          "localPath": "/images/projects/tickeron/13.webp",
+          "animated": false,
+          "poster": null,
+          "outputWidth": 846,
+          "outputHeight": 958,
+          "alt": "Tickeron — 13"
+        },
+        {
+          "position": 14,
+          "sourceUrl": "https://sites.google.com/sitesv-images-rt/AMxu72tF-fbmXqFUpyLu85pO99P7o5wfVVWB11MUtRmKrWZBXJ2JQSRuot_HKpm1x8jN2sM33jtHY1rwvTYsAhTo60XowuE6r42Vx3Wq662SRYg1ShfDRifmoILV75rBaF-oaQ-hDbIJiEjX9t-Nex6XoKobmCkih2TQWp-DeiRVtMtpR8ZuyxXcxfIgNIIQ1wrAnxxkoXTApqBtBG-NQK32H53eQVMKgA6031sgXATg=w1280",
+          "requestedUrl": "https://sites.google.com/sitesv-images-rt/AMxu72tF-fbmXqFUpyLu85pO99P7o5wfVVWB11MUtRmKrWZBXJ2JQSRuot_HKpm1x8jN2sM33jtHY1rwvTYsAhTo60XowuE6r42Vx3Wq662SRYg1ShfDRifmoILV75rBaF-oaQ-hDbIJiEjX9t-Nex6XoKobmCkih2TQWp-DeiRVtMtpR8ZuyxXcxfIgNIIQ1wrAnxxkoXTApqBtBG-NQK32H53eQVMKgA6031sgXATg=w16383",
+          "status": "complete",
+          "original": "migration/assets-original/tickeron/14.jpeg",
+          "sha256": "9029e5370a469d1eedaf463ccc98159cb12faead59248613eed9faae40f51be9",
+          "width": 836,
+          "height": 860,
+          "localPath": "/images/projects/tickeron/14.webp",
+          "animated": false,
+          "poster": null,
+          "outputWidth": 836,
+          "outputHeight": 860,
+          "alt": "Tickeron — 14"
+        },
+        {
+          "position": 15,
+          "sourceUrl": "https://sites.google.com/sitesv-images-rt/AMxu72vkjIvKbe-bmk6Snt5w2DN8ozhMAR_r4mHYq0Mrc23CZu6KBCCYmbUh-yb-FHsScM0JcHnbe-Ky1cSq8YU01ZmS0J2G-ZX2TLdTB1AIReET0fEhiX-hwwanAL_PTGSjbkfA7UmQ-Yy_8k0u5CK0yLaICQFV-R8ldE0xAFeUvDEworV1kVMUUMrNLEo1Bx00HIyUqiAvdDxPlUnTDRnSsBn5gP4Om38UMATuKMFv90w=w1280",
+          "requestedUrl": "https://sites.google.com/sitesv-images-rt/AMxu72vkjIvKbe-bmk6Snt5w2DN8ozhMAR_r4mHYq0Mrc23CZu6KBCCYmbUh-yb-FHsScM0JcHnbe-Ky1cSq8YU01ZmS0J2G-ZX2TLdTB1AIReET0fEhiX-hwwanAL_PTGSjbkfA7UmQ-Yy_8k0u5CK0yLaICQFV-R8ldE0xAFeUvDEworV1kVMUUMrNLEo1Bx00HIyUqiAvdDxPlUnTDRnSsBn5gP4Om38UMATuKMFv90w=w16383",
+          "status": "complete",
+          "original": "migration/assets-original/tickeron/15.jpeg",
+          "sha256": "431bf2f7a4b7c839785dea5a9962994403a0696dbb34ef2d713be36237e9b7ad",
+          "width": 838,
+          "height": 720,
+          "localPath": "/images/projects/tickeron/15.webp",
+          "animated": false,
+          "poster": null,
+          "outputWidth": 838,
+          "outputHeight": 720,
+          "alt": "Tickeron — 15"
+        },
+        {
+          "position": 16,
+          "sourceUrl": "https://sites.google.com/sitesv-images-rt/AMxu72toy1LtZKVnPK54KY7-pt1E3P-epyFQ2unxCutT8Tf5oiINqJHXPR8Iqrql7ieh4Re-T9py4pF_gcY2mnPmV3N87OWc5cwwc3iGvaNa8bj9LrQeY27mTLTehuB13ICYvbYMmX1PsDMCurNNyAvtsC3ww_zpT8CCcHoJYdbJh-QNyUzDtY0Q6gs6egpZpvzeWi4z6D4VLK5XPw_8TkV6KqnJfCBgmsbROIkcWcE0RmM=w1280",
+          "requestedUrl": "https://sites.google.com/sitesv-images-rt/AMxu72toy1LtZKVnPK54KY7-pt1E3P-epyFQ2unxCutT8Tf5oiINqJHXPR8Iqrql7ieh4Re-T9py4pF_gcY2mnPmV3N87OWc5cwwc3iGvaNa8bj9LrQeY27mTLTehuB13ICYvbYMmX1PsDMCurNNyAvtsC3ww_zpT8CCcHoJYdbJh-QNyUzDtY0Q6gs6egpZpvzeWi4z6D4VLK5XPw_8TkV6KqnJfCBgmsbROIkcWcE0RmM=w16383",
+          "status": "complete",
+          "original": "migration/assets-original/tickeron/16.jpeg",
+          "sha256": "713e6a674cc9961c18d70906b3ddeaae042ea07fdf46ef83c9d09e5ae4782e90",
+          "width": 846,
+          "height": 598,
+          "localPath": "/images/projects/tickeron/16.webp",
+          "animated": false,
+          "poster": null,
+          "outputWidth": 846,
+          "outputHeight": 598,
+          "alt": "Tickeron — 16"
+        },
+        {
+          "position": 17,
+          "sourceUrl": "https://sites.google.com/sitesv-images-rt/AMxu72tS7wgOyzhwxvqzl9_rmRdI20ciczz_rF_sndGEIvJ4iVz0jFoiqeJ7zdm7E2wKmtxTP16PDEKySAXQcKVrJ8FjamnEedNHmEY2hfHf-SiLyw9Liz-N-RmJN0d6RiJ3UtIzxur0d_pFIq-r32-mOzxR9wykchQq7foCuoe4UO-GVriYHe36ulCeyxlD=w1280",
+          "requestedUrl": "https://sites.google.com/sitesv-images-rt/AMxu72sC7iC-guG6C1dSKYn0YKjf5wJgwIFr7OFNkpWF8KQUZiyfyxrP-uv0ETAITFrlq-KD1sTSpB5xKB6arFjIrOo2vfubSHFKQ78XTEsJGPVSxtSZfDI8ZJHtlWInGh-NziaxJhijS4XGkiAqCaiLwu6dCMp9ADHVu8k-JdF861fzzD9ABvA7DSuExTaj=w16383",
+          "status": "complete",
+          "original": "migration/assets-original/tickeron/17.jpeg",
+          "sha256": "5e5248b43657dd2b0b9e839df66fef4db28dafb26214eb04f44f3cd41a3d2c93",
+          "width": 1863,
+          "height": 2048,
+          "localPath": "/images/projects/tickeron/17.webp",
+          "animated": false,
+          "poster": null,
+          "outputWidth": 1863,
+          "outputHeight": 2048,
+          "alt": "Tickeron — 17"
+        },
+        {
+          "position": 18,
+          "sourceUrl": "https://sites.google.com/sitesv-images-rt/AMxu72u6Y01jsjEp_PoLb94ICSMMzS0mk_ZE7faRQxtr56AC8VX0FgkPU6_DXXo1zibKQr5QZHL712X2BWltbWbH7BRocEL2vauozKL_Ojy_P0HuDP4yXBJysayYwo4leQ8gCWxoMiY7a-tMeBgumok_0uIQKK0Et9MJzDA9K13fcYmCiSWATb9iL1h0eEXcnnL1Ej3D6PswJrWYV4rIoABTH2xc37V4um4lg3RM72XBQT4=w1280",
+          "requestedUrl": "https://sites.google.com/sitesv-images-rt/AMxu72u6Y01jsjEp_PoLb94ICSMMzS0mk_ZE7faRQxtr56AC8VX0FgkPU6_DXXo1zibKQr5QZHL712X2BWltbWbH7BRocEL2vauozKL_Ojy_P0HuDP4yXBJysayYwo4leQ8gCWxoMiY7a-tMeBgumok_0uIQKK0Et9MJzDA9K13fcYmCiSWATb9iL1h0eEXcnnL1Ej3D6PswJrWYV4rIoABTH2xc37V4um4lg3RM72XBQT4=w16383",
+          "status": "complete",
+          "original": "migration/assets-original/tickeron/18.jpeg",
+          "sha256": "6c4842d6eca8bf9161d96ab2b50b593e2f76860960778051d343aa9fc98c28c5",
+          "width": 601,
+          "height": 318,
+          "localPath": "/images/projects/tickeron/18.webp",
+          "animated": false,
+          "poster": null,
+          "outputWidth": 601,
+          "outputHeight": 318,
+          "alt": "Tickeron — 18"
+        },
+        {
+          "position": 19,
+          "sourceUrl": "https://sites.google.com/sitesv-images-rt/AMxu72v23SorFruZTxFsozT1MRaDzwIhTqKFslD8wjA6GLY1-Qo7GdbnTiJhdulhg0KehJDX4Wv0VZtyHP4jU2mC_bfXDigxNVp9yR5QGGq04rlYjvag5DBNbqWJ1jwi4JhmeBAEZgtyaTwB2ja1NmfA0ta3ke8deM_XwqkLgIjA_Qs4yhf-BSuyv0Oz1mwqPn8MyIgllQqL_x26uNI3aqzkbd25qYxsmI8cUtuwWnBA-68=w1280",
+          "requestedUrl": "https://sites.google.com/sitesv-images-rt/AMxu72v23SorFruZTxFsozT1MRaDzwIhTqKFslD8wjA6GLY1-Qo7GdbnTiJhdulhg0KehJDX4Wv0VZtyHP4jU2mC_bfXDigxNVp9yR5QGGq04rlYjvag5DBNbqWJ1jwi4JhmeBAEZgtyaTwB2ja1NmfA0ta3ke8deM_XwqkLgIjA_Qs4yhf-BSuyv0Oz1mwqPn8MyIgllQqL_x26uNI3aqzkbd25qYxsmI8cUtuwWnBA-68=w16383",
+          "status": "complete",
+          "original": "migration/assets-original/tickeron/19.jpeg",
+          "sha256": "6a29dc32fa26cb2391e44ea46a40d4fedde12f741057d335c7768901e65c0fd6",
+          "width": 601,
+          "height": 318,
+          "localPath": "/images/projects/tickeron/19.webp",
+          "animated": false,
+          "poster": null,
+          "outputWidth": 601,
+          "outputHeight": 318,
+          "alt": "Tickeron — 19"
+        }
+      ],
+      "links": [
+        {
+          "text": "Tickeron",
+          "sourceUrl": "https://tickeron.com/",
+          "href": "https://tickeron.com/"
+        },
+        {
+          "text": "Next project",
+          "sourceUrl": "https://sites.google.com/view/natalia-isakova/uxui-design/ijet-media",
+          "href": "https://sites.google.com/view/natalia-isakova/uxui-design/ijet-media"
+        }
+      ],
+      "gaps": []
+    },
+    {
+      "slug": "myhospital",
+      "sourceUrl": "https://sites.google.com/view/natalia-isakova/user-research/myhospital",
+      "target": "src/content/projects/myhospital.mdx",
+      "newPath": "/work/myhospital/",
+      "status": "complete",
+      "sourceSha256": "51995df841cf1100a342eb21e5ba79b98128f21b5f6e5d12b762a7e6d0a7429b",
+      "sourceBlocks": [
+        {
+          "tag": "h1",
+          "text": "MyHospital"
+        },
+        {
+          "tag": "h3",
+          "text": "Medical Service Aggregator"
+        },
+        {
+          "tag": "h2",
+          "text": "MyHospital app"
+        },
+        {
+          "tag": "p",
+          "text": "MyHospital is a medical service aggregator located in the capital of the region. MyHospital aggregates public hospitals and private consultations, making it easier for clients to find the right specialist. Their target customers are families with children, mid-level workers, newly arrived immigrants and students."
+        },
+        {
+          "tag": "p",
+          "text": "Families and new residents need to make an appointment to the hospital quickly and use a language they can understand, without speaking by the phone with operators. Design an app for MyHospital helps people make an appointment with a specialist, in the fastest and easiest way."
+        },
+        {
+          "tag": "h3",
+          "text": "My role as UX Researcher & UX/UI Designer from start to finish of the project:"
+        },
+        {
+          "tag": "p",
+          "text": "🔬 Conducting usability studies"
+        },
+        {
+          "tag": "p",
+          "text": "📝 Conducting interviews"
+        },
+        {
+          "tag": "p",
+          "text": "💡 Paper & digital wireframing"
+        },
+        {
+          "tag": "p",
+          "text": "🔗 Low and high-fidelity prototyping"
+        },
+        {
+          "tag": "p",
+          "text": "🦼 Accounting for accessibility"
+        },
+        {
+          "tag": "p",
+          "text": "🔄 Iterating on designs"
+        },
+        {
+          "tag": "h2",
+          "text": "Understanding the user"
+        },
+        {
+          "tag": "h3",
+          "text": "User research"
+        },
+        {
+          "tag": "p",
+          "text": "I conducted interviews and created empathy maps to understand the users I’m designing for and their needs. A primary user group identified through research was families with children, who have a busy work schedule and need to make an appointment to the hospital quickly."
+        },
+        {
+          "tag": "p",
+          "text": "The creation of empathy maps and user journey maps showed that the main problem of the target group is the process of making a call and talking with an operator to schedule an appointment with a specialist."
+        },
+        {
+          "tag": "h3",
+          "text": "User pain points"
+        },
+        {
+          "tag": "h2",
+          "text": "Time"
+        },
+        {
+          "tag": "p",
+          "text": "Families with children are too busy to make an appointment by phone"
+        },
+        {
+          "tag": "h2",
+          "text": "Language"
+        },
+        {
+          "tag": "p",
+          "text": "Competitor products don’t offer different languages"
+        },
+        {
+          "tag": "h2",
+          "text": "UI"
+        },
+        {
+          "tag": "p",
+          "text": "Navigation of competitor products is difficult and not very clear"
+        },
+        {
+          "tag": "h2",
+          "text": "Accessibility"
+        },
+        {
+          "tag": "p",
+          "text": "Competitor products provide a limited amount of accessibility features"
+        },
+        {
+          "tag": "h3",
+          "text": "Persona"
+        },
+        {
+          "tag": "h3",
+          "text": "Persona: Victoria"
+        },
+        {
+          "tag": "p",
+          "text": "Problem statement: Victoria is a mother of two children who has a busy work schedule, needs to make an appointment to the hospital quickly because operators who receive calls are often busy."
+        },
+        {
+          "tag": "h2",
+          "text": "Starting the design"
+        },
+        {
+          "tag": "h3",
+          "text": "Paper wireframes"
+        },
+        {
+          "tag": "p",
+          "text": "Taking the time to draft iterations of each screen of the app on paper ensured that the elements that made it to digital wireframes would be well-suited to address user pain points."
+        },
+        {
+          "tag": "p",
+          "text": "For the home screen, I prioritized round buttons for selecting a medical area and an input field for quick search to help users save time."
+        },
+        {
+          "tag": "h3",
+          "text": "Low-fidelity prototype"
+        },
+        {
+          "tag": "p",
+          "text": "Using the completed set of digital wireframes, I created a low-fidelity prototype. The primary user flow I connected was making the appointment with a specialist so the prototype could be used in a usability study."
+        },
+        {
+          "tag": "h2",
+          "text": "Usability study"
+        },
+        {
+          "tag": "p",
+          "text": "I conducted two rounds of unmoderated usability studies with 5 participants, length of 30-40 min."
+        },
+        {
+          "tag": "p",
+          "text": "The first study used a low-fidelity prototype. Findings from the first study helped guide the designs from wireframes to mockups."
+        },
+        {
+          "tag": "p",
+          "text": "The second study used a high-fidelity prototype and revealed what aspects of the mockups needed refining."
+        },
+        {
+          "tag": "h3",
+          "text": "Participants"
+        },
+        {
+          "tag": "h3",
+          "text": "Participant A"
+        },
+        {
+          "tag": "p",
+          "text": "\"Everything is simple and clear, except for the moment of choosing a hospital and a specialist\""
+        },
+        {
+          "tag": "h3",
+          "text": "Participant B"
+        },
+        {
+          "tag": "p",
+          "text": "\"The application is very simple. It is very easy to make an appointment with a doctor\""
+        },
+        {
+          "tag": "h3",
+          "text": "Participant C"
+        },
+        {
+          "tag": "p",
+          "text": "\"I did not like it. I don't see complete information. I want to make appointment not for myself, but for someone else, but I do not see how this can be done.\""
+        },
+        {
+          "tag": "h3",
+          "text": "Participant D"
+        },
+        {
+          "tag": "p",
+          "text": "\"Maybe due to age, or due to some of my erroneous actions, I can’t understand how I can see my appointment. I go to Favorites, but there are a lot of erroneous appointments that I can't remove.\""
+        },
+        {
+          "tag": "h3",
+          "text": "Participant E"
+        },
+        {
+          "tag": "p",
+          "text": "\"I liked everything, except for the moment when I chose the hospital and it didn’t work, apparently there was a mistake."
+        },
+        {
+          "tag": "p",
+          "text": "I would use such an application to make an appointment with the doctor. Often there are applications that are clogged with unnecessary information. And in this application, everything is clear.\""
+        },
+        {
+          "tag": "h3",
+          "text": "Usability study: findings"
+        },
+        {
+          "tag": "h2",
+          "text": "Round 1 findings"
+        },
+        {
+          "tag": "li",
+          "text": "Detailed information about specialists is necessary for most users"
+        },
+        {
+          "tag": "li",
+          "text": "Some users want to make an appointment with the doctor as soon as possible"
+        },
+        {
+          "tag": "li",
+          "text": "Appointment information is difficult to find for some users"
+        },
+        {
+          "tag": "li",
+          "text": "Date and time for appointment is difficult to choose for some users"
+        },
+        {
+          "tag": "h2",
+          "text": "Round 2 findings"
+        },
+        {
+          "tag": "li",
+          "text": "Users want to be able to cancel the selected date and time of appointment"
+        },
+        {
+          "tag": "li",
+          "text": "Inability to make an appointment with a specialist from Favorites"
+        },
+        {
+          "tag": "li",
+          "text": "Users want to see notifications on the main screen"
+        },
+        {
+          "tag": "h2",
+          "text": "Refining the design"
+        },
+        {
+          "tag": "h3",
+          "text": "Key mockups"
+        },
+        {
+          "tag": "h3",
+          "text": "High-fidelity prototype"
+        },
+        {
+          "tag": "p",
+          "text": "The final high-fidelity prototype presented a more detailed and consistent user flow, with viewing the specialist’s profile in Favorites and the ability to make an appointment directly from there."
+        },
+        {
+          "tag": "p",
+          "text": "This video shows the main user flow and the additional features in the MyHospital app."
+        },
+        {
+          "tag": "h3",
+          "text": "Accessibility considerations"
+        },
+        {
+          "tag": "h2",
+          "text": "1"
+        },
+        {
+          "tag": "p",
+          "text": "I provided interface for visually impaired and Text-to-Speech technology"
+        },
+        {
+          "tag": "h2",
+          "text": "2"
+        },
+        {
+          "tag": "p",
+          "text": "I used icons to help make navigation easier"
+        },
+        {
+          "tag": "h2",
+          "text": "3"
+        },
+        {
+          "tag": "p",
+          "text": "I used WebAIM Contrast Checker for every color combination to comply with WCAG 2 requirements for contrast and color"
+        },
+        {
+          "tag": "h2",
+          "text": "Going forward"
+        },
+        {
+          "tag": "h3",
+          "text": "Takeaways"
+        },
+        {
+          "tag": "p",
+          "text": "The app makes users feel like My Hospital really thinks about how to meet their needs."
+        },
+        {
+          "tag": "p",
+          "text": "One quote from study participant:"
+        },
+        {
+          "tag": "p",
+          "text": "“I would use such an app to make an appointment with the doctor. Often there are apps that are clogged with unnecessary information. And in this application, everything is clear.”"
+        },
+        {
+          "tag": "p",
+          "text": "While designing the MyHospital app, I learned that the first ideas for the app are only the beginning of the process. Usability studies and peer feedback influenced each iteration of the app’s designs."
+        },
+        {
+          "tag": "h3",
+          "text": "Next steps"
+        },
+        {
+          "tag": "h2",
+          "text": "1"
+        },
+        {
+          "tag": "p",
+          "text": "Conduct another round of usability studies to validate whether the pain points users experienced have been effectively addressed."
+        },
+        {
+          "tag": "h2",
+          "text": "2"
+        },
+        {
+          "tag": "p",
+          "text": "Conduct more user research to determine any new areas of need."
+        },
+        {
+          "tag": "p",
+          "text": "Next project"
+        }
+      ],
+      "sourceCounts": {
+        "textBlocks": 84,
+        "images": 14,
+        "sections": 47
+      },
+      "assets": [
+        {
+          "position": 1,
+          "sourceUrl": "https://sites.google.com/sitesv-images-rt/AMxu72ujEfrmywucQAzMGwsn1k6abyhxPSvsM0qM2ji22TSkRKVCX2YqVyd0aGvOfG5EOF6xEUxWiZVHVsni1nytI6aqNk8yG3P3TujzhZHpSYaJQgG4jqm40Z1rzLIW2g7flW6vlX-FurkI0TqlcS9WRKfSkKQlYagOSXRncdDbMScW9SJhUJLjAsU5rDGwVmP5fcVDt0JXYmfoOd__YJr-szFTVNYe2cZRcae1NVxsHcc=w1280",
+          "requestedUrl": "https://sites.google.com/sitesv-images-rt/AMxu72ujEfrmywucQAzMGwsn1k6abyhxPSvsM0qM2ji22TSkRKVCX2YqVyd0aGvOfG5EOF6xEUxWiZVHVsni1nytI6aqNk8yG3P3TujzhZHpSYaJQgG4jqm40Z1rzLIW2g7flW6vlX-FurkI0TqlcS9WRKfSkKQlYagOSXRncdDbMScW9SJhUJLjAsU5rDGwVmP5fcVDt0JXYmfoOd__YJr-szFTVNYe2cZRcae1NVxsHcc=w16383",
+          "status": "complete",
+          "original": "migration/assets-original/myhospital/01.png",
+          "sha256": "5a1f842b79416ce496a11833dc1cceb92f4b3c5a5b2fc536ccd73470448cba28",
+          "width": 340,
+          "height": 309,
+          "localPath": "/images/projects/myhospital/01.webp",
+          "animated": false,
+          "poster": null,
+          "outputWidth": 340,
+          "outputHeight": 309,
+          "alt": "MyHospital — 01"
+        },
+        {
+          "position": 2,
+          "sourceUrl": "https://sites.google.com/sitesv-images-rt/AMxu72tTShbZQBHrpmLdR_9ZpfWFJS1vLdJSb9Pr_7NJ3YPQI-3WkOUw4AForQmQQhzZznlMpMMupwcRnxQr_FThRGo57s2INauf1n5w4p6XeG4F-i7ijyGHaAkBH1iyveqWTGRztEjJwPuLMm4v9o-R6VHNgF_6XrntpeG0x3n2z97ChGoRkQUac_YxzPDFxKSxnxsBCYQNJdIDZFoXsM9GYTjGaHaPVF9syuPsJQlFTUA=w1280",
+          "requestedUrl": "https://sites.google.com/sitesv-images-rt/AMxu72tTShbZQBHrpmLdR_9ZpfWFJS1vLdJSb9Pr_7NJ3YPQI-3WkOUw4AForQmQQhzZznlMpMMupwcRnxQr_FThRGo57s2INauf1n5w4p6XeG4F-i7ijyGHaAkBH1iyveqWTGRztEjJwPuLMm4v9o-R6VHNgF_6XrntpeG0x3n2z97ChGoRkQUac_YxzPDFxKSxnxsBCYQNJdIDZFoXsM9GYTjGaHaPVF9syuPsJQlFTUA=w16383",
+          "status": "complete",
+          "original": "migration/assets-original/myhospital/02.png",
+          "sha256": "6b2c26d042490a547a78aaac2d4afe273647779c571d3a071df7ea900aa48672",
+          "width": 156,
+          "height": 165,
+          "localPath": "/images/projects/myhospital/02.webp",
+          "animated": false,
+          "poster": null,
+          "outputWidth": 156,
+          "outputHeight": 165,
+          "alt": "MyHospital — 02"
+        },
+        {
+          "position": 3,
+          "sourceUrl": "https://sites.google.com/sitesv-images-rt/AMxu72t2sITdrDhp91PBjOhN6krY4ctHuJm7a_FNjx5U6vOEZHQLttZEs_4r_npqH6_4zezar-4AkuNWWNH5Js8LS6JWo63cdk040Ulp9sZJ2tFyayOi3tzrQbK9UQr5DS4fXoE1MkE8-BnJOmHjMW_GHUSv_MDrMUoLuk1VijTRWgf-khIuTWOnvYAXRejPuyo0Bd0yw5nE6wU-CNdY_QlAk0BUbN_Zhfa3fQBS1A=w1280",
+          "requestedUrl": "https://sites.google.com/sitesv-images-rt/AMxu72t2sITdrDhp91PBjOhN6krY4ctHuJm7a_FNjx5U6vOEZHQLttZEs_4r_npqH6_4zezar-4AkuNWWNH5Js8LS6JWo63cdk040Ulp9sZJ2tFyayOi3tzrQbK9UQr5DS4fXoE1MkE8-BnJOmHjMW_GHUSv_MDrMUoLuk1VijTRWgf-khIuTWOnvYAXRejPuyo0Bd0yw5nE6wU-CNdY_QlAk0BUbN_Zhfa3fQBS1A=w16383",
+          "status": "complete",
+          "original": "migration/assets-original/myhospital/03.png",
+          "sha256": "4c22d8b9edf0439094c865734ad3a2b2ebb6fda4386ac503ffcecd8d427e0cc4",
+          "width": 1237,
+          "height": 1173,
+          "localPath": "/images/projects/myhospital/03.webp",
+          "animated": false,
+          "poster": null,
+          "outputWidth": 1237,
+          "outputHeight": 1173,
+          "alt": "MyHospital — 03"
+        },
+        {
+          "position": 4,
+          "sourceUrl": "https://sites.google.com/sitesv-images-rt/AMxu72u-C6EFBns2A_ifE-RRMnU5J2Ejnm3UrmKrz8qsVVq-jCE6H18uTcJIBsKULhClMsIhfx7UxFmOb2pNCCiOlWBPnGA0eSMCr-yLUdazVnB5JepKX1cdBphOPECrNktWOFSo4OWPf-0fBaZZ67pQehxkgULnQMY2ztoscSOy3eMXoj_hm2BxutoQV8DUV2vS856x_NBRD3uMpxVKM82YKmRPcT1Qrb4gN0UVKCC58ew=w1280",
+          "requestedUrl": "https://sites.google.com/sitesv-images-rt/AMxu72v5VbKGSPGhtPa4jhNXJiij4cMTtqRwaWkXBTWOyAg45Kw6Za_0s4DABKP4OZ5pjA_RQGy6wNQ2SB-viAmStiz3Ny0LJ9THNRc3JqoliLtRTRj0qhQdwf74MtlCS2x27PuTKOfO1mFlPw2xERTnoFUEKMLl9Llnwc7Za1djty-7-yuD0UP5fo0EJffGB2xo_e683u2bFWKZmNKi4ulRsnMZk3VdlkzX8CwCJX0NOus=w16383",
+          "status": "complete",
+          "original": "migration/assets-original/myhospital/04.jpeg",
+          "sha256": "095ed09d497e0cff7da7a8a4bc860f59ede82f20ec1f66be44660fc92a072e80",
+          "width": 959,
+          "height": 540,
+          "localPath": "/images/projects/myhospital/04.webp",
+          "animated": false,
+          "poster": null,
+          "outputWidth": 959,
+          "outputHeight": 540,
+          "alt": "MyHospital — 04"
+        },
+        {
+          "position": 5,
+          "sourceUrl": "https://sites.google.com/sitesv-images-rt/AMxu72tgvn6NomLqjA9r32THen6G50VvhoXfhl6O5TI9G5xP-8_gOYlSJ-2z1CuSOUK38XWUABXUkeTaHvMhoPsb3b8ft3ho3P9E7aquXnCsCW-_istyu_PUUhxYrx11DxT5iYg9KHwE2fhD9EvpZPRkFBW8unkIelO3Uaf_W5irWjgGx3RW3yIvz7YGzbjM4lkCA0wEtqFFsYfWU4m5BQfKE3aCf251cRv59f6SzDljAEs=w1280",
+          "requestedUrl": "https://sites.google.com/sitesv-images-rt/AMxu72tgvn6NomLqjA9r32THen6G50VvhoXfhl6O5TI9G5xP-8_gOYlSJ-2z1CuSOUK38XWUABXUkeTaHvMhoPsb3b8ft3ho3P9E7aquXnCsCW-_istyu_PUUhxYrx11DxT5iYg9KHwE2fhD9EvpZPRkFBW8unkIelO3Uaf_W5irWjgGx3RW3yIvz7YGzbjM4lkCA0wEtqFFsYfWU4m5BQfKE3aCf251cRv59f6SzDljAEs=w16383",
+          "status": "complete",
+          "original": "migration/assets-original/myhospital/05.jpeg",
+          "sha256": "a48494295ddad0e89253decb25ffd6a38c630597400d3b65074a667dba5b4a2b",
+          "width": 991,
+          "height": 1469,
+          "localPath": "/images/projects/myhospital/05.webp",
+          "animated": false,
+          "poster": null,
+          "outputWidth": 991,
+          "outputHeight": 1469,
+          "alt": "MyHospital — 05"
+        },
+        {
+          "position": 6,
+          "sourceUrl": "https://sites.google.com/sitesv-images-rt/AMxu72uPYzv42e8WkJyl0UJ6AmJGEtSGv_T2YHSJHrkpkjchtddeX-XHJGM0eFTVrjlkWs3B4YOiPq-sZTfWIppUVrjZ55DIWN6H6jaJyZ9_BBDUk5DKhBpK8BdHwWeV5SODRCEqPL6wbFm96Gx6L2YK8HMkJLEqBIeL7eV4cHbkuzZTo6G9HQaIp2_X03N2p1ZgklicE3rJLdNN8f4VR15SwQpjCXMbNA2MNTTvv-jgqzs=w1280",
+          "requestedUrl": "https://sites.google.com/sitesv-images-rt/AMxu72uPYzv42e8WkJyl0UJ6AmJGEtSGv_T2YHSJHrkpkjchtddeX-XHJGM0eFTVrjlkWs3B4YOiPq-sZTfWIppUVrjZ55DIWN6H6jaJyZ9_BBDUk5DKhBpK8BdHwWeV5SODRCEqPL6wbFm96Gx6L2YK8HMkJLEqBIeL7eV4cHbkuzZTo6G9HQaIp2_X03N2p1ZgklicE3rJLdNN8f4VR15SwQpjCXMbNA2MNTTvv-jgqzs=w16383",
+          "status": "complete",
+          "original": "migration/assets-original/myhospital/06.png",
+          "sha256": "134570eedfc77122f0d8ee435ff2e9a2889db9f98e55c0a5dfc91f3cdaa075d4",
+          "width": 1285,
+          "height": 578,
+          "localPath": "/images/projects/myhospital/06.webp",
+          "animated": false,
+          "poster": null,
+          "outputWidth": 1285,
+          "outputHeight": 578,
+          "alt": "MyHospital — 06"
+        },
+        {
+          "position": 7,
+          "sourceUrl": "https://sites.google.com/sitesv-images-rt/AMxu72tQuNtbitFLhUr5EfV0txJDIIU5oXmICyHgTfXutD4AEBq1qj5eXWWKaVKzlrsomk4Iiep8TvPbHXrG7MTCwy_cm09k44dEVIdnYAnjDFFQhuQcOvoUY5MKLhSNyFg9yoiNZ7C5kVv6R4ThPdqm1zwVh9DtYlrtdJoQH5lzB7ySU-zoiypQV2QM9zmr=w1280",
+          "requestedUrl": "https://sites.google.com/sitesv-images-rt/AMxu72tQuNtbitFLhUr5EfV0txJDIIU5oXmICyHgTfXutD4AEBq1qj5eXWWKaVKzlrsomk4Iiep8TvPbHXrG7MTCwy_cm09k44dEVIdnYAnjDFFQhuQcOvoUY5MKLhSNyFg9yoiNZ7C5kVv6R4ThPdqm1zwVh9DtYlrtdJoQH5lzB7ySU-zoiypQV2QM9zmr=w16383",
+          "status": "complete",
+          "original": "migration/assets-original/myhospital/07.jpeg",
+          "sha256": "6ef71d5e52619f381cdf3c4dd875951e25669380196a715b381c821302dfeb69",
+          "width": 222,
+          "height": 222,
+          "localPath": "/images/projects/myhospital/07.webp",
+          "animated": false,
+          "poster": null,
+          "outputWidth": 222,
+          "outputHeight": 222,
+          "alt": "MyHospital — 07"
+        },
+        {
+          "position": 8,
+          "sourceUrl": "https://sites.google.com/sitesv-images-rt/AMxu72sh9QR7IbN1h7ADrFXGBC39Ekl7KzrYMz20kiIwhJSUNuG9RfRCVl1FnnLeDHiM3IaxuFV9cGkqf81eyK_HG5iYWEVUDX_Wl-h-skY5A-bzzDEAD6NttSVJuj_oBRc8VZfJveE0Y9YXJdwKO4jEiq1vI5Tog8a1m6xkgwF9B0gZnwVbbRNniNzw5O7YKfk=w1280",
+          "requestedUrl": "https://sites.google.com/sitesv-images-rt/AMxu72sh9QR7IbN1h7ADrFXGBC39Ekl7KzrYMz20kiIwhJSUNuG9RfRCVl1FnnLeDHiM3IaxuFV9cGkqf81eyK_HG5iYWEVUDX_Wl-h-skY5A-bzzDEAD6NttSVJuj_oBRc8VZfJveE0Y9YXJdwKO4jEiq1vI5Tog8a1m6xkgwF9B0gZnwVbbRNniNzw5O7YKfk=w16383",
+          "status": "complete",
+          "original": "migration/assets-original/myhospital/08.jpeg",
+          "sha256": "6ef71d5e52619f381cdf3c4dd875951e25669380196a715b381c821302dfeb69",
+          "width": 222,
+          "height": 222,
+          "localPath": "/images/projects/myhospital/08.webp",
+          "animated": false,
+          "poster": null,
+          "outputWidth": 222,
+          "outputHeight": 222,
+          "alt": "MyHospital — 08"
+        },
+        {
+          "position": 9,
+          "sourceUrl": "https://sites.google.com/sitesv-images-rt/AMxu72tQuNtbitFLhUr5EfV0txJDIIU5oXmICyHgTfXutD4AEBq1qj5eXWWKaVKzlrsomk4Iiep8TvPbHXrG7MTCwy_cm09k44dEVIdnYAnjDFFQhuQcOvoUY5MKLhSNyFg9yoiNZ7C5kVv6R4ThPdqm1zwVh9DtYlrtdJoQH5lzB7ySU-zoiypQV2QM9zmr=w1280",
+          "requestedUrl": "https://sites.google.com/sitesv-images-rt/AMxu72tQuNtbitFLhUr5EfV0txJDIIU5oXmICyHgTfXutD4AEBq1qj5eXWWKaVKzlrsomk4Iiep8TvPbHXrG7MTCwy_cm09k44dEVIdnYAnjDFFQhuQcOvoUY5MKLhSNyFg9yoiNZ7C5kVv6R4ThPdqm1zwVh9DtYlrtdJoQH5lzB7ySU-zoiypQV2QM9zmr=w16383",
+          "status": "complete",
+          "original": "migration/assets-original/myhospital/09.jpeg",
+          "sha256": "6ef71d5e52619f381cdf3c4dd875951e25669380196a715b381c821302dfeb69",
+          "width": 222,
+          "height": 222,
+          "localPath": "/images/projects/myhospital/09.webp",
+          "animated": false,
+          "poster": null,
+          "outputWidth": 222,
+          "outputHeight": 222,
+          "alt": "MyHospital — 09"
+        },
+        {
+          "position": 10,
+          "sourceUrl": "https://sites.google.com/sitesv-images-rt/AMxu72sh9QR7IbN1h7ADrFXGBC39Ekl7KzrYMz20kiIwhJSUNuG9RfRCVl1FnnLeDHiM3IaxuFV9cGkqf81eyK_HG5iYWEVUDX_Wl-h-skY5A-bzzDEAD6NttSVJuj_oBRc8VZfJveE0Y9YXJdwKO4jEiq1vI5Tog8a1m6xkgwF9B0gZnwVbbRNniNzw5O7YKfk=w1280",
+          "requestedUrl": "https://sites.google.com/sitesv-images-rt/AMxu72sh9QR7IbN1h7ADrFXGBC39Ekl7KzrYMz20kiIwhJSUNuG9RfRCVl1FnnLeDHiM3IaxuFV9cGkqf81eyK_HG5iYWEVUDX_Wl-h-skY5A-bzzDEAD6NttSVJuj_oBRc8VZfJveE0Y9YXJdwKO4jEiq1vI5Tog8a1m6xkgwF9B0gZnwVbbRNniNzw5O7YKfk=w16383",
+          "status": "complete",
+          "original": "migration/assets-original/myhospital/10.jpeg",
+          "sha256": "6ef71d5e52619f381cdf3c4dd875951e25669380196a715b381c821302dfeb69",
+          "width": 222,
+          "height": 222,
+          "localPath": "/images/projects/myhospital/10.webp",
+          "animated": false,
+          "poster": null,
+          "outputWidth": 222,
+          "outputHeight": 222,
+          "alt": "MyHospital — 10"
+        },
+        {
+          "position": 11,
+          "sourceUrl": "https://sites.google.com/sitesv-images-rt/AMxu72tQuNtbitFLhUr5EfV0txJDIIU5oXmICyHgTfXutD4AEBq1qj5eXWWKaVKzlrsomk4Iiep8TvPbHXrG7MTCwy_cm09k44dEVIdnYAnjDFFQhuQcOvoUY5MKLhSNyFg9yoiNZ7C5kVv6R4ThPdqm1zwVh9DtYlrtdJoQH5lzB7ySU-zoiypQV2QM9zmr=w1280",
+          "requestedUrl": "https://sites.google.com/sitesv-images-rt/AMxu72tQuNtbitFLhUr5EfV0txJDIIU5oXmICyHgTfXutD4AEBq1qj5eXWWKaVKzlrsomk4Iiep8TvPbHXrG7MTCwy_cm09k44dEVIdnYAnjDFFQhuQcOvoUY5MKLhSNyFg9yoiNZ7C5kVv6R4ThPdqm1zwVh9DtYlrtdJoQH5lzB7ySU-zoiypQV2QM9zmr=w16383",
+          "status": "complete",
+          "original": "migration/assets-original/myhospital/11.jpeg",
+          "sha256": "6ef71d5e52619f381cdf3c4dd875951e25669380196a715b381c821302dfeb69",
+          "width": 222,
+          "height": 222,
+          "localPath": "/images/projects/myhospital/11.webp",
+          "animated": false,
+          "poster": null,
+          "outputWidth": 222,
+          "outputHeight": 222,
+          "alt": "MyHospital — 11"
+        },
+        {
+          "position": 12,
+          "sourceUrl": "https://sites.google.com/sitesv-images-rt/AMxu72t5ku_YAZrS20lpUndFi2PY-atejfUZXlQgbhVrliuGi9U4vb-rU4mxRbfUXlWbGnUaKr_G_G4JOoAunCVeSoVnpC9_b20JTT8UJFXMARGp-SvyNtWKQUJ52poEr0GhhgqChy9reScCKWN3PzS7HwlgASb2skLySHtUKyiWvWMtAH7YECq2UAmwxdQkpA49AG_RH9kKIHenKeYtBCONy8_UTzITDmeU2IUMbgS4=w1280",
+          "requestedUrl": "https://sites.google.com/sitesv-images-rt/AMxu72t5ku_YAZrS20lpUndFi2PY-atejfUZXlQgbhVrliuGi9U4vb-rU4mxRbfUXlWbGnUaKr_G_G4JOoAunCVeSoVnpC9_b20JTT8UJFXMARGp-SvyNtWKQUJ52poEr0GhhgqChy9reScCKWN3PzS7HwlgASb2skLySHtUKyiWvWMtAH7YECq2UAmwxdQkpA49AG_RH9kKIHenKeYtBCONy8_UTzITDmeU2IUMbgS4=w16383",
+          "status": "complete",
+          "original": "migration/assets-original/myhospital/12.png",
+          "sha256": "ca283c36c4d0137fe1aaecad9112838bbe227b10d9ee0a86bb9cceb782eeb076",
+          "width": 1026,
+          "height": 480,
+          "localPath": "/images/projects/myhospital/12.webp",
+          "animated": false,
+          "poster": null,
+          "outputWidth": 1026,
+          "outputHeight": 480,
+          "alt": "MyHospital — 12"
+        },
+        {
+          "position": 13,
+          "sourceUrl": "https://sites.google.com/sitesv-images-rt/AMxu72tj7-fIxc_Lcc1mRA0Pe0TEeRAuiEDioIjQ8B4g4TaiaX002nxWprjQp0UDuOxhSV4Zjdj9lJPlXz3_qrAeWhKxKJsJNyy-WU2k89N-uhO1aTUreAGh1Cx8EyZFGvaOd43ZYY2APKZadVsUnSrZml1wEu9r4XrsTx07QE2L05ytgb-6EsCbWSzzPsiYisVt7u9XiR3y36MLjSZgTHdeuB-jlSF3J7s5w9zUhano=w1280",
+          "requestedUrl": "https://sites.google.com/sitesv-images-rt/AMxu72tj7-fIxc_Lcc1mRA0Pe0TEeRAuiEDioIjQ8B4g4TaiaX002nxWprjQp0UDuOxhSV4Zjdj9lJPlXz3_qrAeWhKxKJsJNyy-WU2k89N-uhO1aTUreAGh1Cx8EyZFGvaOd43ZYY2APKZadVsUnSrZml1wEu9r4XrsTx07QE2L05ytgb-6EsCbWSzzPsiYisVt7u9XiR3y36MLjSZgTHdeuB-jlSF3J7s5w9zUhano=w16383",
+          "status": "complete",
+          "original": "migration/assets-original/myhospital/13.jpeg",
+          "sha256": "99b14be6d59743cfe898a2af1e811172271bfedcc52093464a5d0f8a72af30b2",
+          "width": 1050,
+          "height": 821,
+          "localPath": "/images/projects/myhospital/13.webp",
+          "animated": false,
+          "poster": null,
+          "outputWidth": 1050,
+          "outputHeight": 821,
+          "alt": "MyHospital — 13"
+        },
+        {
+          "position": 14,
+          "sourceUrl": "https://sites.google.com/sitesv-images-rt/AMxu72t6i-MOUayPUESe7SIIPZvd-RQ_fK-dc6dIirZMI8hD6mTDiL7sSxDn_Ned0P93-gDuowggofbc59RlDBOoPl1KJHv_ARkD6I4HFxF3092YWsPuiKJpmpur3fvlExTgGxp5K-WD2dWOhq896Awr8u3evZSja0NeT6sItN4JjZSHe1F05OehpNamlyqk0nusbJsNpx8Qx4faJGaspwyonLWLVO6cETHBctJ2leAiU0k=w1280",
+          "requestedUrl": "https://sites.google.com/sitesv-images-rt/AMxu72sjYn2GmwmFbfKF8tr8igMiziZEjY4vAGFxydLxcJkG28zHlGqY-3ZPGO4sT5AGD4OXmbsmquWQ7PhU8tZWOjLcFerKn1rzzHkiMyB1GmRergah976HWyeNk8uf6lzu5iNrREFQDS_yFh7JJ3mTVmZ93zIXTuJ9cDoIM7I1ZL4jD68Gh9Eu36DhtubiIlQVndbE1jTNKR_mkD_4IEnBUQyrJN6_oKWq-oPPZpKPZec=w16383",
+          "status": "complete",
+          "original": "migration/assets-original/myhospital/14.gif",
+          "sha256": "d5b218a41174e543db201dfb6d44e16f1cde16469bb1ed23c45800adccb294e6",
+          "width": 396,
+          "height": 821,
+          "localPath": "/images/projects/myhospital/14.gif",
+          "animated": true,
+          "poster": "/images/projects/myhospital/14.webp",
+          "outputWidth": 396,
+          "outputHeight": 821,
+          "alt": "MyHospital — 14"
+        }
+      ],
+      "links": [
+        {
+          "text": "Next project",
+          "sourceUrl": "https://sites.google.com/view/natalia-isakova/uxui-design/tickeron",
+          "href": "/work/tickeron/"
+        }
+      ],
+      "gaps": []
+    },
+    {
+      "slug": "kidswearcycle",
+      "sourceUrl": "https://sites.google.com/view/natalia-isakova/user-research/kidswearcycle",
+      "target": "src/content/projects/kidswearcycle.mdx",
+      "newPath": "/work/kidswearcycle/",
+      "status": "complete",
+      "sourceSha256": "7ef496742b20897b33db6c0df51c11e0f88fbe2b210b1c9f3cfafa4b56f3ffcf",
+      "sourceBlocks": [
+        {
+          "tag": "h1",
+          "text": "KidswearCycle"
+        },
+        {
+          "tag": "h3",
+          "text": "Online Resale Platform"
+        },
+        {
+          "tag": "h2",
+          "text": "KidswearCycle responsive website"
+        },
+        {
+          "tag": "p",
+          "text": "KidswearCycle is an online resale platform for parents to purchase and resell children's clothing. The typical user is between 20-50 years old, and most users are families with several children. KidswearCycle's goal is to provide a way to sell used children's clothing quickly and cheaply while protecting nature and the environment."
+        },
+        {
+          "tag": "p",
+          "text": "Current online platforms often lack user-friendliness and focus, making it difficult to buy and sell used children's clothing within a limited time frame and budget. Design a KidswearCycle responsive website to be a user-friendly platform that simplifies the process of buying and selling high-quality, affordable children's clothing, protecting the environment from unnecessary waste."
+        },
+        {
+          "tag": "h3",
+          "text": "My role as UX Researcher & UX/UI Designer from start to finish of the project:"
+        },
+        {
+          "tag": "p",
+          "text": "🔬 Conducting usability studies"
+        },
+        {
+          "tag": "p",
+          "text": "💡 Paper & digital wireframing"
+        },
+        {
+          "tag": "p",
+          "text": "🔗 Low and high-fidelity prototyping"
+        },
+        {
+          "tag": "p",
+          "text": "📱 Responsive design"
+        },
+        {
+          "tag": "p",
+          "text": "🦼 Accounting for accessibility"
+        },
+        {
+          "tag": "p",
+          "text": "🔄 Iterating on designs"
+        },
+        {
+          "tag": "h2",
+          "text": "Understanding the user"
+        },
+        {
+          "tag": "h3",
+          "text": "User research"
+        },
+        {
+          "tag": "p",
+          "text": "I conducted usability research for my project. To better understand my users, I created personas using AI and then trained the AI to describe their needs and wants as if they were real people. I interviewed each virtual persona and asked them questions that interested me. This allowed me to conduct research in a very short time."
+        },
+        {
+          "tag": "p",
+          "text": "The conducted research of personas and user journey map showed that the main problem of the target group is the lengthy and inconvenient processes of searching and purchasing high-quality children's clothing at low prices, on the one hand, and selling unnecessary clothing, on the other."
+        },
+        {
+          "tag": "h3",
+          "text": "User pain points"
+        },
+        {
+          "tag": "h2",
+          "text": "Time"
+        },
+        {
+          "tag": "p",
+          "text": "Families with children are often too busy to shop in offline stores or second-hand stores"
+        },
+        {
+          "tag": "h2",
+          "text": "Cost-effective solutions"
+        },
+        {
+          "tag": "p",
+          "text": "Online stores do not offer cheap prices for high-quality children's clothing"
+        },
+        {
+          "tag": "h2",
+          "text": "UI"
+        },
+        {
+          "tag": "p",
+          "text": "Online platforms are not user-friendly, making it difficult to quickly browse and make purchases without a significant time investment"
+        },
+        {
+          "tag": "h2",
+          "text": "Accessibility"
+        },
+        {
+          "tag": "p",
+          "text": "Competitor products provide a limited amount of accessibility features"
+        },
+        {
+          "tag": "h3",
+          "text": "Persona"
+        },
+        {
+          "tag": "h3",
+          "text": "Persona: Maria"
+        },
+        {
+          "tag": "p",
+          "text": "Problem statement: Maria is a mother of two children who works from home, who needs affordable, high-quality children's clothing in a short time because she has limited time for shopping."
+        },
+        {
+          "tag": "h2",
+          "text": "Starting the design"
+        },
+        {
+          "tag": "h3",
+          "text": "Sitemap"
+        },
+        {
+          "tag": "p",
+          "text": "The time to select and purchase children's clothing is the first pain point for the users, therefore I created the information architecture of the site as simple as possible: search with filters, categories of children's clothing, list of recently added items."
+        },
+        {
+          "tag": "p",
+          "text": "After conducting a study of personas, it turned out that young parents would like to learn useful information about children and seasonal sales from individuals and companies, which they could read in articles on the same site. That's why I added links to articles on the main page."
+        },
+        {
+          "tag": "h3",
+          "text": "Paper wireframes (desktop)"
+        },
+        {
+          "tag": "p",
+          "text": "I sketched out 4 variants of paper wireframes for each screen of my site, marking with a star in each option the most suitable implementation of the site’s functionality."
+        },
+        {
+          "tag": "p",
+          "text": "The final sketch on the right contains all the elements I selected for the main page."
+        },
+        {
+          "tag": "p",
+          "text": "At the very top I prioritized input field with drop-down filters for quick search and big buttons for categories to help users save time."
+        },
+        {
+          "tag": "h1",
+          "text": "→"
+        },
+        {
+          "tag": "h3",
+          "text": "Paper wireframe screen size variations"
+        },
+        {
+          "tag": "p",
+          "text": "I started to work on designs for additional screen sizes to make sure the site would be fully responsive, because KidswearCycle´s customers access the site on a variety of different devices."
+        },
+        {
+          "tag": "h3",
+          "text": "Low-fidelity prototype"
+        },
+        {
+          "tag": "p",
+          "text": "Then I created the low-fidelity prototype, and after that I had received feedback on my designs from members of my team about things like placement of buttons and page organization. I made sure to listen to their feedback, and I implemented several suggestions in places that addressed user pain points."
+        },
+        {
+          "tag": "h2",
+          "text": "Usability Study"
+        },
+        {
+          "tag": "p",
+          "text": "I conducted the moderated usability study with 4 participants, length 15-20 min. The usability study used a low-fidelity prototype."
+        },
+        {
+          "tag": "p",
+          "text": "These were the main findings uncovered by the usability study."
+        },
+        {
+          "tag": "h3",
+          "text": "Usability study: findings"
+        },
+        {
+          "tag": "h2",
+          "text": "1"
+        },
+        {
+          "tag": "h3",
+          "text": "Category"
+        },
+        {
+          "tag": "p",
+          "text": "The category selection block on a specific category page confuses the user"
+        },
+        {
+          "tag": "h2",
+          "text": "2"
+        },
+        {
+          "tag": "h3",
+          "text": "Description of item"
+        },
+        {
+          "tag": "p",
+          "text": "A lot of space is taken up for reviews about the seller, but the description of item is too small"
+        },
+        {
+          "tag": "h2",
+          "text": "3"
+        },
+        {
+          "tag": "h3",
+          "text": "Checkout"
+        },
+        {
+          "tag": "p",
+          "text": "At the checkout stage, users did not have a clear choice of delivery options"
+        },
+        {
+          "tag": "h2",
+          "text": "Refining the design"
+        },
+        {
+          "tag": "h3",
+          "text": "Mockups: Original screen size (desktop)"
+        },
+        {
+          "tag": "h3",
+          "text": "Mockups: Screen size variations (mobile & tablet)"
+        },
+        {
+          "tag": "p",
+          "text": "I included considerations for additional screen sizes in my mockups based on my earlier wireframes."
+        },
+        {
+          "tag": "p",
+          "text": "Due to users shopping from a variety of devices, I felt it was important to optimize the browsing experience for a range of device sizes, such as mobile and tablet so users have the smoothest experience possible."
+        },
+        {
+          "tag": "h3",
+          "text": "High-fidelity prototype"
+        },
+        {
+          "tag": "p",
+          "text": "My hi-fi prototype followed the same user flow as the lo-fi prototype, and included the design changes made after the usability study, as well as several changes suggested by members of my team."
+        },
+        {
+          "tag": "p",
+          "text": "This video shows the main user flow and the additional features in the KidswearCycle website (desktop version)."
+        },
+        {
+          "tag": "h3",
+          "text": "Accessibility considerations"
+        },
+        {
+          "tag": "h2",
+          "text": "1"
+        },
+        {
+          "tag": "p",
+          "text": "I used headings with different sized text for clear visual hierarchy"
+        },
+        {
+          "tag": "h2",
+          "text": "2"
+        },
+        {
+          "tag": "p",
+          "text": "I used WebAIM Contrast Checker for every color combination to comply with WCAG 2 requirements for contrast and color"
+        },
+        {
+          "tag": "h2",
+          "text": "3"
+        },
+        {
+          "tag": "p",
+          "text": "I used icons to help make navigation easier"
+        },
+        {
+          "tag": "h2",
+          "text": "Going forward"
+        },
+        {
+          "tag": "h3",
+          "text": "Takeaways"
+        },
+        {
+          "tag": "p",
+          "text": "Our intended users mentioned that they found the design easy to use, enjoyed the visuals, and noticed a clear organization of information."
+        },
+        {
+          "tag": "p",
+          "text": "I found out that even small design tweaks can make a big difference for users. The main thing I learned is to always think about what users really need when designing."
+        },
+        {
+          "tag": "h3",
+          "text": "Next steps"
+        },
+        {
+          "tag": "h2",
+          "text": "1"
+        },
+        {
+          "tag": "p",
+          "text": "Create chat and user profile screens, add messaging functionality between seller and buyer"
+        },
+        {
+          "tag": "h2",
+          "text": "2"
+        },
+        {
+          "tag": "p",
+          "text": "Add a drop-down block with filters when using the search field on the main screen"
+        },
+        {
+          "tag": "h2",
+          "text": "3"
+        },
+        {
+          "tag": "p",
+          "text": "Conduct follow-up usability testing on the new website"
+        },
+        {
+          "tag": "p",
+          "text": "Next project"
+        }
+      ],
+      "sourceCounts": {
+        "textBlocks": 81,
+        "images": 13,
+        "sections": 45
+      },
+      "assets": [
+        {
+          "position": 1,
+          "sourceUrl": "https://sites.google.com/sitesv-images-rt/AMxu72srbHJWH-RAGIpMEyl9Lu7pwnut1ygqTYh5hB5w4lA5pluAi14YliJaYkIXbXxHEWUp5UdH8FrCTMuvwuT5v5FS0GsQ6XqMIaCVhGLNwh05T_q9A_fuYM2mSvsrcyTfD4e44F3IBOy-TFJo2oLk7LI7pFqHD488ikyuzVQQ14ip5wt0juJ18t2yyiGK1Hu1ASnPnK6mf31ChIRHpZ72Hh8AliT99R0VMBHKoMXlm2U=w1280",
+          "requestedUrl": "https://sites.google.com/sitesv-images-rt/AMxu72srbHJWH-RAGIpMEyl9Lu7pwnut1ygqTYh5hB5w4lA5pluAi14YliJaYkIXbXxHEWUp5UdH8FrCTMuvwuT5v5FS0GsQ6XqMIaCVhGLNwh05T_q9A_fuYM2mSvsrcyTfD4e44F3IBOy-TFJo2oLk7LI7pFqHD488ikyuzVQQ14ip5wt0juJ18t2yyiGK1Hu1ASnPnK6mf31ChIRHpZ72Hh8AliT99R0VMBHKoMXlm2U=w16383",
+          "status": "complete",
+          "original": "migration/assets-original/kidswearcycle/01.png",
+          "sha256": "75a26a8697dff6d342ef40faf0c689271359a77fa0352370b368a9a526912390",
+          "width": 692,
+          "height": 220,
+          "localPath": "/images/projects/kidswearcycle/01.webp",
+          "animated": false,
+          "poster": null,
+          "outputWidth": 692,
+          "outputHeight": 220,
+          "alt": "KidswearCycle — 01"
+        },
+        {
+          "position": 2,
+          "sourceUrl": "https://sites.google.com/sitesv-images-rt/AMxu72tTShbZQBHrpmLdR_9ZpfWFJS1vLdJSb9Pr_7NJ3YPQI-3WkOUw4AForQmQQhzZznlMpMMupwcRnxQr_FThRGo57s2INauf1n5w4p6XeG4F-i7ijyGHaAkBH1iyveqWTGRztEjJwPuLMm4v9o-R6VHNgF_6XrntpeG0x3n2z97ChGoRkQUac_YxzPDFxKSxnxsBCYQNJdIDZFoXsM9GYTjGaHaPVF9syuPsJQlFTUA=w1280",
+          "requestedUrl": "https://sites.google.com/sitesv-images-rt/AMxu72vdUpjdX52XlG21d8zeBBsI3zrp7HVqEAAGTS210r4GVmGGSkFBNxQKrzDX-jmwOsfmD9P82Pmqi5i3AQgyJ2mJflyUK9Kbx68hV9jltZJG_DGgXNXp3Tl_Ue31yp4k5nKT4Dymy_oAeP1I8pgG098VMVG1ZFCH4kWr3v6UH7jWXsrpfKsRpC78ybDaWsCwo9dhBga0H3vx9VQoFqulM5W3idrkk_tY0CYFOq4JNY0=w16383",
+          "status": "complete",
+          "original": "migration/assets-original/kidswearcycle/02.png",
+          "sha256": "6b2c26d042490a547a78aaac2d4afe273647779c571d3a071df7ea900aa48672",
+          "width": 156,
+          "height": 165,
+          "localPath": "/images/projects/kidswearcycle/02.webp",
+          "animated": false,
+          "poster": null,
+          "outputWidth": 156,
+          "outputHeight": 165,
+          "alt": "KidswearCycle — 02"
+        },
+        {
+          "position": 3,
+          "sourceUrl": "https://sites.google.com/sitesv-images-rt/AMxu72uFisOdfxr1keKhexce1qxJO_pI80GLey0bUOZ4oLId27bwaZkhIK4jV1Q6R_G5IwMBZKlAr_lsgGxr_PKmMQPL8VYKCCskFAh1Nb2V083sNbb_RNoaMK8wXqyfXUyg9Qd_H-MIE4e6dWLNqUVp8U5lAmv7AgO45oNw-5diQ94XOn0ZLT3mGLniATX-g20oZnsNoPH5KVRHF9KftjNIyzmUOq143zfd5EPMXnxsYzc=w1280",
+          "requestedUrl": "https://sites.google.com/sitesv-images-rt/AMxu72uFisOdfxr1keKhexce1qxJO_pI80GLey0bUOZ4oLId27bwaZkhIK4jV1Q6R_G5IwMBZKlAr_lsgGxr_PKmMQPL8VYKCCskFAh1Nb2V083sNbb_RNoaMK8wXqyfXUyg9Qd_H-MIE4e6dWLNqUVp8U5lAmv7AgO45oNw-5diQ94XOn0ZLT3mGLniATX-g20oZnsNoPH5KVRHF9KftjNIyzmUOq143zfd5EPMXnxsYzc=w16383",
+          "status": "complete",
+          "original": "migration/assets-original/kidswearcycle/03.png",
+          "sha256": "20629da48ca0e754298060f333a39be273495550edad2e1b5d1aa55e119b35b2",
+          "width": 1957,
+          "height": 1963,
+          "localPath": "/images/projects/kidswearcycle/03.webp",
+          "animated": false,
+          "poster": null,
+          "outputWidth": 1957,
+          "outputHeight": 1963,
+          "alt": "KidswearCycle — 03"
+        },
+        {
+          "position": 4,
+          "sourceUrl": "https://sites.google.com/sitesv-images-rt/AMxu72uMZZq94adYl4iSH7D5aOZx9SIN1OYyO-egY1mAipXH3QkiKAcvByOBQ86NR_W8a0_9aZbOE9X3I8um0LKQL6YWyD19708ITQiKNvwpWyNNu6t_hHU84GCF01LXNMwn1I9-1intJNPY93VLsjZjx5NF6VjilQJDpXkRQ5k0N1jhOBtgNtij_pGbD8iDLuy_oLHATFsjRZIuuADfudYWHDGih9RTSje3QkFMN9lv9FU=w1280",
+          "requestedUrl": "https://sites.google.com/sitesv-images-rt/AMxu72uMZZq94adYl4iSH7D5aOZx9SIN1OYyO-egY1mAipXH3QkiKAcvByOBQ86NR_W8a0_9aZbOE9X3I8um0LKQL6YWyD19708ITQiKNvwpWyNNu6t_hHU84GCF01LXNMwn1I9-1intJNPY93VLsjZjx5NF6VjilQJDpXkRQ5k0N1jhOBtgNtij_pGbD8iDLuy_oLHATFsjRZIuuADfudYWHDGih9RTSje3QkFMN9lv9FU=w16383",
+          "status": "complete",
+          "original": "migration/assets-original/kidswearcycle/04.jpeg",
+          "sha256": "b0b8af77c95a981463fd3a1267e84d28471b7f0a71189490e658c2896bb7c9ad",
+          "width": 959,
+          "height": 540,
+          "localPath": "/images/projects/kidswearcycle/04.webp",
+          "animated": false,
+          "poster": null,
+          "outputWidth": 959,
+          "outputHeight": 540,
+          "alt": "KidswearCycle — 04"
+        },
+        {
+          "position": 5,
+          "sourceUrl": "https://sites.google.com/sitesv-images-rt/AMxu72v2L81Cc6comQ09UK2Mk63dvUIVloib-BLRLNJoEcGElPNc8UA7TSA4jCtEadiJm1Fp_DOYp7v8psmd5Tg21GHN-FL7aaifEaE5QvaYJzDxL0ApRUDkNhkpdnisjLq3eO7B0G0fWlnQFxYhnGt7oPr_cK0ubnosaJO98ox1TcGfxsTA0YWcs0vS3KaNPBCvF08a1YYM7T2QZ6rSF6KHFiFPltxz95oN8-8uktdJ=w1280",
+          "requestedUrl": "https://sites.google.com/sitesv-images-rt/AMxu72v2L81Cc6comQ09UK2Mk63dvUIVloib-BLRLNJoEcGElPNc8UA7TSA4jCtEadiJm1Fp_DOYp7v8psmd5Tg21GHN-FL7aaifEaE5QvaYJzDxL0ApRUDkNhkpdnisjLq3eO7B0G0fWlnQFxYhnGt7oPr_cK0ubnosaJO98ox1TcGfxsTA0YWcs0vS3KaNPBCvF08a1YYM7T2QZ6rSF6KHFiFPltxz95oN8-8uktdJ=w16383",
+          "status": "complete",
+          "original": "migration/assets-original/kidswearcycle/05.jpeg",
+          "sha256": "be3ef820de67c1eb3325294a1e1e10f05d20d1544c28bbebb385c99bb2bd35f6",
+          "width": 1257,
+          "height": 2048,
+          "localPath": "/images/projects/kidswearcycle/05.webp",
+          "animated": false,
+          "poster": null,
+          "outputWidth": 1257,
+          "outputHeight": 2048,
+          "alt": "KidswearCycle — 05"
+        },
+        {
+          "position": 6,
+          "sourceUrl": "https://sites.google.com/sitesv-images-rt/AMxu72vlzFj77Ywgtc16EWfgb7l88Zcz1fL9_texAg4B89H7pKQ9CWQ1YXebqgn9_u3HEQCWw1lreGhBt1uKtk5vaZR2cUv5Qac2FACcttxtod21jIH8yuCGhW18crKTBEKGaHxLgFn-rq-obDlikxpdyLS-UwZM7DE26Hl_v5JXTmaCiUDhDmT2HYmg_Cxoz-7JB6G3bdU8r2UJkGfuszY3bOjyXxn9ySxWAtt8c55Nojg=w1280",
+          "requestedUrl": "https://sites.google.com/sitesv-images-rt/AMxu72v7OH8h5g4ppLtJU-nJzF0pwwoITD91Euc_e9oUwBzRt9wqHiP2wgHQlnzQ4lglqL7qnOi51Sl1imWFiX0Bl71tMzrI1QEuPeCCeZ8W-8ClqkBJWqxkH0nh8RLB2g1W9X9_WaLnZlOloUTMbaGnksfaHPXXS0phc4-Dke78hrb7I04AArI0BiWLZCd-Po8_LzeJ_9-waGZgYMgBcYVVzLf0xk8moKJ2Ydjm1ABERcs=w16383",
+          "status": "complete",
+          "original": "migration/assets-original/kidswearcycle/06.jpeg",
+          "sha256": "30348f14d1789f34e66e7baf2ac1b31cbecd1fa01b9823d5e5b01564221aadd3",
+          "width": 2048,
+          "height": 1462,
+          "localPath": "/images/projects/kidswearcycle/06.webp",
+          "animated": false,
+          "poster": null,
+          "outputWidth": 2048,
+          "outputHeight": 1462,
+          "alt": "KidswearCycle — 06"
+        },
+        {
+          "position": 7,
+          "sourceUrl": "https://sites.google.com/sitesv-images-rt/AMxu72tLeFowowSWMwF_t1gDMLyihbfXp5H8VR3q26MhOURLYQObmYVfAJAMqZnoYqv0qB72i2IgtaypTjVnknfpcUpP3pfe9rw31B2A3WaeUloZBtb6CjRFFsKN2q2dpwB2224p_D6agpGkUWJ4slXdKqlkXMwF_kvo8Rk7JuoaYMlAQ5j8-BzWlM8oqexNE-Y=w1280",
+          "requestedUrl": "https://sites.google.com/sitesv-images-rt/AMxu72tXd_QmpAMy5LTRkdokD3PxwNxwIzdK7xSybuwbgrEv__RPs2xxj6fQZMhFjXHSw7bl7ZWSTOZ-sLbpOfa6NLZlRIqfyXoivPSPLNiwpvM8xBCZ0byvtw_cp4B_V_SSsyFYw_hM4J0cszVrIANfAvzGLDmdE4_INyHGCbeKQ_6NN2KTD9vchOEtAcTPcfQ=w16383",
+          "status": "complete",
+          "original": "migration/assets-original/kidswearcycle/07.jpeg",
+          "sha256": "0538978afe152a9e8b89d45d4185e559376ce53e30eb1d3cf3a4f513e43d98cd",
+          "width": 850,
+          "height": 2048,
+          "localPath": "/images/projects/kidswearcycle/07.webp",
+          "animated": false,
+          "poster": null,
+          "outputWidth": 850,
+          "outputHeight": 2048,
+          "alt": "KidswearCycle — 07"
+        },
+        {
+          "position": 8,
+          "sourceUrl": "https://sites.google.com/sitesv-images-rt/AMxu72usyF1MEjZ78-DxkgSeya1-EXBia9kKpYW4MCYl6f0AtETkPIHWLkdHFr_4VT7n-pfaiF0E2RjNy2Q9aZz5sq3Pu7FDP3FX1tpg2kJgDu4cRINmgJ2u9vbyaPvZ591NPvnFffYSPr5q2qxT9mzItlQ177ZaK1-ZJJr_sj3Oq6W7IRoFbDns-kSBUaiTVjDVfbKAZU1RmqbYjvkJQDrZ2miWIwF7iTzV2gebvTaxrUo=w1280",
+          "requestedUrl": "https://sites.google.com/sitesv-images-rt/AMxu72tLtEPXdm1EefXafurZ_PRvKeGJ8xVFdcJ_B58M7BmJCCWPJ8Culs77rLtdtAg3Z_2BgazZ2vdFZlmn8cYZKo1MNgGOl8mZbVRWhpmJ6qDw0BO1dsfVOlyMWYVOmETF8dfeoIEXLJ3t8wFmyPGox0bWOygnjVENDpuLFGwl2MqrM5J6_qsyGxIVuBTCwriMtTm9SdScwg087baNQn4pyIXC88uWz3fGpKnkD3gyBUI=w16383",
+          "status": "complete",
+          "original": "migration/assets-original/kidswearcycle/08.jpeg",
+          "sha256": "8737ee216dbc84211771e40f3ed6ddcb22aae4833eb1427860cfaee7bafd75d1",
+          "width": 1428,
+          "height": 2048,
+          "localPath": "/images/projects/kidswearcycle/08.webp",
+          "animated": false,
+          "poster": null,
+          "outputWidth": 1428,
+          "outputHeight": 2048,
+          "alt": "KidswearCycle — 08"
+        },
+        {
+          "position": 9,
+          "sourceUrl": "https://sites.google.com/sitesv-images-rt/AMxu72uSqz7oWJ8Mzck1iXvkrs0RwrcAnAdxS4C-mAGvH0NGl77ctWeMUeHh2Advz1hPOoVfLwAt7pZh5SMqsWfZkqz3nG8Cccb7cHdQZSE3W4GGT0q0JQPRIzXiipeZIJ7c-LF4uwr1k5ODhU5g3aD0ZY4QexQTZY9y-W1qLYnSj2EodVmNQRVNM-SQwAPWqrHQo3GeYgIqW28DH7UgmB_jxYsco1NOSxpCn-0U7WpRa3I=w1280",
+          "requestedUrl": "https://sites.google.com/sitesv-images-rt/AMxu72tlViAMZbUIUIK-ZTt2dNQjUYt_sQ4DUuYFAXSO4NL5jnfzh61dp34kI_mJRlfsNQ48X0Zsbf5i-udo0DBFmtyki78EbWTKr1eajWo9xC4mZNhSPoWOgXR5OHkpngjQ3bokBmffqGzmJwocx3GwaC6aWt8oVFZy7I9Vh8c45RCtDFpcWaWFiOOWhMA0LuE1wk0UcttoTgWxYu_ZYRlW8U2MoG2qXrUrYvSAXzn7MZ0=w16383",
+          "status": "complete",
+          "original": "migration/assets-original/kidswearcycle/09.png",
+          "sha256": "14e69a273c652c444ccd5b45cded6e7ff58e324d5acf6ea55e3126d8c561e242",
+          "width": 1300,
+          "height": 463,
+          "localPath": "/images/projects/kidswearcycle/09.webp",
+          "animated": false,
+          "poster": null,
+          "outputWidth": 1300,
+          "outputHeight": 463,
+          "alt": "KidswearCycle — 09"
+        },
+        {
+          "position": 10,
+          "sourceUrl": "https://sites.google.com/sitesv-images-rt/AMxu72uu8G7fBq-IesXBeQHnJaSmmlNlVWDLaiiBKlb-Ni7--YwZCHd24LTBrMGPBhsp-UTFbkOjYJWX7QrhGUF1u8ndcTTl1P3SzKkAay_9WXQPIBH0w4MSD2N9nxb66kd1Yaw5fxbFsesoWUMxuVhTFw3JIuVmV7zO_i-n9qqtgEuyeKCnU5waj1hpGIEFrPxifZZbMbLXYybJ6LqG8OpjDBYgaUz-fcRu49axCl-g=w1280",
+          "requestedUrl": "https://sites.google.com/sitesv-images-rt/AMxu72ujFhMPgRoLp4mCZbDRYV4GIVbN6ZNeNmM5nOKhJegATFwgD8t70mtRU7QDITsMNaarHuyeL-2VCFuYTBf-pedKfS5p0ERspRCfoWL-6-Ts5Ocx4Z0ERSbbC6iaGH1q4omBAGDRWNc4fjG2AObRqaM44iDR4ggLetFZpoM6pQ17upTkbxYKYb_ZoA9swPT_4YOtRqCzYLn2tEQXG65VIP5T1pUn4JdosFzJzrhR=w16383",
+          "status": "complete",
+          "original": "migration/assets-original/kidswearcycle/10.png",
+          "sha256": "a952e4e2d0019a38392cbf9d5fdb526988e194df9107cc1f23d2201d828720de",
+          "width": 2048,
+          "height": 1078,
+          "localPath": "/images/projects/kidswearcycle/10.webp",
+          "animated": false,
+          "poster": null,
+          "outputWidth": 2048,
+          "outputHeight": 1078,
+          "alt": "KidswearCycle — 10"
+        },
+        {
+          "position": 11,
+          "sourceUrl": "https://sites.google.com/sitesv-images-rt/AMxu72v00ChR6cwjhEPApF4XIAvCQRxHeq_I01ySwJXoGupX9nv4uQjr9hZRpzJOrm51HU48cjSHdwcwetAFjTT_Lf8h6ZwKwxjobLtzjmrb1cxEHVMAsUMJ5fCdEm60JNgIcP1onI28-oJJaBPdIfl0kIgGW28bJuEgRpvHaNH5ovwXUWJ2BSVQrWVhX4sTvi4VgaFc_9SLKJrFE-_C-Ee-mjrYOezwzrLujkwa6MpG=w1280",
+          "requestedUrl": "https://sites.google.com/sitesv-images-rt/AMxu72v00ChR6cwjhEPApF4XIAvCQRxHeq_I01ySwJXoGupX9nv4uQjr9hZRpzJOrm51HU48cjSHdwcwetAFjTT_Lf8h6ZwKwxjobLtzjmrb1cxEHVMAsUMJ5fCdEm60JNgIcP1onI28-oJJaBPdIfl0kIgGW28bJuEgRpvHaNH5ovwXUWJ2BSVQrWVhX4sTvi4VgaFc_9SLKJrFE-_C-Ee-mjrYOezwzrLujkwa6MpG=w16383",
+          "status": "complete",
+          "original": "migration/assets-original/kidswearcycle/11.png",
+          "sha256": "bbf04d2b2664d9bc8ffc5e095d04c1ef642a168ab4810fced7f0b3f245ba746c",
+          "width": 685,
+          "height": 1208,
+          "localPath": "/images/projects/kidswearcycle/11.webp",
+          "animated": false,
+          "poster": null,
+          "outputWidth": 685,
+          "outputHeight": 1208,
+          "alt": "KidswearCycle — 11"
+        },
+        {
+          "position": 12,
+          "sourceUrl": "https://sites.google.com/sitesv-images-rt/AMxu72tEva0v_XfG-p90wi2oyv_PvMAKoJPN4Dq75JvbzcDs0aP99Q0ENN9EXNm48FKJ0nrhdYmTVORzbYcVKSWYBK3S6Ojqw9VdsvQNn3oCKvg10cmZhwI7MQVPC7RtpD9xLCat9SCM4C2_X1_9ipj6bfeDVzInKWEFSQibrpStiVdS3LNeX78wpsrixwupRel8cFBc8Y8-Lh8xZklm8eEhMy0jbzZNbvM4PdtnTF9hCS8=w1280",
+          "requestedUrl": "https://sites.google.com/sitesv-images-rt/AMxu72tEva0v_XfG-p90wi2oyv_PvMAKoJPN4Dq75JvbzcDs0aP99Q0ENN9EXNm48FKJ0nrhdYmTVORzbYcVKSWYBK3S6Ojqw9VdsvQNn3oCKvg10cmZhwI7MQVPC7RtpD9xLCat9SCM4C2_X1_9ipj6bfeDVzInKWEFSQibrpStiVdS3LNeX78wpsrixwupRel8cFBc8Y8-Lh8xZklm8eEhMy0jbzZNbvM4PdtnTF9hCS8=w16383",
+          "status": "complete",
+          "original": "migration/assets-original/kidswearcycle/12.png",
+          "sha256": "b4f7489ca113abc7b31a53a971c97b236e13ebd7e3c562d3803f904cf96e1809",
+          "width": 2048,
+          "height": 541,
+          "localPath": "/images/projects/kidswearcycle/12.webp",
+          "animated": false,
+          "poster": null,
+          "outputWidth": 2048,
+          "outputHeight": 541,
+          "alt": "KidswearCycle — 12"
+        },
+        {
+          "position": 13,
+          "sourceUrl": "https://sites.google.com/sitesv-images-rt/AMxu72sonHX50B5EDnn19FkY9CkBRzANAeU0RJ0tb2UWkdn5-Ew2zHUQ2GiwO34U315uh80Z_vWEwivubGK1QU6rOO_-SxiwRCnPN4D-hF5dPaxekkVLUGHFCfjNuTeYrI9nkSLRZeHvzLW8nm1AcJQyzFQXirgFR69oO5l2cpop41obHLZw_N0fbZJJ3pwT46rS5l0Qy755NTpyBzQS-ZjDpL_FFS-Y9d43zpHF3kD5C58=w1280",
+          "requestedUrl": "https://sites.google.com/sitesv-images-rt/AMxu72sonHX50B5EDnn19FkY9CkBRzANAeU0RJ0tb2UWkdn5-Ew2zHUQ2GiwO34U315uh80Z_vWEwivubGK1QU6rOO_-SxiwRCnPN4D-hF5dPaxekkVLUGHFCfjNuTeYrI9nkSLRZeHvzLW8nm1AcJQyzFQXirgFR69oO5l2cpop41obHLZw_N0fbZJJ3pwT46rS5l0Qy755NTpyBzQS-ZjDpL_FFS-Y9d43zpHF3kD5C58=w1280",
+          "status": "complete",
+          "note": "Recovered source-size rendition; full-resolution original not verified.",
+          "original": "migration/assets-original/kidswearcycle/13.gif",
+          "sha256": "448d37a9c2fbfa5f9cbd9a16e046694e382d81bcc6d7da652969726fff004b17",
+          "width": 1280,
+          "height": 901,
+          "localPath": "/images/projects/kidswearcycle/13.gif",
+          "animated": true,
+          "poster": "/images/projects/kidswearcycle/13.webp",
+          "outputWidth": 1280,
+          "outputHeight": 901,
+          "alt": "KidswearCycle — 13"
+        }
+      ],
+      "links": [
+        {
+          "text": "Next project",
+          "sourceUrl": "https://sites.google.com/view/natalia-isakova/user-research/myhospital",
+          "href": "/work/myhospital/"
+        }
+      ],
+      "gaps": []
+    }
+  ],
+  "discoveredPages": [
+    {
+      "url": "https://sites.google.com/view/natalia-isakova",
+      "status": "included"
+    },
+    {
+      "url": "https://sites.google.com/view/natalia-isakova/about-me",
+      "status": "outside-current-scope"
+    },
+    {
+      "url": "https://sites.google.com/view/natalia-isakova/home",
+      "status": "included"
+    },
+    {
+      "url": "https://sites.google.com/view/natalia-isakova/marketing-design",
+      "status": "outside-current-scope"
+    },
+    {
+      "url": "https://sites.google.com/view/natalia-isakova/user-research",
+      "status": "outside-current-scope"
+    },
+    {
+      "url": "https://sites.google.com/view/natalia-isakova/user-research/kidswearcycle",
+      "status": "included"
+    },
+    {
+      "url": "https://sites.google.com/view/natalia-isakova/user-research/myhospital",
+      "status": "included"
+    },
+    {
+      "url": "https://sites.google.com/view/natalia-isakova/uxui-design",
+      "status": "outside-current-scope"
+    },
+    {
+      "url": "https://sites.google.com/view/natalia-isakova/uxui-design/ijet-media",
+      "status": "outside-current-scope"
+    },
+    {
+      "url": "https://sites.google.com/view/natalia-isakova/uxui-design/tickeron",
+      "status": "included"
+    }
+  ],
+  "notes": [
+    "Static source extraction. Manual desktop/mobile comparison remains required.",
+    "Google Sites image rendition requested at w16383; access to original design files is not implied."
+  ]
+}
