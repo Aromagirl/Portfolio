@@ -1,0 +1,13 @@
+---
+interface Props { src: string; title: string; sourceUrl: string }
+const { src, title, sourceUrl } = Astro.props;
+---
+<div class="document-embed" data-document>
+  <iframe src={src} title={title} loading="lazy"></iframe>
+  <p><a href={src}>Open {title} ↗</a><a href={sourceUrl}>View on Google Drive ↗</a></p>
+</div>
+<style>
+  .document-embed{margin-block:24px;width:100%}
+  iframe{display:block;width:100%;height:clamp(350px,65vh,760px);border:1px solid var(--line);border-radius:16px;background:#fff}
+  p{display:flex;flex-wrap:wrap;gap:12px 24px;margin-top:14px;font-size:.85rem}
+</style>

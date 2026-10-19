@@ -2,6 +2,7 @@
 import { getCollection, render } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import CaseImage from '../../components/CaseImage.astro';
+import CaseHeading from '../../components/theme/CaseHeading.astro';
 export async function getStaticPaths() {
   const projects = await getCollection('projects', ({ data }) => data.status === 'published');
   return projects.map(project => ({ params: { id: project.id }, props: { project } }));
@@ -11,15 +12,10 @@ const { Content, headings } = await render(project);
 const contents = headings.filter(h => h.depth === 2 && h.text !== project.data.title && /\p{L}/u.test(h.text));
 ---
 <BaseLayout title={project.data.title} description={project.data.summary}>
-  <a class="back-link" href="/">← All work</a>
-  <div class="case-shell">
-    <aside class="case-index" aria-label="Case study navigation">
-      <p class="eyebrow">{project.data.category}</p>
-      <h1>{project.data.title}</h1>
-      <p>{project.data.summary}</p>
-      {contents.length > 0 && <nav aria-label="On this page"><p class="eyebrow">On this page</p>{contents.map(h => <a href={`#${h.slug}`}>{h.text}</a>)}</nav>}
-      <a class="source-link" href={project.data.sourceUrl}>Original case study ↗</a>
-    </aside>
-    <article class="prose case-content" data-source-content><Content components={{ img: CaseImage }} /></article>
+  <div class="shell case-shell">
+    <nav class="case-breadcrumb" aria-label="Breadcrumb"><a href="/work/">Work</a><span aria-hidden="true">/</span><span aria-current="page">{project.data.title}</span></nav>
+    {contents.length > 0 && <details class="case-index"><summary>On this page</summary><nav aria-label="On this page">{contents.map(h => <a href={`#${h.slug}`}>{h.text}</a>)}</nav></details>}
+    <article class="prose source-content case-content" data-source-content><Content components={{ img: CaseImage, h2: CaseHeading }} /></article>
+    <a class="source-link" href={project.data.sourceUrl}>Original case study ↗</a>
   </div>
 </BaseLayout>

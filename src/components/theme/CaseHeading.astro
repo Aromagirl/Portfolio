@@ -1,0 +1,5 @@
+---
+const { id } = Astro.props;
+const Tag = ['tickeron', 'myhospital', 'kidswearcycle', 'i-jet'].includes(id) ? 'h1' : 'h2';
+---
+<Tag id={id}><slot /></Tag>

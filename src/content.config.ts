@@ -15,4 +15,5 @@ const schema = z.object({
 export const collections = {
   projects: defineCollection({ loader: glob({ pattern: '**/*.mdx', base: './src/content/projects' }), schema }),
   home: defineCollection({ loader: glob({ pattern: '**/*.mdx', base: './src/content/home' }), schema }),
+  pages: defineCollection({ loader: glob({ pattern: '**/*.mdx', base: './src/content/pages' }), schema }),
 };

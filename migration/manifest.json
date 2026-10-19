@@ -1,5 +1,5 @@
 {
-  "createdAt": "2026-10-19T15:01:49.770Z",
+  "createdAt": "2026-10-19T15:26:05.520Z",
   "pages": [
     {
       "slug": "home",
@@ -642,7 +642,7 @@
         {
           "text": "Next project",
           "sourceUrl": "https://sites.google.com/view/natalia-isakova/uxui-design/ijet-media",
-          "href": "https://sites.google.com/view/natalia-isakova/uxui-design/ijet-media"
+          "href": "/work/ijet-media/"
         }
       ],
       "gaps": []
@@ -1789,6 +1789,1475 @@
         }
       ],
       "gaps": []
+    },
+    {
+      "slug": "about-me",
+      "sourceUrl": "https://sites.google.com/view/natalia-isakova/about-me",
+      "target": "src/content/pages/about-me.mdx",
+      "newPath": "/about/",
+      "status": "complete",
+      "sourceSha256": "6f0fd8ff20986dffa2a766b0a613be02ab91a6d5e9ca30ee01245279079aeb76",
+      "sourceBlocks": [
+        {
+          "tag": "h1",
+          "text": "About me"
+        },
+        {
+          "tag": "p",
+          "text": "I'm Natalia Isakova, a professional interactive and graphic designer. I have worked in the online game studio for about 6 years, managed team of artists and designers for 3 years, developed navigation, mockups and prototypes for a financial marketplace for investors."
+        },
+        {
+          "tag": "p",
+          "text": "In my role as a UI Designer at Tickeron, I developed website mockups and prototypes for various devices, enhancing user interactions through thoughtful design. Previously, at Fraudscore, I managed the company's visual identity, creating compelling graphics for marketing and social media."
+        },
+        {
+          "tag": "p",
+          "text": "My background also includes extensive experience in user research and usability testing from my time at I-Jet Media, where I led a team of artists and UX specialists to design online game interfaces. My project management experience at Taran Plus allowed me to evaluate design effectiveness through data analytics, ensuring that our products met user needs effectively."
+        },
+        {
+          "tag": "p",
+          "text": "I hold a Google UX Design Professional Certificate and a Certified Usability Professional credential from UsabilityLab. I’m proficient with tools like Figma and Adobe XD, which I’ve used to deliver successful projects like KidswearCycle, a responsive e-commerce site, and MyHospital, a mobile app for medical services."
+        },
+        {
+          "tag": "p",
+          "text": "I’m excited about the opportunity to bring my expertise in creating user-centric designs to your team and contribute to building outstanding digital experiences."
+        },
+        {
+          "tag": "p",
+          "text": "Let’s connect to discuss how I can help elevate your user experience design!"
+        },
+        {
+          "tag": "p",
+          "text": "📬My email: nisakova.info@gmail.com"
+        },
+        {
+          "tag": "h2",
+          "text": "hard skills"
+        },
+        {
+          "tag": "p",
+          "text": "Knowledge of development process and workflow"
+        },
+        {
+          "tag": "p",
+          "text": "Ability to work in a team"
+        },
+        {
+          "tag": "p",
+          "text": "User research experience"
+        },
+        {
+          "tag": "h2",
+          "text": "soft skills"
+        },
+        {
+          "tag": "p",
+          "text": "Responsibility"
+        },
+        {
+          "tag": "p",
+          "text": "Compliance with deadlines"
+        },
+        {
+          "tag": "p",
+          "text": "Attention to details"
+        },
+        {
+          "tag": "p",
+          "text": "Sociability"
+        },
+        {
+          "tag": "h2",
+          "text": "tools"
+        },
+        {
+          "tag": "p",
+          "text": "Prototyping tools & graphical editors"
+        },
+        {
+          "tag": "p",
+          "text": "Analytic tools"
+        },
+        {
+          "tag": "p",
+          "text": "Workflow & ticketing"
+        },
+        {
+          "tag": "p",
+          "text": "As of today I am a certified design specialist, as confirmed by the Google UX Design Professional Certificate."
+        },
+        {
+          "tag": "p",
+          "text": "My projects"
+        }
+      ],
+      "sourceCounts": {
+        "textBlocks": 23,
+        "images": 2,
+        "sections": 12
+      },
+      "assets": [
+        {
+          "position": 1,
+          "sourceUrl": "https://sites.google.com/sitesv-images-rt/AMxu72vfGlRvFjlfvjyKbFWA1ISIfjdNzti9gBGxmfjzqvIp_-rD3nEFUc0TBNg3mp6Jh3tKbLeWpmvpyBzb6Jqu2NkJfSV4sMhBUcGWbAI4yYQauPRKOdQHgOqFKXBvx1I6T3RYh-zxtAGjQ4pvokEAAGg6KLbs0qRDKHNbggaFIDzX_7V4hIDDVx09gnqpW5OZuqDNVfqfroFCb7AmSoGqKqRIamwsQYXqyfasiIKFxdU=w1280",
+          "requestedUrl": "https://sites.google.com/sitesv-images-rt/AMxu72t8_jw1EzYauC78DxZg4FTIrDXYnXX5_f_sM8yI4xwo1d2jF9bMujguV3I8Zkv9EMiw28M1J_uwqLqbYnD1zINeJPH7-6FHWInoSj8dAJ4qAPt5BsOwc9i9AoMc4sMB9Ff9jy0S1ZmA_SGHfTdC3iMtTq0oee8PGm1iE7Cf6NTaTWbm-epYbG22a3-33aDmVe5xBHzq46I4v5FNIOsXgxLLrM3fhyXQ_rSC4Woutcw=w16383",
+          "status": "complete",
+          "original": "migration/assets-original/about-me/01.jpeg",
+          "sha256": "c210bcd88c20ebffc1a9a26877eadf759220cde7c9223f4cad6439366ad1947f",
+          "width": 1188,
+          "height": 191,
+          "localPath": "/images/projects/about-me/01.webp",
+          "animated": false,
+          "poster": null,
+          "outputWidth": 1188,
+          "outputHeight": 191,
+          "alt": "About me — 01"
+        },
+        {
+          "position": 2,
+          "sourceUrl": "https://sites.google.com/sitesv-images-rt/AMxu72tmYBvuP-EkzDRQWThH8DYlWg2q-TbB7R0d5sYYhCaYYxgNoNziT9h5uyy3bEp1bT34ltX64XIZi0tl_ijaLrIh_M6cbRp2NEjz2Pa_ZYdTMiBpPddj1hyBaGRGyKcvLRDu86YiafejQWd56tW-VWNObPhZjkU1aXBtCkmOppizsjFXIdSp5iPwX4sZdfd-R_Hl6n4w7tznUEJ7VOZAqQua_VftftW_oKpb4-yFays=w1280",
+          "requestedUrl": "https://sites.google.com/sitesv-images-rt/AMxu72s7waOsZCrs7nwgeLhAfrtKzRbtUvUBWXjiPLYlx-FX2vDORftB-LteQaUkuiHEhytCY3oHsWuHrMBWjLgNA6lrd8DtDPe_LDnCB007ParcWT1WgFyz9-q2-vM-VWPK8OvYxpJe-0gNN92sb2aD_XgL5B4a-uIW7PtaAyEk05_ooz8YmUnb6k1EX0Y_8wtB1IZANZAbh-JVSMHEjAQGSK2JHxipVOTrW5-88P0c9YA=w16383",
+          "status": "complete",
+          "original": "migration/assets-original/about-me/02.jpeg",
+          "sha256": "c371fca7ea06a2676c59566533f00a48440c0e475ae4c61b17223664a967fe14",
+          "width": 1397,
+          "height": 1076,
+          "localPath": "/images/projects/about-me/02.webp",
+          "animated": false,
+          "poster": null,
+          "outputWidth": 1397,
+          "outputHeight": 1076,
+          "alt": "About me — 02"
+        }
+      ],
+      "links": [
+        {
+          "text": "nisakova.info@gmail.com",
+          "sourceUrl": "mailto:nisakova.info@gmail.com",
+          "href": "mailto:nisakova.info@gmail.com"
+        },
+        {
+          "text": "My projects",
+          "sourceUrl": "https://sites.google.com/view/natalia-isakova/uxui-design",
+          "href": "/uxui-design/"
+        }
+      ],
+      "gaps": []
+    },
+    {
+      "slug": "user-research",
+      "sourceUrl": "https://sites.google.com/view/natalia-isakova/user-research",
+      "target": "src/content/pages/user-research.mdx",
+      "newPath": "/user-research/",
+      "status": "complete",
+      "sourceSha256": "e08159c95dc3d3c88d42e3e3b4f83de66b1659f36df0d694ab443e0b1b7e0e9b",
+      "sourceBlocks": [
+        {
+          "tag": "h1",
+          "text": "User research"
+        },
+        {
+          "tag": "h3",
+          "text": "KidswearCycle"
+        },
+        {
+          "tag": "p",
+          "text": "KidswearCycle is an online resale platform for parents to purchase and resell children's clothing."
+        },
+        {
+          "tag": "p",
+          "text": "Read more"
+        },
+        {
+          "tag": "h3",
+          "text": "MyHospital"
+        },
+        {
+          "tag": "p",
+          "text": "MyHospital is a medical service aggregator located in the capital of the region."
+        },
+        {
+          "tag": "p",
+          "text": "Read more"
+        }
+      ],
+      "sourceCounts": {
+        "textBlocks": 7,
+        "images": 2,
+        "sections": 5
+      },
+      "assets": [
+        {
+          "position": 1,
+          "sourceUrl": "https://sites.google.com/sitesv-images-rt/AMxu72t-S9ZPhIcc1OHb5dwFKR8PtBHLqwz8dqnFQFmcKsmy28O9rycNcjUsZXkTOp444PFEcJY-6ojHhPm--8ZOkCZNS2YRGLup7Byxslnz-XsuskMeJzEaUS93FaQnwtNoJCdWGgpRTZOA-UD-CspgrP9sot8-Rvm1C-qJsF7SU3MFuAIZEczyGqjCotokgTy_ihpKLILr3FtcnqqsWPLHtfmJ23PTl6TEXQXyFzr3=w1280",
+          "requestedUrl": "https://sites.google.com/sitesv-images-rt/AMxu72swfzvKFzmh0sj_zRPrRilGxbfrJPP_A0UEIGPQHCYDkIkD3OPRNCvEfmAcxKtq2tjuPKmg7NHyRpK09QvLzWIappDmikLhDcd9-OrvgbYC7rPF8BGn6siUVS6CFpEuGEYbrXBbCy1xbVj6PKUUHEfY9DNBYRYn6Poajs4LxwOx3wwVXOZKXiELU3ZQ0D9A3TDIFktFI2jdjUoSvdQcDaW4m2gIcclCw6a_JC6J=w16383",
+          "status": "complete",
+          "original": "migration/assets-original/user-research/01.png",
+          "sha256": "dd869b478d130468640fe81266695e157e9738a83da28d207c97ee2eb4fb52b3",
+          "width": 2048,
+          "height": 1904,
+          "localPath": "/images/projects/user-research/01.webp",
+          "animated": false,
+          "poster": null,
+          "outputWidth": 2048,
+          "outputHeight": 1904,
+          "alt": "User research — 01"
+        },
+        {
+          "position": 2,
+          "sourceUrl": "https://sites.google.com/sitesv-images-rt/AMxu72vMgGk2b9qx72PoFSO3upP9S6vW8L1wYVekdeiFytl0wX0oKQwf4HtHl8qLjzfQtgshhFMlUmQZOVjncT3ZGkZj2fvWj7dXgC070hg7JOd_Bi-8XC_cgub6AWx6Xj-nBHyri2nwSE0OY_3a7qazwcODLweqrF50nyfQA4BJE_866TkFZAKOLVwBiNPHBN40TjtMt2EImgFqn5Vy57WrDvHTCFzC0JIupc8Rd4yGwBc=w1280",
+          "requestedUrl": "https://sites.google.com/sitesv-images-rt/AMxu72ss0YlrmC8iPLy1QX2HD9jM3LIFBlnFmLqR9Xhsdzs-JLRZO1pXCwav1XEZD1d7STqsSgEVcza7A5sov0mTeDysTYK7xefaEFak7uxXzaOBzrniAcSCVO60qeXrgfjlZPbgshBtwuox6xo5_dDmlan13OUohFHYcs-4pMasId9WDXbz03hoMtTktzAYFMGioqJrYGnXJEFRCE1wVqkkEVGzeOtje0e_0-DIdAxwbI4=w16383",
+          "status": "complete",
+          "original": "migration/assets-original/user-research/02.png",
+          "sha256": "1e5022da7532cb9c71e84d3dfbf9bf6f9b32dcbf9f879decc0d8ad6cdaa62b04",
+          "width": 1273,
+          "height": 1190,
+          "localPath": "/images/projects/user-research/02.webp",
+          "animated": false,
+          "poster": null,
+          "outputWidth": 1273,
+          "outputHeight": 1190,
+          "alt": "User research — 02"
+        }
+      ],
+      "links": [
+        {
+          "text": "Read more",
+          "sourceUrl": "https://sites.google.com/view/natalia-isakova/user-research/kidswearcycle",
+          "href": "/work/kidswearcycle/"
+        },
+        {
+          "text": "Read more",
+          "sourceUrl": "https://sites.google.com/view/natalia-isakova/user-research/myhospital",
+          "href": "/work/myhospital/"
+        }
+      ],
+      "gaps": []
+    },
+    {
+      "slug": "uxui-design",
+      "sourceUrl": "https://sites.google.com/view/natalia-isakova/uxui-design",
+      "target": "src/content/pages/uxui-design.mdx",
+      "newPath": "/uxui-design/",
+      "status": "complete",
+      "sourceSha256": "04bd424d1688e684388e8f15d167367bc92725a216eaf42d3d84667f85b2c8ec",
+      "sourceBlocks": [
+        {
+          "tag": "h1",
+          "text": "UX/UI design"
+        },
+        {
+          "tag": "h3",
+          "text": "Tickeron"
+        },
+        {
+          "tag": "p",
+          "text": "Tickeron is a web-based, interactive Financial Marketplace."
+        },
+        {
+          "tag": "p",
+          "text": "Read more"
+        },
+        {
+          "tag": "h3",
+          "text": "i-Jet Media"
+        },
+        {
+          "tag": "p",
+          "text": "i-Jet Media is one of the world's largest distribution networks and publishers of social games."
+        },
+        {
+          "tag": "p",
+          "text": "Read more"
+        }
+      ],
+      "sourceCounts": {
+        "textBlocks": 7,
+        "images": 2,
+        "sections": 5
+      },
+      "assets": [
+        {
+          "position": 1,
+          "sourceUrl": "https://sites.google.com/sitesv-images-rt/AMxu72vH2AD59UqpVj4YvTHNKB45aK-Y8IqItxXObiWR_0R58MH_nqmM_s8IAXnmJfesXpZc8Dym6g2BnUepr_STS-5jG89TFZ2vPpbhkqUibyX7TTb69p4AfQnaXYE8M-U4euvv_ZWk4JIdA6b6ktJtXg1mdsl-5mCh7knICIZS7idKiQ60m7SxPoRbEGr-hPk5QdMxXYjLYbm9JVOJ5JY8ifvyfRtspvAoCOSQ38_1=w1280",
+          "requestedUrl": "https://sites.google.com/sitesv-images-rt/AMxu72vzm7D7i851OBTFbMZXj_We6tj8ONhGCfKn5BSDTqkfsSVkhqVM1T303oX17zLo-c2SvkJEfn26BG4kDBXZnyuvPDNOSGNoaluB8uWOImxkU4fwj_HkVRoRJjLhkQjjXOFH1YyfVpVp5fUavXQWZSM6yySOEHaNb2ZweZFTPFhmE3R4mbTp8vN1I0S8Xsg_Ky4W30_87Ydju6Hts1J8Mqo563vufEm1XkNHS2_q=w16383",
+          "status": "complete",
+          "original": "migration/assets-original/uxui-design/01.png",
+          "sha256": "ee4d901359fd2fe7c470f5f66f990bced1f066a57f61122418e26b0ef51b90c8",
+          "width": 1974,
+          "height": 1649,
+          "localPath": "/images/projects/uxui-design/01.webp",
+          "animated": false,
+          "poster": null,
+          "outputWidth": 1974,
+          "outputHeight": 1649,
+          "alt": "UX/UI design — 01"
+        },
+        {
+          "position": 2,
+          "sourceUrl": "https://sites.google.com/sitesv-images-rt/AMxu72tW6YEk2ZSeQOnPjjGPklaDYMlRp_Bg-DvuVIuK9WYOUh5Waqr6y5VI8gn1JDt5BLsoSNEWiXanFOtzhC5OyP1OwuX4aK5CRTRU5qMbBzGnTvFC1Z5ZxO5aq4igdHiJgTwE8hDiPYMQ2OkVNUHsWxcHZvC0xtwsDv1UpUzACxVQ_aB5q0vTsd8ptw2goonvDDKPt2AsCC6r391yf6GeB550a3ISAxspni3iEABNSQU=w1280",
+          "requestedUrl": "https://sites.google.com/sitesv-images-rt/AMxu72vDDGJL55-Bzgz08oXNb193-r1BR9VRQb8ep6bpLHZvYGRETvJ2xzmgTYDx1jun8Tfe3Hr9CeFeQPsonjJadheOKrv5pJEo-GRXxH3M1jXNGynz-QAH3IeAdgZzoAINOjvV3trJWq9S8U3xN5AuI1AfSad6n_2ZFregZDOkLQ689GsgCIfHku2SkpbHjkzbU6vYTbexr0Snj7mwKhIiHgKLJZ5QHEio1btF_LjBivI=w16383",
+          "status": "complete",
+          "original": "migration/assets-original/uxui-design/02.png",
+          "sha256": "4834fcd3396fd3c2300f15c59a32c70690551ade3d61f7207c614c60d9016f21",
+          "width": 1839,
+          "height": 1536,
+          "localPath": "/images/projects/uxui-design/02.webp",
+          "animated": false,
+          "poster": null,
+          "outputWidth": 1839,
+          "outputHeight": 1536,
+          "alt": "UX/UI design — 02"
+        }
+      ],
+      "links": [
+        {
+          "text": "Read more",
+          "sourceUrl": "https://sites.google.com/view/natalia-isakova/uxui-design/tickeron",
+          "href": "/work/tickeron/"
+        },
+        {
+          "text": "Read more",
+          "sourceUrl": "https://sites.google.com/view/natalia-isakova/uxui-design/ijet-media",
+          "href": "/work/ijet-media/"
+        }
+      ],
+      "gaps": []
+    },
+    {
+      "slug": "ijet-media",
+      "sourceUrl": "https://sites.google.com/view/natalia-isakova/uxui-design/ijet-media",
+      "target": "src/content/projects/ijet-media.mdx",
+      "newPath": "/work/ijet-media/",
+      "status": "complete",
+      "sourceSha256": "7df158e476fbdf2ae56421602a5df95ad4978a0fa2618cec56ad47cd54df815f",
+      "sourceBlocks": [
+        {
+          "tag": "h1",
+          "text": "i-Jet"
+        },
+        {
+          "tag": "h3",
+          "text": "Online Games"
+        },
+        {
+          "tag": "h2",
+          "text": "iJet Media"
+        },
+        {
+          "tag": "p",
+          "text": "i-Jet Media is one of the world's largest distribution networks and publishers of social games. More than 70 million users play dozens of social games made by 40+ independent developers from various countries and published by i-Jet Media on 30+ social networks across the world."
+        },
+        {
+          "tag": "p",
+          "text": "In April 2009, i-Jet Media published Happy Harvest which succeeded to become the most popular and profitable social gaes in the history of the Russian market. Happy Harvest was also honoured with the Google Trend prize as the best game of 2009."
+        },
+        {
+          "tag": "p",
+          "text": "Offices of i-Jet Media was situated in Sunnyvale (CA, USA) and Beijing (China), as well as Ekaterinburg, Chelyabinsk, Nizhny Tagil and Ozersk (Russia)."
+        },
+        {
+          "tag": "h3",
+          "text": "My role as Lead UX Designer:"
+        },
+        {
+          "tag": "p",
+          "text": "📝 Conducting moderated usability studies on user groups and analyzing feedback"
+        },
+        {
+          "tag": "p",
+          "text": "💡 Designing wireframes & user flow paths"
+        },
+        {
+          "tag": "p",
+          "text": "🔗 Low-fidelity prototyping"
+        },
+        {
+          "tag": "p",
+          "text": "📚 Developing workflow & metrics, creating specifications for graphics dpt"
+        },
+        {
+          "tag": "p",
+          "text": "🖼️ Banners design & animation"
+        },
+        {
+          "tag": "p",
+          "text": "🤝 Сollaborating with the development team"
+        },
+        {
+          "tag": "p",
+          "text": "🔄 Iterating on designs"
+        },
+        {
+          "tag": "h2",
+          "text": "What is a social online game?"
+        },
+        {
+          "tag": "h3",
+          "text": "Main features of social online games:"
+        },
+        {
+          "tag": "li",
+          "text": "A casual game that does not require special knowledge or skills."
+        },
+        {
+          "tag": "p",
+          "text": "In this game, there is no need for deep knowledge or professional skills. It is designed to be accessible and appealing to all players, regardless of their level of experience or abilities."
+        },
+        {
+          "tag": "li",
+          "text": "Short gaming sessions similar to using social networks."
+        },
+        {
+          "tag": "p",
+          "text": "Gaming sessions in this game last a few minutes, making it similar to using social networks. It offers a quick and easy entertainment break in your day, which you can take anytime, anywhere."
+        },
+        {
+          "tag": "li",
+          "text": "Asynchronous gameplay."
+        },
+        {
+          "tag": "p",
+          "text": "The game offers asynchronous gameplay, meaning that players can play at their own pace, regardless of the actions of other players. This allows playing at a convenient time, even if your friends are not available at the moment."
+        },
+        {
+          "tag": "li",
+          "text": "Conditionally free game."
+        },
+        {
+          "tag": "p",
+          "text": "The game is available for download and play for free, but may contain in-game purchases or advertising. It has free access, allowing players to try it before purchasing additional content."
+        },
+        {
+          "tag": "li",
+          "text": "Communication tabs allowing you to invite friends."
+        },
+        {
+          "tag": "p",
+          "text": "The game includes communication features, such as tabs for inviting friends, making the process of social interaction more convenient and straightforward. This allows players to share the joy of playing with friends and compete with them."
+        },
+        {
+          "tag": "li",
+          "text": "Long-term entertainment service."
+        },
+        {
+          "tag": "p",
+          "text": "The game is a long-term entertainment service that promises a long and engaging gaming experience. It is constantly updated and expanded, offering players new opportunities and content over an extended period of time."
+        },
+        {
+          "tag": "h3",
+          "text": "Social online games of the development studio \"Taran Studio\""
+        },
+        {
+          "tag": "p",
+          "text": "Happy Farmer"
+        },
+        {
+          "tag": "p",
+          "text": "City Gangs"
+        },
+        {
+          "tag": "p",
+          "text": "Farm Frenzy (mobile)"
+        },
+        {
+          "tag": "p",
+          "text": "Caribbean Pirates"
+        },
+        {
+          "tag": "h2",
+          "text": "Stages of work as an Interface designer"
+        },
+        {
+          "tag": "h1",
+          "text": "I."
+        },
+        {
+          "tag": "p",
+          "text": "The first stage of the Interface designer’s work:"
+        },
+        {
+          "tag": "li",
+          "text": "Analysis of Game designer's specifications"
+        },
+        {
+          "tag": "li",
+          "text": "Market monitoring, search and analysis of similar products, pros and cons of interface solutions"
+        },
+        {
+          "tag": "li",
+          "text": "Interaction with programmers, selection of technical solutions"
+        },
+        {
+          "tag": "li",
+          "text": "Drawing up logical diagrams, sketches of the main screens, coordinating them with the Game designer"
+        },
+        {
+          "tag": "h1",
+          "text": "II."
+        },
+        {
+          "tag": "p",
+          "text": "The second stage:"
+        },
+        {
+          "tag": "li",
+          "text": "Development of detailed layouts in graphic editors with a description of the operation of individual elements"
+        },
+        {
+          "tag": "li",
+          "text": "Creating a working prototype of the main screen(s) of the game if necessary, experiments with active objects"
+        },
+        {
+          "tag": "li",
+          "text": "Transferring agreed upon layouts to programmers to create the “skeleton” of the game and navigation"
+        },
+        {
+          "tag": "h1",
+          "text": "III."
+        },
+        {
+          "tag": "p",
+          "text": "The third stage:"
+        },
+        {
+          "tag": "li",
+          "text": "Interaction with artists and designers, transferring finished layouts to them"
+        },
+        {
+          "tag": "li",
+          "text": "“Extension” of the resulting software skeleton with a graphical interface according to the layouts: drawing and inserting icons, buttons, windows, panels, menus..."
+        },
+        {
+          "tag": "li",
+          "text": "Control of inserted graphics: active objects (animals, plants, factories, equipment, houses...), backgrounds, decors"
+        },
+        {
+          "tag": "li",
+          "text": "Navigation check"
+        },
+        {
+          "tag": "h1",
+          "text": "IV."
+        },
+        {
+          "tag": "p",
+          "text": "The fourth stage:"
+        },
+        {
+          "tag": "li",
+          "text": "Usability testing of the finished product in beta version"
+        },
+        {
+          "tag": "li",
+          "text": "Processing player feedback after release: forum, contacting technical support."
+        },
+        {
+          "tag": "li",
+          "text": "Adjusting the interface in a running product, if necessary"
+        },
+        {
+          "tag": "li",
+          "text": "Further development of the finished product"
+        },
+        {
+          "tag": "h2",
+          "text": "Development of mobile versions"
+        },
+        {
+          "tag": "p",
+          "text": "Farm Of Happiness (desktop)"
+        },
+        {
+          "tag": "h1",
+          "text": "→"
+        },
+        {
+          "tag": "p",
+          "text": "Farm Of Happiness (mobile)"
+        },
+        {
+          "tag": "p",
+          "text": "Farm Of Happiness (mobile)"
+        },
+        {
+          "tag": "p",
+          "text": "City Gangs (desktop)"
+        },
+        {
+          "tag": "h1",
+          "text": "→"
+        },
+        {
+          "tag": "p",
+          "text": "City Gangs (mobile)"
+        },
+        {
+          "tag": "p",
+          "text": "City Gangs (mobile)"
+        },
+        {
+          "tag": "h2",
+          "text": "technical SPECIFICATIONS"
+        },
+        {
+          "tag": "li",
+          "text": "Creating different documents (in coop with producers & game designers): a variety of diagrams, scenarios, mockups, specifications for the development team and artists"
+        },
+        {
+          "tag": "li",
+          "text": "Developing workflow for QA and Design processes"
+        },
+        {
+          "tag": "li",
+          "text": "Prototyping experimental projects"
+        },
+        {
+          "tag": "p",
+          "text": "Farm Of Happiness - Main page"
+        },
+        {
+          "tag": "p",
+          "text": "Farm Of Happiness - Market"
+        },
+        {
+          "tag": "p",
+          "text": "World Of Fitness - Training"
+        },
+        {
+          "tag": "p",
+          "text": "Farm Of Happiness - Types of goods"
+        },
+        {
+          "tag": "p",
+          "text": "Farm Of Happiness - Menu of actions"
+        },
+        {
+          "tag": "p",
+          "text": "World Of Fitness - Сursor stages"
+        },
+        {
+          "tag": "p",
+          "text": "Marketing design"
+        }
+      ],
+      "sourceCounts": {
+        "textBlocks": 77,
+        "images": 24,
+        "sections": 29
+      },
+      "assets": [
+        {
+          "position": 1,
+          "sourceUrl": "https://sites.google.com/sitesv-images-rt/AMxu72uqm3SC6KMsLQasZEnj-_McibqAuTk4pmdCSNM3vRsvUCVMaphCajLhGVo02SH4C92vTHOG0Kj86OgSyYCzEihktHC_3xnR8jGuFtAwASo6IpqN_Tid3F_ONXeFKkuxejGNtM7bMHWlLQ0a4UYhyViLPW9h4Zzi22r7PfwXMIXfoRqF-mu4zkIrhsrw6fbbNKEsG1FvKgreq1pfMBrsI1jSWbdd4rStMhHMRQ0kLZI=w1280",
+          "requestedUrl": "https://sites.google.com/sitesv-images-rt/AMxu72v3iBz3qLxVpkeYmakUpH5h8CTxq1DZtL5iaC7EKvIaYORo86w2_jKCQn8Vt759UL8j6I7j0jtodwdUr60arovBg1Ys_htOYo3r7GtEFCAyyvOC4cAZ4hhrSttBV9KX3Bg9ZzWjSdue4EwY7hLq1EP4Qe8JbEisi3_l2nAZRvZXJjeykehr4Sy_smML5RbZZ1KUYyKnHuDq19_LfzbkVjyl4es4s_4g4gbsR63OROo=w16383",
+          "status": "complete",
+          "refreshSource": "https://sites.google.com/view/natalia-isakova/uxui-design/ijet-media?migration=1792423360309",
+          "original": "migration/assets-original/ijet-media/01.jpeg",
+          "sha256": "31f9852b409d00b3dd4b6513507e527643683056dbb8f2006496c01ae4d7a0fa",
+          "width": 344,
+          "height": 248,
+          "localPath": "/images/projects/ijet-media/01.webp",
+          "animated": false,
+          "poster": null,
+          "outputWidth": 344,
+          "outputHeight": 248,
+          "alt": "i-Jet Media — 01"
+        },
+        {
+          "position": 2,
+          "sourceUrl": "https://sites.google.com/sitesv-images-rt/AMxu72sZVqwfxU3B7OlW8QU_rN9lT2_h_ltAT1Yvsv4VUu3lzBvP5rf2vfQipNBOzYTTSZGOnU7RRVNTqGHgdfOIIZnhhSAiKFYPvZT8gXYPdO6Uj5C9s1MKlRDFgOoF0euw7aqFOrTHA_7aPtJw7bVMgVJCfjEnO6T-g_JwWjCbUp-QIv9sDSbzGeqqNZpgaJya7JbWePL130ukhVEvWHgzNvm8Ee01AsJEG5_GUQFeYik=w1280",
+          "requestedUrl": "https://sites.google.com/sitesv-images-rt/AMxu72s5lhNclDbFOr8Cy7RGFdb7XtoyX2NI9u1seL1VQI3o7ARsErFKUv8w8hBHNQQd-NSpPydCeCI493TzwSvySVmskG9DamxgVAMZyfvSrB8oQlAsdzKicd_OyAew84T8nV1Gnzx8thi1J2RsB5_3WjzY_uIrQY2YvE5PhjUd0mPB0nvtrVSmtGwp362qTnXgGYciOnB6uZDZfZogicoOPM2cciZMXpU9SWoWxUXDkl8=w16383",
+          "status": "complete",
+          "refreshSource": "https://sites.google.com/view/natalia-isakova/uxui-design/ijet-media?migration=1792423361832",
+          "original": "migration/assets-original/ijet-media/02.png",
+          "sha256": "0f500c9db040f22b8080f316a83acc219ff33e5d272ff923838bcfddfaf37018",
+          "width": 1733,
+          "height": 1536,
+          "localPath": "/images/projects/ijet-media/02.webp",
+          "animated": false,
+          "poster": null,
+          "outputWidth": 1733,
+          "outputHeight": 1536,
+          "alt": "i-Jet Media — 02"
+        },
+        {
+          "position": 3,
+          "sourceUrl": "https://sites.google.com/sitesv-images-rt/AMxu72swHOHftEaeilPjk7Wlj0xgzGAcdEJ3lDaiQpQwm6UE04LV7kY9PNuTZ2fImLleoDQpo0NqTrmYx1rhIvu7fTDj6jRmV4N4nPmzqS-I-6gvKsAODFZu5FqdG0BiMtKpYMiIFiihVNg61V95FjX7C-qtziU_kr7K3a2ygoxcpxZImam1whvV9-sZhhfyQNm_fFivovqh5bdtK3NZETV1qoI4opuxT5u374B4Ie6tEjw=w1280",
+          "requestedUrl": "https://sites.google.com/sitesv-images-rt/AMxu72v1ACpiVYED2vOvRgGpqE7uXYDqXGEXyGq9_1W8-tFkFQKHTI85iUdveRMDYIRAIMQvNxZR5-WWS_P9WTaeOKxki7rPbWaHFSqjybuDTw7T5BnFPabfyEdV0y8U7gKxRACONl52-zuTRe6_xFKmrSx0Bs7VSjZQfgvmNXSV9SGKcFNV8d2lXEI-sxsIgjATCnITHslrgv95NBlnu4bQDeHYojiHcPkjvNL1slTLiqI=w16383",
+          "status": "complete",
+          "refreshSource": "https://sites.google.com/view/natalia-isakova/uxui-design/ijet-media?migration=1792423364944",
+          "original": "migration/assets-original/ijet-media/03.png",
+          "sha256": "218d266fdf40c6419c50176ee11ba99c3182a778115db27b8232a4646b24541a",
+          "width": 732,
+          "height": 590,
+          "localPath": "/images/projects/ijet-media/03.webp",
+          "animated": false,
+          "poster": null,
+          "outputWidth": 732,
+          "outputHeight": 590,
+          "alt": "i-Jet Media — 03"
+        },
+        {
+          "position": 4,
+          "sourceUrl": "https://sites.google.com/sitesv-images-rt/AMxu72sXhJngvSynzCJFrr5GSbxgfYNYtEkapmUL9LmoM_V2B8KGsQR45LF8tFzyDCQjxrf5TKoY9j4j1pQvKxf3bH-WCrLhbj9cVAYmcooLa_KyRyPEq-4BBh7bJ3sP3w3ieh1r_87bOIiNFiDpURtYXQxelqfU7V7vJZVYDwBmNeOmSC2BkgYaVmbl-duoOIuRqITFl2gitQOmBaika57GiUs-LmqkxIlt4W5inlxQ=w1280",
+          "requestedUrl": "https://sites.google.com/sitesv-images-rt/AMxu72tyqBUX8lj5N_ofj7RxGBVleoUwXxYAxj-_RC1OLPW8HcXWKmiu8efgCXnrZqNEar8QZirRTPzHYe7bS0ZEuKHPxo0gmv7LTF9zCOwtRg-6zwMgfK7-OGZN_OxdqF11LphbdsnojNH0zQLGDlfNL068uSYHZKUPtXYr6V_dsIqcbSuSxEEEINih6x_R6blvGmiErfEhXxd7-VFsj3XB88h1BAMrJCQs5Abx9Rfo=w16383",
+          "status": "complete",
+          "refreshSource": "https://sites.google.com/view/natalia-isakova/uxui-design/ijet-media?migration=1792423366754",
+          "original": "migration/assets-original/ijet-media/04.png",
+          "sha256": "e7380cc312ee2802fb450124d539513b49b4198c7803c20520c7f73fd8faf6cf",
+          "width": 359,
+          "height": 359,
+          "localPath": "/images/projects/ijet-media/04.webp",
+          "animated": false,
+          "poster": null,
+          "outputWidth": 359,
+          "outputHeight": 359,
+          "alt": "i-Jet Media — 04"
+        },
+        {
+          "position": 5,
+          "sourceUrl": "https://sites.google.com/sitesv-images-rt/AMxu72vFB8I8w0O3PHUr8J2mws1IAmFMDGuMO_qz7soLxrHqLxlfeTiEZZNFQIaN0UWx58GMgs-cT-FTSJH6roVNAoRWuNszcUQ6ptdmLDWKRR7deGDo9I0TG4fWQNeL93Vko5G5TAyP19kX2_r-I_xfEt4bHnRqI9gjjQE0EsM4ZKxEnFPlwuoo7P6reoEiztsGLiPf2C7Pw8KZcGE-ShgXDfqnCml5B_iK3Gvi1otA=w1280",
+          "requestedUrl": "https://sites.google.com/sitesv-images-rt/AMxu72tBEO7QQp-BDhK4r26AT4qgq7pvgugFDg8RPzIg76Z-4m5PUXdoJo3xaxLII1zZHeQfqRWg4eWwqOjC6tqtplHOXrJmsNPPSDgBWt3r5O76YuXd6tpWkVIWahRtFE1BiNcHAngDhKDwgtc6TwlGqjoRHwqJf7f10N5FUuq4j0-3ag-xhcTiF8fLNc8jmGzF5uWVgXA8k2xwmVpI6hg0vRoLuWJB_Je6Si19Honn=w16383",
+          "status": "complete",
+          "refreshSource": "https://sites.google.com/view/natalia-isakova/uxui-design/ijet-media?migration=1792423368511",
+          "original": "migration/assets-original/ijet-media/05.png",
+          "sha256": "0198c2428ba4784d1ca39fc331c0c919d6280c7e609d66c32df4d1c25fb14865",
+          "width": 359,
+          "height": 359,
+          "localPath": "/images/projects/ijet-media/05.webp",
+          "animated": false,
+          "poster": null,
+          "outputWidth": 359,
+          "outputHeight": 359,
+          "alt": "i-Jet Media — 05"
+        },
+        {
+          "position": 6,
+          "sourceUrl": "https://sites.google.com/sitesv-images-rt/AMxu72vEd7uSSvEmS-tZ9jgPPH08PQTtKvTZrgPA58rXgqHHOAPrAnoRAA7DLdkuIE7ueAfE6sEH3HDn-xBsr5DWkO-YjJlTj4eJHEeKRPPz1wsDbXJzCJd2xRFUovcyu7mX9StYnOAxMzLZ9l7I8mjXnYb827lXnPlSvOurXt3LkIpW35p0HrO9eU616rySakohkszzFRtquQDQ83zbUeUJnmG61BT9OwyBzsDNILUT=w1280",
+          "requestedUrl": "https://sites.google.com/sitesv-images-rt/AMxu72skNcI4U7jvdQqutndwWPeK_HZ2AxxnGAGgd4LSj7utlL2qoB72xRFBknc9LKNZ42-_Hwt0i5noiNdqgSe3IjVCxT5-8XmMYpwwYHRZD8O71jVoHD6HOnwALK-Fwz08_8tCOsdNzHPL7gfQfAY9nDP0ysD44rBsvs_zANkGq_hNUxh-fqNXxHEvxXnGKDOsytDw4tI3zZxppMd2sNrR9PBuVVE9xJOiB4cVFA8v=w16383",
+          "status": "complete",
+          "refreshSource": "https://sites.google.com/view/natalia-isakova/uxui-design/ijet-media?migration=1792423370042",
+          "original": "migration/assets-original/ijet-media/06.png",
+          "sha256": "36330c2efb62bf5dc947261b94f9ecd278022d8a45b78e0a8d2abf6a25a51189",
+          "width": 351,
+          "height": 351,
+          "localPath": "/images/projects/ijet-media/06.webp",
+          "animated": false,
+          "poster": null,
+          "outputWidth": 351,
+          "outputHeight": 351,
+          "alt": "i-Jet Media — 06"
+        },
+        {
+          "position": 7,
+          "sourceUrl": "https://sites.google.com/sitesv-images-rt/AMxu72s9EihoRLG74_DgshuQ0rv7eYItOcUUtSyQypWzPst192O_ug6XdJ6FZugGnDFH2dky8Ue7q9bycn-mgTbzx45LbmI4fNAENBS-Sf8HIyf7DzOjdiGKiv3pPaBVWQz7TWIY5fv8x8JH8Adccio4_oNqU__nMw9juRYvKtqSG7V11uDc3r-78NHo-sUUeBGN3dcQ4CBC7IFUjCVRkWOsBxW4TNlqeEeNrWQmd8c9EKY=w1280",
+          "requestedUrl": "https://sites.google.com/sitesv-images-rt/AMxu72v5882dGg-wG2mfp_5oMzIfrnpdjhX-OsxmA_JisKYyv8DBSUOJzR2O4kt-DCUtk0wrNxlxzrAF90bfHWm0Ms3-KYMiCsOWtj_vSAtcyMCNWpYWFAqzVhCnNL9CW3Up8q4UWfhk25c3_O3b3sm0h3RS04D-7mkT4-aswdgJCKL50d8K_bDqWuL2NOyCtdfIgiEh3Tuf0aYc_Do60A2MyDXeGBr_-0HpxurJXe_4rOM=w16383",
+          "status": "complete",
+          "refreshSource": "https://sites.google.com/view/natalia-isakova/uxui-design/ijet-media?migration=1792423375112",
+          "original": "migration/assets-original/ijet-media/07.png",
+          "sha256": "753a419b772e06c5d9eb5dd6e05bc618ba274761bf2e4cb06ac7d1799df42a5a",
+          "width": 359,
+          "height": 359,
+          "localPath": "/images/projects/ijet-media/07.webp",
+          "animated": false,
+          "poster": null,
+          "outputWidth": 359,
+          "outputHeight": 359,
+          "alt": "i-Jet Media — 07"
+        },
+        {
+          "position": 8,
+          "sourceUrl": "https://sites.google.com/sitesv-images-rt/AMxu72tpOxuX_QQgdZS_hUbgn-aiMWvcCauEqc6OR425xsCvgXwsvasla9dwCF2QExF1rYkU4E7wq65Bm2CTDSvtJ_jHd-B2fB7SHWmPmsqsBH-AlPRFtgYOTGHMHZAL5Jc1XAnKovzN6F-x-mYlBoKNW8Zo5r24_2mYXtZNP8mHhSJDKbk9ea9zhI79xaId63-zzW7ZNdQJcFi6iPHVm5sWERg9tfZ23Ns8WV7skOweXYg=w1280",
+          "requestedUrl": "https://sites.google.com/sitesv-images-rt/AMxu72s0u9C6v7XGJ-wsmt7iJtien3p5H5ENSRWDRwJhthsh30m6i0oFGZ1hbaZi619B8GSqEv16hg3qP4gLAxde_tdoyaVQgDsZTZhn2hfmAs6-tcAt6JXmGTBZ98CGBVL9wTiLsBItnpLxIMzbSVVSvUdEBFmi5Ftx6ZoxBN40cTdL4fWs3bc-eMzLS0f9sVvlCHIhMaJNlkI5IAI-vd4-wc8gJFV-cpmuQuZR3Doj1cc=w16383",
+          "status": "complete",
+          "refreshSource": "https://sites.google.com/view/natalia-isakova/uxui-design/ijet-media?migration=1792423379347",
+          "original": "migration/assets-original/ijet-media/08.png",
+          "sha256": "e30c3a094717d6e4c7ad95ee82de816743f5fc2fe7d9060071a28cb73e950a57",
+          "width": 1216,
+          "height": 887,
+          "localPath": "/images/projects/ijet-media/08.webp",
+          "animated": false,
+          "poster": null,
+          "outputWidth": 1216,
+          "outputHeight": 887,
+          "alt": "i-Jet Media — 08"
+        },
+        {
+          "position": 9,
+          "sourceUrl": "https://sites.google.com/sitesv-images-rt/AMxu72txSBNwtrqwpL3EvIBWcjxKtVzbyKjWj5Alr71Rjdj-a8Pl63kuULoNKl8mQ4QW2rXefn3rdK29dKaLqddbFWzRcsMkF_myLMWTu3JhdP2IUp2VrzrXVPxfhQTvEu1W9sXMH8TmXaivHbEI2jITjrNpump5ZWbkAReaIa1Va2G6k97MnK3uJG0kZbBJe73BIbuUv576ngu9UEsFP3yK5vdquFZQ8ASnZWnA8ejNYIQ=w1280",
+          "requestedUrl": "https://sites.google.com/sitesv-images-rt/AMxu72u32nGmDs4ytejBIO0fCs4I8nsVuDESpntG5IheLFDSmwKPl2XbkRisUYENZ6rAvpCW_TjU82WidgTX31raSVpiV28S0jGd_AUb_3GNqTHI_0A2VYKAyuWkHNXiONAe97HpHs6s2HmDbHeOqOcgg14FtrJMquM3sze0gM0rSlQAZg7zy3CmaU7u__t_p94AeDGFoWTKlYozx3vHj_M9vaNIQWHv78_KDulSPsZA9YQ=w16383",
+          "status": "complete",
+          "refreshSource": "https://sites.google.com/view/natalia-isakova/uxui-design/ijet-media?migration=1792423381483",
+          "original": "migration/assets-original/ijet-media/09.png",
+          "sha256": "e8a0eb203e688cac9d326f554a1b234bf1b4401b17ec41a146c764deb21ef8ae",
+          "width": 1299,
+          "height": 911,
+          "localPath": "/images/projects/ijet-media/09.webp",
+          "animated": false,
+          "poster": null,
+          "outputWidth": 1299,
+          "outputHeight": 911,
+          "alt": "i-Jet Media — 09"
+        },
+        {
+          "position": 10,
+          "sourceUrl": "https://sites.google.com/sitesv-images-rt/AMxu72u2slv9b9vwlPZdUwiCZR-z2QUA39JRAzJsbdHPq9PhR7LRWsU0xiuhp0Z7FjgtxZKDycD1v9ZJjBosCmoW8kAVCR7idEMvZUGlmJMz9Ig1oieLCpSNdHX41miOMqocn4PgWl6k3IjLGUGGCCFmPzjIZfUhgWb95JYA7_Boe8UAQk1D5NS326HaX1BHc_Smu_Z8JK4tuZwQCcEaZ9faya5vd8jTWap6OhFvSOoRsuA=w1280",
+          "requestedUrl": "https://sites.google.com/sitesv-images-rt/AMxu72s2BbunXSTWPGTyc1HqIwSaQYEySwS1-JMAQhRVzpu-NPmPw-zZf0Osro5KPg6P0IXKqM8BJX2yGN1NJB-aXUwWfgUV5beNama8Y2uKIQkFVay4GBnYl4oI4rOdxFT9-VoPTB-GJPhBWUuPqhw4OZUTx1QLgpICCg7rmVt5GrJ_DPwD026NLc25QO8uwe5ZYbBVe9NLZYWMI_vfMYAm6Qd6-xs8GPQ287heMuMQbMM=w16383",
+          "status": "complete",
+          "refreshSource": "https://sites.google.com/view/natalia-isakova/uxui-design/ijet-media?migration=1792423383002",
+          "original": "migration/assets-original/ijet-media/10.png",
+          "sha256": "669de654ff7d06c37118cd6980e753524d45cacc2274f2830607f3706bde98cd",
+          "width": 651,
+          "height": 651,
+          "localPath": "/images/projects/ijet-media/10.webp",
+          "animated": false,
+          "poster": null,
+          "outputWidth": 651,
+          "outputHeight": 651,
+          "alt": "i-Jet Media — 10"
+        },
+        {
+          "position": 11,
+          "sourceUrl": "https://sites.google.com/sitesv-images-rt/AMxu72vBnpFCp6WGg07-jt1pcE5LgX7QffQrzIneiFSTZDqjXZcFvnINYEMenu2KWOOfy5nwNGTULDq0aLzT-989D3b7kXNIcYZi7KZrdQnx5KsynQw-Ame45XmqU4ZXvDAvePoTbFJmbdEXcf3rMqOUaYg0WVKo4nhsaYvlf3z4U0ZtIFJvHB4rJY0WMTBDOzdwaCZ0NwT0Mcdi0l8pw_VFVT1Q0sxUB2ZpSExlkRd9mrA=w1280",
+          "requestedUrl": "https://sites.google.com/sitesv-images-rt/AMxu72sH_Kje_NyGtwZvg23WuyF3b1G13CQv58fPWwGj_k_pv-grnw5GT3n5sOTkoUzK0ZGDQDjqf9cKHVgvmN85uSBniYNLbZDG6gfBFfrZsIO9OMTRjXh-m2ch_0esr1kkAb0ZT6oQAc1czWKuFuYxVHsUf82unSortumcWAHmWLfh1ht4tIT_kjmAMELOyH7pVSsjBfIUVwNGsZ3TqxkBciJ1rssDB0ZdoxxvETCharg=w16383",
+          "status": "complete",
+          "refreshSource": "https://sites.google.com/view/natalia-isakova/uxui-design/ijet-media?migration=1792423384629",
+          "original": "migration/assets-original/ijet-media/11.png",
+          "sha256": "d4788a9f05b71ec265a443758a7f219db82a3c8bff0dfd5dd9b8a0d06cc90de2",
+          "width": 663,
+          "height": 664,
+          "localPath": "/images/projects/ijet-media/11.webp",
+          "animated": false,
+          "poster": null,
+          "outputWidth": 663,
+          "outputHeight": 664,
+          "alt": "i-Jet Media — 11"
+        },
+        {
+          "position": 12,
+          "sourceUrl": "https://sites.google.com/sitesv-images-rt/AMxu72s5hAAQ6UWP1oFac-2ss3j1VIaQS4F9GYkpl3bE_GaDmNcMr2wbNCiVGjECnf2tud1pTGev_64UI0begAyY0mPTMqCnOHelpflXkgRNISkNhkCufNMri08vg9psA8nZJItsbPC7HljjTEHQXf_cyFnZQYBjXxalMX4KttDVKH45DER-7czOHvP5oP5AIr8CAEaRyhOIYMyTWW2oyBUo1u71Fg1X4bhn3Qt7PGAh5Uk=w1280",
+          "requestedUrl": "https://sites.google.com/sitesv-images-rt/AMxu72twZEV90tvymZI8v5NCLyc3KLNZsNwIjAJKEcfcMYosD-lExjDFYZYHs5webJrjatCl7WGGk5894MOcCNt_T1MTPX6HzmP4PX_Q_ZD7MJQzVKEO7fia4-JQYjdYVR7YCEcDSF7v7nZ6eeasVaxYi1bROn1i3_fnJJQa8X6FsYHvR02wIek7SMdQPlYyd9r--UwZm5zzcFIpK425k7FOGTnsXwEGBoocvGR3xQnumwU=w16383",
+          "status": "complete",
+          "refreshSource": "https://sites.google.com/view/natalia-isakova/uxui-design/ijet-media?migration=1792423386227",
+          "original": "migration/assets-original/ijet-media/12.jpeg",
+          "sha256": "0165c67563962eee046040799f41ff0c3c05d3d4c1bdf6660eb5919673f8c396",
+          "width": 731,
+          "height": 681,
+          "localPath": "/images/projects/ijet-media/12.webp",
+          "animated": false,
+          "poster": null,
+          "outputWidth": 731,
+          "outputHeight": 681,
+          "alt": "i-Jet Media — 12"
+        },
+        {
+          "position": 13,
+          "sourceUrl": "https://sites.google.com/sitesv-images-rt/AMxu72uW7Fvm82ESv1JSqObzQr7XZWnS5BMM21e4A1Jwjp_OEJqXk_ENMN8BQqkH2ITdLrkM4lo-MkCHQXKQ7RgaR3dhvTXNNeVdaNVgPFmsJm-0aT8X4CLrie5ZXHmye-FT5SzxhDskgA-ay-1wGmu0AUwE_IlMyBK8Ev__8wy-V-k4pZPuQgh1izt6wIjFgDah6kFV0CQI085TwZEoA96aFKrUUflCYYdpiQHF9vuHoKM=w1280",
+          "requestedUrl": "https://sites.google.com/sitesv-images-rt/AMxu72va0aQ9spJ4iEjI6x9qB0_U7SzcxrS0xjt4gwB_MYlFnpkQ4i1oteMkEBiOeTRV7FGNjgyH_-Fed5tVwOH4rNVAK8xEcIsTo1fyAIXnLX9RKt6F6zI66cKL-9fNsY1pc-tRdQrENlgsP6jz86uPXSBAytWJwjxwQbWCRNm2PwteiCPvTUKPbtCTKRu9fu5JANNlSGzLnZBJXwBonFLQVHkklH-IuS-tXDhrt-sLnz8=w16383",
+          "status": "complete",
+          "refreshSource": "https://sites.google.com/view/natalia-isakova/uxui-design/ijet-media?migration=1792423387648",
+          "original": "migration/assets-original/ijet-media/13.jpeg",
+          "sha256": "b02d1c4dd8a3972b536deed89dfb3d404b86bb3fbed8f7437008abb32b05fc9d",
+          "width": 730,
+          "height": 680,
+          "localPath": "/images/projects/ijet-media/13.webp",
+          "animated": false,
+          "poster": null,
+          "outputWidth": 730,
+          "outputHeight": 680,
+          "alt": "i-Jet Media — 13"
+        },
+        {
+          "position": 14,
+          "sourceUrl": "https://sites.google.com/sitesv-images-rt/AMxu72sdznnOcKevfSJ_hbafF-IQpKqX0Xh8LUHlqD-lIMW4YwvOfzgOoIKaPDHDhO53563o4xBCCC-fIqKgMkOA52iJzpRHKlVsTebnG77MsMmgTW3xM4ugS4fLC_slhJCtY1DnPDw2fKGkxyXBl7AQ5OgYHpcPpBee9n9E0AYPU9AwJR_jf8W4N1eW59SuPzpXqNOskVbag5idyPR3TEK2Bj7GlHlLsJmSBfkHURxG=w1280",
+          "requestedUrl": "https://sites.google.com/sitesv-images-rt/AMxu72tvZfeVtVrDvNry7MoYMcJLTu1h5HP6Z9l3boII0wVRL_Y0HiaKkPUkfEqOe5U3FzROGMLaUN1kTj0UYWmO63JIlUsQfhclx-oxNpufarAab_BC8l5WTz_UDGV-IJqKZCnWuP_-m_oeOIqxnZQ7hxF2TiIJeJjewJtjRUKBgK-PnCI8N6ysu9Y1d8uSTP4IJvlI4HUKIknDHeJeOAEJMLx-E_FT2Vjag0_bLg1T=w16383",
+          "status": "complete",
+          "refreshSource": "https://sites.google.com/view/natalia-isakova/uxui-design/ijet-media?migration=1792423389003",
+          "original": "migration/assets-original/ijet-media/14.jpeg",
+          "sha256": "d191283a1a8ce7adb0e2a6e8d29d2f9299a77af997e4e664ca1bed3453741aeb",
+          "width": 333,
+          "height": 492,
+          "localPath": "/images/projects/ijet-media/14.webp",
+          "animated": false,
+          "poster": null,
+          "outputWidth": 333,
+          "outputHeight": 492,
+          "alt": "i-Jet Media — 14"
+        },
+        {
+          "position": 15,
+          "sourceUrl": "https://sites.google.com/sitesv-images-rt/AMxu72tytw3TJEL9FDXM-zU86NUm32V1F1H1kfzEK3hXHpzmS5lgmthmdk81mJc0fLx3AqrI6i_NqsHvF3G9DZxHpewip1RpXMRATuCpCT_v1ZEpZS8lXP4RcW52eOwjVcroMUej02a5pQHT_l3tuB7Qu_71fXFUVp90nit3QTfHUty2DWsFUTEYj42NQhu1-OkqUHunxiYz3UwcnT1QQbC60lHFasxH7IKY9g2j_9H9=w1280",
+          "requestedUrl": "https://sites.google.com/sitesv-images-rt/AMxu72u92_5eeTCJARBQToi28VfOejx3GLTAReBGkvUhOrnpj_OHJkq6K2UzYkbOBi0tXh-UqIQ727hyatwfaFmj7QBv9n5T4tcSlrP1jXqu1hQjXwv0Taqli_pMyWNYcOf4p4OdsOvyn80vHACV3v0S02BYYFZIsOyYw0avlOgXI5EbN6SDDZrOy83AwawhUb5mt9S079nv72t80FfjkAzCLKUWAS7jSMm_zroLRtMC=w16383",
+          "status": "complete",
+          "refreshSource": "https://sites.google.com/view/natalia-isakova/uxui-design/ijet-media?migration=1792423390067",
+          "original": "migration/assets-original/ijet-media/15.png",
+          "sha256": "618ee49d1c76780bec1859b4f3772bad81344243c46e056e008436d8e763a2c2",
+          "width": 338,
+          "height": 502,
+          "localPath": "/images/projects/ijet-media/15.webp",
+          "animated": false,
+          "poster": null,
+          "outputWidth": 338,
+          "outputHeight": 502,
+          "alt": "i-Jet Media — 15"
+        },
+        {
+          "position": 16,
+          "sourceUrl": "https://sites.google.com/sitesv-images-rt/AMxu72sw2xm__dUnWjOyAFCKd5smXu7lxsD0jhsR4MBhGm-Tdxbruj1kQ6fLA7En9mKpvp8vIQFOomkPw9XJhYMofOVtvhEeRj-XE6kMAS20P2N1Sv-9hIMqzebgJPqa2VpNXtatAuIVpTb0pMHVzwtMXwsQOc0HlR7aTWg3mLzb4jIjIPZftaS7azdYrN_7n6_aDKBy-bBq-1U0sFtSwcEF4_RvwHGGdheAI7YMusty2Xc=w1280",
+          "requestedUrl": "https://sites.google.com/sitesv-images-rt/AMxu72vzPy9PW5Qtfb2_S6wvuy1bl3_LqUz8auEbDcEUoxoi462WHABHiZMWo9dE7FpOZ6ha4gtPO1APMwjF-IaTjK9j8XDDypFBeC3uF6fQvPpEyAjLVNa2gLOz0WqAcv6JOeCqnoPPYyBMwEKAuZ23Pc8GK-3C8Li0OycV8WtyaKLWGJ1M9EtOaA1qGSTDqpnPhHq3Yw3BfYy4rI-Y7iJgeO3DaTbKZeVbSpIf_4EdNMU=w16383",
+          "status": "complete",
+          "refreshSource": "https://sites.google.com/view/natalia-isakova/uxui-design/ijet-media?migration=1792423391545",
+          "original": "migration/assets-original/ijet-media/16.jpeg",
+          "sha256": "38b8d147988d76548d21de4ff8ba8972434a21d967c42f2a3fb2ecd1970fce6c",
+          "width": 731,
+          "height": 674,
+          "localPath": "/images/projects/ijet-media/16.webp",
+          "animated": false,
+          "poster": null,
+          "outputWidth": 731,
+          "outputHeight": 674,
+          "alt": "i-Jet Media — 16"
+        },
+        {
+          "position": 17,
+          "sourceUrl": "https://sites.google.com/sitesv-images-rt/AMxu72vOTeEY6cknCEWmH5kXTqiTEuGcudA-Gvkf2nDDRjXJNhOAaOzWCUKNn77dpHnvujDKX_ac7h49jVNZ0S9M735wC2KPMv1Myta9PGpounxxUK1KRcaNA_ZajLrect11XCaOwYW08PRNx_aIruwa9xYBPtS4W0EDquRzmBXi_r44Rrx4ehyx-fq20Lfdi-DPugPEffknjGMBugTa7U2xsAQEN3IdqZBgxqO3fZhonC4=w1280",
+          "requestedUrl": "https://sites.google.com/sitesv-images-rt/AMxu72tnKRqteaiRydWJt2vqzTuN06rTHqs1dsXT6dBC1IP0xAi1RkQHmZjrcALa_5qIgBHioHBFwQs-5bOTW9ZvFNeih4EM9KKyjprxgF28WVb6EkHWUgDQOw59KZlxaWhhBR3qNgFvk4Mm9F6xBki_dF0uUIOFV1-jQicIcjmHVeWf279lWg6ubHorkQaTMR4aB8k2DuQAIQFoeJXJYmGC8oY_1Cn2twQo267UhJoYYLs=w16383",
+          "status": "complete",
+          "refreshSource": "https://sites.google.com/view/natalia-isakova/uxui-design/ijet-media?migration=1792423393318",
+          "original": "migration/assets-original/ijet-media/17.jpeg",
+          "sha256": "1c71481e02286791e9d3f1093f80254f228ad6f25c3e8bcb0a5d0a39c0e7ba66",
+          "width": 473,
+          "height": 702,
+          "localPath": "/images/projects/ijet-media/17.webp",
+          "animated": false,
+          "poster": null,
+          "outputWidth": 473,
+          "outputHeight": 702,
+          "alt": "i-Jet Media — 17"
+        },
+        {
+          "position": 18,
+          "sourceUrl": "https://sites.google.com/sitesv-images-rt/AMxu72tJAVneyx07g6MTzD5Ie8uJBHZ7iaSPcUaUjuoj_dWbmICbg5Laz8kWgPDk4RTf3JeX5VyqRbhRegOVWQlvMNL-a7tyvJVvj95oQQz6HyflAnSr2n6y64y-1JI22VQv88urLq8g3JzusfZKo6Xui-_-OO1VzMzIpsSHKNrT90-BLauuxqTvvtbHY3VgvZYffIeUDNlH7sN0IxerXzBEyfQc3la7ufyTzTa8QaQLujc=w1280",
+          "requestedUrl": "https://sites.google.com/sitesv-images-rt/AMxu72thfccWURwM5WsfteTzzcwAbY2cKSuPqmw0IsSztVpFuTFGhvuxqq1KLrnpI2xKsNumDE12ltIxjhP3DrD8fsif5aHZbyCnYovg-1pBdwTM-K4k6ymzFQblWT9az5qxOr8JvNGRfu3mmaQnDhOaL7TvtyP8ssP5Mnmy4hplp5JMRWzILJauBNxRDCD1eS8iCdkFLQeQvoL8yXJoy4ovEUmW-JqW9LIoiDfHpfybxwQ=w16383",
+          "status": "complete",
+          "refreshSource": "https://sites.google.com/view/natalia-isakova/uxui-design/ijet-media?migration=1792423394887",
+          "original": "migration/assets-original/ijet-media/18.jpeg",
+          "sha256": "0d81412a0bcfda8fad5457eaa3e065365aecb6ef83e01a597067f990612fc202",
+          "width": 479,
+          "height": 711,
+          "localPath": "/images/projects/ijet-media/18.webp",
+          "animated": false,
+          "poster": null,
+          "outputWidth": 479,
+          "outputHeight": 711,
+          "alt": "i-Jet Media — 18"
+        },
+        {
+          "position": 19,
+          "sourceUrl": "https://sites.google.com/sitesv-images-rt/AMxu72vaxzMsXC2qf31P-VxqojkJPxfL2UOOrPZa2gQhmdvF2gk8MJtCK17M-bY_iCFru7ZgRhv3k9Y_0Avy9fkzr182zlFa7sviv2U-WDLZrmY9UHBgwoKnPzM10zus4rpG0hS7J64nZ9923KWSXXje9A1OelEJKzQgUca5_61MBuqQVwR64Qb8oJX4etqDP6SEU4_r2BKP6PoIqATlkmQ-DVRCjNQUuLTmt0MKchHN5VU=w1280",
+          "requestedUrl": "https://sites.google.com/sitesv-images-rt/AMxu72tdFjEnDknAg6VaJhZSX18ZVkzdLgoPF8Zkk0TvuP-ry9oSZ7LJUiDB5xniqX4qPVr8a_iYm9b7zktvopKeSOfaL3kveAOsowfmdeaTgWstPy1s9XH-WrCMhBiCPR57ctW1n8dbvgun1atR-YG1bdKQGrx2sUh1NvRsbSSdo5PLqKLHKkFWarCfuv2ZUs92TKqCYUnpqrbMyLQTIjBb47KkVN7l4sI_vLyusXEvwQg=w16383",
+          "status": "complete",
+          "refreshSource": "https://sites.google.com/view/natalia-isakova/uxui-design/ijet-media?migration=1792423396551",
+          "original": "migration/assets-original/ijet-media/19.jpeg",
+          "sha256": "9cfa2e1c59fc3accbd341eacd333b4de1fe0c0ee112f4d473f6f3e3571fd0a73",
+          "width": 1204,
+          "height": 842,
+          "localPath": "/images/projects/ijet-media/19.webp",
+          "animated": false,
+          "poster": null,
+          "outputWidth": 1204,
+          "outputHeight": 842,
+          "alt": "i-Jet Media — 19"
+        },
+        {
+          "position": 20,
+          "sourceUrl": "https://sites.google.com/sitesv-images-rt/AMxu72vW7wA7RaG1POaQekC1o8N-g-pptr77SQxMklBMRmc_D-xvS6T9YN-QiCl3LKGzB7w2FihYzayQHBEuHSWU2py5GX2liQ7s8HEL_egOjwW5Z5O0YgZXXhca-cxfeRbSJDliCruCYjuce1GTyENbcUQnyXBs2rVSOKjOTaqm4UXnfdO5MBkrBS4XRr6PAIIsRtYlzdEqxB2D_GT_cpLryuVF04iBvBBgyj1GPc1Z=w1280",
+          "requestedUrl": "https://sites.google.com/sitesv-images-rt/AMxu72tXgvQezw1kPwWCqaGbL1780-oXstbOCvMp_AQvX3Kcbg8gg_hx4c9uHeGm94VZa2kfdXQaXLa5gOZyqnPHv20p833hZKzIWHgNJSgFJyedvTUXaV8ePzLD-xNqckRqSzkZvZkXD7eojhmxL-YxHeWqwbHdYe5LkQtnKeJP_2I3GTMTjGwE_oKGDRePIkVBt4Syb4busYFnRRpnuDtOBFYoegnwm-2r3IvmLOpA=w16383",
+          "status": "complete",
+          "refreshSource": "https://sites.google.com/view/natalia-isakova/uxui-design/ijet-media?migration=1792423398145",
+          "original": "migration/assets-original/ijet-media/20.png",
+          "sha256": "fcf82e1dc9a378213a66243d677932ff87472cb252d3a8fa5b011f1ed84f6ca8",
+          "width": 1298,
+          "height": 917,
+          "localPath": "/images/projects/ijet-media/20.webp",
+          "animated": false,
+          "poster": null,
+          "outputWidth": 1298,
+          "outputHeight": 917,
+          "alt": "i-Jet Media — 20"
+        },
+        {
+          "position": 21,
+          "sourceUrl": "https://sites.google.com/sitesv-images-rt/AMxu72trf8-p7gfr6Spd9RJt6FgGMrT2YnM5kh_Wyu4wxH1Ay_PmDUg3TIyLGJns5e1SVekIWRQuy2emU2SgFt7ZC2LA5Hbn4NvtqPiRBvStSg1gZtSjTQbKRInd7lzv4L1dD8WHTvqdzXfINRYWxhNxoXDhKVlx532E22LGjpvvmHUXjQ4xxbsdVSYF-mxBYU73dTLL5jwvx1D-QH4yrbjA4v0T4bhF65OfCe8tZTH5YZk=w1280",
+          "requestedUrl": "https://sites.google.com/sitesv-images-rt/AMxu72vfNShE2MgGylaR9egGgpyzZ9agFp-GY-I0x1p-WIf9woVqACXoLo9dR6BTBj9CwpLIXYdTMifd46MwHjtx2EV4k0xxTJgkmGEg4n__vCtcTzKOC-CitR9Pj1opthFrnW1exfWYagHmaU-PpOO0v1bnR0JTbDYts4ZgpyKe8ldfQVlL_88B5EtLpSt5lBBKViIXQXilmuarg83CJXyvw1GTOxSYosHnU11Zsp4JxZY=w16383",
+          "status": "complete",
+          "refreshSource": "https://sites.google.com/view/natalia-isakova/uxui-design/ijet-media?migration=1792423402366",
+          "original": "migration/assets-original/ijet-media/21.jpeg",
+          "sha256": "5683d3ff14fc3b0cbf99f23ee12d5e10de9ced1d5666090e1d047225fcee6c69",
+          "width": 886,
+          "height": 639,
+          "localPath": "/images/projects/ijet-media/21.webp",
+          "animated": false,
+          "poster": null,
+          "outputWidth": 886,
+          "outputHeight": 639,
+          "alt": "i-Jet Media — 21"
+        },
+        {
+          "position": 22,
+          "sourceUrl": "https://sites.google.com/sitesv-images-rt/AMxu72v2_-Ead328cmR7b8lM6MJzjPRTq009u4boRMsKVAhy5-JVm6iPysp1E7OWwwnmr8NmIGT0ikxvhQi3-miDHRoaW7Gsd7kk1CZTCpWMbcxjQZ7Dw4RmZpj54Lz6AK11trh-dTv_Grn0s2gKNjnsTERJwWYNh38HNOn599oZ2NAOrttUUDe5fyqK_wRMyET59jDdOUQeKunVpCghUyBIOUYPIf0I9ubJlHPKN8sE=w1280",
+          "requestedUrl": "https://sites.google.com/sitesv-images-rt/AMxu72s-Iz7seecUvmAGCp-2pFZG0u-woTqTmJvtosAjkCKN4vkP33-r4o46xhgjynUL--fxkJQ8J9P8qCrVsU_zLWY5CmyOCGktNv3wuXDqVo67i7I4nGeQ-oUluDIfsOPVWU7HBIriyHf02XG4RW5NHqqui7Tl1Z6BUo3CDnK-06TBO3jR1RDB8QlNMySiI1-t9uWVbcHIrLA066IUx9Odd4U2a4aGmPQjgskIwQW7=w16383",
+          "status": "complete",
+          "refreshSource": "https://sites.google.com/view/natalia-isakova/uxui-design/ijet-media?migration=1792423403900",
+          "original": "migration/assets-original/ijet-media/22.jpeg",
+          "sha256": "e27a1a5025f37e252fb3d855690ce831322054953867d9e8b65bc496c02d8681",
+          "width": 834,
+          "height": 609,
+          "localPath": "/images/projects/ijet-media/22.webp",
+          "animated": false,
+          "poster": null,
+          "outputWidth": 834,
+          "outputHeight": 609,
+          "alt": "i-Jet Media — 22"
+        },
+        {
+          "position": 23,
+          "sourceUrl": "https://sites.google.com/sitesv-images-rt/AMxu72twCSDumGwTqo8ocq8lmpqeHahXSgZmW06wqBndaG-ThhBureYiCptktiv017Cu0IdxFHsXE58dg3q5yIaJ3Oao5EXWzIxs6TKR_pIx1bauTu2feECb3jgx0YNp2ABYnGbicP3Ap_JkrAbudOYuzm-mm2OmdP4p9Clfq2C2f1Ph80OLipZNwZ04jw5Wbie8YH29R2blz3NzgN3WythkAvpySm1IDRRHu8Picw6w=w1280",
+          "requestedUrl": "https://sites.google.com/sitesv-images-rt/AMxu72tB-O5oI0VIFZL19U0WOLlez-1S0C2mb1JOhFXBpigxe8cHlpCDBFlpjd2beH74xvdTAH74T6MNim7chP08lhQ8czy7Cto94vspeCWhHd_RQ0hUyXqsEHig-upXXezBJb3owNEek072efHcAOevriQvqiR59k5cMxxeMDcJIUt-nmVvApYNjsLsLHu65GSFyjKhTuz9dE7Q6wKSnI0GfEMLsYcIwjNjVPqGYJwR=w16383",
+          "status": "complete",
+          "refreshSource": "https://sites.google.com/view/natalia-isakova/uxui-design/ijet-media?migration=1792423405286",
+          "original": "migration/assets-original/ijet-media/23.png",
+          "sha256": "8a7a44c8bda68f37be5a6a58ea605b1569c65a2c6481bb8e3f036e43768f3b07",
+          "width": 609,
+          "height": 601,
+          "localPath": "/images/projects/ijet-media/23.webp",
+          "animated": false,
+          "poster": null,
+          "outputWidth": 609,
+          "outputHeight": 601,
+          "alt": "i-Jet Media — 23"
+        },
+        {
+          "position": 24,
+          "sourceUrl": "https://sites.google.com/sitesv-images-rt/AMxu72veb8Uq1kDzeBS1BDRIGdVqNW7nByxktofZtSFeM2F0IYDf8fdmgWxRXWzYMrLbCaI94N3lSdt3FHrL3uRjGNfIFfdHBDO-RoQ6klei-7s-46ZjbVhDtSBc6QbYBRG3G4Q_HeLtcHO4lnL1tdYoGtGWs27xkkzd2XEW9bYdb2FgSUIEGUZaiX_yeqtgBLMgeUGmQlbqC9yfSfa5EMtd3KYTZT9YP60sBlvcaYSb=w1280",
+          "requestedUrl": "https://sites.google.com/sitesv-images-rt/AMxu72uPE3GNeGZ2cgkQ8Jag2cbMb39ub-rxnpZJ4AWqys-wF_oXEsOBp_-L1mZTajpdT0X3awXE4bMYwqJUKB6NJ8fxm0CeJZMkjGV8dEhog04Wlx3QrAoUVyV5IF_8kglb-otDerkGvIp1-CODhejnSFQVTwbstyt0QasGWL5w2lfN-vic0Ub9EiUEQG62mnFN24_itisiBoInBHS9HI4C55X_dJf_Rm7KyMNattpH=w16383",
+          "status": "complete",
+          "refreshSource": "https://sites.google.com/view/natalia-isakova/uxui-design/ijet-media?migration=1792423406570",
+          "original": "migration/assets-original/ijet-media/24.jpeg",
+          "sha256": "e60b42ed7586844a62f47b99966652296d98b13bdb3b1b1707a0a30f1fd57836",
+          "width": 650,
+          "height": 637,
+          "localPath": "/images/projects/ijet-media/24.webp",
+          "animated": false,
+          "poster": null,
+          "outputWidth": 650,
+          "outputHeight": 637,
+          "alt": "i-Jet Media — 24"
+        }
+      ],
+      "links": [
+        {
+          "text": "Marketing design",
+          "sourceUrl": "https://sites.google.com/view/natalia-isakova/marketing-design",
+          "href": "/marketing-design/"
+        }
+      ],
+      "gaps": []
+    },
+    {
+      "slug": "marketing-design",
+      "sourceUrl": "https://sites.google.com/view/natalia-isakova/marketing-design",
+      "target": "src/content/pages/marketing-design.mdx",
+      "newPath": "/marketing-design/",
+      "status": "complete",
+      "sourceSha256": "37c16cf3473808e1ba9b1f7e6437a86f00370cfe58125487d9e9ec19fb108768",
+      "sourceBlocks": [
+        {
+          "tag": "h1",
+          "text": "Marketing design"
+        },
+        {
+          "tag": "p",
+          "text": "FraudScore (est. 2016) is an independent ad fraud detection & prevention solution for click campaigns. Analyze clicks in real time with lots of filters and eliminate click fraud, ensuring accurate data and actionable insights. Block or redirect fraudulent clicks before they reach the advertiser, spoil statistics or ruin your business. Maximize ROI, optimize campains, and confidently engage genuine users. Gain transparency with easy-to-read reports and dashboards."
+        },
+        {
+          "tag": "h3",
+          "text": "My role as Marketing Designer:"
+        },
+        {
+          "tag": "p",
+          "text": "🖌️ Creating company style & presentations"
+        },
+        {
+          "tag": "p",
+          "text": "🖼️ SMM and blog graphics design"
+        },
+        {
+          "tag": "p",
+          "text": "🎪 Expo design (booth, rollups, swag, prints)"
+        },
+        {
+          "tag": "p",
+          "text": "📦 Pre-press preparation of materials"
+        },
+        {
+          "tag": "p",
+          "text": "🖨️ Сollaborating with printing offices"
+        },
+        {
+          "tag": "h2",
+          "text": "Social media marketing"
+        },
+        {
+          "tag": "h3",
+          "text": "Social media posts, conference & speeches announcements"
+        },
+        {
+          "tag": "h3",
+          "text": "Blog graphics design"
+        },
+        {
+          "tag": "h2",
+          "text": "Expo design"
+        },
+        {
+          "tag": "p",
+          "text": "Booth and rollups for Madrid Mobile Summit expo"
+        },
+        {
+          "tag": "p",
+          "text": "Brochure for handouts at conferences"
+        },
+        {
+          "tag": "p",
+          "text": "Expo swag"
+        },
+        {
+          "tag": "p",
+          "text": "Hoodies and T-shirts with company logo"
+        },
+        {
+          "tag": "h2",
+          "text": "Presentations"
+        },
+        {
+          "tag": "h2",
+          "text": "Ultimate Fraud Detection"
+        },
+        {
+          "tag": "p",
+          "text": "Presentation for FraudScore Company was made for speech at the Madrid Mobile Summit expo."
+        },
+        {
+          "tag": "h3",
+          "text": "Thank you!"
+        },
+        {
+          "tag": "p",
+          "text": "Back to Home"
+        }
+      ],
+      "sourceCounts": {
+        "textBlocks": 21,
+        "images": 17,
+        "sections": 27
+      },
+      "assets": [
+        {
+          "position": 1,
+          "sourceUrl": "https://sites.google.com/sitesv-images-rt/AMxu72u0inVXIdNcy15qWBsciBCwv2Gy81XkY7uKH2y0TgWH7UcKXerGLOZ7J3nHjWzVojgdNoZU0f7grASvv-eFTNXlZ5O7dcwCGU7bTvNWWYvCY7L0nP6_Tk7gjs_nsL04xx-rKiIfXxHO90vN-OY9LO_I90sh6FKW46t4Bh4ySOmszrJOcQioNLWhEf5tDBALGvImKSHDXOnYLjfFWkW0qDX41Sj19rjQUKg2iS8kMw8=w1280",
+          "requestedUrl": "https://sites.google.com/sitesv-images-rt/AMxu72u4g6BLscJkcWNGbmJFtJ6eaZeMv62KR8BujdyXuCbGLl1hXbwemLqbL3elFlLepIkuBF2nTUPPTYu26EDu1pcRG0JETqEqV7V5yoRchohHGE0B-udfCjALdhgtm4E_x9ioJZpkfDBAEB-LPLX7h5SnwNd88cEXgfuPKBg43YdGqXYLttbpuPX7PwS-CmKxdwAXLZZK95EA_i-AmUgTMmHLxtnV63zZw37fLFfz1TI=w16383",
+          "status": "complete",
+          "original": "migration/assets-original/marketing-design/01.png",
+          "sha256": "57acb534c36ba2cd4e8093f711439b7d4be4e4fc311f3b8ff2bf52287490d72a",
+          "width": 567,
+          "height": 503,
+          "localPath": "/images/projects/marketing-design/01.webp",
+          "animated": false,
+          "poster": null,
+          "outputWidth": 567,
+          "outputHeight": 503,
+          "alt": "Marketing design — 01"
+        },
+        {
+          "position": 2,
+          "sourceUrl": "https://sites.google.com/sitesv-images-rt/AMxu72us3MGpO_ArBUZdNQaiHSislwPysLLFAfw7WLsE9DewYS2Gv3ea7VADa2L2P8AVc5u277BsP0hHOYRoGe_QvY-S0xvpz3HIB0vgRRifiOmp4luvF3KDfAhYn1boMmgKGls1UGPO2pDweHSDHGdZ7W1sE4Vs7svqwVrBr1WPb2ncu9aiOp03poTLYCvokQk=w16383",
+          "requestedUrl": "https://sites.google.com/sitesv-images-rt/AMxu72tn5joVWwaBXyprkHInYtJFSimf8FNb2uN0Iypukz-3e3aJurbGpdhXxyO2sXcq8JCLA27QyX6IIAQpwggEhlv5HQCfzShvQOrymDaH8ImKciS5-vCWCkZVz3eAPR1ZPOACeANRT077V1JnAMApyMQmfVjtdELfjfFx8AtKdCVI9wj-dRJY5Wkcnw0ohqQ=w16383",
+          "status": "complete",
+          "original": "migration/assets-original/marketing-design/02.jpeg",
+          "sha256": "ad71bf622a6be9e59ce1b3d62acb032555989fe62bbe4b15c38d12ea75c26094",
+          "width": 1200,
+          "height": 900,
+          "localPath": "/images/projects/marketing-design/02.webp",
+          "animated": false,
+          "poster": null,
+          "outputWidth": 1200,
+          "outputHeight": 900,
+          "alt": "Social media post 1"
+        },
+        {
+          "position": 3,
+          "sourceUrl": "https://sites.google.com/sitesv-images-rt/AMxu72uS8SyeDucKbiR-dw2dof2nm1WFO0lh_ok725H0dOkK9XUjt4yOBvEkUbCB6UVCM1AIbd19z4knXgwZE0cEhiUV7A6Fl7pEVBC2Iw6NqcitKqxXASkNC4YdEOuhfRoWPci5_tYEH1C_Vd-_UoUEbZ6OvTRilde1X8Y0LVOQx6lmKO2WuLDIQiDP2tYfJEQ=w16383",
+          "requestedUrl": "https://sites.google.com/sitesv-images-rt/AMxu72uFrI4pD6L5RMSY4skAX5CEARdyYoicXbuW9HfjMake2pUJdodur50HACBl0GrzWoqF3xATTKgBNVWx25LsJOM7kwx7RGM4chYTIRIqwXAkiPW0CZ3s_QhBu83IW9nMr6tZHNQrnZdXAYo3JKHWjnYg94jlu3BTcyyVCnKZWRpNJteyJ4VPp-Yq5qmcONg=w16383",
+          "status": "complete",
+          "original": "migration/assets-original/marketing-design/03.jpeg",
+          "sha256": "20b1c6cc4d611f686f23c69079c6f29ab9649dad84f90d2aee5b3eebdd7728aa",
+          "width": 1202,
+          "height": 902,
+          "localPath": "/images/projects/marketing-design/03.webp",
+          "animated": false,
+          "poster": null,
+          "outputWidth": 1202,
+          "outputHeight": 902,
+          "alt": "Social media post 2"
+        },
+        {
+          "position": 4,
+          "sourceUrl": "https://sites.google.com/sitesv-images-rt/AMxu72trQ1nfVdfxoHWHUSSm1NF3uH9mmHBEN7InbGrUVrn9k8NJ3s78lVlgj1YMeMzobVnimxa_Ezcc_GQ7YfueyHDOCt2jFMsxng0Xjdd4hQ-t5BMsNFDjrMne7AQsltqW0QIwT_5_P5H7OiuJPseqq4JVUUxeUI4X_TI2ziPv4XMrELfgslipTZcY5LKL=w16383",
+          "requestedUrl": "https://sites.google.com/sitesv-images-rt/AMxu72sryUQUsABkn5rl8r9FJLHB-cXdAe_t5ba3EmagPACcKwZIw0ezoEoT2KtGRSXQJBHPacOsTljeIse2gIoPFhqONh-FtWQ59LGMVkDZCQokdCVWq91aZYir-3X_CIkG_NSRLJ5ImW-MP2MRbsm7p5XJYWdtl8QgNr5tPmBil6loMA6QevYe2EqIGf8k=w16383",
+          "status": "complete",
+          "original": "migration/assets-original/marketing-design/04.jpeg",
+          "sha256": "5f707bf86b272d9187466a1aad00a0934676440b5fee05fa806b58a7bfcff791",
+          "width": 1184,
+          "height": 890,
+          "localPath": "/images/projects/marketing-design/04.webp",
+          "animated": false,
+          "poster": null,
+          "outputWidth": 1184,
+          "outputHeight": 890,
+          "alt": "Social media post 3"
+        },
+        {
+          "position": 5,
+          "sourceUrl": "https://sites.google.com/sitesv-images-rt/AMxu72v_qi5dgCyr5iQcG-LItclinhwWgwxFGnIhFv-xGJHjT00cVF_LPIedv7qMCsXcvc-0AF8MXvBxBcVDaytTOLHiskzRpS4cv2cMlV_xBBUejXAWYy5WkGgoDjO9pM2I-I7LxCJHTFetASa_1aunVCUlrRBXorzIwSeH4XIAC-DIcrUmHkf_B6-KnTtWNuA=w16383",
+          "requestedUrl": "https://sites.google.com/sitesv-images-rt/AMxu72v6QjgQYGwe_mSRmT-EGNTZMucwJxQrF3S4n_kTNJ9Vxb3cUI13V1U1n_O5GMvgSJJ55qXjOfIU2rEw3ggo6whUcQZLUrcmZK0L-LmC3yf9NP51em2LKDSZfMyLywOfwpL-BP0AUGIvjMtCnWhbiPM9zVXhkBqltFjKJAWZmoCB-V0oSrNQ3zRyqklhWLI=w16383",
+          "status": "complete",
+          "original": "migration/assets-original/marketing-design/05.jpeg",
+          "sha256": "ccc739bd56e75c1e9904fbb7b05a30cda6994f3de7b7f80d18b2033c3ffe394f",
+          "width": 1201,
+          "height": 901,
+          "localPath": "/images/projects/marketing-design/05.webp",
+          "animated": false,
+          "poster": null,
+          "outputWidth": 1201,
+          "outputHeight": 901,
+          "alt": "Social media post 4"
+        },
+        {
+          "position": 6,
+          "sourceUrl": "https://sites.google.com/sitesv-images-rt/AMxu72uSGZqshAotlyqgU0xxQ0MLWfK5q2NDVc-mKEA8ozVyw4z2VxwJYJ2mZqxCjcxD3KnYmimjLJZ1qy49-3P2HwkUe1fIHs943bQce6cdM8FfNb96lps95UETUQ6d6xnMIjCWgHIwYDtcAfV8lamFIpQ0GrloUEph4ehfgd_afjKEILRi4z4n7D0rgEA9wO0=w16383",
+          "requestedUrl": "https://sites.google.com/sitesv-images-rt/AMxu72skZdD6fY22wEvMJAoExmMdIKJdzQrufaO9iARtGECGKPpkBGTNJUxDN1rrnzD5_8NowwIMHKU4N5m9PGHy6p78vWlGSrm2-Cw4g2VyjlnVS9HkbJcw8wHIi59MncKAARCWK96KBVeew5Grkz8zVvHc4gIzQKrDWa8FT9DNS0WBGL2-ycA-HuLYW40izc0=w16383",
+          "status": "complete",
+          "original": "migration/assets-original/marketing-design/06.jpeg",
+          "sha256": "db230b7e9aeaeac8f7cd96fb490fa448bed3d11955c52b51e64865cb030891ff",
+          "width": 1201,
+          "height": 901,
+          "localPath": "/images/projects/marketing-design/06.webp",
+          "animated": false,
+          "poster": null,
+          "outputWidth": 1201,
+          "outputHeight": 901,
+          "alt": "Social media post 5"
+        },
+        {
+          "position": 7,
+          "sourceUrl": "https://sites.google.com/sitesv-images-rt/AMxu72tHshlU0k7aIyptr010In6wnSP4UrX7iQ6RWK7Qkj4InGo8v5_8bfgH75Q92N9YGoVVKV7xazXveb_kmKTL6mfdZ_ZqzI6oPFgKcVBgzhsLDPiSvxXZQByRxqYEwAUZ-MhzPRlcZZbPSihEknH0j8lrMPiow8sDRriTES2-GBsC32ZaSC9VcHMGMO1C=w16383",
+          "requestedUrl": "https://sites.google.com/sitesv-images-rt/AMxu72teOB3rmtzCU3sm0frQq0fSrXOAcvo9cREXaWYL_RoGS1S-6VR17KeJdTOmggBW3S8Jtjy83xVQu_IHgGMyqpbLKZTSyLA3Au91ziJ-C8_hexHFJbjDx0iWinJWWsCUn-NEY3LDeZDkLIImBjnsCQjEKcnyeSjjY7i7FyC-RUNg_yPQ-iSBSGsMkvvE=w16383",
+          "status": "complete",
+          "original": "migration/assets-original/marketing-design/07.jpeg",
+          "sha256": "3de5e656a3c43f46a032620e7a0854e7ee2a2d870e829d95826a36b5a7b494bf",
+          "width": 1201,
+          "height": 901,
+          "localPath": "/images/projects/marketing-design/07.webp",
+          "animated": false,
+          "poster": null,
+          "outputWidth": 1201,
+          "outputHeight": 901,
+          "alt": "Social media post 6"
+        },
+        {
+          "position": 8,
+          "sourceUrl": "https://sites.google.com/sitesv-images-rt/AMxu72uWHVwpBeL3CS7oFPTcACwrhUBkA4sJXfrN0yGcX24YHNQaGiwfLtDDAJ4F_jwqGqbXkXgt1mCSAY1X3RrNaHjEPpFm1B0GwsAIFdaba1MW2LXOJxFq-t3a8p1ipTCb1Enn5fUsOC9GuBnWQtEYzHCJYgsa2jEsqsR0-5bp06-e6R6aatKhr79Hpgzj=w16383",
+          "requestedUrl": "https://sites.google.com/sitesv-images-rt/AMxu72ufH7NtnxiOKO5j6pmXCd2JhCn3sPoLXFTl1JLuVzchEGhzRK5wvwAyacZ2wG1TN30c_A5-sDbsGruqUE3w823Hv2R6TIODSFOHnIHvKQfMayedvBsjtPPAb9WQDpBSN-kbubSK_1TSConRZQtzeUihr0IPFUqTCLGnLr26VnVmbcsSVUeZGcplg2_t=w16383",
+          "status": "complete",
+          "original": "migration/assets-original/marketing-design/08.jpeg",
+          "sha256": "839130148f9b350843f942f642143fd8326008f2e80c09bead5b83c1ffa35495",
+          "width": 1204,
+          "height": 903,
+          "localPath": "/images/projects/marketing-design/08.webp",
+          "animated": false,
+          "poster": null,
+          "outputWidth": 1204,
+          "outputHeight": 903,
+          "alt": "Social media post 7"
+        },
+        {
+          "position": 9,
+          "sourceUrl": "https://sites.google.com/sitesv-images-rt/AMxu72svshl6yeAnkiA4fqFBfWzt_rBHTthWjUCU1CE5bSrJXCRub3NVMfx4Pxs2_V8hK_j61FVFSiLqJpWp5ycjTcty2eMvbw6YfC6BTsHVN7Y9iidV5cmUFZIeZ4bLmnAyamdHsFUBico-u-OSbpbJXmg_gp36s1v1-Zozfg52kH2cgtJk5HHqq6Kt7Ow188o=w16383",
+          "requestedUrl": "https://sites.google.com/sitesv-images-rt/AMxu72t3Bdelbem4Q4kRBGx8HH6WMQZm07sOFECg5z8WKSgbLTKh6p4oVdtZ8VFaO2oODrdW-_y55n9hSy9JQwnGeP11H3iDitKN99dsutAEDfFngo8EQzK45ONV4eaB54SWguMYyHnNPmveCktt4srm8-68YzVq-lq0rr5KDRCuSf_gbbrFsknhagTPVS62ARg=w16383",
+          "status": "complete",
+          "original": "migration/assets-original/marketing-design/09.jpeg",
+          "sha256": "48004614ff97ef421a959663139ee17dc517c70a97131b40d7b0cfa86e0e99c7",
+          "width": 1203,
+          "height": 903,
+          "localPath": "/images/projects/marketing-design/09.webp",
+          "animated": false,
+          "poster": null,
+          "outputWidth": 1203,
+          "outputHeight": 903,
+          "alt": "Social media post 8"
+        },
+        {
+          "position": 10,
+          "sourceUrl": "https://sites.google.com/sitesv-images-rt/AMxu72u4IpQXLSgRAoqC6umjYnyTRw4fFjPy8yTd3LCjto015gklWdOfSTdNZnTOxbkwgXICwWj2Fpdv-_OYX362WmfEwBoFhecYLItgLKgnRusownEq9vUpG58y92vJFYPVfI89fOlJhOhFv2Q8d86eS1C6ATsBcquIe0IQiYCJXMsmS8BnEzT-gP5k4NbuYII=w16383",
+          "requestedUrl": "https://sites.google.com/sitesv-images-rt/AMxu72v0PigOQoK6l7IXtQjRZQtg58iTswpdtd5cGAYpSj-LUwFciPFqngY4ET-eT3MyBZk3_ELFWCwAPUDQmLeYealTieWAwToKp3Vxfe58-czlkPfSw4LHwLlMUn1FsBw9Rwd3zdcK_2d3cJGjV9y4u3B45CbmX1UOz0Fw2nbgc6QNjL-K6Wb4sLnO3dsUG90=w16383",
+          "status": "complete",
+          "original": "migration/assets-original/marketing-design/10.jpeg",
+          "sha256": "bb7eca22f8d888474dd44cc5433b978bfa821ea39d5d7d539a32087c2abf145e",
+          "width": 1201,
+          "height": 901,
+          "localPath": "/images/projects/marketing-design/10.webp",
+          "animated": false,
+          "poster": null,
+          "outputWidth": 1201,
+          "outputHeight": 901,
+          "alt": "Social media post 9"
+        },
+        {
+          "position": 11,
+          "sourceUrl": "https://sites.google.com/sitesv-images-rt/AMxu72uqUBqgb4gYEbKiCLRyZnsyhoyNYUxsNhCHnAplUVRarOuS7R0CHUHdR_dVZ4NepaG7NC3yUrB-Ga204c9Kio3elNwSJWgbskmoZlXO1x3CCeFY-dMwy6CKhbfpOfwpjDnaBWRiSV6BjX7a5N97JAifnYt3HXep2ckf3gToipIirTcYdaaJyEr984HC7tFGtQbSj2MKX-5B2uYeubr0S2WlSOJlWh13OelusdiicOU=w1280",
+          "requestedUrl": "https://sites.google.com/sitesv-images-rt/AMxu72sftZbdHIXtGyDR7XYZ0vW8AhMcZn8FLBQ_tfp3qwAVqYUc7XSEOYSNlXSRC5JXk2egY4GjVd8W_BlI_J4nrZngnIB0aTzHdYE3Wz8WmiS1kliB5D2CoOiXRXoPfByFL---6ZMOHN0B-N6PLLqAKybFYhOX0SZu7bkUHrOzB2eD79DIqvY5aD1JRbB_XgyypG8hw3jVhMQ4GqOnS208nzIHv8vLSUNyJo6TeSFW5XE=w16383",
+          "status": "complete",
+          "original": "migration/assets-original/marketing-design/11.jpeg",
+          "sha256": "bd1bbde27bfb7a3f61219a37ef41f3d4138a074fc1dc251ecf9d9044aea0ed03",
+          "width": 1175,
+          "height": 901,
+          "localPath": "/images/projects/marketing-design/11.webp",
+          "animated": false,
+          "poster": null,
+          "outputWidth": 1175,
+          "outputHeight": 901,
+          "alt": "Marketing design — 11"
+        },
+        {
+          "position": 12,
+          "sourceUrl": "https://sites.google.com/sitesv-images-rt/AMxu72uz1uc_lvCMk4GROvfDvJNiDhlVkQXU5sFo92XI0hQmnDy7tYNHGM02F5Dp1X_qO02OmprJLDzg5MFMzBn56Lb0sneduy0TDDkydQiYFHfaDf-_3VA_GVf0Ed7_O4-p8DNutbRgW2VUfXwNhMVBIR12TDBSfkEpabHXc7dMZP8WslOOTioCI1IOnhRfZVEOWYL4Oy5zb9RVpR8iVZXWkUB8inVHrS1T4YiGgdY9Tms=w1280",
+          "requestedUrl": "https://sites.google.com/sitesv-images-rt/AMxu72sIXDxF7PDeSQhQfnOodVmLXsQ-JzjQH5LfoBpdd9je9eMYprdlUXvCBMaCjM6_ZSb6FM9QNlCqB5fud3euH6wvk0pTGSvqrPUZPF0eib0Pcvvxpk2MWZba81EUl0vF8yzqva57-XPX2wwrfUaeivn8_wkDnJoKLwH3vD5Iv_Gd_ohJDVemxeiUL_-bV_QPuoLLGdNwYVD-6rX4iu1Xe1JzCVVn5l0XDFhGz-umKFU=w16383",
+          "status": "complete",
+          "original": "migration/assets-original/marketing-design/12.jpeg",
+          "sha256": "7fbc07c34276f63f926610e55360a6ae84cf295201c12a54a9e2667983405fcd",
+          "width": 1181,
+          "height": 903,
+          "localPath": "/images/projects/marketing-design/12.webp",
+          "animated": false,
+          "poster": null,
+          "outputWidth": 1181,
+          "outputHeight": 903,
+          "alt": "Marketing design — 12"
+        },
+        {
+          "position": 13,
+          "sourceUrl": "https://sites.google.com/sitesv-images-rt/AMxu72sfM4fWovANcnEfZEzixpB_O7hxCyDzec2jfWBnTY6HgTetXPTMHjjTpBJvoKe-trpTwIi9S5oe2qrDuqBteGsyqYSVRYR842sacdg-tVJFj5-0W41zZyQLn_9yWzv4ruL36TDtiKv_endllex_02GF5m7rV2qEnWxO2Q5cP4pdGnFmDjSsqH96_5u_XQ2P4vkCB4dfYQbjPmS_Ju4LpBEQk5oBSL3kFUynVaQsUxA=w1280",
+          "requestedUrl": "https://sites.google.com/sitesv-images-rt/AMxu72snOACyJSVDuQd52ICF8cGYc1LgQLWk2_tf7M4XE8pGb2LlKO0WIOvjo1Svg-eYCuEZoksHKDrwO1_NdldhGeJoJ2FUOsB-qmQisZ8mf0HWDxbLXi5h5sVKhYh5Q_GoDIlM6IJQCcNg0k7zbxWemINGbRd0FVDJtG1_ED7wYTDsRmaw3OkEJmAFaZ0G8vYfWXQokk5qTSUT4VSAYLd685VWu6I2CQHXHxWQFiuQrlw=w16383",
+          "status": "complete",
+          "original": "migration/assets-original/marketing-design/13.jpeg",
+          "sha256": "2c60e6a7f851532d103c4e6ec24ca21e3d6ca45622c6a577c9fdc70e96bb72af",
+          "width": 1183,
+          "height": 904,
+          "localPath": "/images/projects/marketing-design/13.webp",
+          "animated": false,
+          "poster": null,
+          "outputWidth": 1183,
+          "outputHeight": 904,
+          "alt": "Marketing design — 13"
+        },
+        {
+          "position": 14,
+          "sourceUrl": "https://sites.google.com/sitesv-images-rt/AMxu72sJAxAJEI8GMdMJ1zhqBSHPKiGOLdL4bu4WPzYtrXhOOPbKXCE-N2EmpY7fB0MYD8FFapbvqi8c20rfxOKKcheMGVE37KXVharjil_kfQf_g7fBqSTrHc32787iBM4Y7183_eCRmlfoTw0BMf8LRsJCu5rwYWsuHDhhvSxwJqpQFKq8pMeVOmx95rEhzd7gJVMduBT1sUucgjV8InpFegO57OPPceC7vYQ5WLINybI=w1280",
+          "requestedUrl": "https://sites.google.com/sitesv-images-rt/AMxu72t8i0vp9Sso9emhVw7mFECPfF0bNzwzNDchB0fiPPZy37E08jDW-QEKgDbAOVO-2hgM0_QFGXZRPLwzYpInaahXCZtEwWADrDeqwrnLxMya80YLc1rhZKYI36meyOGfxkB1Fqq5YGV6ByyhAJ94yztRGTfxJJAhkH4OUHhTfQK6Q2poyw918S8oeMogQxc8Iyi5jYuUjigsGdZ_VBXBmrNpVoR4eIFb-EgDWDyp4nM=w16383",
+          "status": "complete",
+          "original": "migration/assets-original/marketing-design/14.jpeg",
+          "sha256": "f6573bda92e31f0062a02572c31959b77f814948b83346c3c08543d50a8ee584",
+          "width": 3705,
+          "height": 3120,
+          "localPath": "/images/projects/marketing-design/14.webp",
+          "animated": false,
+          "poster": null,
+          "outputWidth": 3200,
+          "outputHeight": 2695,
+          "alt": "Marketing design — 14"
+        },
+        {
+          "position": 15,
+          "sourceUrl": "https://sites.google.com/sitesv-images-rt/AMxu72vKqOajKVGiwcfv9NqMJ7G3qGHmGWGkWNsIhCZ8SYE5FUTg2siQR-Xnhbe7ICqXNzEaQFR6PnGGImuDdu_M4dqaPpXq3o-D1Tcg93LxZqnOTZOd1IQYZdOnTODYVPWAKKzY-ZOg9F3vQ9VIBruit--HG7HuyjtyoO71VFSqQdLO4A8oOVF44rZL7AopB7ztZxx3J8KfmmMlmTXeW942e1lQdZWXThCjEU2aS8OjWoE=w1280",
+          "requestedUrl": "https://sites.google.com/sitesv-images-rt/AMxu72s2ESXsOO3gjtTftr2Yo-aIe96fGnh4Etbp2MRxveB-6LRSFocwdQf-fFey1iG03ebW6hOZ15tEv24sJqAI_dN_99sZdi2c_85WQ_xUwfu7O7SCyySCSk5-os2RZSoDDnq8AaZw5tM3bseUyI5qxQzJeaVYVWgwT-Nn33AF5jil-BESiT835vnggO1uyglqHtZW26vDw_F_dBwwgkWmki-P70XVLWRBeevE87ro-_M=w16383",
+          "status": "complete",
+          "original": "migration/assets-original/marketing-design/15.jpeg",
+          "sha256": "0acb990422e4efed621171952aa3747d78523133af6c3902e6c58ed2e4c99749",
+          "width": 664,
+          "height": 562,
+          "localPath": "/images/projects/marketing-design/15.webp",
+          "animated": false,
+          "poster": null,
+          "outputWidth": 664,
+          "outputHeight": 562,
+          "alt": "Marketing design — 15"
+        },
+        {
+          "position": 16,
+          "sourceUrl": "https://sites.google.com/sitesv-images-rt/AMxu72sw8wfsJQUHJCAabxHYACuGH_bP4U7xrAKUDWT-a9Zj3L1rIyq1noSwp8lIu-WZ9GiDIszRUmt01WgN5b7AwIkGw3C1xfheDiWISntNby15cCjyYRrdoY6moAyJ-kuQ8mxVnNQWnMeFg9Y68PzXoCTaUkBvGXIm1LwqKs-JJpVzly2-cRm_UN1w5uGAHAhztWKB8ElscGQ7-FwkMfSa_1bDWk8BrAIEzrrvZcX1gdI=w1280",
+          "requestedUrl": "https://sites.google.com/sitesv-images-rt/AMxu72vHnVwfO2k0JZdnM0w-J6ha-lnnPc8PHUq6Afj8OD8U-5qWM1JE4yGCIkR8h4FmQSbtAXMzpJe5uJ9QhZXTTOpfVmJWN2bWdhk-yyXFvhprfAHZdlyWGlOAL2ANsFLKBrOrZ14jbNHq5YTReYcOaIdEzkXs6AUSRD4Ou_gdvZvlKNsu5g56WCxQSj3tuKWkBTQnBVqCUw79ZFCmiwIR-nAuqwYyvDNhMYmmZUY6dnc=w16383",
+          "status": "complete",
+          "original": "migration/assets-original/marketing-design/16.jpeg",
+          "sha256": "fbde63781aeb2e441ba16e278ef236643381d00eee9403b7b72d3001fddb8f78",
+          "width": 1536,
+          "height": 1305,
+          "localPath": "/images/projects/marketing-design/16.webp",
+          "animated": false,
+          "poster": null,
+          "outputWidth": 1536,
+          "outputHeight": 1305,
+          "alt": "Marketing design — 16"
+        },
+        {
+          "position": 17,
+          "sourceUrl": "https://sites.google.com/sitesv-images-rt/AMxu72vsffaDC9ilfmnZ4Az3sFDS9Q8UgHTI7n5cLdiQ7ndzT7ScwjPZSOUhUNBu_U1TxIofpGf-KZoT9Yvb3GeAQNYaP94OS3wk4fYZ_Yi5isBPG9vitVV36YtHVNmfO10SUPbFfwWk-iTknpgeVBT6W1pyeaiTP_nnlYCJ29I7rGEOBsADtcGlKWQzdQZBY5D3yDm3QbXfPdJYGKtaq9fUcj6IPmTd5FCjcT_gyq9oxjo=w1280",
+          "requestedUrl": "https://sites.google.com/sitesv-images-rt/AMxu72sdtcpo-VVq7WHElqDzgc2IQjQEnkp88sFi-TMFilcnJq8_phx1EjVd_aF5ZT0noutJwlJn-obyx7x6gPUc0o3HCtrTZEJO-ZaBxmpD35praf0_fvtFQpOfzxU7iEjsEe86jcBYgeCX0HbXMLLibTmHNMmyU0L-8gVpIduFUbAHPNIvXDweKvUPQVBrCb30fgub45uvlHLLC2pyuRvjypUwj5GfqTLdAFUYSM1AT14=w16383",
+          "status": "complete",
+          "original": "migration/assets-original/marketing-design/17.jpeg",
+          "sha256": "e455a7c5e1b999800fe5263496163b3de82b53f4916c74b7024ebc9c2f710bd8",
+          "width": 1536,
+          "height": 1305,
+          "localPath": "/images/projects/marketing-design/17.webp",
+          "animated": false,
+          "poster": null,
+          "outputWidth": 1536,
+          "outputHeight": 1305,
+          "alt": "Marketing design — 17"
+        }
+      ],
+      "links": [
+        {
+          "text": "Back to Home",
+          "sourceUrl": "https://sites.google.com/view/natalia-isakova/home",
+          "href": "/"
+        }
+      ],
+      "gaps": [],
+      "documents": [
+        {
+          "title": "Fraudscore.pdf",
+          "sourceUrl": "https://drive.google.com/open?id=1oZ5vFIXSzU8BhIZm3PuMD3dBMJD-V23G",
+          "previewUrl": "https://drive.google.com/file/d/1oZ5vFIXSzU8BhIZm3PuMD3dBMJD-V23G/preview",
+          "downloadUrl": "https://drive.google.com/uc?id=1oZ5vFIXSzU8BhIZm3PuMD3dBMJD-V23G&export=download",
+          "status": "complete",
+          "localPath": "/documents/marketing-design/fraudscore.pdf",
+          "original": "migration/assets-original/marketing-design/fraudscore.pdf",
+          "sha256": "82b201fd64fc0d395cdaa50c4fb9410a8bc1f0a62d3028799472144fa82d2134",
+          "bytes": 2844317
+        }
+      ]
     }
   ],
   "discoveredPages": [
@@ -1798,7 +3267,7 @@
     },
     {
       "url": "https://sites.google.com/view/natalia-isakova/about-me",
-      "status": "outside-current-scope"
+      "status": "included"
     },
     {
       "url": "https://sites.google.com/view/natalia-isakova/home",
@@ -1806,11 +3275,11 @@
     },
     {
       "url": "https://sites.google.com/view/natalia-isakova/marketing-design",
-      "status": "outside-current-scope"
+      "status": "included"
     },
     {
       "url": "https://sites.google.com/view/natalia-isakova/user-research",
-      "status": "outside-current-scope"
+      "status": "included"
     },
     {
       "url": "https://sites.google.com/view/natalia-isakova/user-research/kidswearcycle",
@@ -1822,11 +3291,11 @@
     },
     {
       "url": "https://sites.google.com/view/natalia-isakova/uxui-design",
-      "status": "outside-current-scope"
+      "status": "included"
     },
     {
       "url": "https://sites.google.com/view/natalia-isakova/uxui-design/ijet-media",
-      "status": "outside-current-scope"
+      "status": "included"
     },
     {
       "url": "https://sites.google.com/view/natalia-isakova/uxui-design/tickeron",

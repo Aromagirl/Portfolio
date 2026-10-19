@@ -1,0 +1,23 @@
+---
+import { getCollection, render } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import CaseImage from '../components/CaseImage.astro';
+import { workNavigation } from '../config/site';
+
+export async function getStaticPaths() {
+  const pages = await getCollection('pages', ({ data }) => data.status === 'published');
+  return pages.map(page => ({ params: { id: page.id === 'about-me' ? 'about' : page.id }, props: { page } }));
+}
+const { page } = Astro.props;
+const { Content } = await render(page);
+const isIndex = ['user-research', 'uxui-design'].includes(page.id);
+const isAbout = page.id === 'about-me';
+---
+<BaseLayout title={page.data.title} description={page.data.summary}>
+  <div class="shell">
+  {isIndex && <nav class="category-nav" aria-label="Work categories">{workNavigation.map(link => <a class="chip" href={link.href} aria-current={Astro.url.pathname === link.href ? 'page' : undefined}>{link.label}</a>)}</nav>}
+  <div class:list={isAbout ? ['about-page'] : ['prose', 'source-content', 'section-content', `section-${page.id}`, { 'work-index': isIndex }]} data-source-content>
+    <Content components={{ img: CaseImage }} />
+  </div>
+  </div>
+</BaseLayout>

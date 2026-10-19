@@ -1,0 +1,21 @@
+---
+import Icon from './Icon.astro';
+import manifest from '../../../migration/manifest.json';
+interface Props { title: string; summary: string; href: string; cover: string | null; tint?: string; eager?: boolean }
+const { title, summary, href, cover, tint = '#e5edda', eager = false } = Astro.props;
+const asset = manifest.pages.flatMap(p => p.assets).find(a => 'localPath' in a && a.localPath === cover);
+---
+<article class="project-card relative" style={`--tint: ${tint}`}>
+  <div class="tint-panel relative aspect-5/4 overflow-hidden rounded-card">
+    {cover && <img src={cover} alt={`${title} — project preview`} width={asset?.outputWidth} height={asset?.outputHeight} loading={eager ? 'eager' : 'lazy'} class="project-shot absolute top-[12%] left-[8%] w-[84%] rounded-xl object-contain" />}
+    <span class="project-badge absolute top-5 right-5 grid size-11 place-items-center rounded-full bg-inverse text-on-inverse" aria-hidden="true"><Icon name="arrow-up-right" class="size-5" /></span>
+  </div>
+  <h2 class="mt-5 text-title"><a href={href} class="after:absolute after:inset-0 focus-visible:outline-none">{title}</a></h2>
+  <p class="mt-2 text-body">{summary}</p>
+</article>
+<style>
+  .project-card:has(a:focus-visible){outline:2px solid var(--ink);outline-offset:8px;border-radius:var(--radius-card)}
+  .project-badge{opacity:0;scale:.6;transition:opacity 200ms,scale 200ms}
+  .project-card:hover .project-badge,.project-card:has(a:focus-visible) .project-badge{opacity:1;scale:1}
+  @media(prefers-reduced-motion:no-preference){.project-shot{transition:scale 700ms var(--ease-out-expo)}@media(hover:hover){.project-card:hover .project-shot{scale:1.04}}}
+</style>

@@ -8,20 +8,38 @@ Imported without editorial rewriting. Original HTML and images are ignored by Gi
 | tickeron | 37 | 19/19 | complete |
 | myhospital | 84 | 14/14 | complete |
 | kidswearcycle | 81 | 13/13 | complete |
+| about-me | 23 | 2/2 | complete |
+| user-research | 7 | 2/2 | complete |
+| uxui-design | 7 | 2/2 | complete |
+| ijet-media | 77 | 24/24 | complete |
+| marketing-design | 21 | 17/17 | complete |
 
 ## Open issues
 
-- Homepage preview checked at desktop and 390px mobile width; full manual comparison of all source sections remains pending.
+- Full manual comparison of every source section on desktop/mobile is pending.
 - Image alt text missing in the source uses a temporary project/position label; editorial descriptions need review.
-- Both prototype demonstrations restored as original animated GIFs (MyHospital: 368 frames; KidswearCycle: 375 frames), with playback controls.
-- KidswearCycle animation recovered at source display size (1280px); full-resolution original not verified.
-- Production build and automated validation passed: 217/217 source text blocks, 50/50 media; no broken local references.
-- Playback start/pause verified in browser.
+- KidswearCycle animation was recovered at the source display size (1280px); full-resolution original not verified.
+
+## Restored prototype demonstrations
+
+- MyHospital: original animated GIF, 368 frames; playback control and still poster.
+- KidswearCycle: original animated GIF, 375 frames; playback control and still poster.
 
 ## Other discovered pages
 
-- https://sites.google.com/view/natalia-isakova/about-me
-- https://sites.google.com/view/natalia-isakova/marketing-design
-- https://sites.google.com/view/natalia-isakova/user-research
-- https://sites.google.com/view/natalia-isakova/uxui-design
-- https://sites.google.com/view/natalia-isakova/uxui-design/ijet-media
+
+## Embedded documents
+
+- **marketing-design: complete** — Fraudscore.pdf → /documents/marketing-design/fraudscore.pdf
+
+## Image galleries
+
+- Marketing design: all nine social-media carousel images preserved in source order as a responsive gallery. The decorative Google Drive icon is excluded.
+
+## Automated validation
+
+- Result: passed.
+- Text blocks: 352/352.
+- Images: 97/97; source order checked.
+- Documents: 1/1.
+- Local references and heading anchors checked across all 9 migrated pages.

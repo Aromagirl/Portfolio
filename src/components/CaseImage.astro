@@ -4,10 +4,11 @@ const { src, alt = '' } = Astro.props;
 const asset = manifest.pages.flatMap(p => p.assets).find(a => 'localPath' in a && a.localPath === src);
 const animated = asset && 'animated' in asset && asset.animated;
 const poster = animated && 'poster' in asset ? asset.poster : src;
+const eager = src === '/images/projects/home/01.webp';
 ---
 <span class="case-media">
   {animated && <button class="animation-toggle" type="button" data-animation={src} data-poster={poster} aria-pressed="false">Play prototype animation</button>}
-  <a class="image-link" href={src} aria-label={`Open image: ${alt}`}><img src={poster} alt={alt} width={asset && 'outputWidth' in asset ? asset.outputWidth : undefined} height={asset && 'outputHeight' in asset ? asset.outputHeight : undefined} loading="lazy" decoding="async" /></a>
+  <a class="image-link" href={src} aria-label={`Open image: ${alt}`}><img src={poster} alt={alt} width={asset && 'outputWidth' in asset ? asset.outputWidth : undefined} height={asset && 'outputHeight' in asset ? asset.outputHeight : undefined} loading={eager ? 'eager' : 'lazy'} decoding="async" /></a>
 </span>
 <script>
   document.querySelectorAll<HTMLButtonElement>('.animation-toggle').forEach(button => {
@@ -22,6 +23,6 @@ const poster = animated && 'poster' in asset ? asset.poster : src;
   });
 </script>
 <style>
-  .animation-toggle{font:inherit;font-size:.85rem;padding:10px 16px;border:1px solid #486647;border-radius:6px;color:#222c27;background:#edf0e7;cursor:pointer;margin-block:8px}
-  .animation-toggle:focus-visible{outline:3px solid #486647;outline-offset:4px}
+  .animation-toggle{font:inherit;font-size:.85rem;padding:10px 16px;border:1px solid var(--line-strong);border-radius:999px;color:var(--ink);background:var(--sunken);cursor:pointer;margin-block:8px}
+  .animation-toggle:focus-visible{outline:2px solid var(--ink);outline-offset:4px}
 </style>
