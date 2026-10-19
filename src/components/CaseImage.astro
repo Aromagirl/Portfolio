@@ -1,5 +1,6 @@
 ---
 import manifest from '../../migration/manifest.json';
+import { withBase } from '../utils/paths';
 const { src, alt = '' } = Astro.props;
 const asset = manifest.pages.flatMap(p => p.assets).find(a => 'localPath' in a && a.localPath === src);
 const animated = asset && 'animated' in asset && asset.animated;
@@ -7,8 +8,8 @@ const poster = animated && 'poster' in asset ? asset.poster : src;
 const eager = src === '/images/projects/home/01.webp';
 ---
 <span class="case-media">
-  {animated && <button class="animation-toggle" type="button" data-animation={src} data-poster={poster} aria-pressed="false">Play prototype animation</button>}
-  <a class="image-link" href={src} aria-label={`Open image: ${alt}`}><img src={poster} alt={alt} width={asset && 'outputWidth' in asset ? asset.outputWidth : undefined} height={asset && 'outputHeight' in asset ? asset.outputHeight : undefined} loading={eager ? 'eager' : 'lazy'} decoding="async" /></a>
+  {animated && <button class="animation-toggle" type="button" data-animation={withBase(src)} data-poster={withBase(poster)} aria-pressed="false">Play prototype animation</button>}
+  <a class="image-link" href={withBase(src)} aria-label={`Open image: ${alt}`}><img src={withBase(poster)} alt={alt} width={asset && 'outputWidth' in asset ? asset.outputWidth : undefined} height={asset && 'outputHeight' in asset ? asset.outputHeight : undefined} loading={eager ? 'eager' : 'lazy'} decoding="async" /></a>
 </span>
 <script>
   document.querySelectorAll<HTMLButtonElement>('.animation-toggle').forEach(button => {

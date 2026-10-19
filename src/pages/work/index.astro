@@ -2,6 +2,7 @@
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import ProjectCard from '../../components/theme/ProjectCard.astro';
+import { withBase } from '../../utils/paths';
 import { projectPresentation, workNavigation } from '../../config/site';
 const projects = (await getCollection('projects', ({ data }) => data.status === 'published')).sort((a,b) => a.data.sortOrder-b.data.sortOrder);
 const marketing = (await getCollection('pages', ({ data }) => data.status === 'published')).find(p => p.id === 'marketing-design');
@@ -10,7 +11,7 @@ const marketing = (await getCollection('pages', ({ data }) => data.status === 'p
   <div class="shell pt-14 sm:pt-20">
     <p class="eyebrow">Portfolio</p>
     <h1 class="mt-6 max-w-[18ch] text-headline">Selected <span class="serif">work.</span></h1>
-    <nav class="category-nav" aria-label="Work categories">{workNavigation.map(link => <a class="chip" href={link.href} aria-current={link.href === '/work/' ? 'page' : undefined}>{link.label}</a>)}</nav>
+    <nav class="category-nav" aria-label="Work categories">{workNavigation.map(link => <a class="chip" href={withBase(link.href)} aria-current={link.href === '/work/' ? 'page' : undefined}>{link.label}</a>)}</nav>
     <div class="mt-12 grid gap-x-8 gap-y-16 md:grid-cols-2">
       {projects.map((p,i) => <ProjectCard title={p.data.title} summary={p.data.summary} href={`/work/${p.id}/`} cover={projectPresentation[p.id]?.cover||p.data.cover} tint={projectPresentation[p.id]?.tint} eager={i<2} />)}
       {marketing && <ProjectCard title={marketing.data.title} summary={marketing.data.summary} href="/marketing-design/" cover={projectPresentation['marketing-design'].cover||marketing.data.cover} tint={projectPresentation['marketing-design'].tint} />}

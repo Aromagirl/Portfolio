@@ -1,0 +1,7 @@
+---
+import type { HTMLAttributes } from 'astro/types';
+import { withBase } from '../utils/paths';
+type Props = HTMLAttributes<'a'>;
+const { href, ...attributes } = Astro.props;
+---
+<a {...attributes} href={href ? withBase(href) : undefined}><slot /></a>

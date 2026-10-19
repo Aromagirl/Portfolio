@@ -3,14 +3,15 @@ import ThemeToggle from './ThemeToggle.astro';
 import Icon from './Icon.astro';
 import Logomark from './Logomark.astro';
 import { navigation, siteConfig } from '../../config/site';
+import { withBase } from '../../utils/paths';
 
 const path = Astro.url.pathname;
-const current = (href: string) => (path === href ? 'page' : path.startsWith(href) ? 'true' : undefined);
+const current = (href: string) => (path === withBase(href) ? 'page' : path.startsWith(withBase(href)) ? 'true' : undefined);
 ---
 
 <header class="site-header sticky top-0 z-40 h-(--header-h) border-b border-transparent bg-canvas">
   <div class="shell flex h-full items-center gap-4">
-    <a href="/" class="flex items-center gap-2.5 rounded-lg text-[1.15rem] font-semibold tracking-[-0.03em]">
+    <a href={withBase('/')} class="flex items-center gap-2.5 rounded-lg text-[1.15rem] font-semibold tracking-[-0.03em]">
       <Logomark />
       <span>{siteConfig.name}</span>
       <span class="sr-only">, home</span>
@@ -20,7 +21,7 @@ const current = (href: string) => (path === href ? 'page' : path.startsWith(href
       <ul class="flex items-center gap-1">
         {navigation.map((link) => (
           <li>
-            <a href={link.href} class="nav-link" aria-current={current(link.href)}>
+            <a href={withBase(link.href)} class="nav-link" aria-current={current(link.href)}>
               {link.label}
             </a>
           </li>
@@ -48,7 +49,7 @@ const current = (href: string) => (path === href ? 'page' : path.startsWith(href
 
   <dialog id="mobile-nav" aria-label="Menu" class="mobile-nav md:hidden">
     <div class="shell flex h-(--header-h) items-center justify-between">
-      <a href="/" class="flex items-center gap-2.5 text-[1.15rem] font-semibold tracking-[-0.03em]">
+      <a href={withBase('/')} class="flex items-center gap-2.5 text-[1.15rem] font-semibold tracking-[-0.03em]">
         <Logomark />
         <span>{siteConfig.name}</span>
         <span class="sr-only">, home</span>
@@ -66,13 +67,13 @@ const current = (href: string) => (path === href ? 'page' : path.startsWith(href
     <nav aria-label="Mobile" class="shell mt-4">
       <ul class="grid">
         <li>
-          <a href="/" class="mobile-link" aria-current={path === '/' ? 'page' : undefined}>
+          <a href={withBase('/')} class="mobile-link" aria-current={path === withBase('/') ? 'page' : undefined}>
             Home
           </a>
         </li>
         {navigation.map((link) => (
           <li>
-            <a href={link.href} class="mobile-link" aria-current={current(link.href)}>
+            <a href={withBase(link.href)} class="mobile-link" aria-current={current(link.href)}>
               {link.label}
             </a>
           </li>

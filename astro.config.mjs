@@ -4,6 +4,8 @@ import { satteri } from '@astrojs/markdown-satteri';
 import tailwindcss from '@tailwindcss/vite';
 
 export default defineConfig({
+  site: 'https://aromagirl.github.io',
+  base: '/Portfolio',
   output: 'static',
   trailingSlash: 'always',
   integrations: [mdx()],

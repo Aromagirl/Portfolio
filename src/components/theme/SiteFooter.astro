@@ -1,5 +1,6 @@
 ---
 import Icon from './Icon.astro';
+import { withBase } from '../../utils/paths';
 import Logomark from './Logomark.astro';
 import { closing } from '../../config/home';
 import { workNavigation, navigation, siteConfig } from '../../config/site';
@@ -28,7 +29,7 @@ const year = new Date().getFullYear();
             {email}
             <Icon name="arrow-up-right" class="icon-nudge-diagonal size-4" />
           </a>
-          <a class="btn text-night-ink underline-offset-4 hover:underline" href="/about/">
+          <a class="btn text-night-ink underline-offset-4 hover:underline" href={withBase('/about/')}>
             About me
           </a>
         </div>
@@ -40,7 +41,7 @@ const year = new Date().getFullYear();
 <footer class="mt-24 border-t border-line sm:mt-32">
   <div class="shell grid gap-12 py-16 sm:grid-cols-2 lg:grid-cols-[1.6fr_1fr_1fr_1fr]">
     <div>
-      <a href="/" class="inline-flex items-center gap-2.5 text-[1.15rem] font-semibold tracking-[-0.03em]">
+      <a href={withBase('/')} class="inline-flex items-center gap-2.5 text-[1.15rem] font-semibold tracking-[-0.03em]">
         <Logomark />
         <span>{siteConfig.name}</span>
         <span class="sr-only">, home</span>
@@ -56,13 +57,13 @@ const year = new Date().getFullYear();
       </h2>
       <ul class="mt-4 grid gap-2.5">
         <li>
-          <a class="footer-link" href="/">
+          <a class="footer-link" href={withBase('/')}>
             Home
           </a>
         </li>
         {navigation.map((link) => (
           <li>
-            <a class="footer-link" href={link.href}>
+            <a class="footer-link" href={withBase(link.href)}>
               {link.label}
             </a>
           </li>
@@ -88,7 +89,7 @@ const year = new Date().getFullYear();
 
     <nav aria-labelledby="footer-categories">
       <h2 id="footer-categories" class="text-sm font-medium text-muted">Explore work</h2>
-      <ul class="mt-4 grid gap-2.5">{workNavigation.slice(1).map(link => <li><a class="footer-link" href={link.href}>{link.label}</a></li>)}</ul>
+      <ul class="mt-4 grid gap-2.5">{workNavigation.slice(1).map(link => <li><a class="footer-link" href={withBase(link.href)}>{link.label}</a></li>)}</ul>
     </nav>
   </div>
 

@@ -1,5 +1,6 @@
 ---
 import '../styles/global.css';
+import { withBase } from '../utils/paths';
 import SiteHeader from '../components/theme/SiteHeader.astro';
 import SiteFooter from '../components/theme/SiteFooter.astro';
 interface Props { title: string; description?: string; home?: boolean }
@@ -17,8 +18,8 @@ const { title, description = 'UX/UI & Interactive designer — Natalia Isakova',
     <title>{title === 'Natalia Isakova' ? title : `${title} — Natalia Isakova`}</title>
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
-    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-    <link rel="preload" href="/fonts/hanken-grotesk/hanken-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="icon" href={withBase('/favicon.svg')} type="image/svg+xml" />
+    <link rel="preload" href={withBase('/fonts/hanken-grotesk/hanken-grotesk-latin.woff2')} as="font" type="font/woff2" crossorigin />
     <script is:inline>
       (() => {
         const storageKey = 'portfolio-theme';

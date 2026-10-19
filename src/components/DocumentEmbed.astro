@@ -1,10 +1,11 @@
 ---
 interface Props { src: string; title: string; sourceUrl: string }
+import { withBase } from '../utils/paths';
 const { src, title, sourceUrl } = Astro.props;
 ---
 <div class="document-embed" data-document>
-  <iframe src={src} title={title} loading="lazy"></iframe>
-  <p><a href={src}>Open {title} ↗</a><a href={sourceUrl}>View on Google Drive ↗</a></p>
+  <iframe src={withBase(src)} title={title} loading="lazy"></iframe>
+  <p><a href={withBase(src)}>Open {title} ↗</a><a href={sourceUrl}>View on Google Drive ↗</a></p>
 </div>
 <style>
   .document-embed{margin-block:24px;width:100%}

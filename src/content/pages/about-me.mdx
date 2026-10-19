@@ -9,6 +9,8 @@ category: "UX/UI design"
 cover: "/images/projects/home/01.webp"
 ---
 
+import { withBase } from '../../utils/paths';
+
 <header className="grid gap-12 pt-16 sm:pt-24 lg:grid-cols-[minmax(0,1fr)_22rem] lg:items-end lg:gap-16">
 
 <div>
@@ -24,7 +26,7 @@ I'm Natalia Isakova, a professional interactive and graphic designer. I have wor
 </div>
 
 <div className="mt-8 flex flex-wrap gap-3">
-<a className="btn btn-primary" href="/work/">My projects <span aria-hidden="true">&#8594;</span></a>
+<a className="btn btn-primary" href={withBase('/work/')}>My projects <span aria-hidden="true">&#8594;</span></a>
 <a className="btn btn-ghost" href="mailto:nisakova.info@gmail.com">Email me</a>
 </div>
 
