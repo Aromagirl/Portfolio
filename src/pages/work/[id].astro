@@ -18,6 +18,6 @@ const contents = headings.filter(h => h.depth === 2 && h.text !== project.data.t
     <nav class="case-breadcrumb" aria-label="Breadcrumb"><a href={withBase('/work/')}>Work</a><span aria-hidden="true">/</span><span aria-current="page">{project.data.title}</span></nav>
     {contents.length > 0 && <details class="case-index"><summary>On this page</summary><nav aria-label="On this page">{contents.map(h => <a href={`#${h.slug}`}>{h.text}</a>)}</nav></details>}
     <article class="prose source-content case-content" data-source-content><Content components={{ img: CaseImage, a: ContentLink, h2: CaseHeading }} /></article>
-    <a class="source-link" href={project.data.sourceUrl}>Original case study ↗</a>
+    {project.data.sourceUrl && <a class="source-link" href={project.data.sourceUrl}>Original case study ↗</a>}
   </div>
 </BaseLayout>

@@ -12,9 +12,11 @@ export const workNavigation = [
   { label: 'Marketing design', href: '/marketing-design/' },
 ];
 export const projectPresentation: Record<string, { tint: string; cover?: string }> = {
+  safeclick: { tint: '#e1ece8' },
+  'mafia-bot-mini-app': { tint: '#e8e1ed' },
   tickeron: { tint: '#e4e8f3', cover: '/images/projects/home/04.webp' },
   myhospital: { tint: '#efe5f2', cover: '/images/projects/home/03.webp' },
   kidswearcycle: { tint: '#e5edda', cover: '/images/projects/home/02.webp' },
-  'ijet-media': { tint: '#f5e5d3', cover: '/images/projects/ijet-media/08.webp' },
-  'marketing-design': { tint: '#e6e4f2', cover: '/images/projects/marketing-design/02.webp' },
+  'ijet-media': { tint: '#f5e5d3', cover: '/images/projects/ijet-media/02.webp' },
+  'marketing-design': { tint: '#e6e4f2', cover: '/images/projects/fraudscore/cover.png' },
 };

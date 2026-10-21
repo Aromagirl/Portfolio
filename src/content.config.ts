@@ -4,7 +4,7 @@ import { glob } from 'astro/loaders';
 const schema = z.object({
   title: z.string(),
   summary: z.string(),
-  sourceUrl: z.string().url(),
+  sourceUrl: z.string().url().optional(),
   status: z.enum(['published', 'archived', 'draft']),
   featured: z.boolean(),
   sortOrder: z.number(),

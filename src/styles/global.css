@@ -4,7 +4,7 @@
 
 @font-face {
   font-family: 'Hanken Grotesk';
-  src: url('/fonts/hanken-grotesk/hanken-grotesk-latin.woff2') format('woff2');
+  src: url('/Portfolio/fonts/hanken-grotesk/hanken-grotesk-latin.woff2') format('woff2');
   font-weight: 100 900;
   font-style: normal;
   font-display: swap;
@@ -15,7 +15,7 @@
 
 @font-face {
   font-family: 'Hanken Grotesk';
-  src: url('/fonts/hanken-grotesk/hanken-grotesk-latin-ext.woff2') format('woff2');
+  src: url('/Portfolio/fonts/hanken-grotesk/hanken-grotesk-latin-ext.woff2') format('woff2');
   font-weight: 100 900;
   font-style: normal;
   font-display: swap;
@@ -26,7 +26,7 @@
 
 @font-face {
   font-family: 'Hanken Grotesk';
-  src: url('/fonts/hanken-grotesk/hanken-grotesk-latin-italic.woff2') format('woff2');
+  src: url('/Portfolio/fonts/hanken-grotesk/hanken-grotesk-latin-italic.woff2') format('woff2');
   font-weight: 100 900;
   font-style: italic;
   font-display: swap;
@@ -37,7 +37,7 @@
 
 @font-face {
   font-family: 'Instrument Serif';
-  src: url('/fonts/instrument-serif/instrument-serif-latin-italic.woff2') format('woff2');
+  src: url('/Portfolio/fonts/instrument-serif/instrument-serif-latin-italic.woff2') format('woff2');
   font-weight: 400;
   font-style: italic;
   font-display: swap;
@@ -48,7 +48,7 @@
 
 @font-face {
   font-family: 'Instrument Serif';
-  src: url('/fonts/instrument-serif/instrument-serif-latin-ext-italic.woff2') format('woff2');
+  src: url('/Portfolio/fonts/instrument-serif/instrument-serif-latin-ext-italic.woff2') format('woff2');
   font-weight: 400;
   font-style: italic;
   font-display: swap;
