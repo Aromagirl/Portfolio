@@ -4,226 +4,74 @@ summary: "Online Resale Platform"
 sourceUrl: "https://sites.google.com/view/natalia-isakova/user-research/kidswearcycle"
 status: "published"
 featured: true
-sortOrder: 3
-category: "UX/UI design"
-cover: "/images/projects/kidswearcycle/01.webp"
+slug: "kidswearcycle"
+order: 5
+cover: "/images/projects/kidswearcycle/cover.webp"
+visibility: "public"
+role: "UX Researcher & UX/UI Designer"
+expertise: ["ux-research", "ui-design"]
+industries: ["ecommerce"]
+fillCover: false
+logo: "/images/projects/kidswearcycle/01.webp"
 ---
-
-<section className="source-section">
-
-
-
-<span id="h.zeifpxtf9kpu" />
-
-
-
-## KidswearCycle
-
-
-
-<span id="h.4hre7j2gzwjp" />
-
-
-
-### Online Resale Platform
-
-</section>
-
-<section className="source-section">
-
-![KidswearCycle — 01](/images/projects/kidswearcycle/01.webp)
-
-</section>
-
-<section className="source-section">
-
-![KidswearCycle — 02](/images/projects/kidswearcycle/02.webp)
-
-The project was created as part of a training course Google UX Design Professional Certificate.Google Career Certificates are part of Grow with Google, an initiative that draws on Google's 20-year history of building products, platforms, and services that help people and businesses grow. Through programs like these, we aim to help everyone – those who make up the workforce of today and the students who will drive the workforce of tomorrow.
-
-</section>
-
-<section className="source-section">
-
-![KidswearCycle — 03](/images/projects/kidswearcycle/03.webp)
-
-
-
-<span id="h.1olklviydreq" />
-
-
-
-## KidswearCycle responsive website
 
 KidswearCycle is an online resale platform for parents to purchase and resell children's clothing. The typical user is between 20-50 years old, and most users are families with several children. KidswearCycle's goal is to provide a way to sell used children's clothing quickly and cheaply while protecting nature and the environment.
 
 Current online platforms often lack user-friendliness and focus, making it difficult to buy and sell used children's clothing within a limited time frame and budget. Design a KidswearCycle responsive website to be a user-friendly platform that simplifies the process of buying and selling high-quality, affordable children's clothing, protecting the environment from unnecessary waste.
 
-</section>
+![KidswearCycle — 02](/images/projects/kidswearcycle/02.webp)
 
-<section className="source-section">
+The project was created as part of a training course Google UX Design Professional Certificate.Google Career Certificates are part of Grow with Google, an initiative that draws on Google's 20-year history of building products, platforms, and services that help people and businesses grow. Through programs like these, we aim to help everyone – those who make up the workforce of today and the students who will drive the workforce of tomorrow.
 
+## My role as UX Researcher & UX/UI Designer from start to finish of the project:
 
+- 🔬   Conducting usability studies 
 
-<span id="h.5b0pp4s372hu" />
+- 💡   Paper & digital wireframing
 
+- 🔗   Low and high-fidelity prototyping
 
+- 📱   Responsive design
 
-### My role as UX Researcher & UX/UI Designer from start to finish of the project:
+- 🦼   Accounting for accessibility
 
-</section>
-
-<section className="source-section">
-
-🔬   Conducting usability studies 
-
-💡   Paper & digital wireframing
-
-🔗   Low and high-fidelity prototyping
-
-📱   Responsive design
-
-🦼   Accounting for accessibility
-
-🔄   Iterating on designs
-
-</section>
-
-<section className="source-section">
-
-
-
-<span id="h.xrr32e9eeeau" />
-
-
+- 🔄   Iterating on designs
 
 ## Understanding the user
 
-</section>
-
-<section className="source-section">
-
-
-
-<span id="h.lg7g0sqx3lrh" />
-
-
-
 ### User research
-
-</section>
-
-<section className="source-section">
 
 I conducted usability research for my project. To better understand my users, I created personas using AI and then trained the AI to describe their needs and wants as if they were real people. I interviewed each virtual persona and asked them questions that interested me. This allowed me to conduct research in a very short time.
 
 The conducted research of personas and user journey map showed that the main problem of the target group is the lengthy and inconvenient processes of searching and purchasing high-quality children's clothing at low prices, on the one hand, and selling unnecessary clothing, on the other.
 
-</section>
-
-<section className="source-section">
-
-
-
-<span id="h.zgj2x8lcovav" />
-
-
-
 ### User pain points
 
-</section>
-
-<section className="source-section">
-
-
-
-<span id="h.q5wwpoahd7bp" />
-
-
-
-## Time
+#### Time
 
 Families with children are often too busy to shop in offline stores or second-hand stores
 
-
-
-<span id="h.j729nmk3ilre" />
-
-
-
-## Cost-effective solutions
+#### Cost-effective solutions
 
 Online stores do not offer cheap prices for high-quality children's clothing
 
-
-
-<span id="h.fhn8tmen3h41" />
-
-
-
-## UI
+#### UI
 
 Online platforms are not user-friendly, making it difficult to quickly browse and make purchases without a significant time investment
 
-
-
-<span id="h.oovesoi3upps" />
-
-
-
-## Accessibility
+#### Accessibility
 
 Competitor products provide a limited amount of accessibility features
 
-</section>
-
-<section className="source-section">
-
-
-
-<span id="h.rqzt5k5nt393" />
-
-
-
 ### Persona
 
-</section>
-
-<section className="source-section">
-
 ![KidswearCycle — 04](/images/projects/kidswearcycle/04.webp)
-
-
-
-<span id="h.9lgqrlh7hwgo" />
-
-
 
 ### Persona: Maria
 
 Problem statement: Maria is a mother of two children who works from home, who needs affordable, high-quality children's clothing in a short time because she has limited time for shopping.
 
-</section>
-
-<section className="source-section">
-
-
-
-<span id="h.wwge1nuflfmk" />
-
-
-
 ## Starting the design
-
-</section>
-
-<section className="source-section">
-
-
-
-<span id="h.olebf6qqj1pn" />
-
-
 
 ### Sitemap
 
@@ -232,16 +80,6 @@ The time to select and purchase children's clothing is the first pain point for 
 After conducting a study of personas, it turned out that young parents would like to learn useful information about children and seasonal sales from individuals and companies, which they could read in articles on the same site. That's why I added links to articles on the main page.
 
 ![KidswearCycle — 05](/images/projects/kidswearcycle/05.webp)
-
-</section>
-
-<section className="source-section">
-
-
-
-<span id="h.bl1ng0168l44" />
-
-
 
 ### Paper wireframes (desktop)
 
@@ -254,48 +92,13 @@ At the very top I prioritized input field with drop-down filters for quick searc
 ![KidswearCycle — 06](/images/projects/kidswearcycle/06.webp)
 
 
-
-<span id="h.3yfc6obz7g89" />
-
-
-
-  
-
-
-
-<span id="h.l1iaizutjo4d" />
-
-
-
-## →
-
 ![KidswearCycle — 07](/images/projects/kidswearcycle/07.webp)
 
-</section>
-
-<section className="source-section">
-
 ![KidswearCycle — 08](/images/projects/kidswearcycle/08.webp)
-
-
-
-<span id="h.ovtmooe83x2e" />
-
-
 
 ### Paper wireframe screen size variations
 
 I started to work on designs for additional screen sizes to make sure the site would be fully responsive, because KidswearCycle´s customers access the site on a variety of different devices.
-
-</section>
-
-<section className="source-section">
-
-
-
-<span id="h.62rgbwkn0858" />
-
-
 
 ### Low-fidelity prototype
 
@@ -303,133 +106,39 @@ Then I created the low-fidelity prototype, and after that I had received feedbac
 
 ![KidswearCycle — 09](/images/projects/kidswearcycle/09.webp)
 
-</section>
-
-<section className="source-section">
-
-
-
-<span id="h.ka8jz3491l82" />
-
-
-
 ## Usability Study
-
-</section>
-
-<section className="source-section">
 
 I conducted the moderated usability study with 4 participants, length 15-20 min. The usability study used a low-fidelity prototype.
 
 These were the main findings uncovered by the usability study.
 
-</section>
-
-<section className="source-section">
-
-
-
-<span id="h.a2nhvg9w13by" />
-
-
-
 ### Usability study: findings
 
-</section>
-
-<section className="source-section">
-
-
-
-<span id="h.9dn8getkto0e" />
-
-
-
-## 1
-
-
-
-<span id="h.3uldo8sw89i1" />
-
-
+#### 1
 
 ### Category
 
 The category selection block on a specific category page confuses the user
 
-
-
-<span id="h.r8zkepg0p5bs" />
-
-
-
-## 2
-
-
-
-<span id="h.2esfjsq73a1e" />
-
-
+#### 2
 
 ### Description of item
 
 A lot of space is taken up for reviews about the seller, but the description of item is too small
 
-
-
-<span id="h.u72v304q9s7n" />
-
-
-
-## 3
-
-
-
-<span id="h.5d7e83ykukrx" />
-
-
+#### 3
 
 ### Checkout
 
 At the checkout stage, users did not have a clear choice of delivery options
 
-</section>
-
-<section className="source-section">
-
-
-
-<span id="h.14u09e4x8v1r" />
-
-
-
 ## Refining the design
-
-</section>
-
-<section className="source-section">
-
-
-
-<span id="h.fo1r14l0e3n8" />
-
-
 
 ### Mockups: Original screen size (desktop)
 
 ![KidswearCycle — 10](/images/projects/kidswearcycle/10.webp)
 
-</section>
-
-<section className="source-section">
-
 ![KidswearCycle — 11](/images/projects/kidswearcycle/11.webp)
-
-
-
-<span id="h.fgqzpfe06hc2" />
-
-
 
 ### Mockups: Screen size variations (mobile & tablet)
 
@@ -437,168 +146,50 @@ I included considerations for additional screen sizes in my mockups based on my 
 
 Due to users shopping from a variety of devices, I felt it was important to optimize the browsing experience for a range of device sizes, such as mobile and tablet so users have the smoothest experience possible.
 
-</section>
-
-<section className="source-section">
-
-
-
-<span id="h.qkeujxnte4ic" />
-
-
-
 ### High-fidelity prototype
 
 My hi-fi prototype followed the same user flow as the lo-fi prototype, and included the design changes made after the usability study, as well as several changes suggested by members of my team.
 
 ![KidswearCycle — 12](/images/projects/kidswearcycle/12.webp)
 
-</section>
-
-<section className="source-section">
-
 This video shows the main user flow and the additional features in the KidswearCycle website (desktop version).
 
 ![KidswearCycle — 13](/images/projects/kidswearcycle/13.gif)
 
-</section>
-
-<section className="source-section">
-
-
-
-<span id="h.tvhzk1jfvig" />
-
-
-
-</section>
-
-<section className="source-section">
-
-
-
-<span id="h.q46y0voedv7t" />
-
-
-
 ### Accessibility considerations
 
-</section>
-
-<section className="source-section">
-
-
-
-<span id="h.83kwdq7trgx1" />
-
-
-
-## 1
+#### 1
 
 I used headings with different sized text for clear visual hierarchy
 
-
-
-<span id="h.gmtjsbbfqcg6" />
-
-
-
-## 2
+#### 2
 
 I used WebAIM Contrast Checker for every color combination to comply with WCAG 2 requirements for contrast and color
 
-
-
-<span id="h.jgqzsne9wca4" />
-
-
-
-## 3
+#### 3
 
 I used icons to help make navigation easier
 
-</section>
-
-<section className="source-section">
-
-
-
-<span id="h.a08jqqe3t7de" />
-
-
-
 ## Going forward
 
-</section>
-
-<section className="source-section">
-
-
-
-<span id="h.w6qk0cpb7vnv" />
-
-
-
 ### Takeaways
-
-</section>
-
-<section className="source-section">
 
 Our intended users mentioned that they found the design easy to use, enjoyed the visuals, and noticed a clear organization of information.
 
 I found out that even small design tweaks can make a big difference for users. The main thing I learned is to always think about what users really need when designing.
 
-</section>
-
-<section className="source-section">
-
-
-
-<span id="h.6mym08f1z6fi" />
-
-
-
 ### Next steps
 
-</section>
-
-<section className="source-section">
-
-
-
-<span id="h.if9ehgvjvc49" />
-
-
-
-## 1
+#### 1
 
 Create chat and user profile screens, add messaging functionality between seller and buyer
 
-
-
-<span id="h.2j4fhn43c266" />
-
-
-
-## 2
+#### 2
 
 Add a drop-down block with filters when using the search field on the main screen
 
-
-
-<span id="h.qnzcnl5qghks" />
-
-
-
-## 3
+#### 3
 
 Conduct follow-up usability testing on the new website
 
-</section>
-
-<section className="source-section">
-
 [Next project](/work/myhospital/)
-
-</section>

@@ -1,0 +1,56 @@
+/* Brand color library. Source: docs/palette.jpg.
+   Primitives stay constant; semantic tokens adapt to the selected theme.
+   Logo artwork retains its original Forest/Lime colors. */
+:root {
+  --palette-charcoal: #151817;
+  --palette-ivory: #F3F1E9;
+  --palette-forest: #245443;
+  --palette-sage: #B8C9A8;
+  --palette-lime: #D6FF43;
+  --palette-logo-forest: #1F3529;
+  --palette-logo-lime: #CEF63F;
+
+  --canvas: var(--palette-ivory);
+  --surface: color-mix(in srgb, var(--palette-ivory) 72%, white);
+  --sunken: color-mix(in srgb, var(--palette-sage) 24%, var(--palette-ivory));
+  --line: color-mix(in srgb, var(--palette-forest) 16%, var(--palette-ivory));
+  --line-strong: color-mix(in srgb, var(--palette-forest) 32%, var(--palette-ivory));
+  --ink: var(--palette-logo-forest);
+  --body: color-mix(in srgb, var(--palette-charcoal) 85%, var(--palette-ivory));
+  --muted: color-mix(in srgb, var(--palette-forest) 85%, var(--palette-ivory));
+  --accent: var(--palette-lime);
+  --accent-strong: color-mix(in srgb, var(--palette-lime) 90%, var(--palette-forest));
+  --on-accent: var(--palette-charcoal);
+  --inverse: var(--palette-charcoal);
+  --on-inverse: #FAFAF7;
+  --night: var(--palette-charcoal);
+  --night-ink: var(--palette-ivory);
+  --night-muted: color-mix(in srgb, var(--palette-ivory) 80%, var(--palette-sage));
+  --heading-accent: var(--palette-forest);
+  --glass: color-mix(in srgb, var(--surface) 82%, transparent);
+  --tint-sage: color-mix(in srgb, var(--palette-sage) 55%, var(--palette-ivory));
+  --tint-forest: color-mix(in srgb, var(--palette-forest) 22%, var(--palette-ivory));
+  --tint-lime: color-mix(in srgb, var(--palette-lime) 22%, var(--palette-ivory));
+  --shadow-card: 0 2px 4px color-mix(in srgb, var(--palette-forest) 4%, transparent), 0 24px 60px -32px color-mix(in srgb, var(--palette-forest) 28%, transparent);
+  --shadow-shot: 0 2px 6px color-mix(in srgb, var(--palette-forest) 8%, transparent), 0 30px 60px -24px color-mix(in srgb, var(--palette-forest) 28%, transparent);
+  color-scheme: light;
+}
+
+:root.dark {
+  --canvas: var(--palette-charcoal);
+  --surface: color-mix(in srgb, var(--palette-forest) 18%, var(--palette-charcoal));
+  --sunken: color-mix(in srgb, var(--palette-forest) 32%, var(--palette-charcoal));
+  --line: color-mix(in srgb, var(--palette-sage) 17%, var(--palette-charcoal));
+  --line-strong: color-mix(in srgb, var(--palette-sage) 34%, var(--palette-charcoal));
+  --ink: var(--palette-ivory);
+  --body: color-mix(in srgb, var(--palette-ivory) 85%, var(--palette-charcoal));
+  --muted: var(--palette-sage);
+  --inverse: #F4F3EE;
+  --on-inverse: var(--palette-charcoal);
+  --night: var(--palette-charcoal);
+  --heading-accent: var(--palette-lime);
+  --glass: color-mix(in srgb, var(--surface) 85%, transparent);
+  --shadow-card: 0 2px 4px rgb(0 0 0 / .15), 0 24px 60px -32px rgb(0 0 0 / .5);
+  --shadow-shot: 0 2px 6px rgb(0 0 0 / .2), 0 30px 60px -24px rgb(0 0 0 / .5);
+  color-scheme: dark;
+}

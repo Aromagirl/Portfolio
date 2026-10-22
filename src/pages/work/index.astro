@@ -2,22 +2,107 @@
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import ProjectCard from '../../components/theme/ProjectCard.astro';
-import { withBase } from '../../utils/paths';
-import { projectPresentation, workNavigation } from '../../config/site';
-const projects = (await getCollection('projects', ({ data }) => data.status === 'published')).sort((a,b) => a.data.sortOrder-b.data.sortOrder);
-const marketing = (await getCollection('pages', ({ data }) => data.status === 'published')).find(p => p.id === 'marketing-design');
-const safeClick = projects.find(p => p.id === 'safeclick');
-const remainingProjects = projects.filter(p => p.id !== 'safeclick');
+import WorkFilters from '../../components/theme/WorkFilters.astro';
+import { projectPresentation } from '../../config/site';
+import { workTagGroups } from '../../data/work-tags';
+import { projectPath } from '../../utils/work';
+const allProjects = await getCollection('projects');
+const paths = allProjects.map(projectPath);
+if (new Set(paths).size !== paths.length) throw new Error('Project URLs must be unique; check slug and casePage.');
+const pages = await getCollection('pages');
+for (const project of allProjects) {
+  if (project.data.casePage && !pages.some(page => page.id === project.data.casePage && page.data.status === 'published') && !project.body?.trim()) {
+    throw new Error(`Missing published case page for ${project.data.slug}`);
+  }
+}
+const projects = allProjects.filter(project => project.data.visibility === 'public')
+  .sort((a,b) => a.data.order - b.data.order || a.data.slug.localeCompare(b.data.slug));
 ---
 <BaseLayout title="Work" description="Selected UX/UI, interactive and marketing design projects by Natalia Isakova.">
-  <div class="shell pt-14 sm:pt-20">
+  <div class="shell pt-14 sm:pt-20" data-work-catalog>
     <p class="eyebrow">Portfolio</p>
     <h1 class="mt-6 max-w-[18ch] text-headline">Selected <span class="serif">work.</span></h1>
-    <nav class="category-nav" aria-label="Work categories">{workNavigation.map(link => <a class="chip" href={withBase(link.href)} aria-current={link.href === '/work/' ? 'page' : undefined}>{link.label}</a>)}</nav>
-    <div class="mt-12 grid gap-x-8 gap-y-16 md:grid-cols-2">
-      {safeClick && <ProjectCard title={safeClick.data.title} summary={safeClick.data.summary} href={`/work/${safeClick.id}/`} cover={safeClick.data.cover} tint={projectPresentation.safeclick.tint} eager fillCover />}
-      {marketing && <ProjectCard title="FraudScore" summary={marketing.data.summary} href="/marketing-design/" cover={projectPresentation['marketing-design'].cover||marketing.data.cover} tint={projectPresentation['marketing-design'].tint} eager fillCover />}
-      {remainingProjects.map((p,i) => <ProjectCard title={p.data.title} summary={p.data.summary} href={`/work/${p.id}/`} cover={projectPresentation[p.id]?.cover||p.data.cover} tint={projectPresentation[p.id]?.tint} eager={i < 2 - Number(Boolean(safeClick)) - Number(Boolean(marketing))} fillCover={p.id === 'mafia-bot-mini-app'} />)}
+    <div class="work-layout">
+      <WorkFilters projects={projects} />
+      <section class="work-results" id="work-results" aria-label="Projects">
+        <p class="results-count" role="status" aria-live="polite" aria-atomic="true" data-results-count>{projects.length} {projects.length === 1 ? 'project' : 'projects'}</p>
+        <div class="work-grid">
+          {projects.map((project, index) => <div data-project data-expertise={JSON.stringify(project.data.expertise)} data-industries={JSON.stringify(project.data.industries)}>
+            <ProjectCard title={project.data.title} summary={project.data.summary} href={projectPath(project)} cover={project.data.cover} tint={projectPresentation[project.data.slug]?.tint} eager={index < 2} fillCover={project.data.fillCover}>
+              {workTagGroups.some(group => project.data[group.id].length > 0) && <ul class="project-tags" aria-label="Project tags">
+                {workTagGroups.flatMap(group => group.tags.filter(tag => project.data[group.id].includes(tag.id))).map(tag => <li class="chip">{tag.label}</li>)}
+              </ul>}
+            </ProjectCard>
+          </div>)}
+        </div>
+        <div class="empty-state" data-empty-state hidden>
+          <h2 class="text-title">No projects match these filters.</h2>
+          <p>Try another combination or clear the filters to see all projects.</p>
+          <button type="button" class="btn btn-ghost" data-clear-filters>Clear filters</button>
+        </div>
+      </section>
     </div>
   </div>
 </BaseLayout>
+<script>
+  import { filterGroups, matchesFilters, readFilters, writeFilters, type FilterState } from '../../utils/work-filters';
+  const catalog = document.querySelector<HTMLElement>('[data-work-catalog]');
+  if (catalog) {
+    const filters = catalog.querySelector<HTMLElement>('[data-work-filters]')!;
+    const details = filters.querySelector('details')!;
+    const inputs = [...filters.querySelectorAll<HTMLInputElement>('input[type="checkbox"]')];
+    const cards = [...catalog.querySelectorAll<HTMLElement>('[data-project]')].map(element => ({
+      element,
+      tags: { expertise: JSON.parse(element.dataset.expertise!), industries: JSON.parse(element.dataset.industries!) } as FilterState,
+    }));
+    const clearButtons = [...catalog.querySelectorAll<HTMLButtonElement>('[data-clear-filters]')];
+    const available = Object.fromEntries(filterGroups.map(group => [group, inputs.filter(input => input.name === group).map(input => input.value)])) as FilterState;
+    const selected = (): FilterState => Object.fromEntries(filterGroups.map(group => [group, inputs.filter(input => input.name === group && input.checked).map(input => input.value)])) as FilterState;
+    const update = (push = false) => {
+      const state = selected();
+      let visible = 0;
+      for (const card of cards) {
+        card.element.hidden = !matchesFilters(card.tags, state);
+        if (!card.element.hidden) visible++;
+      }
+      const active = state.expertise.length + state.industries.length;
+      catalog.querySelector('[data-results-count]')!.textContent = `${visible} ${visible === 1 ? 'project' : 'projects'}`;
+      catalog.querySelector<HTMLElement>('[data-empty-state]')!.hidden = visible > 0;
+      filters.querySelector('[data-active-count]')!.textContent = active ? `(${active})` : '';
+      clearButtons.forEach(button => { button.disabled = active === 0; });
+      if (push) {
+        const next = writeFilters(new URL(window.location.href), state);
+        if (next.href !== window.location.href) window.history.pushState(null, '', next);
+      }
+    };
+    const restore = () => {
+      const state = readFilters(new URLSearchParams(window.location.search), available);
+      inputs.forEach(input => { input.checked = state[input.name as keyof FilterState].includes(input.value); });
+      update();
+    };
+    inputs.forEach(input => input.addEventListener('change', () => update(true)));
+    clearButtons.forEach(button => button.addEventListener('click', () => {
+      inputs.forEach(input => { input.checked = false; });
+      update(true);
+    }));
+    window.addEventListener('popstate', restore);
+    const desktop = window.matchMedia('(min-width: 1024px)');
+    const resize = () => { details.open = desktop.matches; };
+    desktop.addEventListener('change', resize);
+    restore();
+    resize();
+    filters.hidden = false;
+  }
+</script>
+<style>
+  .work-layout{margin-top:3rem;display:grid;gap:2rem}
+  .work-results{min-width:0}
+  .results-count{font-size:.9rem;color:var(--muted);margin-bottom:1.5rem}
+  .work-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:4rem 2rem}
+  .work-grid>[data-project]{min-width:0}
+  .project-tags{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:1rem}
+  .empty-state{border:1px solid var(--line);border-radius:var(--radius-card);padding:2.5rem;display:grid;gap:1rem;justify-items:start}
+  .empty-state p{color:var(--body)}
+  @media(min-width:1024px){.work-layout:has([data-work-filters]:not([hidden])){grid-template-columns:250px minmax(0,1fr);gap:3rem}}
+  @media(max-width:639px){.work-grid{grid-template-columns:minmax(0,1fr);gap:3rem}}
+</style>

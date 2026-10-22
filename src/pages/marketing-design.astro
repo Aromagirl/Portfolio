@@ -1,0 +1,19 @@
+---
+import { withBase } from '../utils/paths';
+const destination = withBase('/fraudscore/');
+const canonical = new URL(destination, Astro.site);
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>FraudScore</title>
+    <link rel="canonical" href={canonical} />
+    <script is:inline define:vars={{ destination }}>
+      window.location.replace(destination + window.location.search + window.location.hash);
+    </script>
+    <noscript><meta http-equiv="refresh" content={`0;url=${destination}`} /></noscript>
+  </head>
+  <body><p><a href={destination}>Continue to FraudScore</a></p></body>
+</html>

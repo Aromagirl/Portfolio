@@ -7,16 +7,15 @@ export const siteConfig = {
 export const navigation = [{ label: 'Work', href: '/work/' }, { label: 'About', href: '/about/' }];
 export const workNavigation = [
   { label: 'All work', href: '/work/' },
-  { label: 'User research', href: '/user-research/' },
-  { label: 'UX/UI design', href: '/uxui-design/' },
-  { label: 'Marketing design', href: '/marketing-design/' },
+  { label: 'User research', href: '/work/?expertise=ux-research' },
+  { label: 'UX/UI design', href: '/work/?expertise=ui-design' },
+  { label: 'Marketing design', href: '/fraudscore/' },
 ];
-export const projectPresentation: Record<string, { tint: string; cover?: string }> = {
-  safeclick: { tint: '#e1ece8' },
-  'mafia-bot-mini-app': { tint: '#e8e1ed' },
-  tickeron: { tint: '#e4e8f3', cover: '/images/projects/home/04.webp' },
-  myhospital: { tint: '#efe5f2', cover: '/images/projects/home/03.webp' },
-  kidswearcycle: { tint: '#e5edda', cover: '/images/projects/home/02.webp' },
-  'ijet-media': { tint: '#f5e5d3', cover: '/images/projects/ijet-media/02.webp' },
-  'marketing-design': { tint: '#e6e4f2', cover: '/images/projects/fraudscore/cover.png' },
+export const projectPresentation: Record<string, { tint: string }> = {
+  'mafia-bot-mini-app': { tint: 'var(--tint-forest)' },
+  tickeron: { tint: 'var(--tint-sage)' },
+  myhospital: { tint: 'var(--tint-lime)' },
+  kidswearcycle: { tint: 'var(--tint-sage)' },
+  'ijet-media': { tint: 'var(--tint-forest)' },
+  fraudscore: { tint: 'var(--tint-lime)' },
 };

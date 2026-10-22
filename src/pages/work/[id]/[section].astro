@@ -1,0 +1,61 @@
+---
+import { getCollection, getEntry, render } from 'astro:content';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import CaseImage from '../../../components/CaseImage.astro';
+import MarkdownBody from '../../../components/MarkdownBody.astro';
+import { insertedContentAnchorIds } from '../../../config/content-anchors';
+import ContentLink from '../../../components/ContentLink.astro';
+import { withBase } from '../../../utils/paths';
+import { getWorkSections, projectPath, workSectionPath, workSectionAnchors } from '../../../utils/work';
+export async function getStaticPaths() {
+  const sections = await getCollection('workSections');
+  return Promise.all(sections.map(async section => {
+    const project = await getEntry('projects', section.data.project.id);
+    if (!project) throw new Error(`Missing parent project for ${section.id}`);
+    return { params: { id: project.data.slug, section: section.data.slug }, props: { project, section } };
+  }));
+}
+const { project, section } = Astro.props;
+const siblings = await getWorkSections(project);
+const { Content, headings } = await render(section);
+const bodyAnchors = new Set([
+  ...headings.map(heading => heading.slug),
+  ...insertedContentAnchorIds(section.id, headings.map(heading => heading.slug)),
+  ...[...(section.body ?? '').matchAll(/\bid="([^"]+)"/g)].map(match => match[1]),
+]);
+const extraAnchors = workSectionAnchors(section).filter(anchor => !bodyAnchors.has(anchor));
+const sourceHeading = section.data.sourceHeading ?? section.data.title;
+const contents = headings.filter(heading => heading.depth <= 3 && /\p{L}/u.test(heading.text));
+---
+<BaseLayout title={`${section.data.title} - ${project.data.title}`} description={section.data.summary}>
+  <div class="shell case-shell">
+    <nav class="case-breadcrumb" aria-label="Breadcrumb">
+      <a href={withBase('/work/')}>Work</a><span aria-hidden="true">/</span>
+      <a href={withBase(projectPath(project))}>{project.data.title}</a><span aria-hidden="true">/</span>
+      <span aria-current="page">{section.data.title}</span>
+    </nav>
+    <header class="work-section-heading">
+      {extraAnchors.map(anchor => <span id={anchor} class="legacy-anchor" aria-hidden="true" />)}
+      <p class="eyebrow">{project.data.title}</p>
+      <h1 class="text-headline">{section.data.title}</h1>
+      <p class="text-lead text-body">{sourceHeading.toLowerCase() !== section.data.title.toLowerCase() && !headings.some(heading => heading.text === sourceHeading) ? sourceHeading : section.data.summary}</p>
+    </header>
+    <nav class="section-navigation" aria-label={`Work at ${project.data.title}`}>
+      <a class="chip" href={withBase(projectPath(project))}>Overview</a>
+      {siblings.map(sibling => <a class="chip" href={withBase(workSectionPath(project, sibling))} aria-current={sibling.id === section.id ? 'page' : undefined}>{sibling.data.title}</a>)}
+    </nav>
+    {contents.length > 2 && <details class="case-index"><summary>On this page</summary><nav aria-label="On this page">{contents.map(heading => <a href={`#${heading.slug}`}>{heading.text}</a>)}</nav></details>}
+    <article class="prose source-content work-section-content" data-source-content>{section.filePath?.endsWith('.md') ? <MarkdownBody entryId={section.id}><Content /></MarkdownBody> : <Content components={{ img: CaseImage, a: ContentLink }} />}
+    </article>
+    <a class="btn btn-ghost mt-8" href={withBase(projectPath(project))}>Back to {project.data.title}</a>
+  </div>
+</BaseLayout>
+<style>
+  .work-section-heading{position:relative;display:grid;gap:1rem;padding-block:3rem 2rem;max-width:54rem}
+  .legacy-anchor{position:absolute;top:0}
+  .section-navigation{display:flex;flex-wrap:wrap;gap:.5rem;padding-bottom:1.5rem;border-bottom:1px solid var(--line)}
+  .section-navigation .chip{padding:.65rem 1rem;min-height:44px}
+  .section-navigation .chip:hover{border-color:var(--ink)}
+  .section-navigation .chip[aria-current]{background:var(--inverse);color:var(--on-inverse);border-color:var(--inverse)}
+  .work-section-content{padding-top:2rem}
+</style>

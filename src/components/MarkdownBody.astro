@@ -1,0 +1,90 @@
+---
+import { load } from 'cheerio';
+import manifest from '../../migration/manifest.json';
+import { contentAnchorAliases } from '../config/content-anchors';
+import { withBase } from '../utils/paths';
+interface Props { entryId: string; splitRole?: boolean; part?: 'overview' | 'case' }
+const { entryId, splitRole = false, part } = Astro.props;
+const $ = load(await Astro.slots.render('default'), {}, false);
+// One Markdown case can share the company header while keeping its full narrative below.
+if (part) {
+  let inRole = false;
+  let inCase = false;
+  for (const element of $.root().children().toArray()) {
+    if (/^h[2-3]$/.test(element.tagName) && /^My role\b/i.test($(element).text())) inRole = true;
+    else if (inRole && element.tagName === 'h2') inCase = true;
+    if ((part === 'overview' && inCase) || (part === 'case' && !inCase)) $(element).remove();
+  }
+}
+
+
+// Plain Markdown stays editorial; base paths, image presentation and old IDs live here.
+$('a[href]').each((_, element) => {
+  const link = $(element);
+  link.attr('href', withBase(link.attr('href')!));
+});
+$('img').each((_, element) => {
+  const img = $(element);
+  const src = img.attr('src') ?? '';
+  const asset = manifest.pages.flatMap(page => page.assets).find(asset => 'localPath' in asset && asset.localPath === src);
+  img.attr({ src: withBase(src), loading: 'lazy', decoding: 'async' });
+  if (asset && 'outputWidth' in asset && asset.outputWidth) img.attr('width', String(asset.outputWidth));
+  if (asset && 'outputHeight' in asset && asset.outputHeight) img.attr('height', String(asset.outputHeight));
+  if (!img.closest('a').length) {
+    const media = $('<span>').addClass('case-media');
+    const link = $('<a>').addClass('image-link').attr({ href: withBase(src), 'aria-label': `Open image: ${img.attr('alt') ?? ''}` });
+    img.replaceWith(media);
+    media.append(link.append(img));
+  }
+});
+// Consecutive image lines in a Markdown paragraph form a gallery.
+$('p').each((_, element) => {
+  const paragraph = $(element);
+  const children = paragraph.children().toArray();
+  if (children.length > 1 && children.every(child => $(child).hasClass('case-media'))) paragraph.addClass('image-gallery');
+});
+// A regular link to a local PDF keeps editing simple and retains the inline viewer.
+$('a[href]').each((_, element) => {
+  const link = $(element);
+  const href = link.attr('href') ?? '';
+  if (!href.startsWith('/') || !/\.pdf(?:[?#].*)?$/i.test(href) || link.closest('[data-document]').length) return;
+  const paragraph = link.closest('p');
+  if (!paragraph.length) return;
+  const title = link.text().replace(/^Open\s+/, '').replace(/\s*\u2197$/, '');
+  const embed = $('<div>').addClass('document-embed').attr('data-document', '');
+  const frame = $('<iframe>').attr({ src: href, title, loading: 'lazy' });
+  paragraph.replaceWith(embed);
+  embed.append(frame, paragraph);
+});
+for (const [alias, target] of Object.entries(contentAnchorAliases[entryId] ?? {})) {
+  if (part === 'case' && target === '@start') continue;
+  if ($('[id]').toArray().some(element => $(element).attr('id') === alias)) continue;
+  const destination = target === '@start' ? $.root().children().first() : $('[id]').filter((_, element) => $(element).attr('id') === target).first();
+  if (destination.length) destination.prepend($('<span>').attr({ id: alias, 'aria-hidden': 'true' }));
+}
+
+const output = $('<div>');
+if (splitRole) {
+  const description = $('<section>').addClass('source-section company-description');
+  const role = $('<section>').addClass('source-section company-responsibilities');
+  let inRole = false;
+  for (const element of $.root().children().toArray()) {
+    if (/^h[2-3]$/.test(element.tagName) && /^My role\b/i.test($(element).text())) inRole = true;
+    (inRole ? role : description).append(element);
+  }
+  if (description.children().length) output.append(description);
+  if (role.children().length) output.append(role);
+} else {
+  let section = $('<section>').addClass('source-section');
+  for (const element of $.root().children().toArray()) {
+    if (/^h[2-3]$/.test(element.tagName) && section.children().length) {
+      output.append(section);
+      section = $('<section>').addClass('source-section');
+    }
+    section.append(element);
+  }
+  if (section.children().length) output.append(section);
+}
+const html = output.html() ?? '';
+---
+<Fragment set:html={html} />

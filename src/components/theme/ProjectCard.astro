@@ -3,7 +3,7 @@ import Icon from './Icon.astro';
 import { withBase } from '../../utils/paths';
 import manifest from '../../../migration/manifest.json';
 interface Props { title: string; summary: string; href: string; cover: string | null; tint?: string; eager?: boolean; fillCover?: boolean }
-const { title, summary, href, cover, tint = '#e5edda', eager = false, fillCover = false } = Astro.props;
+const { title, summary, href, cover, tint = 'var(--tint-sage)', eager = false, fillCover = false } = Astro.props;
 const asset = manifest.pages.flatMap(p => p.assets).find(a => 'localPath' in a && a.localPath === cover);
 ---
 <article class="project-card relative" style={`--tint: ${tint}`}>
@@ -13,7 +13,8 @@ const asset = manifest.pages.flatMap(p => p.assets).find(a => 'localPath' in a &
     <span class="project-badge absolute top-5 right-5 grid size-11 place-items-center rounded-full bg-inverse text-on-inverse" aria-hidden="true"><Icon name="arrow-up-right" class="size-5" /></span>
   </div>
   <h2 class="mt-5 text-title"><a href={withBase(href)} class="after:absolute after:inset-0 focus-visible:outline-none">{title}</a></h2>
-  <p class="mt-2 text-body">{summary}</p>
+  {summary && <p class="mt-2 text-body">{summary}</p>}
+  <slot />
 </article>
 <style>
   .project-card:has(a:focus-visible){outline:2px solid var(--ink);outline-offset:8px;border-radius:var(--radius-card)}

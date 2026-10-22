@@ -1,0 +1,77 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import ProjectCard from './ProjectCard.astro';
+import { projectPresentation } from '../../config/site';
+import { workSectionPath, workSectionAnchors } from '../../utils/work';
+import { withBase } from '../../utils/paths';
+interface Props { project: CollectionEntry<'projects'>; sections: CollectionEntry<'workSections'>[]; splitRole?: boolean }
+const { project, sections, splitRole = false } = Astro.props;
+const redirects = sections.flatMap(section => workSectionAnchors(section).map(anchor => ({
+  anchor, title: section.data.title, href: `${withBase(workSectionPath(project, section))}#${encodeURIComponent(anchor)}`,
+})));
+---
+<header class="company-heading">
+  <p class="eyebrow">Project overview</p>
+  <div class="company-identity">
+    {project.data.logo && <img class="company-logo" src={withBase(project.data.logo)} alt="" width="64" height="64" />}
+    <h1 class="text-headline">{project.data.title}</h1>
+  </div>
+  {project.data.summary && <p class="text-lead text-body">{project.data.summary}</p>}
+  {project.data.role && !splitRole && <p class="company-role"><span>My role</span> {project.data.role}</p>}
+</header>
+<section class="company-context" data-project={project.data.slug} aria-labelledby="company-context-title">
+  <h2 id="company-context-title" class="text-title text-ink">About {project.data.title} &amp; my role</h2>
+  <div class:list={['prose', 'source-content', 'company-context-content', { 'company-context-columns': splitRole, 'company-context-plain': project.filePath?.endsWith('.md') }]} data-source-content><slot /></div>
+</section>
+{sections.length > 0 && <section class="company-work" aria-labelledby="company-work-title">
+  <div class="company-work-heading"><h2 id="company-work-title" class="text-title">Explore the work</h2><p>{sections.length} areas of work</p></div>
+  <div class="company-work-grid">
+    {sections.map(section => <ProjectCard title={section.data.title} summary={section.data.summary} href={workSectionPath(project, section)} cover={section.data.cover} fillCover={section.data.fillCover} tint={projectPresentation[project.data.slug]?.tint} eager />)}
+  </div>
+</section>}
+<div class="legacy-section-links">
+  {redirects.map(link => <a id={link.anchor} class="legacy-section-link" href={link.href}>This section has its own page: {link.title} <span aria-hidden="true">&rarr;</span></a>)}
+</div>
+<script is:inline define:vars={{ redirects }}>
+  (() => {
+    const visitSection = () => {
+      let anchor;
+      try { anchor = decodeURIComponent(window.location.hash.slice(1)); } catch { return; }
+      if (!anchor) return;
+      const destination = redirects.find(link => link.anchor === anchor);
+      if (destination) window.location.replace(destination.href);
+    };
+    visitSection();
+    window.addEventListener('hashchange', visitSection);
+  })();
+</script>
+<style>
+  .company-heading{padding-block:3rem 2.5rem;display:grid;gap:1rem;max-width:52rem}
+  .company-identity{display:flex;align-items:center;gap:1.25rem}
+  .company-logo{width:4rem;height:4rem;object-fit:contain;border-radius:.75rem;flex-shrink:0}
+  @media(max-width:639px){.company-identity{gap:1rem}.company-logo{width:3rem;height:3rem}}
+  .company-role{font-size:.95rem;color:var(--body)}
+  .company-role span{color:var(--muted);margin-right:.75rem}
+  .company-work{padding-block:2rem 3rem;border-top:1px solid var(--line)}
+  .company-work-heading{display:flex;align-items:baseline;justify-content:space-between;gap:1rem;margin-bottom:2rem}
+  .company-work-heading p{color:var(--muted);font-size:.9rem}
+  .company-work-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:2rem}
+  .company-context{border-top:1px solid var(--line);padding:2rem 0;color:var(--body)}
+  .company-context-content{padding-top:2rem}
+  .company-context:is([data-project="myhospital"],[data-project="kidswearcycle"]) :global(.company-description > p:last-child){font-size:.875rem;line-height:1.6}
+  .company-context-content:not(.company-context-plain) :global(.source-section:first-child){display:none}
+  .company-context-content :global(img){max-width:12rem}
+  .company-context-content :global(.company-responsibilities > :is(h2,h3)){font-size:1.3rem;line-height:1.3;letter-spacing:-.02em}
+  @media(min-width:900px){
+    .company-context-columns{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:1rem 3rem;align-items:start}
+    .company-context-columns :global(.source-section){min-width:0;margin:0}
+    .company-context-columns :global(.company-description){grid-column:1}
+    .company-context-columns :global(.company-responsibilities){grid-column:2}
+    .company-context-columns :global(.source-section :is(h2,h3)){margin-top:0}
+    .company-context-columns :global(.source-section p:first-of-type){margin-top:0}
+  }
+  .legacy-section-link{display:none}
+  .legacy-section-link:target{display:block;border:1px solid var(--line);border-radius:var(--radius-panel);padding:1rem;margin-top:1rem;text-decoration:underline}
+  @media(max-width:900px){.company-work-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:2.5rem 1.5rem}}
+  @media(max-width:639px){.company-work-grid{grid-template-columns:minmax(0,1fr)}.company-work-heading{display:block}.company-work-heading p{margin-top:.5rem}}
+</style>

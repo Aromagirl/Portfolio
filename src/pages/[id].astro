@@ -4,22 +4,38 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import CaseImage from '../components/CaseImage.astro';
 import ContentLink from '../components/ContentLink.astro';
 import { withBase } from '../utils/paths';
-import { workNavigation } from '../config/site';
+import CompanyOverview from '../components/theme/CompanyOverview.astro';
+import MarkdownBody from '../components/MarkdownBody.astro';
+import { getWorkSections } from '../utils/work';
 
 export async function getStaticPaths() {
-  const pages = await getCollection('pages', ({ data }) => data.status === 'published');
-  return pages.map(page => ({ params: { id: page.id === 'about-me' ? 'about' : page.id }, props: { page } }));
+  const pages = await getCollection('pages', ({ id, data }) => id !== 'home' && data.status === 'published');
+  const projects = await getCollection('projects', ({ data }) => Boolean(data.casePage));
+  return [
+    ...pages.map(page => ({ params: { id: page.id === 'about-me' ? 'about' : page.id }, props: { page } })),
+    ...projects.filter(project => !pages.some(page => page.id === project.data.casePage)).map(project => ({
+      params: { id: project.data.casePage! }, props: { page: project, legacyProject: project },
+    })),
+  ];
 }
-const { page } = Astro.props;
+const { page, legacyProject } = Astro.props;
 const { Content } = await render(page);
-const isIndex = ['user-research', 'uxui-design'].includes(page.id);
 const isAbout = page.id === 'about-me';
+const project = legacyProject ?? (await getCollection('projects')).find(project => project.data.casePage === page.id);
+const sections = project ? await getWorkSections(project) : [];
+const splitRole = Boolean(project?.filePath?.endsWith('.md') && /^#{2,3} My role\b/im.test(project?.body ?? ''));
 ---
-<BaseLayout title={page.data.title} description={page.data.summary}>
-  <div class="shell">
-  {isIndex && <nav class="category-nav" aria-label="Work categories">{workNavigation.map(link => <a class="chip" href={withBase(link.href)} aria-current={Astro.url.pathname === withBase(link.href) ? 'page' : undefined}>{link.label}</a>)}</nav>}
-  <div class:list={isAbout ? ['about-page'] : ['prose', 'source-content', 'section-content', `section-${page.id}`, { 'work-index': isIndex }]} data-source-content>
+<BaseLayout title={project?.data.title ?? page.data.title} description={project?.data.summary ?? page.data.summary}>
+  <div class:list={['shell', { 'case-shell': sections.length > 0 }]}>
+  {project && sections.length > 0 ? <>
+    <nav class="case-breadcrumb" aria-label="Breadcrumb"><a href={withBase('/work/')}>Work</a><span aria-hidden="true">/</span><span aria-current="page">{project.data.title}</span></nav>
+    <CompanyOverview project={project} sections={sections} splitRole={splitRole}>
+      {page.filePath?.endsWith('.md') ? <MarkdownBody entryId={project.id} splitRole={splitRole}><Content /></MarkdownBody> : <Content components={{ img: CaseImage, a: ContentLink }} />}
+    </CompanyOverview>
+  </> : <>
+  <div class:list={isAbout ? ['about-page'] : ['prose', 'source-content', 'section-content', `section-${page.id}`]} data-source-content>
     <Content components={{ img: CaseImage, a: ContentLink }} />
   </div>
+  </>}
   </div>
 </BaseLayout>
