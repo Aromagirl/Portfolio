@@ -4,6 +4,7 @@ import { withBase } from '../utils/paths';
 import SiteHeader from '../components/theme/SiteHeader.astro';
 import SiteFooter from '../components/theme/SiteFooter.astro';
 interface Props { title: string; description?: string; home?: boolean }
+const previewImage = new URL(withBase('/images/brand/site-preview.png'), Astro.site).href;
 const { title, description = 'Product Designer & Builder — Natalia Isakova', home = false } = Astro.props;
 ---
 <!doctype html>
@@ -18,6 +19,17 @@ const { title, description = 'Product Designer & Builder — Natalia Isakova', h
     <title>{title === 'Natalia Isakova' ? title : `${title} — Natalia Isakova`}</title>
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content={previewImage} />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1730" />
+    <meta property="og:image:height" content="909" />
+    <meta property="og:image:alt" content="Natalia Isakova ? Product Designer & Builder" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={previewImage} />
+    <meta name="twitter:image:alt" content="Natalia Isakova ? Product Designer & Builder" />
     <link rel="icon" href={withBase('/favicon.svg?v=ni-3')} type="image/svg+xml" />
     <link rel="preload" href={withBase('/fonts/hanken-grotesk/hanken-grotesk-latin.woff2')} as="font" type="font/woff2" crossorigin />
     <script is:inline>
