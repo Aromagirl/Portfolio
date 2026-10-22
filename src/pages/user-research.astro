@@ -1,0 +1,23 @@
+---
+import { withBase } from '../utils/paths';
+const destination = withBase('/work/?expertise=ux-research');
+const canonical = new URL(destination, Astro.site);
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>UX Research - Work</title>
+    <link rel="canonical" href={canonical} />
+    <script is:inline define:vars={{ destination }}>
+      const target = new URL(destination, window.location.href);
+      for (const [key, value] of new URLSearchParams(window.location.search)) {
+        if (key !== 'expertise') target.searchParams.append(key, value);
+      }
+      window.location.replace(target.href);
+    </script>
+    <noscript><meta http-equiv="refresh" content={`0;url=${destination}`} /></noscript>
+  </head>
+  <body><p><a href={destination}>Continue to UX Research projects</a></p></body>
+</html>

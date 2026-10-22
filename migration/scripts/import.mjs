@@ -46,7 +46,7 @@ function prepareRoot($){
  root.find('[data-embed-doc-id] img').remove();
  return root;
 }
-for(const collection of ['projects','home','pages'])await mkdir(`src/content/${collection}`,{recursive:true});
+for(const collection of ['projects','pages'])await mkdir(`src/content/${collection}`,{recursive:true});
 const manifest={createdAt:new Date().toISOString(),pages:[],discoveredPages:[],notes:['Static source extraction. Manual desktop/mobile comparison remains required.','Google Sites image rendition requested at w16383; access to original design files is not implied.']};
 const discovered=new Set();
 let previous;try{previous=JSON.parse(await readFile('migration/manifest.json','utf8'));}catch{}
@@ -54,7 +54,7 @@ if(selected.size&&previous){manifest.pages=previous.pages.filter(p=>!selected.ha
 for(const page of pages){
  const [slug,path,title,summary,kind]=page;
  if(selected.size&&!selected.has(slug))continue;
- const collection=kind||(slug==='home'?'home':'projects');
+ const collection=kind||(slug==='home'?'pages':'projects');
  const html=await readFile(`migration/raw/${slug}.html`,'utf8');const $=load(html);const root=prepareRoot($);if(root.length!==1)throw Error(`Content root not found: ${slug}`);
  if(collection==='pages'&&!root.find('h1').length){const heading=root.find('h2,h3').filter((_,e)=>normalize($(e).text()).toLowerCase()===title.toLowerCase()).first();if(heading.length)heading.replaceWith($('<h1>').attr('id',heading.attr('id')).html(heading.html()));}
  $('a[href]').each((_,e)=>{const u=new URL($(e).attr('href'),base);if(u.origin==='https://sites.google.com'&&u.pathname.startsWith('/view/natalia-isakova'))discovered.add(u.origin+u.pathname);});

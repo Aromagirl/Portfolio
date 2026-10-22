@@ -5,7 +5,7 @@ import CaseImage from '../components/CaseImage.astro';
 import ContentLink from '../components/ContentLink.astro';
 import { withBase } from '../utils/paths';
 import HomeTitle from '../components/theme/HomeTitle.astro';
-const entry = await getEntry('home', 'home');
+const entry = await getEntry('pages', 'home');
 if (!entry) throw new Error('Homepage content is missing');
 const { Content } = await render(entry);
 ---
