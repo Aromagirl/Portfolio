@@ -15,7 +15,7 @@ const year = new Date().getFullYear();
 ---
 
 {showClosing && (
-  <section class="shell mt-24 sm:mt-32" aria-labelledby="closing-title">
+  <section id="contact" class="shell mt-24 sm:mt-32" aria-labelledby="closing-title">
     <div class="relative overflow-hidden rounded-[2rem] bg-night px-6 py-14 text-night-ink sm:px-12 sm:py-20 lg:px-20 lg:py-24">
       <div class="closing-grid" aria-hidden="true" />
       <div class="relative">
@@ -105,6 +105,10 @@ const year = new Date().getFullYear();
 </footer>
 
 <style>
+  #contact {
+    scroll-margin-top: calc(var(--header-h) + 1rem);
+  }
+
   .footer-link {
     color: var(--ink);
     transition: color 160ms ease;

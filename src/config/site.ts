@@ -1,7 +1,7 @@
 export const siteConfig = {
   name: 'Natalia Isakova',
-  author: { name: 'Natalia Isakova', role: 'UX/UI & Interactive designer', email: 'nisakova.info@gmail.com' },
-  action: { label: 'Get in touch', href: 'mailto:nisakova.info@gmail.com' },
+  author: { name: 'Natalia Isakova', role: 'Product Designer & Builder', email: 'nisakova.info@gmail.com' },
+  action: { label: 'Get in touch', href: '#contact' },
   socials: [{ label: 'LinkedIn', href: 'https://www.linkedin.com/in/ux-natalia-isakova/' }],
 };
 export const navigation = [{ label: 'Work', href: '/work/' }, { label: 'About', href: '/about/' }];
