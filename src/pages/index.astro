@@ -5,11 +5,12 @@ import CaseImage from '../components/CaseImage.astro';
 import ContentLink from '../components/ContentLink.astro';
 import { withBase } from '../utils/paths';
 import HomeTitle from '../components/theme/HomeTitle.astro';
+import HomeProjectCard from '../components/theme/HomeProjectCard.astro';
 const entry = await getEntry('pages', 'home');
 if (!entry) throw new Error('Homepage content is missing');
 const { Content } = await render(entry);
 ---
 <BaseLayout title="Natalia Isakova" home>
-  <div class="shell home-content" data-source-content><Content components={{ img: CaseImage, a: ContentLink, h1: HomeTitle }} /></div>
+  <div class="shell home-content" data-source-content><Content components={{ img: CaseImage, a: ContentLink, h1: HomeTitle, HomeProjectCard }} /></div>
   <div class="shell mt-12 flex flex-wrap gap-3"><a class="btn btn-primary" href={withBase('/work/')}>Explore all work →</a><a class="btn btn-ghost" href={withBase('/about/')}>About me</a></div>
 </BaseLayout>

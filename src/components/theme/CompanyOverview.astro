@@ -26,7 +26,7 @@ const redirects = sections.flatMap(section => workSectionAnchors(section).map(an
 {sections.length > 0 && <section class="company-work" aria-labelledby="company-work-title">
   <div class="company-work-heading"><h2 id="company-work-title" class="text-title">Explore the work</h2><p>{sections.length} areas of work</p></div>
   <div class="company-work-grid">
-    {sections.map(section => <ProjectCard title={section.data.title} summary={section.data.summary} href={workSectionPath(project, section)} cover={section.data.cover} fillCover={section.data.fillCover} tint={projectPresentation[project.data.slug]?.tint} eager />)}
+    {sections.map(section => <ProjectCard title={section.data.title} summary={section.data.summary} href={workSectionPath(project, section)} cover={section.data.cover} fillCover={section.data.fillCover} disabled={section.data.cardDisabled} tint={projectPresentation[project.data.slug]?.tint} eager />)}
   </div>
 </section>}
 <div class="legacy-section-links">

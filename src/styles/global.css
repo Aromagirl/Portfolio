@@ -500,7 +500,7 @@
 .home-content>.source-section:nth-child(n+3) img{width:100%;height:100%;object-fit:contain;border-radius:.875rem;transition:scale 400ms}
 .home-content>.home-project-cover:nth-child(n+3) .image-link{padding:0}
 .home-content>.home-project-cover:nth-child(n+3) img{object-fit:cover;border-radius:0}
-@media(hover:hover) and (prefers-reduced-motion:no-preference){.home-content>.home-project-cover:hover img{scale:1.04}}
+@media(hover:hover) and (prefers-reduced-motion:no-preference){.home-content>.home-project-cover:not([data-disabled]):hover img{scale:1.04}}
 .home-content>.source-section:nth-child(n+3) h2{font-size:var(--text-title);line-height:1.2;letter-spacing:-.025em;margin:0 0 1rem}
 .home-content>.source-section:nth-child(n+3)>p{color:var(--body);margin-bottom:1rem}
 .home-content>.source-section:nth-child(n+3)>p:last-child{margin-top:auto;padding-top:.5rem}

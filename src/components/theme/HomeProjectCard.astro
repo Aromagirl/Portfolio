@@ -1,0 +1,22 @@
+---
+import { getEntry } from 'astro:content';
+import CaseImage from '../CaseImage.astro';
+import { withBase } from '../../utils/paths';
+import { workSectionPath } from '../../utils/work';
+
+interface Props { projectId: string; summary?: string }
+const { projectId, summary } = Astro.props;
+const project = await getEntry('workSections', projectId);
+if (!project) throw new Error(`Missing homepage project: ${projectId}`);
+const company = await getEntry(project.data.project);
+if (!company) throw new Error(`Missing company for homepage project: ${projectId}`);
+const { title, cover, cardDisabled } = project.data;
+---
+<section class="source-section home-project-cover" data-disabled={cardDisabled || undefined}>
+  {cover && <p><CaseImage src={cover} alt={`${title} — project preview`} disabled={cardDisabled} /></p>}
+  <h2>{title}</h2>
+  {(summary ?? project.data.summary) && <p>{summary ?? project.data.summary}</p>}
+  <p>{cardDisabled
+    ? <span class="home-card-unavailable">Coming soon</span>
+    : <a href={withBase(workSectionPath(company, project))}>Read more</a>}</p>
+</section>

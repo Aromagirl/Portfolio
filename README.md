@@ -37,7 +37,7 @@ npm run dev
 | KidswearCycle | `src/content/companies/kidswearcycle/index.md` | `/work/kidswearcycle/` |
 | I-Jet Media | `src/content/companies/ijet-media/index.md` | `/work/ijet-media/` |
 
-Главная содержит собственные карточки SafeClick Website и FraudScore Website. Они редактируются в `home.mdx` независимо от каталога Work. Если у карточки с классом `home-project-cover` нет изображения, сайт сохраняет пустую область обложки.
+Главная содержит карточки SafeClick Website и FraudScore Website через `HomeProjectCard`. Их выбор и описания задаются в `home.mdx`, а заголовок, обложка и `cardDisabled` читаются из Markdown соответствующего проекта. При `cardDisabled: true` ссылки на проект и изображение отключены, вместо Read more показано Coming soon. Эта же настройка действует в каталоге и блоке Explore the work компании. Если у карточки нет изображения, сайт сохраняет пустую область обложки.
 
 В файлах проектов используется обычный Markdown с метаданными в начале. HTML, JSX и импорты для оформления кейсов не нужны. Главная и About остаются в MDX.
 
