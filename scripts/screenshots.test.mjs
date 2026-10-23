@@ -3,13 +3,13 @@ import assert from 'node:assert/strict';
 import { createServer } from 'node:http';
 import { execFile } from 'node:child_process';
 import { promisify } from 'node:util';
-import { mkdtemp, writeFile, readFile, rm } from 'node:fs/promises';
+import { mkdtemp, mkdir, writeFile, readFile, rm } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
 import { join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { randomUUID } from 'node:crypto';
 import sharp from 'sharp';
-import { parseOptions, validateConfig } from './screenshots.mjs';
+import { parseOptions, validateConfig, resolveOutputDirectories, screenshotTarget } from './screenshots.mjs';
 
 const run = promisify(execFile);
 const root = fileURLToPath(new URL('../', import.meta.url));
@@ -41,6 +41,38 @@ test('configuration and CLI reject mistakes before opening a browser', () => {
   assert.throws(() => parseOptions(['--page', 'home']), /требует --project/);
   assert.throws(() => parseOptions(['extra']), /Unexpected argument/);
   assert.equal(parseOptions(['--project', 'demo', '--device', 'mobile']).device, 'mobile');
+});
+
+test('output routes to a project, a standalone company or fallback; ambiguous IDs fail safely', async () => {
+  const temporary = await mkdtemp(join(tmpdir(), 'portfolio-output-'));
+  const content = join(temporary, 'companies');
+  const fallback = join(temporary, 'screenshots');
+  const project = join(content, 'company', 'projects', 'website');
+  const standalone = join(content, 'hospital');
+  try {
+    await mkdir(project, { recursive: true });
+    await writeFile(join(project, 'website.md'), '---\n---');
+    await writeFile(join(content, 'company', 'index.md'), '---\n---');
+    await mkdir(standalone);
+    await writeFile(join(standalone, 'index.mdx'), '---\n---');
+    const destinations = await resolveOutputDirectories(['website', 'hospital', 'company', 'unknown'], content, fallback);
+    assert.deepEqual(destinations.get('website'), { directory: project, inContent: true });
+    assert.deepEqual(destinations.get('hospital'), { directory: standalone, inContent: true });
+    assert.deepEqual(destinations.get('company'), { directory: join(fallback, 'company'), inContent: false });
+    assert.deepEqual(destinations.get('unknown'), { directory: join(fallback, 'unknown'), inContent: false });
+    assert.equal(screenshotTarget(destinations.get('website'), 'homepage', 'desktop', false), join(project, 'homepage-desktop.png'));
+    assert.equal(screenshotTarget(destinations.get('hospital'), 'features', 'mobile', true), join(standalone, 'features-mobile-full.png'));
+    assert.equal(screenshotTarget(destinations.get('unknown'), 'homepage', 'desktop', true), join(fallback, 'unknown', 'homepage', 'desktop-full.png'));
+    const duplicate = join(content, 'other', 'projects', 'website');
+    await mkdir(duplicate, { recursive: true });
+    await writeFile(join(duplicate, 'website.md'), '---\n---');
+    await assert.rejects(resolveOutputDirectories(['website'], content, fallback), /найден в нескольких папках/);
+    const missing = await resolveOutputDirectories(['unknown'], join(temporary, 'missing'), fallback);
+    assert.equal(missing.get('unknown').inContent, false);
+  } finally {
+    assert(resolve(temporary).startsWith(resolve(tmpdir())));
+    await rm(temporary, { recursive: true, force: true });
+  }
 });
 
 test('Chromium captures both devices, lazy content, cookies; HTTP failures preserve files and continue', { timeout: 90000 }, async () => {

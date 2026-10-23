@@ -3,13 +3,13 @@ import Icon from './Icon.astro';
 import { withBase } from '../../utils/paths';
 import manifest from '../../../migration/manifest.json';
 interface Props { title: string; summary: string; href: string; cover: string | null; tint?: string; eager?: boolean; fillCover?: boolean; companyName?: string }
-const { title, summary, href, cover, tint = 'var(--tint-sage)', eager = false, fillCover = false, companyName } = Astro.props;
+const { title, summary, href, cover, tint = 'var(--tint-sage)', eager = false, companyName } = Astro.props;
 const asset = manifest.pages.flatMap(p => p.assets).find(a => 'localPath' in a && a.localPath === cover);
 ---
 <article class="project-card relative" style={`--tint: ${tint}`}>
   <div class="tint-panel relative aspect-5/4 overflow-hidden rounded-card">
     {!cover && <span class="absolute inset-0 grid place-items-center px-6 text-center text-headline text-ink">{title}</span>}
-    {cover && <img src={withBase(cover)} alt={`${title} — project preview`} width={asset?.outputWidth} height={asset?.outputHeight} loading={eager ? 'eager' : 'lazy'} class:list={['project-shot absolute', fillCover ? 'inset-0 h-full w-full object-cover' : 'top-[12%] left-[8%] w-[84%] rounded-xl object-contain']} />}
+    {cover && <img src={withBase(cover)} alt={`${title} — project preview`} width={asset?.outputWidth} height={asset?.outputHeight} loading={eager ? 'eager' : 'lazy'} class="project-shot absolute inset-0 h-full w-full object-cover" />}
     <span class="project-badge absolute top-5 right-5 grid size-11 place-items-center rounded-full bg-inverse text-on-inverse" aria-hidden="true"><Icon name="arrow-up-right" class="size-5" /></span>
   </div>
   {companyName && <p class="mt-5 eyebrow">{companyName}</p>}

@@ -1,4 +1,4 @@
-import { readFile, mkdir, writeFile, rename, rm } from 'node:fs/promises';
+import { readFile, readdir, mkdir, writeFile, rename, rm } from 'node:fs/promises';
 import { resolve, join, dirname } from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 import { randomUUID } from 'node:crypto';
@@ -7,6 +7,7 @@ import { chromium, devices } from 'playwright';
 
 const root = fileURLToPath(new URL('../', import.meta.url));
 const outputRoot = join(root, 'screenshots');
+const companiesRoot = join(root, 'src', 'content', 'companies');
 const defaults = { desktop: { width: 1440, height: 900 }, mobile: { width: 390, height: 844 } };
 const help = `Съёмка сайтов: npm run screenshots -- [параметры]
   --project ID       Один проект
@@ -88,6 +89,42 @@ export function parseOptions(args) {
   return values;
 }
 
+export async function resolveOutputDirectories(ids, contentRoot = companiesRoot, fallbackRoot = outputRoot) {
+  const matches = new Map(ids.map(id => [id, []]));
+  let companies;
+  try { companies = await readdir(contentRoot, { withFileTypes: true }); }
+  catch (error) { if (error.code !== 'ENOENT') throw error; companies = []; }
+  const hasMarkdown = (files, name) => files.some(file => file.isFile() && [name + '.md', name + '.mdx'].includes(file.name));
+  for (const company of companies.filter(entry => entry.isDirectory())) {
+    const directory = join(contentRoot, company.name);
+    const files = await readdir(directory, { withFileTypes: true });
+    let hasProjects = false;
+    if (files.some(file => file.name === 'projects' && file.isDirectory())) {
+      for (const project of await readdir(join(directory, 'projects'), { withFileTypes: true })) {
+        if (!project.isDirectory()) continue;
+        const projectDirectory = join(directory, 'projects', project.name);
+        if (!hasMarkdown(await readdir(projectDirectory, { withFileTypes: true }), project.name)) continue;
+        hasProjects = true;
+        matches.get(project.name)?.push(projectDirectory);
+      }
+    }
+    if (!hasProjects && hasMarkdown(files, 'index')) matches.get(company.name)?.push(directory);
+  }
+  return new Map(ids.map(id => {
+    slug(id, 'id');
+    const candidates = matches.get(id);
+    assert(candidates.length <= 1, `ID "${id}" найден в нескольких папках. Используйте уникальные ID проектов:\n${candidates.join('\n')}`);
+    return [id, { directory: candidates[0] ?? join(fallbackRoot, id), inContent: candidates.length === 1 }];
+  }));
+}
+
+export function screenshotTarget(destination, page, device, fullPage) {
+  const filename = `${device}${fullPage ? '-full' : ''}.png`;
+  return destination.inContent
+    ? join(destination.directory, `${page}-${filename}`)
+    : join(destination.directory, page, filename);
+}
+
 async function settle(page, warn) {
   try {
     await page.waitForFunction(() => [...document.images].every(image => image.complete), null, { timeout: 8000 });
@@ -161,10 +198,12 @@ export async function main(args = process.argv.slice(2)) {
   assert(projects.length, `Не найден проект: ${options.project}.`);
   if (options.page) assert(projects[0].urls.some(page => page.name === options.page), `Не найдена страница ${options.project}/${options.page}.`);
   const selectedDevices = options.device ? [options.device] : ['desktop', 'mobile'];
+  const destinations = await resolveOutputDirectories(projects.map(project => project.id));
+  const outputDirectories = [...destinations.values()].map(destination => destination.directory);
   let success = 0;
   let failed = 0;
   const failures = [];
-  console.log(`Конфигурация: ${configPath}\nРезультаты: ${outputRoot}`);
+  console.log(`Конфигурация: ${configPath}\nПапки результатов:\n${outputDirectories.join('\n')}`);
   let browser;
   try { browser = await chromium.launch({ headless: true }); }
   catch (error) { throw new Error(`Не удалось запустить Chromium. Выполните: npx playwright install chromium\n${error.message}`); }
@@ -189,7 +228,7 @@ export async function main(args = process.argv.slice(2)) {
             const action = entry.cookieAction === undefined ? project.cookieAction : entry.cookieAction;
             await prepare(page, entry.url, action, message => console.warn(`  Предупреждение: ${message}`));
             for (const fullPage of [false, true]) {
-              const target = join(outputRoot, project.id, entry.name, `${device}${fullPage ? '-full' : ''}.png`);
+              const target = screenshotTarget(destinations.get(project.id), entry.name, device, fullPage);
               try {
                 await saveScreenshot(page, target, fullPage);
                 success++;
@@ -213,7 +252,7 @@ export async function main(args = process.argv.slice(2)) {
     }
   } finally {
     await browser.close();
-    console.log(`\nИтого операций (PNG): успешно ${success}, неудачно ${failed}.\nРезультаты: ${outputRoot}`);
+    console.log(`\nИтого операций (PNG): успешно ${success}, неудачно ${failed}.\nПапки результатов:\n${outputDirectories.join('\n')}`);
     if (failures.length) console.error(`\nНе удалось обработать:\n${failures.map(message => `- ${message}`).join('\n')}`);
   }
   if (failed) process.exitCode = 1;

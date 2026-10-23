@@ -5,9 +5,17 @@
   },
   "projects": [
     {
-      "id": "example",
+      "id": "fraudscore-website",
+      "cookieAction": { "selector": "[data-cookie-banner] [data-cookie-agree]" },
       "urls": [
-        { "name": "homepage", "url": "https://example.com" }
+        { "name": "homepage", "url": "https://fraudscore.ai" }
+      ]
+    },
+    {
+      "id": "safeclick-website",
+      "cookieAction": { "selector": "#rcc-decline-button" },
+      "urls": [
+        { "name": "homepage", "url": "https://safeclick.io" }
       ]
     }
   ]

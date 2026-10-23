@@ -3,7 +3,7 @@ project: "fraudscore"
 slug: "presentations"
 title: "Presentations"
 summary: "FraudScore presentation for the Madrid Mobile Summit expo."
-cover: null
+cover: "/images/projects/fraudscore/presentations/cover.png"
 order: 2
 sourceHeading: "Presentations"
 ---
