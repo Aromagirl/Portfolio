@@ -5,7 +5,7 @@ import ProjectCard from '../../components/theme/ProjectCard.astro';
 import WorkFilters from '../../components/theme/WorkFilters.astro';
 import { projectPresentation } from '../../config/site';
 import { workTagGroups } from '../../data/work-tags';
-import { projectPath } from '../../utils/work';
+import { getWorkSections, projectPath, workSectionPath } from '../../utils/work';
 const allProjects = await getCollection('projects');
 const paths = allProjects.map(projectPath);
 if (new Set(paths).size !== paths.length) throw new Error('Project URLs must be unique; check slug and casePage.');
@@ -15,20 +15,39 @@ for (const project of allProjects) {
     throw new Error(`Missing published case page for ${project.data.slug}`);
   }
 }
-const projects = allProjects.filter(project => project.data.visibility === 'public')
+const companies = allProjects.filter(project => project.data.visibility === 'public')
   .sort((a,b) => a.data.order - b.data.order || a.data.slug.localeCompare(b.data.slug));
+const projects = (await Promise.all(companies.map(async company => {
+  const sections = await getWorkSections(company);
+  if (!sections.length) return [{
+    data: company.data,
+    href: projectPath(company),
+    companyName: undefined,
+    tint: projectPresentation[company.data.slug]?.tint,
+  }];
+  return sections.filter(section => section.data.visibility === 'public').map(section => ({
+    data: {
+      ...section.data,
+      expertise: section.data.expertise ?? company.data.expertise,
+      industries: section.data.industries ?? company.data.industries,
+    },
+    href: workSectionPath(company, section),
+    companyName: company.data.title,
+    tint: projectPresentation[company.data.slug]?.tint,
+  }));
+}))).flat();
 ---
 <BaseLayout title="Work" description="Selected UX/UI, interactive and marketing design projects by Natalia Isakova.">
   <div class="shell pt-14 sm:pt-20" data-work-catalog>
     <p class="eyebrow">Portfolio</p>
     <h1 class="mt-6 max-w-[18ch] text-headline">Selected <span class="serif">work.</span></h1>
     <div class="work-layout">
-      <WorkFilters projects={projects} />
+      <WorkFilters projects={projects.map(project => project.data)} />
       <section class="work-results" id="work-results" aria-label="Projects">
         <p class="results-count" role="status" aria-live="polite" aria-atomic="true" data-results-count>{projects.length} {projects.length === 1 ? 'project' : 'projects'}</p>
         <div class="work-grid">
           {projects.map((project, index) => <div data-project data-expertise={JSON.stringify(project.data.expertise)} data-industries={JSON.stringify(project.data.industries)}>
-            <ProjectCard title={project.data.title} summary={project.data.summary} href={projectPath(project)} cover={project.data.cover} tint={projectPresentation[project.data.slug]?.tint} eager={index < 2} fillCover={project.data.fillCover}>
+            <ProjectCard title={project.data.title} summary={project.data.summary} href={project.href} cover={project.data.cover} tint={project.tint} companyName={project.companyName} eager={index < 2} fillCover={project.data.fillCover}>
               {workTagGroups.some(group => project.data[group.id].length > 0) && <ul class="project-tags" aria-label="Project tags">
                 {workTagGroups.flatMap(group => group.tags.filter(tag => project.data[group.id].includes(tag.id))).map(tag => <li class="chip">{tag.label}</li>)}
               </ul>}
@@ -98,11 +117,11 @@ const projects = allProjects.filter(project => project.data.visibility === 'publ
   .work-layout{margin-top:3rem;display:grid;gap:2rem}
   .work-results{min-width:0}
   .results-count{font-size:.9rem;color:var(--muted);margin-bottom:1.5rem}
-  .work-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:4rem 2rem}
+  .work-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:3rem 1.5rem}
   .work-grid>[data-project]{min-width:0}
   .project-tags{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:1rem}
   .empty-state{border:1px solid var(--line);border-radius:var(--radius-card);padding:2.5rem;display:grid;gap:1rem;justify-items:start}
   .empty-state p{color:var(--body)}
-  @media(min-width:1024px){.work-layout:has([data-work-filters]:not([hidden])){grid-template-columns:250px minmax(0,1fr);gap:3rem}}
+  @media(min-width:1024px){.work-layout:has([data-work-filters]:not([hidden])){grid-template-columns:250px minmax(0,1fr);gap:3rem}.work-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
   @media(max-width:639px){.work-grid{grid-template-columns:minmax(0,1fr);gap:3rem}}
 </style>

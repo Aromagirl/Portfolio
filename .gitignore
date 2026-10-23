@@ -4,3 +4,4 @@ dist/
 .env*
 migration/raw/
 migration/assets-original/
+screenshots/

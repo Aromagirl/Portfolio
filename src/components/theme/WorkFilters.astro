@@ -1,11 +1,11 @@
 ---
 import { workTagGroups } from '../../data/work-tags';
-import type { CollectionEntry } from 'astro:content';
-interface Props { projects: CollectionEntry<'projects'>[] }
+import type { FilterState } from '../../utils/work-filters';
+interface Props { projects: FilterState[] }
 const { projects } = Astro.props;
 const groups = workTagGroups.map(group => ({
   ...group,
-  tags: group.tags.map(tag => ({ ...tag, count: projects.filter(project => project.data[group.id].includes(tag.id)).length })).filter(tag => tag.count > 0),
+  tags: group.tags.map(tag => ({ ...tag, count: projects.filter(project => project[group.id].includes(tag.id)).length })).filter(tag => tag.count > 0),
 }));
 ---
 <aside class="work-filters" aria-label="Filter projects" data-work-filters hidden>

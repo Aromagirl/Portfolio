@@ -15,7 +15,7 @@ const schema = z.object({
 
 const tagList = (tags: readonly { id: string }[]) => z.array(
   z.string().refine(value => tags.some(tag => tag.id === value), 'Unknown work tag; use src/data/work-tags.ts'),
-).default([]).refine(values => new Set(values).size === values.length, 'Duplicate work tags');
+).refine(values => new Set(values).size === values.length, 'Duplicate work tags');
 
 const projectSchema = z.object({
   title: z.string().min(1),
@@ -25,8 +25,8 @@ const projectSchema = z.object({
   logo: z.string().nullable().default(null),
   companyId: z.string().nullable().optional(),
   role: z.string().default(''),
-  expertise: tagList(expertiseTags),
-  industries: tagList(industryTags),
+  expertise: tagList(expertiseTags).default([]),
+  industries: tagList(industryTags).default([]),
   featured: z.boolean().default(false),
   order: z.number().default(100),
   status: z.enum(['placeholder', 'in-progress', 'published']).default('placeholder'),
@@ -42,6 +42,9 @@ const workSectionSchema = z.object({
   slug: z.string().regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/),
   title: z.string().min(1),
   summary: z.string(),
+  expertise: tagList(expertiseTags).optional(),
+  industries: tagList(industryTags).optional(),
+  visibility: z.enum(['public', 'hidden']).default('public'),
   cover: z.string().nullable().default(null),
   fillCover: z.boolean().default(false),
   order: z.number().default(100),
@@ -51,14 +54,18 @@ const workSectionSchema = z.object({
 
 export const collections = {
   projects: defineCollection({
-    loader: glob({ pattern: ['*.{md,mdx}', '*/index.{md,mdx}'], base: './src/content/projects' }),
+    loader: glob({ pattern: '*/index.{md,mdx}', base: './src/content/companies' }),
     schema: projectSchema,
   }),
   workSections: defineCollection({
     loader: glob({
-      pattern: ['projects/*/*.{md,mdx}', '!projects/*/index.{md,mdx}'],
-      base: './src/content',
-      generateId: ({ entry }) => entry.replace(/^projects\//, '').replace(/\.(md|mdx)$/, '').replaceAll('/', '-'),
+      pattern: '*/projects/*/*.{md,mdx}',
+      base: './src/content/companies',
+      // Keep existing section IDs, including anchor aliases, after moving files.
+      generateId: ({ entry }) => {
+        const [company, , project] = entry.split('/');
+        return `${company}-${project}`;
+      },
     }),
     schema: workSectionSchema,
   }),

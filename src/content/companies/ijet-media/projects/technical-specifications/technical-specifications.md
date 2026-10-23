@@ -3,7 +3,7 @@ project: "ijet-media"
 slug: "technical-specifications"
 title: "Technical specifications"
 summary: "Diagrams, scenarios, mockups and specifications for developers and artists."
-cover: "/images/projects/ijet-media/19.webp"
+cover: "/images/projects/ijet-media/technical-specifications/19.webp"
 order: 2
 ---
 
@@ -13,27 +13,27 @@ order: 2
     
 -   Prototyping experimental projects
 
-![i-Jet Media — 19](/images/projects/ijet-media/19.webp)
+![i-Jet Media — 19](/images/projects/ijet-media/technical-specifications/19.webp)
 
 Farm Of Happiness - Main page
 
-![i-Jet Media — 20](/images/projects/ijet-media/20.webp)
+![i-Jet Media — 20](/images/projects/ijet-media/technical-specifications/20.webp)
 
 Farm Of Happiness - Market
 
-![i-Jet Media — 21](/images/projects/ijet-media/21.webp)
+![i-Jet Media — 21](/images/projects/ijet-media/technical-specifications/21.webp)
 
 World Of Fitness \- Training
 
-![i-Jet Media — 22](/images/projects/ijet-media/22.webp)
+![i-Jet Media — 22](/images/projects/ijet-media/technical-specifications/22.webp)
 
 Farm Of Happiness - Types of goods
 
-![i-Jet Media — 23](/images/projects/ijet-media/23.webp)
+![i-Jet Media — 23](/images/projects/ijet-media/technical-specifications/23.webp)
 
 Farm Of Happiness \- Menu of actions
 
-![i-Jet Media — 24](/images/projects/ijet-media/24.webp)
+![i-Jet Media — 24](/images/projects/ijet-media/technical-specifications/24.webp)
 
 World Of Fitness \- Сursor stages
 

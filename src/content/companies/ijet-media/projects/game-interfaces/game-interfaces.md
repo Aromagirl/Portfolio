@@ -3,13 +3,13 @@ project: "ijet-media"
 slug: "game-interfaces"
 title: "Game interface design"
 summary: "Social game interfaces and stages of the interface design process."
-cover: "/images/projects/ijet-media/03.webp"
+cover: "/images/projects/ijet-media/game-interfaces/03.webp"
 order: 0
 ---
 
 ## What is a social online game?
 
-![i-Jet Media — 03](/images/projects/ijet-media/03.webp)
+![i-Jet Media — 03](/images/projects/ijet-media/game-interfaces/03.webp)
 
 ### Main features of social online games:
 
@@ -39,25 +39,25 @@ The game is a long-term entertainment service that promises a long and engaging 
 
 ### Social online games of the development studio "Taran Studio"
 
-![i-Jet Media — 04](/images/projects/ijet-media/04.webp)
+![i-Jet Media — 04](/images/projects/ijet-media/game-interfaces/04.webp)
 
 Happy Farmer
 
-![i-Jet Media — 05](/images/projects/ijet-media/05.webp)
+![i-Jet Media — 05](/images/projects/ijet-media/game-interfaces/05.webp)
 
 City Gangs
 
-![i-Jet Media — 06](/images/projects/ijet-media/06.webp)
+![i-Jet Media — 06](/images/projects/ijet-media/game-interfaces/06.webp)
 
 Farm Frenzy (mobile)
 
-![i-Jet Media — 07](/images/projects/ijet-media/07.webp)
+![i-Jet Media — 07](/images/projects/ijet-media/game-interfaces/07.webp)
 
 Caribbean Pirates
 
 ## Stages of work as an Interface designer
 
-![i-Jet Media — 08](/images/projects/ijet-media/08.webp)
+![i-Jet Media — 08](/images/projects/ijet-media/game-interfaces/08.webp)
 
 ## I.
 
@@ -81,11 +81,11 @@ The second stage:
     
 3.  Transferring agreed upon layouts to programmers to create the “skeleton” of the game and navigation
 
-![i-Jet Media — 09](/images/projects/ijet-media/09.webp)
+![i-Jet Media — 09](/images/projects/ijet-media/game-interfaces/09.webp)
 
-![i-Jet Media — 10](/images/projects/ijet-media/10.webp)
+![i-Jet Media — 10](/images/projects/ijet-media/game-interfaces/10.webp)
 
-![i-Jet Media — 11](/images/projects/ijet-media/11.webp)
+![i-Jet Media — 11](/images/projects/ijet-media/game-interfaces/11.webp)
 
 ## III.
 
@@ -111,4 +111,4 @@ The fourth stage:
     
 4.  Further development of the finished product
 
-![i-Jet Media — 12](/images/projects/ijet-media/12.webp)
+![i-Jet Media — 12](/images/projects/ijet-media/game-interfaces/12.webp)

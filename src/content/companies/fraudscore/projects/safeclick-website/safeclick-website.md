@@ -3,7 +3,7 @@ project: "fraudscore"
 slug: "safeclick-website"
 title: "SafeClick Website"
 summary: ""
-cover: "/images/projects/fraudscore/safeclick/cover.png"
+cover: "/images/projects/fraudscore/safeclick-website/cover.png"
 fillCover: true
 order: -3
 ---

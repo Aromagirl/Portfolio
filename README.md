@@ -5,7 +5,7 @@
 - Сайт: https://aromagirl.github.io/Portfolio/
 - Основная рабочая ветка: `dev`.
 - Главная и About: `src/content/pages/`.
-- Тексты и изображения проектов: `src/content/projects/`.
+- Тексты и изображения проектов: `src/content/companies/`.
 
 ## Локальный запуск
 
@@ -20,6 +20,7 @@ npm run dev
 
 - `npm run build` — сборка в `dist/`.
 - `npm run preview` — просмотр готовой сборки.
+- `npm run screenshots` — ручная съёмка сайтов в PNG; конфигурация и команды в [scripts/README.md](scripts/README.md).
 
 После небольших изменений текста или CSS полная сборка обычно не нужна. Проверяйте сборку после изменения маршрутов, структуры контента или компонентов.
 
@@ -29,12 +30,12 @@ npm run dev
 | --- | --- | --- |
 | Главная | `src/content/pages/home.mdx` | `/` |
 | About me | `src/content/pages/about-me.mdx` | `/about/` |
-| FraudScore | `src/content/projects/fraudscore/index.md` | `/fraudscore/` |
-| Mafia Game | `src/content/projects/mafia-bot-mini-app/index.md` | `/work/mafia-bot-mini-app/` |
-| Tickeron | `src/content/projects/tickeron/index.md` | `/work/tickeron/` |
-| MyHospital | `src/content/projects/myhospital/index.md` | `/work/myhospital/` |
-| KidswearCycle | `src/content/projects/kidswearcycle/index.md` | `/work/kidswearcycle/` |
-| I-Jet Media | `src/content/projects/ijet-media/index.md` | `/work/ijet-media/` |
+| FraudScore | `src/content/companies/fraudscore/index.md` | `/fraudscore/` |
+| Mafia Game | `src/content/companies/mafia-bot-mini-app/index.md` | `/work/mafia-bot-mini-app/` |
+| Tickeron | `src/content/companies/tickeron/index.md` | `/work/tickeron/` |
+| MyHospital | `src/content/companies/myhospital/index.md` | `/work/myhospital/` |
+| KidswearCycle | `src/content/companies/kidswearcycle/index.md` | `/work/kidswearcycle/` |
+| I-Jet Media | `src/content/companies/ijet-media/index.md` | `/work/ijet-media/` |
 
 Главная содержит собственные карточки SafeClick Website и FraudScore Website. Они редактируются в `home.mdx` независимо от каталога Work. Если у карточки с классом `home-project-cover` нет изображения, сайт сохраняет пустую область обложки.
 
@@ -57,13 +58,13 @@ Mafia Game использует такой же верх страницы, бе�
 
 ### Файлы направлений
 
-Все пути ниже указаны относительно `src/content/projects/`.
+Все пути ниже указаны относительно `src/content/companies/`.
 
 | Проект | Файлы направлений |
 | --- | --- |
-| Tickeron | `tickeron/website-ui.md`, `tickeron/landing-pages.md`, `tickeron/icons-banners.md` |
-| FraudScore | `fraudscore/safeclick-website.md`, `fraudscore/fraudscore-website.md`, `fraudscore/ux-ui-design.md`, `fraudscore/social-media-blog.md`, `fraudscore/expo-design.md`, `fraudscore/presentations.md` |
-| I-Jet Media | `ijet-media/game-interfaces.md`, `ijet-media/mobile-versions.md`, `ijet-media/technical-specifications.md` |
+| Tickeron | `tickeron/projects/website-ui/website-ui.md`, `tickeron/projects/landing-pages/landing-pages.md`, `tickeron/projects/icons-banners/icons-banners.md` |
+| FraudScore | `fraudscore/projects/safeclick-website/safeclick-website.md`, `fraudscore/projects/fraudscore-website/fraudscore-website.md`, `fraudscore/projects/ux-ui-design/ux-ui-design.md`, `fraudscore/projects/social-media-blog/social-media-blog.md`, `fraudscore/projects/expo-design/expo-design.md`, `fraudscore/projects/presentations/presentations.md` |
+| I-Jet Media | `ijet-media/projects/game-interfaces/game-interfaces.md`, `ijet-media/projects/mobile-versions/mobile-versions.md`, `ijet-media/projects/technical-specifications/technical-specifications.md` |
 
 Файлы направлений автоматически появляются на обзорной странице родительского проекта. Их адрес: `/work/<project-slug>/<section-slug>/`.
 
@@ -82,35 +83,40 @@ order: 100
 
 `project` — ID родительского проекта, соответствующий его `slug`. `order` задаёт порядок карточек. `fillCover: true` заполняет обложкой всю область карточки.
 
-Отдельная папка `work-sections` больше не используется. Коллекция `workSections` в конфигурации остаётся: она загружает соседние с `index.md` файлы направлений.
+Коллекция `workSections` загружает файлы `companies/<company>/projects/<project>/<project>.md`. Внутренние имена коллекций `projects` и `workSections` сохранены для совместимости компонентов.
 
 ## Изображения и документы
 
-Изображения лежат рядом с Markdown каждого проекта:
+Текст и изображения хранятся рядом. Общий файл компании — `index.md`, каждый отдельный проект — папка в `projects/`:
 
 ```text
-src/content/projects/
+src/content/companies/
   fraudscore/
     index.md
-    fraudscore-website.md
-    images/
-      cover.png
-      cover-ux-ui.png
-      safeclick/
+    cover.png
+    01.webp
+    projects/
+      safeclick-website/
+        safeclick-website.md
+        cover.png
+      ux-ui-design/
+        ux-ui-design.md
         cover.png
 ```
 
 - Для замены изображения сохраните его имя и расширение.
-- Для нового файла используйте ссылку `/images/projects/<project>/<filename>`.
-- Например: `![Описание](/images/projects/fraudscore/cover-ux-ui.png)`.
+- Для изображения отдельного проекта используйте ссылку `/images/projects/<company>/<project>/<filename>`.
+- Например: `![Описание](/images/projects/fraudscore/ux-ui-design/cover.png)`.
+- Общие обложки и логотипы компании лежат рядом с её `index.md`; компании без отдельных проектов хранят там все изображения.
 - Обложки и логотипы задаются в метаданных `cover` и `logo`.
 - `cover: null` оставляет карточку каталога без изображения.
-- Изображения SafeClick: `fraudscore/images/safeclick/`.
-- Изображения Mafia Game: `mafia-bot-mini-app/images/`.
-- Обложки Tickeron, MyHospital и KidswearCycle: `images/cover.webp` в папке каждого проекта.
-- Обложка FraudScore в каталоге: `fraudscore/images/cover.png`; UX/UI Design: `fraudscore/images/cover-ux-ui.png`.
+- Изображения SafeClick: `fraudscore/projects/safeclick-website/`.
+- Изображения Mafia Game: `mafia-bot-mini-app/`, рядом с `index.md`.
+- Обложки Tickeron, MyHospital и KidswearCycle: `cover.webp` в папке каждой компании.
+- Обложка FraudScore в каталоге: `fraudscore/cover.png`; UX/UI Design: `fraudscore/projects/ux-ui-design/cover.png`.
+- Компании без отдельных проектов не требуют пустой папки `projects/`.
 
-Интеграция `src/integrations/project-images.mjs` отдаёт изображения в режиме разработки и копирует их в сборку. Дублировать их в `public` не нужно.
+Интеграция `src/integrations/project-images.mjs` отдаёт изображения из новой структуры в режиме разработки и копирует их в сборку по прежним публичным URL. Markdown не публикуется как медиа. Дублировать изображения в `public` не нужно.
 
 Изображения главной и About, которые не относятся к кейсам, остаются в `public/images/projects/home/` и `public/images/projects/about-me/`. Фирменные логотипы сайта — в `public/images/brand/`.
 
@@ -118,25 +124,26 @@ PDF FraudScore хранится в `public/documents/marketing-design/fraudscore
 
 ## Каталог Work
 
-Каталог `src/pages/work/index.astro` показывает одну карточку на родительский проект. SafeClick Website входит во FraudScore и не имеет отдельной карточки каталога.
+Каталог `src/pages/work/index.astro` показывает отдельные проекты из `companies/<company>/projects/`. Если у компании нет отдельных проектов (например, MyHospital), показывается карточка самой компании. Родительская карточка не дублирует её проекты; название компании подписано над названием каждого проекта.
 
-- `title`, `summary`, `cover`, `order` берутся из метаданных проекта.
+- `title`, `summary`, `cover`, `fillCover` берутся из метаданных отображаемого проекта. Сначала карточки упорядочены по `order` компании, затем по `order` её проектов.
+- `expertise` и `industries` проекта наследуются от компании, если не указаны в его Markdown. Укажите собственный массив для переопределения или `[]`, чтобы убрать теги этой группы.
 - Допустимые теги `expertise` и `industries` заданы в `src/data/work-tags.ts`; пустые массивы разрешены.
 - Внутри группы фильтры работают по OR, между Expertise и Industries — по AND.
 - Фильтры сохраняются в URL, поддерживаются перезагрузка и Back/Forward.
-- Числа возле тегов показывают общее количество публичных проектов с этим тегом независимо от выбранных фильтров.
-- `visibility: hidden` исключает проект только из каталога и его счётчиков; страница и sitemap сохраняются.
+- Числа возле тегов считают отображаемые карточки проектов независимо от выбранных фильтров.
+- `visibility: hidden` у компании исключает её и её проекты из каталога; у отдельного проекта — только его карточку. Страницы и sitemap сохраняются. Если все проекты компании скрыты, её карточка не появляется вместо них.
 - `status` проекта допускает `placeholder`, `in-progress` и `published`; страница создаётся для каждого статуса.
 
 Пример: `/Portfolio/work/?expertise=ui-design&industries=healthcare`.
 
 ### Новый проект
 
-1. Создайте `src/content/projects/<project>/index.md`. Начальные поля можно взять из `templates/project.template.md`.
+1. Создайте `src/content/companies/<project>/index.md`. Начальные поля можно взять из `templates/project.template.md`.
 2. Заполните `title`, уникальный `slug`, `summary`, `cover`, теги и `order`.
-3. Поместите изображения в соседнюю папку `images/`.
+3. Поместите общие изображения рядом с `index.md`.
 4. Для общего шаблона добавьте описание и заголовок `## My role …` со списком обязанностей. Название проекта уже выводит шаблон, дублировать его в тексте не нужно.
-5. Если нужны отдельные направления, создайте соседние Markdown-файлы с полем `project`.
+5. Для отдельного проекта создайте `projects/<project>/<project>.md` с полем `project`, указывающим ID компании. Поместите его изображения в ту же папку.
 
 Обычный адрес проекта — `/work/<slug>/`. FraudScore использует `casePage: fraudscore`, чтобы сохранить адрес `/fraudscore/`.
 
