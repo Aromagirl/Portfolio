@@ -1,5 +1,6 @@
 ---
 import { workTagGroups } from '../../data/work-tags';
+import Icon from './Icon.astro';
 import type { FilterState } from '../../utils/work-filters';
 interface Props { projects: FilterState[] }
 const { projects } = Astro.props;
@@ -12,6 +13,7 @@ const groups = workTagGroups.map(group => ({
   <details open>
     <summary>Filters <span data-active-count></span></summary>
     <div class="filter-panel">
+      <button type="button" class="clear-filters" data-clear-filters disabled><Icon name="x" class="size-4" />Clear filters</button>
       {groups.map(group => group.tags.length > 0 && <fieldset>
         <legend>{group.label}</legend>
         <div class="filter-options">
@@ -21,7 +23,6 @@ const groups = workTagGroups.map(group => ({
           </label>)}
         </div>
       </fieldset>)}
-      <button type="button" class="clear-filters" data-clear-filters disabled>Clear filters</button>
     </div>
   </details>
 </aside>
@@ -37,8 +38,8 @@ const groups = workTagGroups.map(group => ({
   label:has(input:checked){background:var(--sunken);font-weight:600}
   input{width:1rem;height:1rem;accent-color:var(--ink);flex-shrink:0}
   .tag-count{margin-left:auto;color:var(--muted);font-size:.85rem;font-variant-numeric:tabular-nums}
-  .clear-filters{justify-self:start;min-height:44px;text-decoration:underline;text-underline-offset:.2em;cursor:pointer;font-size:.9rem}
-  .clear-filters:disabled{color:var(--muted);cursor:default;text-decoration:none}
+  .clear-filters{justify-self:start;display:inline-flex;align-items:center;gap:.4rem;min-height:44px;text-decoration:underline;text-underline-offset:.2em;cursor:pointer;font-size:.9rem}
+  .clear-filters:disabled{visibility:hidden}
   @media(min-width:1024px){summary{display:none}.filter-panel{padding-top:0}}
   @media(max-width:1023px){.work-filters{border-block:1px solid var(--line)}.filter-panel{grid-template-columns:repeat(2,minmax(0,1fr));gap:1.5rem}.clear-filters{grid-column:1/-1}}
   @media(max-width:479px){.filter-panel{grid-template-columns:minmax(0,1fr)}}
