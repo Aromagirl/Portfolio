@@ -551,7 +551,7 @@
 .about-portrait img{display:block;width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center;border-radius:var(--radius-card)}
 .about-certificate img{display:block;width:100%;max-width:40rem;height:auto;margin-top:1.5rem;border:1px solid var(--line);border-radius:var(--radius-panel)}
 .about-page .about-row p+p{margin-top:1.25rem}
-.about-page .about-row a{text-decoration:underline;text-underline-offset:.2em}
+.about-page .about-row a:not(.btn){text-decoration:underline;text-underline-offset:.2em}
 .section-marketing-design>.source-section:not(:first-child){padding-top:2rem;border-top:1px solid var(--line)}
 .section-marketing-design>.source-section:first-child h1{max-width:48rem;margin-inline:auto}
 .section-marketing-design>.source-section:nth-child(2) img{max-width:25rem}

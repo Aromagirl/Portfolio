@@ -6,6 +6,7 @@ import ContentLink from '../components/ContentLink.astro';
 import { withBase } from '../utils/paths';
 import CompanyOverview from '../components/theme/CompanyOverview.astro';
 import MarkdownBody from '../components/MarkdownBody.astro';
+import EditablePage from '../components/EditablePage.astro';
 import { getWorkSections } from '../utils/work';
 
 export async function getStaticPaths() {
@@ -34,7 +35,7 @@ const splitRole = Boolean(project?.filePath?.endsWith('.md') && /^#{2,3} My role
     </CompanyOverview>
   </> : <>
   <div class:list={isAbout ? ['about-page'] : ['prose', 'source-content', 'section-content', `section-${page.id}`]} data-source-content>
-    <Content components={{ img: CaseImage, a: ContentLink }} />
+    <>{isAbout ? <EditablePage page="about-me"><Content /></EditablePage> : <Content components={{ img: CaseImage, a: ContentLink }} />}</>
   </div>
   </>}
   </div>

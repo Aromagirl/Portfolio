@@ -1,0 +1,82 @@
+---
+import { load } from 'cheerio';
+import manifest from '../../migration/manifest.json';
+import { withBase } from '../utils/paths';
+
+interface Props { page: 'home' | 'about-me' }
+const { page } = Astro.props;
+const $ = load(await Astro.slots.render('default'), {}, false);
+$('a[href]').each((_, element) => {
+  const link = $(element);
+  link.attr('href', withBase(link.attr('href')!));
+});
+// Keep editorial Markdown free of layout classes and component syntax.
+for (const element of $('img').toArray()) {
+  const img = $(element);
+  const src = img.attr('src') ?? '';
+  const asset = manifest.pages.flatMap(page => page.assets).find(asset => 'localPath' in asset && asset.localPath === src);
+  img.attr({ src: withBase(src), loading: src.includes('/home/') ? 'eager' : 'lazy', decoding: 'async' });
+  if (asset && 'outputWidth' in asset && asset.outputWidth) img.attr('width', String(asset.outputWidth));
+  if (asset && 'outputHeight' in asset && asset.outputHeight) img.attr('height', String(asset.outputHeight));
+  const media = $('<span class="case-media">');
+  const link = $('<a class="image-link">').attr({ href: withBase(src), 'aria-label': `Open image: ${img.attr('alt') ?? ''}` });
+  img.replaceWith(media);
+  media.append(link.append(img));
+}
+$('h1 em').each((_, element) => { $(element).replaceWith($('<span class="serif">').html($(element).html() ?? '')); });
+const output = $('<div>');
+if (page === 'home') {
+  const hero = $('<section class="source-section">');
+  const intro = $('<section class="source-section">');
+  let inIntro = false;
+  for (const element of $.root().children().toArray()) {
+    (inIntro ? intro : hero).append(element);
+    if (element.tagName === 'h3') inIntro = true;
+  }
+  hero.find('h1').attr('id', 'h.wxgctqi6bbf6');
+  hero.find('h3').attr('id', 'h.phwyaasj0fps');
+  output.append(hero, intro);
+} else {
+  const hero = $('<header class="grid gap-12 pt-16 sm:pt-24 lg:grid-cols-[minmax(0,1fr)_22rem] lg:items-end lg:gap-16">');
+  const intro = $('<div>');
+  const portrait = $('<div class="about-portrait">');
+  hero.append(intro, portrait);
+  output.append(hero);
+  let section = intro;
+  let sectionIndex = 0;
+  for (const element of $.root().children().toArray()) {
+    const node = $(element);
+    if (element.tagName === 'h2') {
+      sectionIndex++;
+      const row = $('<section class="about-row grid gap-6 border-t border-line py-12 lg:grid-cols-[16rem_minmax(0,1fr)] lg:gap-16">');
+      const group = $('<div>').addClass(sectionIndex === 1 ? 'mt-20 sm:mt-28' : 'mt-16 sm:mt-24').appendTo(output);
+      node.attr('class', 'eyebrow self-start');
+      section = $('<div class="max-w-3xl text-lead text-body about-certificate">');
+      row.append(node, section);
+      group.append(row);
+      continue;
+    }
+    if (sectionIndex > 0 && element.tagName === 'h3') {
+      node.attr('class', section.children().length ? 'mt-8 mb-4 text-title' : 'mb-4 text-title');
+    }
+    if (sectionIndex === 0) {
+      if (node.find('img').length) { portrait.append(node); continue; }
+      if (element.tagName === 'h1') node.attr({ id: 'h.r0hvbedw30a9', class: 'mt-6 max-w-[18ch] text-headline' });
+      else if (!intro.children().length) node.attr('class', 'eyebrow');
+      else if (node.children('a').length) {
+        let buttons = intro.children('.mt-8');
+        if (!buttons.length) buttons = $('<div class="mt-8 flex flex-wrap gap-3">').appendTo(intro);
+        node.children('a').addClass(buttons.children().length ? 'btn btn-ghost' : 'btn btn-primary').appendTo(buttons);
+        continue;
+      } else node.wrap('<div class="mt-6 max-w-2xl text-lead text-body">');
+      intro.append(node.parent().is('div') ? node.parent() : node);
+    } else section.append(node);
+  }
+}
+output.find('a').each((_, element) => {
+  const link = $(element);
+  if (link.text().trim() === 'Email me') link.removeClass('btn-primary').addClass('btn btn-ghost');
+});
+const html = output.html() ?? '';
+---
+<Fragment set:html={html} />

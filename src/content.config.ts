@@ -11,6 +11,7 @@ const schema = z.object({
   sortOrder: z.number(),
   category: z.string(),
   cover: z.string().nullable(),
+  homeProjects: z.array(z.object({ projectId: z.string(), summary: z.string().optional() })).default([]),
 });
 
 const tagList = (tags: readonly { id: string }[]) => z.array(
@@ -71,5 +72,5 @@ export const collections = {
     }),
     schema: workSectionSchema,
   }),
-  pages: defineCollection({ loader: glob({ pattern: '**/*.mdx', base: './src/content/pages' }), schema }),
+  pages: defineCollection({ loader: glob({ pattern: '**/*.{md,mdx}', base: './src/content/pages' }), schema }),
 };
