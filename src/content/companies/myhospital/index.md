@@ -9,7 +9,7 @@ order: 4
 cover: "/images/projects/myhospital/cover.webp"
 visibility: "public"
 role: "UX Researcher & UX/UI Designer"
-expertise: [ux-research, prototyping, ui-design]
+expertise: [ux-research, prototyping, brand-identity, ui-design]
 industries: [healthcare]
 fillCover: false
 logo: "/images/projects/myhospital/01.webp"

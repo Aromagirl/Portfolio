@@ -47,7 +47,7 @@ const projects = (await Promise.all(companies.map(async company => {
         <p class="results-count" role="status" aria-live="polite" aria-atomic="true" data-results-count>{projects.length} {projects.length === 1 ? 'project' : 'projects'}</p>
         <div class="work-grid">
           {projects.map((project, index) => <div data-project data-expertise={JSON.stringify(project.data.expertise)} data-industries={JSON.stringify(project.data.industries)}>
-            <ProjectCard title={project.data.title} summary={project.data.summary} href={project.href} cover={project.data.cover} tint={project.tint} companyName={project.companyName} eager={index < 2} fillCover={project.data.fillCover}>
+            <ProjectCard title={project.data.title} summary={project.data.summary} href={project.href} cover={project.data.cover} tint={project.tint} companyName={project.companyName} eager={index < 2} fillCover={project.data.fillCover} disabled={project.data.cardDisabled}>
               {workTagGroups.some(group => project.data[group.id].length > 0) && <ul class="project-tags" aria-label="Project tags">
                 {workTagGroups.flatMap(group => group.tags.filter(tag => project.data[group.id].includes(tag.id))).map(tag => <li class="chip">{tag.label}</li>)}
               </ul>}

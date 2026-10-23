@@ -4,7 +4,7 @@ slug: "expo-design"
 title: "Expo design"
 summary: "Booth, rollups, conference handouts and branded merchandise."
 cover: "/images/projects/fraudscore/expo-design/14.webp"
-order: 1
+order: 2
 sourceHeading: "Expo design"
 expertise: [marketing-design]
 industries: [adtech]

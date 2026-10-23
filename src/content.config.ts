@@ -31,6 +31,7 @@ const projectSchema = z.object({
   order: z.number().default(100),
   status: z.enum(['placeholder', 'in-progress', 'published']).default('placeholder'),
   visibility: z.enum(['public', 'hidden']).default('public'),
+  cardDisabled: z.boolean().default(false),
   sourceUrl: z.string().url().optional(),
   // Preserve a project's existing top-level URL.
   casePage: z.string().regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/).optional(),
@@ -45,6 +46,7 @@ const workSectionSchema = z.object({
   expertise: tagList(expertiseTags).optional(),
   industries: tagList(industryTags).optional(),
   visibility: z.enum(['public', 'hidden']).default('public'),
+  cardDisabled: z.boolean().default(false),
   cover: z.string().nullable().default(null),
   fillCover: z.boolean().default(false),
   order: z.number().default(100),

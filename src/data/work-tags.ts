@@ -6,6 +6,7 @@ export const expertiseTags = [
   { id: 'design-systems', label: 'Design Systems' },
   { id: 'visual-design', label: 'Visual Design' },
   { id: 'marketing-design', label: 'Marketing Design' },
+  { id: 'brand-identity', label: 'Brand Identity' },
   { id: 'development', label: 'Development' },
   { id: 'digital-analytics', label: 'Digital Analytics' },
   { id: 'quality-assurance', label: 'Quality Assurance' }

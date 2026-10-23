@@ -4,7 +4,7 @@ slug: "presentations"
 title: "Presentations"
 summary: "FraudScore presentation for the Madrid Mobile Summit expo."
 cover: "/images/projects/fraudscore/presentations/cover.png"
-order: 2
+order: 1
 sourceHeading: "Presentations"
 expertise: [marketing-design]
 industries: [adtech]

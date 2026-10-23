@@ -7,8 +7,9 @@ slug: "mafia-bot-mini-app"
 order: 2
 cover: "/images/projects/mafia-bot-mini-app/cover.jpg"
 visibility: "public"
+cardDisabled: true
 role: "Product Designer"
-expertise: [product-design, ui-design, development, quality-assurance]
+expertise: [product-design, brand-identity, ui-design, development, quality-assurance]
 industries: [gaming]
 fillCover: true
 # Draft copy: replace the description and responsibilities with confirmed project details.
