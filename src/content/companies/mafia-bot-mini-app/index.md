@@ -8,8 +8,8 @@ order: 2
 cover: "/images/projects/mafia-bot-mini-app/cover.jpg"
 visibility: "public"
 role: "Product Designer"
-expertise: []
-industries: []
+expertise: [product-design, ui-design, development, quality-assurance]
+industries: [gaming]
 fillCover: true
 # Draft copy: replace the description and responsibilities with confirmed project details.
 ---

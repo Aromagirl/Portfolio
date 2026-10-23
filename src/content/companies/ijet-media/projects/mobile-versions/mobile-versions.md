@@ -5,6 +5,8 @@ title: "Mobile versions"
 summary: "Mobile versions of social game interfaces."
 cover: "/images/projects/ijet-media/mobile-versions/15.webp"
 order: 1
+expertise: [product-design, prototyping, quality-assurance]
+industries: [gaming]
 ---
 
 ![i-Jet Media — 13](/images/projects/ijet-media/mobile-versions/13.webp)

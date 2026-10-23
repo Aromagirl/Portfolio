@@ -10,8 +10,8 @@ order: 3
 cover: "/images/projects/tickeron/cover.webp"
 visibility: "public"
 role: "UI Designer"
-expertise: ["ui-design"]
-industries: ["fintech"]
+expertise: []
+industries: [fintech]
 fillCover: false
 ---
 

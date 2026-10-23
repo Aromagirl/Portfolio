@@ -7,8 +7,8 @@ cover: "/images/projects/fraudscore/cover.png"
 fillCover: true
 companyId: "fraudscore"
 role: "Product Designer"
-expertise: ["marketing", "visual-design"]
-industries: [] # TODO: Confirm industry tag.
+expertise: []
+industries: [adtech]
 featured: true
 order: 1
 status: "published"

@@ -6,6 +6,8 @@ summary: "Landing page designs for desktop and mobile."
 cover: "/images/projects/tickeron/landing-pages/13.webp"
 order: 1
 sourceHeading: "Landing pages"
+expertise: [visual-design, marketing-design]
+industries: [fintech]
 ---
 
 (desktop, mobile versions)

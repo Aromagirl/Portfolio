@@ -2,17 +2,21 @@ export const expertiseTags = [
   { id: 'product-design', label: 'Product Design' },
   { id: 'ux-research', label: 'UX Research' },
   { id: 'ui-design', label: 'UI Design' },
-  { id: 'development', label: 'Development' },
+  { id: 'prototyping', label: 'Prototyping' },
+  { id: 'design-systems', label: 'Design Systems' },
   { id: 'visual-design', label: 'Visual Design' },
-  { id: 'marketing', label: 'Marketing' },
+  { id: 'marketing-design', label: 'Marketing Design' },
+  { id: 'development', label: 'Development' },
+  { id: 'digital-analytics', label: 'Digital Analytics' },
+  { id: 'quality-assurance', label: 'Quality Assurance' }
 ] as const;
 
 export const industryTags = [
+  { id: 'adtech', label: 'AdTech' },
   { id: 'fintech', label: 'Fintech' },
-  { id: 'cybersecurity', label: 'Cybersecurity' },
   { id: 'healthcare', label: 'Healthcare' },
   { id: 'ecommerce', label: 'E-commerce' },
-  { id: 'gaming', label: 'Gaming' },
+  { id: 'gaming', label: 'Gaming' }
 ] as const;
 
 export const workTagGroups = [

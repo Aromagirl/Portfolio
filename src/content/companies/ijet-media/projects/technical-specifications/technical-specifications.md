@@ -5,6 +5,8 @@ title: "Technical specifications"
 summary: "Diagrams, scenarios, mockups and specifications for developers and artists."
 cover: "/images/projects/ijet-media/technical-specifications/19.webp"
 order: 2
+expertise: [product-design, prototyping, quality-assurance]
+industries: [gaming]
 ---
 
 -   Creating different documents (in coop with producers & game designers): a variety of diagrams, scenarios, mockups, specifications for the development team and artists

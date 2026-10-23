@@ -9,8 +9,8 @@ order: 6
 cover: "/images/projects/ijet-media/02.webp"
 visibility: "public"
 role: "Lead UX Designer"
-expertise: ["ui-design"]
-industries: ["gaming"]
+expertise: []
+industries: [gaming]
 fillCover: false
 logo: "/images/projects/ijet-media/01.webp"
 ---

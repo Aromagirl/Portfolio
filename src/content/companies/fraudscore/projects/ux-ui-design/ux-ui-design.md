@@ -6,5 +6,7 @@ summary: ""
 cover: "/images/projects/fraudscore/ux-ui-design/cover.png"
 fillCover: true
 order: -1
+expertise: [ui-design, design-systems, visual-design]
+industries: [adtech]
 ---
 

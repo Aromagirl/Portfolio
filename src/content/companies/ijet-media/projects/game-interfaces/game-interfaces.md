@@ -5,6 +5,8 @@ title: "Game interface design"
 summary: "Social game interfaces and stages of the interface design process."
 cover: "/images/projects/ijet-media/game-interfaces/03.webp"
 order: 0
+expertise: [ux-research, prototyping, quality-assurance, marketing-design, digital-analytics]
+industries: [gaming]
 ---
 
 ## What is a social online game?

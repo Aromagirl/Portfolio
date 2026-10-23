@@ -6,6 +6,8 @@ summary: "FraudScore presentation for the Madrid Mobile Summit expo."
 cover: "/images/projects/fraudscore/presentations/cover.png"
 order: 2
 sourceHeading: "Presentations"
+expertise: [marketing-design]
+industries: [adtech]
 ---
 
 [Open Fraudscore.pdf ↗](/documents/marketing-design/fraudscore.pdf)  [View on Google Drive ↗](https://drive.google.com/open?id=1oZ5vFIXSzU8BhIZm3PuMD3dBMJD-V23G)

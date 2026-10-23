@@ -6,6 +6,8 @@ summary: "Platform mockups and prototypes for desktop, tablet and mobile."
 cover: "/images/projects/tickeron/website-ui/02.webp"
 order: 0
 sourceHeading: "Mockups & prototypes"
+expertise: [ui-design, visual-design]
+industries: [fintech]
 ---
 
 ![Tickeron — 02](/images/projects/tickeron/website-ui/02.webp)

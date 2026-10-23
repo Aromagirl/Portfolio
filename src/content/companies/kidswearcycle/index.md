@@ -9,8 +9,8 @@ order: 5
 cover: "/images/projects/kidswearcycle/cover.webp"
 visibility: "public"
 role: "UX Researcher & UX/UI Designer"
-expertise: ["ux-research", "ui-design"]
-industries: ["ecommerce"]
+expertise: [ux-research, prototyping, ui-design]
+industries: [ecommerce]
 fillCover: false
 logo: "/images/projects/kidswearcycle/01.webp"
 ---

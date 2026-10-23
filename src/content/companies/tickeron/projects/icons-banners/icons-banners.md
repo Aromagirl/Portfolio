@@ -6,6 +6,8 @@ summary: "Vector icons for levels pages and desktop banners."
 cover: "/images/projects/tickeron/icons-banners/17.webp"
 order: 2
 sourceHeading: "Icons & Banners"
+expertise: [visual-design, marketing-design]
+industries: [fintech]
 ---
 
 ### Icons for Levels Pages

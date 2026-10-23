@@ -6,6 +6,8 @@ summary: "Social posts, event announcements and blog graphics."
 cover: "/images/projects/fraudscore/social-media-blog/02.webp"
 order: 0
 sourceHeading: "Social media marketing"
+expertise: [marketing-design]
+industries: [adtech]
 ---
 
 ### Social media posts, conference & speeches announcements

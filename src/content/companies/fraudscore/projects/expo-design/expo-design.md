@@ -6,6 +6,8 @@ summary: "Booth, rollups, conference handouts and branded merchandise."
 cover: "/images/projects/fraudscore/expo-design/14.webp"
 order: 1
 sourceHeading: "Expo design"
+expertise: [marketing-design]
+industries: [adtech]
 ---
 
 ![Marketing design — 14](/images/projects/fraudscore/expo-design/14.webp)
