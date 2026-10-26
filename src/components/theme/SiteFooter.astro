@@ -3,7 +3,7 @@ import Icon from './Icon.astro';
 import { withBase } from '../../utils/paths';
 import Logomark from './Logomark.astro';
 import { closing } from '../../config/home';
-import { workNavigation, navigation, siteConfig } from '../../config/site';
+import { navigation, siteConfig } from '../../config/site';
 
 interface Props {
   closing?: boolean;
@@ -38,66 +38,56 @@ const year = new Date().getFullYear();
   </section>
 )}
 
-<footer class="mt-24 border-t border-line sm:mt-32">
-  <div class="shell grid gap-12 py-16 sm:grid-cols-2 lg:grid-cols-[1.6fr_1fr_1fr_1fr]">
-    <div>
-      <a href={withBase('/')} class="inline-flex items-center gap-2.5 text-[1.15rem] font-semibold tracking-[-0.03em]">
+<footer class="site-footer mt-24 border-t border-line sm:mt-32">
+  <div class="shell footer-main">
+    <div class="footer-identity">
+      <a href={withBase('/')} class="footer-brand">
         <Logomark />
         <span>{siteConfig.name}</span>
         <span class="sr-only">, home</span>
       </a>
-      <p class="mt-5 max-w-xs text-muted">
+      <p class="footer-role">
         {siteConfig.author.role}
       </p>
     </div>
 
-    <nav aria-labelledby="footer-pages">
-      <h2 id="footer-pages" class="text-sm font-medium text-muted">
-        Pages
-      </h2>
-      <ul class="mt-4 grid gap-2.5">
-        <li>
-          <a class="footer-link" href={withBase('/')}>
-            Home
-          </a>
-        </li>
-        {navigation.map((link) => (
+    <div class="footer-links">
+      <nav aria-label="Footer">
+        <ul class="footer-navigation">
           <li>
-            <a class="footer-link" href={withBase(link.href)}>
-              {link.label}
+            <a class="footer-link" href={withBase('/')}>
+              Home
             </a>
           </li>
-        ))}
-      </ul>
-    </nav>
+          {navigation.map((link) => (
+            <li>
+              <a class="footer-link" href={withBase(link.href)}>
+                {link.label}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </nav>
 
-    <nav aria-labelledby="footer-elsewhere">
-      <h2 id="footer-elsewhere" class="text-sm font-medium text-muted">
-        Elsewhere
-      </h2>
-      <ul class="mt-4 grid gap-2.5">
+      <ul class="footer-contact" aria-label="Contact links">
+        <li><a class="footer-link" href={`mailto:${email}`}>{email}<Icon name="arrow-up-right" class="size-3.5" /></a></li>
         {siteConfig.socials.map((social) => (
           <li>
-            <a class="footer-link inline-flex items-center gap-2.5" href={social.href} rel="me noopener">
-              <Icon name={'social-linkedin'} class="size-3.5 text-muted" />
+            <a class="footer-link" href={social.href} rel="me noopener">
               {social.label}
+              <Icon name="arrow-up-right" class="size-3.5" />
             </a>
           </li>
         ))}
       </ul>
-    </nav>
-
-    <nav aria-labelledby="footer-categories">
-      <h2 id="footer-categories" class="text-sm font-medium text-muted">Explore work</h2>
-      <ul class="mt-4 grid gap-2.5">{workNavigation.slice(1).map(link => <li><a class="footer-link" href={withBase(link.href)}>{link.label}</a></li>)}</ul>
-    </nav>
+    </div>
   </div>
 
-  <div class="shell flex flex-wrap items-center justify-between gap-4 border-t border-line py-6 text-sm text-muted">
+  <div class="shell footer-bottom">
     <p>
-      &copy; {year} {siteConfig.author.name}. All rights reserved.
+      &copy; {year} {siteConfig.author.name}
     </p>
-    <a href="#main" class="inline-flex items-center gap-1.5 hover:text-ink">
+    <a href="#main" class="footer-top">
       Back to top
       <Icon name="arrow-up" class="size-3.5" />
     </a>
@@ -109,13 +99,38 @@ const year = new Date().getFullYear();
     scroll-margin-top: calc(var(--header-h) + 1rem);
   }
 
+  .footer-main{display:flex;align-items:start;justify-content:space-between;gap:2rem;padding-block:2.5rem}
+  .footer-brand{display:inline-flex;align-items:center;gap:.75rem;font-size:1.15rem;font-weight:600;letter-spacing:-.03em;color:var(--ink)}
+  .footer-role{margin-top:.75rem;font-size:.95rem;color:var(--muted)}
+  .footer-links{display:grid;justify-items:end;gap:1rem}
+  .footer-navigation,.footer-contact{display:flex;flex-wrap:wrap;align-items:center;justify-content:flex-end;gap:.5rem 2rem}
+  .footer-navigation{font-weight:500}
+  .footer-contact{font-size:.9rem}
+  .footer-contact .footer-link{color:var(--muted)}
+  .footer-bottom{display:flex;align-items:center;justify-content:space-between;gap:1rem;border-top:1px solid var(--line);padding-block:1.25rem;font-size:.8rem;color:var(--muted)}
+  .footer-top{display:inline-flex;align-items:center;gap:.5rem;min-height:44px}
+  .site-footer a:focus-visible{outline:2px solid var(--ink);outline-offset:5px;border-radius:3px}
+  @media(max-width:639px){
+    .footer-main{flex-direction:column;gap:1.5rem;padding-block:2rem}
+    .footer-links{justify-items:start;gap:.75rem;width:100%}
+    .footer-navigation,.footer-contact{justify-content:flex-start;gap:.25rem 1.5rem}
+    .footer-contact{align-items:start;flex-direction:column}
+    .footer-bottom{flex-wrap:wrap;padding-block:1rem}
+  }
+
   .footer-link {
+    display:inline-flex;
+    align-items:center;
+    gap:.5rem;
+    min-height:44px;
     color: var(--ink);
     transition: color 160ms ease;
   }
 
   .footer-link:hover {
-    color: var(--muted);
+    color: var(--ink);
+    text-decoration:underline;
+    text-underline-offset:4px;
   }
 
   .closing-grid {
