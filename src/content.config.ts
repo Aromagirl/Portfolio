@@ -40,6 +40,7 @@ const projectSchema = z.object({
 });
 
 const workSectionSchema = z.object({
+  comparison: z.boolean().default(false),
   project: reference('projects'),
   slug: z.string().regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/),
   title: z.string().min(1),

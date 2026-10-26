@@ -1,0 +1,152 @@
+﻿---
+import { readdir } from 'node:fs/promises';
+import { dirname, extname, join } from 'node:path';
+import ScreenshotPreview from './ScreenshotPreview.astro';
+import { withBase } from '../utils/paths';
+
+interface Props { filePath: string; title: string; mediaPath: string }
+const { filePath, title, mediaPath } = Astro.props;
+const pageOrder = mediaPath.endsWith('/safeclick-website')
+  ? ['home', 'pricing', 'registration', 'glossary', 'compare', 'design-partners']
+  : ['home', 'pricing', 'event-analytics', 'blog', 'blog-article', 'calculator', 'industries', 'glossary', 'glossary-term'];
+const labels: Record<string, string> = { home: 'Homepage', registration: 'Early access', 'event-analytics': 'Event Analytics', blog: 'Blog', 'blog-article': 'Blog article', compare: 'Product comparison', 'design-partners': 'Design Partners', 'glossary-term': 'Glossary term' };
+const versions = await Promise.all([
+  { folder: 'before', title: 'Before', description: 'The previous website', number: '01' },
+  { folder: 'after', title: 'After', description: 'The redesigned website', number: '02' },
+].map(async version => {
+  let files;
+  try { files = await readdir(join(dirname(filePath), version.folder), { withFileTypes: true }); }
+  catch (error) { if ((error as NodeJS.ErrnoException).code !== 'ENOENT') throw error; files = []; }
+  const names = files.filter(file => file.isFile() && /\.(png|jpe?g|webp|avif|gif|svg)$/i.test(file.name)).map(file => file.name);
+  const find = (stem: string) => names.find(name => name.slice(0, -extname(name).length).toLowerCase() === stem);
+  const desktop = find('homepage-desktop') ?? find('homepage-desktop-full');
+  const mobile = find('homepage-mobile') ?? find('homepage-mobile-full');
+  const images = names.filter(name => {
+    const stem = name.slice(0, -extname(name).length).toLowerCase();
+    if (/^homepage-(desktop|mobile)(-full)?$/.test(stem)) return name === desktop || name === mobile;
+    return !(desktop && /^desktop\s*-\s*1920\s*-\s*home$/i.test(stem));
+  }).map((name, index) => {
+    const stem = name.slice(0, -extname(name).length);
+    const key = name === desktop || name === mobile ? 'home' : stem.replace(/^desktop\s*-\s*\d+\s*-\s*/i, '').replace(/^\d+[\s._-]*/, '').replaceAll('_', '-').toLowerCase().trim();
+    const label = labels[key] ?? (key ? key.charAt(0).toUpperCase() + key.slice(1).replaceAll('-', ' ') : `Screen ${index + 1}`);
+    const full = name === desktop ? find('homepage-desktop-full') ?? name : name === mobile ? find('homepage-mobile-full') ?? name : name;
+    return {
+      key, label, mobile: name === mobile,
+      src: withBase(`${mediaPath}/${version.folder}/${encodeURIComponent(full)}`),
+      preview: withBase(`${mediaPath}/${version.folder}/.previews/${encodeURIComponent(name)}.webp`),
+    };
+  }).sort((a, b) => {
+    const rank = (key: string) => pageOrder.includes(key) ? pageOrder.indexOf(key) : pageOrder.length;
+    return rank(a.key) - rank(b.key) || Number(a.mobile) - Number(b.mobile) || a.label.localeCompare(b.label, 'en', { numeric: true });
+  });
+  return { ...version, featured: images.filter(image => image.key === 'home'), pages: images.filter(image => image.key !== 'home') };
+}));
+---
+<div class="website-comparison" data-website-gallery>
+  <nav class="comparison-nav" aria-label="Website versions">
+    {versions.map(version => <a href={`#${version.folder}`}><span>{version.number}</span>{version.title}<span aria-hidden="true">↓</span></a>)}
+  </nav>
+  {versions.map(version => (
+    <section id={version.folder} class:list={['version', { 'version-after': version.folder === 'after' }]} aria-labelledby={`${version.folder}-title`}>
+      <header class="version-heading">
+        <div class="version-title"><span class="version-number" aria-hidden="true">{version.number}</span><h2 id={`${version.folder}-title`}>{version.title}</h2></div>
+        <p>{version.description}</p>
+      </header>
+      {version.featured.length > 0 && <div class:list={['featured-shots', { responsive: version.featured.some(image => image.mobile) }]}>{version.featured.map(image => <ScreenshotPreview image={image} version={version.title} project={title} featured />)}</div>}
+      {version.pages.length > 0 && <div class="page-grid">{version.pages.map(image => <ScreenshotPreview image={image} version={version.title} project={title} />)}</div>}
+      {!version.featured.length && !version.pages.length && <div class="empty-gallery"><p>Screenshots coming soon</p></div>}
+    </section>
+  ))}
+  <dialog class="gallery-dialog" aria-label={`${title} — full page preview`}>
+    <div class="viewer-toolbar">
+      <p class="viewer-title" aria-live="polite" data-viewer-title></p>
+      <div class="viewer-controls">
+        <button type="button" data-viewer-prev aria-label="Previous screenshot">←</button>
+        <span class="viewer-count" data-viewer-count aria-live="polite"></span>
+        <button type="button" data-viewer-next aria-label="Next screenshot">→</button>
+        <a data-viewer-original target="_blank" rel="noopener">Open original ↗</a>
+        <button type="button" data-viewer-close aria-label="Close preview" autofocus>✕</button>
+      </div>
+    </div>
+    <div class="viewer-scroll" tabindex="0" role="region" aria-label="Full page screenshot — scroll to explore"><img class="viewer-image" data-viewer-image alt="" /></div>
+  </dialog>
+</div>
+<script>
+  document.querySelectorAll<HTMLElement>('[data-website-gallery]').forEach(gallery => {
+    const links = Array.from(gallery.querySelectorAll<HTMLAnchorElement>('[data-gallery-image]'));
+    const dialog = gallery.querySelector<HTMLDialogElement>('dialog')!;
+    const image = dialog.querySelector<HTMLImageElement>('[data-viewer-image]')!;
+    const title = dialog.querySelector<HTMLElement>('[data-viewer-title]')!;
+    const count = dialog.querySelector<HTMLElement>('[data-viewer-count]')!;
+    const original = dialog.querySelector<HTMLAnchorElement>('[data-viewer-original]')!;
+    const scroll = dialog.querySelector<HTMLElement>('.viewer-scroll')!;
+    const previous = dialog.querySelector<HTMLButtonElement>('[data-viewer-prev]')!;
+    const next = dialog.querySelector<HTMLButtonElement>('[data-viewer-next]')!;
+    let current = 0;
+    let oldOverflow = '';
+    function show(index: number) {
+      current = index;
+      const link = links[current];
+      image.src = link.href;
+      image.alt = link.querySelector('img')?.alt ?? '';
+      image.classList.toggle('is-mobile', link.closest('.mobile') !== null);
+      title.textContent = link.dataset.title ?? '';
+      count.textContent = `${current + 1} / ${links.length}`;
+      original.href = link.href;
+      previous.disabled = current === 0;
+      next.disabled = current === links.length - 1;
+      scroll.scrollTop = 0;
+    }
+    links.forEach((link, index) => link.addEventListener('click', event => {
+      if (event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+      event.preventDefault();
+      show(index);
+      oldOverflow = document.documentElement.style.overflow;
+      document.documentElement.style.overflow = 'hidden';
+      dialog.showModal();
+    }));
+    previous.addEventListener('click', () => { if (current > 0) show(current - 1); });
+    next.addEventListener('click', () => { if (current < links.length - 1) show(current + 1); });
+    dialog.querySelector('[data-viewer-close]')!.addEventListener('click', () => dialog.close());
+    dialog.addEventListener('click', event => { if (event.target === dialog) dialog.close(); });
+    dialog.addEventListener('keydown', event => {
+      if (event.key === 'ArrowLeft' && current > 0) { event.preventDefault(); show(current - 1); }
+      if (event.key === 'ArrowRight' && current < links.length - 1) { event.preventDefault(); show(current + 1); }
+    });
+    dialog.addEventListener('close', () => { document.documentElement.style.overflow = oldOverflow; image.removeAttribute('src'); });
+  });
+</script>
+<style>
+  .website-comparison{padding-block:1rem 2rem}
+  .comparison-nav{display:flex;flex-wrap:wrap;gap:.75rem;margin-bottom:3.5rem}
+  .comparison-nav a{display:flex;align-items:center;gap:1rem;border:1px solid var(--line-strong);border-radius:999px;padding:.75rem 1.25rem;color:var(--ink);font-size:.95rem;text-decoration:none;min-height:44px}
+  .comparison-nav a:hover{background:var(--sunken)}
+  .comparison-nav a span:first-child{font-size:.75rem;color:var(--muted)}
+  .version{scroll-margin-top:7rem}
+  .version+.version{margin-top:5rem}
+  .version-heading{display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap;padding-bottom:1.25rem;border-bottom:1px solid var(--line);margin-bottom:1.75rem}
+  .version-title{display:flex;align-items:center;gap:1rem}
+  .version-number{display:grid;place-items:center;width:2.5rem;height:2.5rem;border:1px solid var(--accent);border-radius:50%;font-size:.8rem;background:var(--accent);color:var(--on-accent)}
+  h2{font-size:clamp(1.75rem,4vw,2.5rem);line-height:1.15;letter-spacing:-.03em;color:var(--ink)}
+  .version-after h2{font-style:italic}
+  .version-heading p{color:var(--muted);font-size:.95rem}
+  .featured-shots{display:grid;gap:1.5rem;margin-bottom:2rem;align-items:start}
+  .featured-shots.responsive{grid-template-columns:minmax(0,1fr) minmax(0,25%)}
+  .page-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.5rem}
+  .empty-gallery{display:grid;place-content:center;min-height:12rem;border:1px dashed var(--line-strong);border-radius:1rem;background:var(--sunken);color:var(--muted)}
+  a:focus-visible,button:focus-visible,.viewer-scroll:focus-visible{outline:2px solid var(--ink);outline-offset:3px}
+  .gallery-dialog{position:fixed;inset:0;margin:auto;width:min(1440px,96vw);max-width:none;height:94dvh;max-height:none;padding:0;border:1px solid var(--line-strong);border-radius:1rem;background:var(--canvas);color:var(--ink);overflow:hidden}
+  .gallery-dialog[open]{display:flex;flex-direction:column}
+  .gallery-dialog::backdrop{background:rgb(0 0 0 / .78)}
+  .viewer-toolbar{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.75rem 1rem;border-bottom:1px solid var(--line);background:var(--surface)}
+  .viewer-title{font-size:.95rem;font-weight:600}
+  .viewer-controls{display:flex;align-items:center;gap:.5rem;flex-shrink:0}
+  .viewer-controls button{width:44px;height:44px;border:1px solid var(--line-strong);border-radius:50%;background:var(--canvas);color:var(--ink);font:inherit;cursor:pointer}
+  .viewer-controls button:disabled{opacity:.3;cursor:default}
+  .viewer-controls a{font-size:.8rem;color:var(--ink);padding:.75rem;text-underline-offset:4px}
+  .viewer-count{min-width:3.5rem;text-align:center;font-size:.8rem;color:var(--muted)}
+  .viewer-scroll{flex:1;min-height:0;overflow:auto;overscroll-behavior:contain;background:var(--sunken)}
+  .viewer-image{display:block;width:100%;height:auto;margin-inline:auto}
+  .viewer-image.is-mobile{width:390px;max-width:100%}
+  @media(max-width:600px){.comparison-nav{margin-bottom:2.5rem}.version+.version{margin-top:3rem}.page-grid,.featured-shots.responsive{grid-template-columns:minmax(0,1fr)}.featured-shots.responsive :global(.mobile){width:min(100%,22rem);justify-self:center}.gallery-dialog{width:100%;height:100dvh;border:0;border-radius:0}.viewer-toolbar{flex-wrap:wrap;gap:.25rem;padding:.65rem}.viewer-title{width:100%;font-size:.85rem}.viewer-controls{width:100%}.viewer-controls [data-viewer-close]{margin-left:auto}.viewer-controls a{padding-inline:.4rem}}
+</style>

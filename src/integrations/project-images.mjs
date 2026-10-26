@@ -1,9 +1,19 @@
 import { createReadStream } from 'node:fs';
-import { copyFile, mkdir, readdir, stat } from 'node:fs/promises';
+import { copyFile, mkdir, readdir, stat, writeFile } from 'node:fs/promises';
 import { extname, join, resolve, sep } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import sharp from 'sharp';
 
 const mime = { '.png': 'image/png', '.webp': 'image/webp', '.jpg': 'image/jpeg', '.jpeg': 'image/jpeg', '.gif': 'image/gif', '.svg': 'image/svg+xml', '.avif': 'image/avif' };
+
+async function screenshotPreview(file) {
+  const image = sharp(file);
+  const { width, height } = await image.metadata();
+  const mobile = /homepage-mobile(?:-full)?\.[^.]+$/i.test(file);
+  const cropHeight = Math.min(height, Math.round(width * (mobile ? 844 / 390 : 3 / 4)));
+  return image.extract({ left: 0, top: 0, width, height: cropHeight })
+    .resize({ width: mobile ? 390 : 1200, withoutEnlargement: true }).webp({ quality: 82 }).toBuffer();
+}
 
 // Company media lives beside index.md; project media beside projects/<slug>/<slug>.md.
 // Public image URLs stay unchanged when the editable content folders move.
@@ -28,12 +38,21 @@ export default function projectImages() {
           if (!mime[extname(match[2]).toLowerCase()]) return next();
           const companyRoot = resolve(companiesRoot, match[1]);
           const parts = match[2].split('/');
+          const preview = parts.at(-2) === '.previews' && /\.webp$/i.test(parts.at(-1)) && ['before', 'after'].includes(parts.at(-3));
+          if (preview) { parts.splice(-2, 1); parts[parts.length - 1] = parts.at(-1).slice(0, -5); }
           const mediaRoot = parts.length > 1 ? join(companyRoot, 'projects') : companyRoot;
           const file = resolve(mediaRoot, ...parts);
           if (!file.startsWith(mediaRoot + sep)) return next();
           try {
             const info = await stat(file);
             if (!info.isFile()) return next();
+            if (preview) {
+              const buffer = await screenshotPreview(file);
+              response.setHeader('Content-Type', 'image/webp');
+              response.setHeader('Content-Length', buffer.length);
+              response.setHeader('Cache-Control', 'no-cache');
+              return response.end(request.method === 'HEAD' ? undefined : buffer);
+            }
             response.setHeader('Content-Type', mime[extname(file).toLowerCase()] ?? 'application/octet-stream');
             response.setHeader('Content-Length', info.size);
             response.setHeader('Cache-Control', 'no-cache');
@@ -53,6 +72,11 @@ export default function projectImages() {
             } else if (entry.isFile() && mime[extname(entry.name).toLowerCase()]) {
               await mkdir(target, { recursive: true });
               await copyFile(join(source, entry.name), join(target, entry.name));
+              if (['before', 'after'].includes(source.split(sep).at(-1))) {
+                const previewDir = join(target, '.previews');
+                await mkdir(previewDir, { recursive: true });
+                await writeFile(join(previewDir, `${entry.name}.webp`), await screenshotPreview(join(source, entry.name)));
+              }
             }
           }
         }

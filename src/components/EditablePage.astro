@@ -64,7 +64,7 @@ if (page === 'home') {
       if (element.tagName === 'h1') node.attr({ id: 'h.r0hvbedw30a9', class: 'mt-6 max-w-[18ch] text-headline' });
       else if (!intro.children().length) node.attr('class', 'eyebrow');
       else if (node.children('a').length) {
-        let buttons = intro.children('.mt-8');
+        let buttons: typeof intro = intro.children('.mt-8');
         if (!buttons.length) buttons = $('<div class="mt-8 flex flex-wrap gap-3">').appendTo(intro);
         node.children('a').addClass(buttons.children().length ? 'btn btn-ghost' : 'btn btn-primary').appendTo(buttons);
         continue;

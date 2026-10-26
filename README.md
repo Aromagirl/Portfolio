@@ -68,6 +68,10 @@ Mafia Game использует такой же верх страницы, бе�
 
 Файлы направлений автоматически появляются на обзорной странице родительского проекта. Их адрес: `/work/<project-slug>/<section-slug>/`.
 
+В SafeClick Website и FraudScore Website включены галереи Before / After (`comparison: true`). Скриншоты кладите в папки `before/` и `after/` рядом с Markdown проекта: `src/content/companies/fraudscore/projects/safeclick-website/` или `src/content/companies/fraudscore/projects/fraudscore-website/`. Поддерживаются PNG, JPG, JPEG, WebP, AVIF, GIF и SVG. Изображения подхватываются автоматически при сборке, в локальном dev — при обновлении страницы.
+
+Главная показывается крупно, остальные страницы — сеткой с облегчёнными WebP-превью. Имена `Desktop - 1920 - home.png`, `pricing.png`, `registration.png` и другие названия страниц распознаются автоматически; порядок и подписи заданы в `WebsiteComparison.astro`. Новые страницы тоже появляются автоматически. Для главной после редизайна используются `homepage-desktop.png` и `homepage-mobile.png`, по нажатию открываются соответствующие `homepage-desktop-full.png` и `homepage-mobile-full.png` (если есть). Повторный `Desktop - 1920 - home.png` в этом случае скрывается. Полные страницы открываются в окне с прокруткой, стрелками и закрытием по Escape; ссылка Open original открывает исходник отдельно. Без JavaScript превью ведут прямо на исходники. После добавления файлов опубликованный сайт потребуется заново собрать и опубликовать.
+
 Пример метаданных нового направления:
 
 ```yaml

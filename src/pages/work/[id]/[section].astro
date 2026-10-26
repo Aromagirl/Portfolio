@@ -3,6 +3,7 @@ import { getCollection, getEntry, render } from 'astro:content';
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import CaseImage from '../../../components/CaseImage.astro';
 import MarkdownBody from '../../../components/MarkdownBody.astro';
+import WebsiteComparison from '../../../components/WebsiteComparison.astro';
 import { insertedContentAnchorIds } from '../../../config/content-anchors';
 import ContentLink from '../../../components/ContentLink.astro';
 import { withBase } from '../../../utils/paths';
@@ -18,6 +19,7 @@ export async function getStaticPaths() {
 const { project, section } = Astro.props;
 const siblings = await getWorkSections(project);
 const { Content, headings } = await render(section);
+const splitRole = Boolean(section.filePath?.endsWith('.md') && /^#{2,3} My role\b/im.test(section.body ?? ''));
 const bodyAnchors = new Set([
   ...headings.map(heading => heading.slug),
   ...insertedContentAnchorIds(section.id, headings.map(heading => heading.slug)),
@@ -45,9 +47,10 @@ const contents = headings.filter(heading => heading.depth <= 3 && /\p{L}/u.test(
       {siblings.map(sibling => <a class="chip" href={withBase(workSectionPath(project, sibling))} aria-current={sibling.id === section.id ? 'page' : undefined}>{sibling.data.title}</a>)}
     </nav>
     {contents.length > 2 && <details class="case-index"><summary>On this page</summary><nav aria-label="On this page">{contents.map(heading => <a href={`#${heading.slug}`}>{heading.text}</a>)}</nav></details>}
-    <article class="prose source-content work-section-content" data-source-content>{section.filePath?.endsWith('.md') ? <MarkdownBody entryId={section.id}><Content /></MarkdownBody> : <Content components={{ img: CaseImage, a: ContentLink }} />}
+    <article class:list={['prose', 'source-content', 'work-section-content', { 'work-section-columns': splitRole }]} data-source-content>{section.filePath?.endsWith('.md') ? <MarkdownBody entryId={section.id} splitRole={splitRole}><Content /></MarkdownBody> : <Content components={{ img: CaseImage, a: ContentLink }} />}
     </article>
-    <a class="btn btn-ghost mt-8" href={withBase(projectPath(project))}>Back to {project.data.title}</a>
+    {section.data.comparison && <WebsiteComparison filePath={section.filePath!} title={section.data.title} mediaPath={`/images/projects/${project.data.slug}/${section.data.slug}`} />}
+    <a class="btn btn-ghost mt-8" href={withBase('/work/')}>Explore more work</a>
   </div>
 </BaseLayout>
 <style>
@@ -58,4 +61,13 @@ const contents = headings.filter(heading => heading.depth <= 3 && /\p{L}/u.test(
   .section-navigation .chip:hover{border-color:var(--ink)}
   .section-navigation .chip[aria-current]{background:var(--inverse);color:var(--on-inverse);border-color:var(--inverse)}
   .work-section-content{padding-top:2rem}
+  .work-section-columns :global(.company-responsibilities > :is(h2,h3)){font-size:1.3rem;line-height:1.3;letter-spacing:-.02em;margin-top:0}
+  @media(min-width:900px){
+    .work-section-columns{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:1rem 3rem;align-items:start}
+    .work-section-columns :global(.source-section){min-width:0;margin:0 0 2rem}
+    .work-section-columns :global(.company-description){grid-column:1}
+    .work-section-columns :global(.company-responsibilities){grid-column:2}
+    .work-section-columns:has(:global(.company-description > h2:first-child)) :global(.company-responsibilities){padding-top:calc(3.25rem + clamp(1.84rem,1.495rem + 1.15vw,2.415rem))}
+    .work-section-columns :global(.source-section p:first-of-type){margin-top:0}
+  }
 </style>
