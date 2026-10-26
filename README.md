@@ -24,12 +24,14 @@ npm run dev
 
 После небольших изменений текста или CSS полная сборка обычно не нужна. Проверяйте сборку после изменения маршрутов, структуры контента или компонентов.
 
+При запуске из ограниченной песочницы агента на Windows сборка может завершаться ошибкой `require is not defined` при загрузке YAML. В этом проекте ошибка исчезала при запуске той же команды вне песочницы; сначала проверьте среду запуска, прежде чем менять контент или зависимости.
+
 ## Где редактировать контент
 
 | Страница | Файл | Адрес без префикса /Portfolio |
 | --- | --- | --- |
-| Главная | `src/content/pages/home.mdx` | `/` |
-| About me | `src/content/pages/about-me.mdx` | `/about/` |
+| Главная | `src/content/pages/home.md` | `/` |
+| About me | `src/content/pages/about-me.md` | `/about/` |
 | FraudScore | `src/content/companies/fraudscore/index.md` | `/fraudscore/` |
 | Mafia Game | `src/content/companies/mafia-bot-mini-app/index.md` | `/work/mafia-bot-mini-app/` |
 | Tickeron | `src/content/companies/tickeron/index.md` | `/work/tickeron/` |
@@ -37,9 +39,33 @@ npm run dev
 | KidswearCycle | `src/content/companies/kidswearcycle/index.md` | `/work/kidswearcycle/` |
 | I-Jet Media | `src/content/companies/ijet-media/index.md` | `/work/ijet-media/` |
 
-Главная содержит карточки SafeClick Website и FraudScore Website через `HomeProjectCard`. Их выбор и описания задаются в `home.mdx`, а заголовок, обложка и `cardDisabled` читаются из Markdown соответствующего проекта. При `cardDisabled: true` ссылки на проект и изображение отключены, вместо Read more показано Coming soon. Эта же настройка действует в каталоге и блоке Explore the work компании. Если у карточки нет изображения, сайт сохраняет пустую область обложки.
+Главная содержит карточки SafeClick Website и FraudScore Website через `HomeProjectCard`. Их выбор и описания задаются в массиве `homeProjects` в метаданных `home.md`: `projectId` указывает ID направления (например, `fraudscore-safeclick-website`), `summary` переопределяет описание. Заголовок, обложка и `cardDisabled` читаются из Markdown соответствующего проекта. При `cardDisabled: true` ссылки на проект и изображение отключены, вместо Read more показано Coming soon. Эта же настройка действует в каталоге и блоке Explore the work компании. Если у карточки нет изображения, сайт сохраняет пустую область обложки.
 
-В файлах проектов используется обычный Markdown с метаданными в начале. HTML, JSX и импорты для оформления кейсов не нужны. Главная и About остаются в MDX.
+В файлах проектов, главной и About используется обычный Markdown с метаданными в начале. HTML, JSX и импорты для оформления контента не нужны. Оформление главной и About задаёт `src/components/EditablePage.astro`.
+
+### About и сертификаты
+
+Текст страницы хранится в `src/content/pages/about-me.md`. Секции начинаются с `##`, подразделы — с `###`. Во всех секциях основной текст расположен под заголовком и занимает всю ширину контентной области. Секция Experience & Background удалена.
+
+Три сертификата лежат рядом с Markdown, в `src/content/pages/`:
+
+| Файл | Подпись |
+| --- | --- |
+| `Certificate Coursera.jpg` | Google UX Design Professional Certificate · Google / Coursera · 2024 |
+| `Certificate UsabilityLab.jpg` | Certified Usability Professional — Module 1 · UsabilityLab · 2010 |
+| `Certificate UPA Europe.jpg` | User Experience Russia — UPA Europe · Conference participation · 16 hours · 2009 |
+
+Блок Education & Certifications содержит вводный текст, затем карточки сертификатов. Для каждой карточки используйте заголовок `###`, изображение и абзац с подписью:
+
+```markdown
+### Google UX Design Professional Certificate
+
+![Описание сертификата](<./Certificate Coursera.jpg>)
+
+Google / Coursera · 2024
+```
+
+Угловые скобки позволяют использовать пробелы в имени файла. Карточки формируются автоматически в порядке Markdown: три в ряд на широком экране, одна под другой на телефоне. Сертификаты показываются целиком, по нажатию открывается изображение в полном размере. Astro обрабатывает локальные изображения и создаёт WebP при сборке; копировать сертификаты в `public` не нужно. Для замены сертификата сохраните имя файла либо обновите ссылку в Markdown. Название секции `Education & Certifications` используется компонентом для включения карточной раскладки.
 
 ### Шаблоны кейсов
 
@@ -67,6 +93,8 @@ Mafia Game использует такой же верх страницы, бе�
 | I-Jet Media | `ijet-media/projects/game-interfaces/game-interfaces.md`, `ijet-media/projects/mobile-versions/mobile-versions.md`, `ijet-media/projects/technical-specifications/technical-specifications.md` |
 
 Файлы направлений автоматически появляются на обзорной странице родительского проекта. Их адрес: `/work/<project-slug>/<section-slug>/`.
+
+В SafeClick Website и FraudScore Website описание проекта и изменений находится слева, а список `## My role as Product Designer:` — справа; на телефоне блоки идут друг под другом. Заголовок `## About … & my role` относится к левой колонке. Внизу всех направлений кнопка Explore more work ведёт в `/work/`.
 
 В SafeClick Website и FraudScore Website включены галереи Before / After (`comparison: true`). Скриншоты кладите в папки `before/` и `after/` рядом с Markdown проекта: `src/content/companies/fraudscore/projects/safeclick-website/` или `src/content/companies/fraudscore/projects/fraudscore-website/`. Поддерживаются PNG, JPG, JPEG, WebP, AVIF, GIF и SVG. Изображения подхватываются автоматически при сборке, в локальном dev — при обновлении страницы.
 
@@ -122,7 +150,7 @@ src/content/companies/
 
 Интеграция `src/integrations/project-images.mjs` отдаёт изображения из новой структуры в режиме разработки и копирует их в сборку по прежним публичным URL. Markdown не публикуется как медиа. Дублировать изображения в `public` не нужно.
 
-Изображения главной и About, которые не относятся к кейсам, остаются в `public/images/projects/home/` и `public/images/projects/about-me/`. Фирменные логотипы сайта — в `public/images/brand/`.
+Портрет и общие изображения главной и About остаются в `public/images/projects/home/` и `public/images/projects/about-me/`. Актуальные три сертификата About берутся из `src/content/pages/`, а не из старого изображения `public/images/projects/about-me/02.webp`. Фирменные логотипы сайта — в `public/images/brand/`.
 
 PDF FraudScore хранится в `public/documents/marketing-design/fraudscore.pdf`. Обычная Markdown-ссылка на PDF автоматически создаёт встроенный просмотр. Несколько изображений подряд без пустых строк формируют галерею.
 
@@ -162,7 +190,7 @@ PDF FraudScore хранится в `public/documents/marketing-design/fraudscore
 | `/work/fraudscore/safeclick/` | `/work/fraudscore/safeclick-website/` |
 | `/work/fraudscore/website/` | `/work/fraudscore/fraudscore-website/` |
 
-Старые MDX-подборки User research и UX/UI design удалены. Ссылки в футере ведут прямо в каталог с фильтрами.
+Старые MDX-подборки User research и UX/UI design удалены. Футер содержит ссылки Home, Work, About, email и LinkedIn, а также копирайт и Back to top. Отдельных ссылок на категории работ в футере нет.
 
 Совместимость старых якорей хранится в `src/config/content-anchors.ts`. При изменении заголовков проверяйте связанные якоря.
 
@@ -173,6 +201,7 @@ Sitemap: `/Portfolio/sitemap.xml`. В него входят главная, оп
 - Контакты и навигация: `src/config/site.ts`.
 - Общий макет: `src/layouts/BaseLayout.astro`.
 - Компоненты оформления: `src/components/theme/`.
+- Футер и контактный блок: `src/components/theme/SiteFooter.astro`; данные контактов берутся из `src/config/site.ts`, текст контактного блока — из `src/config/home.ts`.
 - Основные стили: `src/styles/global.css`.
 - Цветовая библиотека: `src/styles/colors.css`.
 
