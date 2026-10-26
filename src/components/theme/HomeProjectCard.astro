@@ -13,10 +13,16 @@ if (!company) throw new Error(`Missing company for homepage project: ${projectId
 const { title, cover, cardDisabled } = project.data;
 ---
 <section class="source-section home-project-cover" data-disabled={cardDisabled || undefined}>
-  {cover && <p><CaseImage src={cover} alt={`${title} — project preview`} disabled={cardDisabled} /></p>}
+  {cover && <p><CaseImage src={cover} alt={`${title} — project preview`} disabled /></p>}
   <h2>{title}</h2>
   {(summary ?? project.data.summary) && <p>{summary ?? project.data.summary}</p>}
   <p>{cardDisabled
     ? <span class="home-card-unavailable">Coming soon</span>
-    : <a href={withBase(workSectionPath(company, project))}>Read more</a>}</p>
+    : <a class="home-project-link" href={withBase(workSectionPath(company, project))} aria-label={`Read more about ${title}`}>Read more</a>}</p>
 </section>
+<style>
+  .home-project-cover{position:relative}
+  .home-project-link::after{content:"";position:absolute;inset:0}
+  .home-project-link:focus-visible{outline:none}
+  .home-project-cover:has(.home-project-link:focus-visible){outline:2px solid var(--ink);outline-offset:8px;border-radius:var(--radius-card)}
+</style>

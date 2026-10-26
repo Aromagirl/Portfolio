@@ -9,9 +9,7 @@ category: "UX/UI design"
 cover: "/images/projects/home/01.webp"
 homeProjects:
   - projectId: "fraudscore-safeclick-website"
-    summary: "Website design."
   - projectId: "fraudscore-fraudscore-website"
-    summary: "Website design."
 ---
 
 ![Natalia Isakova — 01](/images/projects/home/01.webp)
