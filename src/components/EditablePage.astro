@@ -48,10 +48,11 @@ if (page === 'home') {
     const node = $(element);
     if (element.tagName === 'h2') {
       sectionIndex++;
-      const row = $('<section class="about-row grid gap-6 border-t border-line py-12 lg:grid-cols-[16rem_minmax(0,1fr)] lg:gap-16">');
+      const row = $('<section class="about-row grid grid-cols-1 gap-6 border-t border-line py-12">');
+      if (node.text().trim() === 'Education & Certifications') row.addClass('about-certifications');
       const group = $('<div>').addClass(sectionIndex === 1 ? 'mt-20 sm:mt-28' : 'mt-16 sm:mt-24').appendTo(output);
       node.attr('class', 'eyebrow self-start');
-      section = $('<div class="max-w-3xl text-lead text-body about-certificate">');
+      section = $('<div class="w-full text-lead text-body about-certificate">');
       row.append(node, section);
       group.append(row);
       continue;
@@ -73,6 +74,26 @@ if (page === 'home') {
     } else section.append(node);
   }
 }
+// Each certificate stays editable as a heading, image and caption in Markdown.
+output.find('.about-certifications > div').each((_, element) => {
+  const content = $(element);
+  const grid = $('<div class="certificate-grid">');
+  for (const heading of content.children('h3').toArray()) {
+    const title = $(heading);
+    const following = title.nextUntil('h3');
+    const media = following.filter('p').filter((_, node) => $(node).find('img').length > 0).first();
+    if (!media.length) continue;
+    const description = following.filter('p').filter((_, node) => $(node).find('img').length === 0).first();
+    const card = $('<figure class="certificate-card">');
+    card.append(media.children());
+    media.remove();
+    title.attr('class', 'certificate-title');
+    const caption = $('<figcaption>').append(title, description);
+    card.append(caption);
+    grid.append(card);
+  }
+  if (grid.children().length) content.append(grid);
+});
 output.find('a').each((_, element) => {
   const link = $(element);
   if (link.text().trim() === 'Email me') link.removeClass('btn-primary').addClass('btn btn-ghost');

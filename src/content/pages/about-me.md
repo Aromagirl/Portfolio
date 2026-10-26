@@ -25,23 +25,6 @@ I enjoy solving complex problems, simplifying user experiences, and finding prac
 
 ![Natalia Isakova](/images/projects/home/01.webp)
 
-## Experience & Background
-
-My professional journey began in the online gaming industry, where I spent around six years designing interactive experiences and three years leading a team of artists and designers.
-
-Over the years, I've worked across different industries and product types:
-
-*I-Jet Media*: Designed online gaming experiences and led multidisciplinary creative teams.
-
-*Taran Plus*: Worked on digital projects, combining design, project coordination, and performance analytics.
-
-*Tickeron*: Designed interfaces, user flows, wireframes, and interactive prototypes for financial analytics and investment tools.
-
-*FraudScore*: Developed and maintained visual communication, interface components, and design systems for advertising analytics products.
-
-
-More recently, I've expanded my work into AI-assisted product development, building functional applications and experimenting with new ways to connect design and implementation.
-
 ## Expertise & Tools
 
 ### Product & UX Design
@@ -66,18 +49,25 @@ Figma · Adobe Creative Cloud · VS Code · Git & GitHub · AI development tools
 
 ## Education & Certifications
 
-### Google UX Design Professional Certificate
-
-Training in user-centered design, UX research, wireframing, prototyping, and usability testing.
-
-![About me — 02](/images/projects/about-me/02.webp)
-
-### Certified Usability Professional — UsabilityLab
-
-Professional training in usability and user experience methodologies.
-
 My professional development continues through hands-on projects, emerging design practices, and AI-assisted development workflows.
 
+### Google UX Design Professional Certificate
+
+![Google UX Design Professional Certificate awarded to Natalia Isakova](<./Certificate Coursera.jpg>)
+
+Google / Coursera · 2024
+
+### Certified Usability Professional
+
+![UsabilityLab certificate for completing Module 1: User and business task analysis](<./Certificate UsabilityLab.jpg>)
+
+UsabilityLab · 2010
+
+### User Experience Russia — UPA Europe
+
+![Certificate of participation in User Experience Russia — UPA Europe 2009](<./Certificate UPA Europe.jpg>)
+
+Conference participation · 2009
 
 ## Let's Work Together
 

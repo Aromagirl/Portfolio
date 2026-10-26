@@ -550,6 +550,19 @@
 .about-portrait .case-media,.about-portrait .image-link{display:block}
 .about-portrait img{display:block;width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center;border-radius:var(--radius-card)}
 .about-certificate img{display:block;width:100%;max-width:40rem;height:auto;margin-top:1.5rem;border:1px solid var(--line);border-radius:var(--radius-panel)}
+.about-certifications{grid-template-columns:minmax(0,1fr)}
+.about-certifications>div{max-width:none;min-width:0}
+.certificate-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.5rem}
+.certificate-card{min-width:0;margin:0;overflow:hidden;border:1px solid var(--line);border-radius:var(--radius-panel);background:var(--surface)}
+.certificate-card .case-media{display:block}
+.certificate-card .image-link{display:block;position:relative;aspect-ratio:4/3;background:var(--sunken);cursor:zoom-in}
+.about-certifications .certificate-card img{position:absolute;inset:1rem;width:calc(100% - 2rem);height:calc(100% - 2rem);max-height:100%;object-fit:contain;margin:0;border:0;border-radius:0}
+.certificate-card figcaption{padding:1.25rem;border-top:1px solid var(--line)}
+.certificate-card .certificate-title{font-size:1.05rem;line-height:1.4;letter-spacing:-.015em;color:var(--ink);margin:0}
+.certificate-card figcaption p{margin-top:.65rem;font-size:.85rem;line-height:1.5;color:var(--muted)}
+.certificate-card a:focus-visible{outline:2px solid var(--ink);outline-offset:-4px}
+.about-certifications p+.certificate-grid{margin-top:1.5rem}
+@media(max-width:767px){.certificate-grid{grid-template-columns:minmax(0,1fr)}}
 .about-page .about-row p+p{margin-top:1.25rem}
 .about-page .about-row a:not(.btn){text-decoration:underline;text-underline-offset:.2em}
 .section-marketing-design>.source-section:not(:first-child){padding-top:2rem;border-top:1px solid var(--line)}
