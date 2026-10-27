@@ -6,7 +6,7 @@ import projectImages from './src/integrations/project-images.mjs';
 
 export default defineConfig({
   site: 'https://aromagirl.github.io',
-  base: '/Portfolio',
+  base: '/portfolio',
   output: 'static',
   trailingSlash: 'always',
   integrations: [mdx(), projectImages()],

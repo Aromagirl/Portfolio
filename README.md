@@ -2,7 +2,7 @@
 
 Сайт-портфолио на Astro, Markdown/MDX и Tailwind CSS.
 
-- Сайт: https://aromagirl.github.io/Portfolio/
+- Сайт: https://aromagirl.github.io/portfolio/
 - Основная рабочая ветка: `dev`.
 - Главная и About: `src/content/pages/`.
 - Тексты и изображения проектов: `src/content/companies/`.
@@ -16,7 +16,7 @@ npm install
 npm run dev
 ```
 
-Откройте адрес из терминала, обычно http://localhost:4321/Portfolio/.
+Откройте адрес из терминала, обычно http://localhost:4321/portfolio/.
 
 - `npm run build` — сборка в `dist/`.
 - `npm run preview` — просмотр готовой сборки.
@@ -28,7 +28,7 @@ npm run dev
 
 ## Где редактировать контент
 
-| Страница | Файл | Адрес без префикса /Portfolio |
+| Страница | Файл | Адрес без префикса /portfolio |
 | --- | --- | --- |
 | Главная | `src/content/pages/home.md` | `/` |
 | About me | `src/content/pages/about-me.md` | `/about/` |
@@ -167,7 +167,7 @@ PDF FraudScore хранится в `public/documents/marketing-design/fraudscore
 - `visibility: hidden` у компании исключает её и её проекты из каталога; у отдельного проекта — только его карточку. Страницы и sitemap сохраняются. Если все проекты компании скрыты, её карточка не появляется вместо них.
 - `status` проекта допускает `placeholder`, `in-progress` и `published`; страница создаётся для каждого статуса.
 
-Пример: `/Portfolio/work/?expertise=ui-design&industries=healthcare`.
+Пример: `/portfolio/work/?expertise=ui-design&industries=healthcare`.
 
 ### Новый проект
 
@@ -194,7 +194,7 @@ PDF FraudScore хранится в `public/documents/marketing-design/fraudscore
 
 Совместимость старых якорей хранится в `src/config/content-anchors.ts`. При изменении заголовков проверяйте связанные якоря.
 
-Sitemap: `/Portfolio/sitemap.xml`. В него входят главная, опубликованные страницы, проекты и направления; страницы перенаправлений не включаются.
+Sitemap: `/portfolio/sitemap.xml`. В него входят главная, опубликованные страницы, проекты и направления; страницы перенаправлений не включаются.
 
 ## Настройки и оформление
 
@@ -231,7 +231,7 @@ Sitemap: `/Portfolio/sitemap.xml`. В него входят главная, оп
 
 ## Публикация
 
-Адрес и префикс `/Portfolio` заданы в `astro.config.mjs`. В компонентах используйте `withBase()` из `src/utils/paths.ts`; обычные Markdown-ссылки обрабатываются компонентами сайта.
+Адрес и префикс `/portfolio` заданы в `astro.config.mjs`. В компонентах используйте `withBase()` из `src/utils/paths.ts`; обычные Markdown-ссылки обрабатываются компонентами сайта.
 
 В GitHub Settings → Pages → Source должен быть выбран GitHub Actions. Workflow `.github/workflows/deploy.yml` использует Node.js 24 и публикует сайт из `main`. Push в `dev` публикацию не запускает. Ручной запуск workflow также публикует только ветку `main`.
 
