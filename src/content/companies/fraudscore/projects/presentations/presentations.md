@@ -3,7 +3,7 @@ project: "fraudscore"
 slug: "presentations"
 title: "Presentations"
 summary: "Product and conference presentations for FraudScore."
-cover: "/images/projects/fraudscore/presentations/cover.png"
+cover: "/images/projects/fraudscore/presentations/2025-slide-01.webp"
 order: 1
 sourceHeading: "Presentations"
 expertise: [marketing-design]
