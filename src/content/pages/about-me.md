@@ -6,7 +6,7 @@ status: "published"
 featured: true
 sortOrder: 4
 category: "UX/UI design"
-cover: "/images/projects/home/01.webp"
+cover: "./photo.webp"
 ---
 
 About me
@@ -23,7 +23,7 @@ I enjoy solving complex problems, simplifying user experiences, and finding prac
 
 [Email me](#contact)
 
-![Natalia Isakova](/images/projects/home/01.webp)
+![Natalia Isakova](./photo.webp)
 
 ## Expertise & Tools
 

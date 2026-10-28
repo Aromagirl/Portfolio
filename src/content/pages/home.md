@@ -6,13 +6,13 @@ status: "published"
 featured: true
 sortOrder: 0
 category: "UX/UI design"
-cover: "/images/projects/home/01.webp"
+cover: "./photo.webp"
 homeProjects:
   - projectId: "fraudscore-safeclick-website"
   - projectId: "fraudscore-fraudscore-website"
 ---
 
-![Natalia Isakova — 01](/images/projects/home/01.webp)
+![Natalia Isakova](./photo.webp)
 
 # Product Designer & *Builder*
 

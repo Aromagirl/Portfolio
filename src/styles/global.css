@@ -621,6 +621,27 @@ body{background-image:radial-gradient(ellipse at 95% 0%,color-mix(in srgb,var(--
 .source-content .document-embed iframe{display:block;width:100%;height:clamp(350px,65vh,760px);border:1px solid var(--line);border-radius:16px;background:#fff}
 .source-content .document-embed p{display:flex;flex-wrap:wrap;gap:12px 24px;margin-top:14px;font-size:.85rem}
 
+  /* Selected presentation slides, with the complete PDF available separately. */
+  .source-content .presentation-showcase{max-width:64rem;margin:2rem auto 3rem}
+  .source-content .presentation-showcase p:has(img){margin:0;max-width:none}
+  .source-content .presentation-showcase .case-media{display:block}
+  .source-content .presentation-showcase .image-link{overflow:hidden;border:1px solid var(--line);border-radius:var(--radius-panel);cursor:zoom-in}
+  .source-content .presentation-showcase img{width:100%;aspect-ratio:16/9;border-radius:0}
+  .source-content .presentation-slide-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.5rem}
+  .source-content .presentation-slide-grid>p{min-width:0}
+  .source-content .presentation-hint{font-size:.85rem;color:var(--muted)}
+  .source-content .presentation-meta{font-size:.85rem;color:var(--muted)}
+  .source-content .presentation-divider{max-width:64rem;margin:4rem auto;border:0}
+  .source-content .presentation-download{max-width:64rem;margin:3rem auto;display:flex;align-items:center;justify-content:space-between;gap:1.5rem;padding:2rem;border-block:1px solid var(--line)}
+  .source-content .presentation-download :is(h2,h3){margin:0;font-size:var(--text-title)}
+  .source-content .presentation-download p{margin:.65rem 0 0;font-size:.9rem;color:var(--muted)}
+  .source-content .presentation-download .btn{flex-shrink:0;text-decoration:none;color:var(--on-inverse)}
+  @media(max-width:767px){
+    .source-content .presentation-slide-grid{grid-template-columns:minmax(0,1fr);gap:1rem}
+    .source-content .presentation-download{align-items:flex-start;flex-direction:column;padding:1.5rem 0}
+    .source-content .presentation-download .btn{max-width:100%;white-space:normal;text-align:center}
+  }
+
 /* Reserve the cover area until a homepage project receives an image. */
 .home-content>.home-project-cover:not(:has(img))::before{content:"";display:block;order:-1;flex-shrink:0;width:100%;aspect-ratio:5/4;margin-bottom:1.5rem;border-radius:var(--radius-card);background:var(--tint,var(--tint-sage));border:1px solid var(--line);box-shadow:var(--shadow-card)}
 .dark .home-content>.home-project-cover:not(:has(img))::before{background:color-mix(in oklab,var(--tint) 16%,var(--surface))}

@@ -11,11 +11,11 @@ $('a[href]').each((_, element) => {
   link.attr('href', withBase(link.attr('href')!));
 });
 // Keep editorial Markdown free of layout classes and component syntax.
-for (const element of $('img').toArray()) {
+for (const [index, element] of $('img').toArray().entries()) {
   const img = $(element);
   const src = img.attr('src') ?? '';
   const asset = manifest.pages.flatMap(page => page.assets).find(asset => 'localPath' in asset && asset.localPath === src);
-  img.attr({ src: withBase(src), loading: src.includes('/home/') ? 'eager' : 'lazy', decoding: 'async' });
+  img.attr({ src: withBase(src), loading: index === 0 ? 'eager' : 'lazy', decoding: 'async' });
   if (asset && 'outputWidth' in asset && asset.outputWidth) img.attr('width', String(asset.outputWidth));
   if (asset && 'outputHeight' in asset && asset.outputHeight) img.attr('height', String(asset.outputHeight));
   const media = $('<span class="case-media">');
