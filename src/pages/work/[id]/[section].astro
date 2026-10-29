@@ -3,6 +3,7 @@ import { getCollection, getEntry, render } from 'astro:content';
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import CaseImage from '../../../components/CaseImage.astro';
 import MarkdownBody from '../../../components/MarkdownBody.astro';
+import CaseIndex from '../../../components/CaseIndex.astro';
 import WebsiteComparison from '../../../components/WebsiteComparison.astro';
 import SocialGallery from '../../../components/SocialGallery.astro';
 import { insertedContentAnchorIds } from '../../../config/content-anchors';
@@ -47,8 +48,7 @@ const contents = headings.filter(heading => heading.depth <= 3 && /\p{L}/u.test(
       <a class="chip" href={withBase(projectPath(project))}>Overview</a>
       {siblings.map(sibling => <a class="chip" href={withBase(workSectionPath(project, sibling))} aria-current={sibling.id === section.id ? 'page' : undefined}>{sibling.data.title}</a>)}
     </nav>
-    {contents.length > 2 && <details class="case-index"><summary>On this page</summary><nav aria-label="On this page">{contents.map(heading => <a href={`#${heading.slug}`}>{heading.text}</a>)}</nav></details>}
-    <article class:list={['prose', 'source-content', 'work-section-content', { 'work-section-columns': splitRole, 'presentations-content': section.data.slug === 'presentations', 'expo-content': section.data.slug === 'expo-design', 'tickeron-ui-content': project.data.slug === 'tickeron' }]} data-source-content>{section.filePath?.endsWith('.md') ? <MarkdownBody entryId={section.id} splitRole={splitRole}><Content /></MarkdownBody> : <Content components={{ img: CaseImage, a: ContentLink }} />}
+    <article class:list={['prose', 'source-content', 'work-section-content', { 'work-section-columns': splitRole, 'presentations-content': section.data.slug === 'presentations', 'expo-content': section.data.slug === 'expo-design', 'tickeron-ui-content': project.data.slug === 'tickeron' }]} data-source-content>{section.filePath?.endsWith('.md') ? <MarkdownBody entryId={section.id} splitRole={splitRole}><Content /><CaseIndex slot="index" headings={contents} /></MarkdownBody> : <><CaseIndex headings={contents} /><Content components={{ img: CaseImage, a: ContentLink }} /></>}
     </article>
     {section.data.slug === 'social-media-blog' && <SocialGallery />}
     {section.data.comparison && <WebsiteComparison filePath={section.filePath!} title={section.data.title} mediaPath={`/images/projects/${project.data.slug}/${section.data.slug}`} />}

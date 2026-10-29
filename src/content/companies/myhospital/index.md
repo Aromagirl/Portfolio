@@ -15,15 +15,16 @@ fillCover: false
 logo: "/images/projects/myhospital/01.webp"
 ---
 
-MyHospital is a medical service aggregator located in the capital of the region.  MyHospital aggregates public hospitals and private consultations, making it easier for clients to find the right specialist. Their target customers are families with children, mid-level workers, newly arrived immigrants and students.
+MyHospital is a mobile app concept for finding medical specialists and booking appointments across public hospitals and private practices.
 
-Families and new residents need to make an appointment to the hospital quickly and use a language they can understand, without speaking by the phone with operators. Design an app for MyHospital helps people make an appointment with a specialist, in the fastest and easiest way.
+The project focuses on families and new residents who need a quick way to book care without calling an operator, including people facing language barriers.
 
-![MyHospital — 02](/images/projects/myhospital/02.webp)
+<aside class="course-note" aria-label="Project context">
+<img src="/images/projects/myhospital/02.webp" alt="" width="32" height="32" />
+<p>Course project completed as part of the Google UX Design Professional Certificate.</p>
+</aside>
 
-The project was created as part of a training course Google UX Design Professional Certificate.Google Career Certificates are part of Grow with Google, an initiative that draws on Google's 20-year history of building products, platforms, and services that help people and businesses grow. Through programs like these, we aim to help everyone – those who make up the workforce of today and the students who will drive the workforce of tomorrow.
-
-## My role as UX Researcher & UX/UI Designer from start to finish of the project:
+## My role as UX Researcher & UX/UI Designer:
 
 - 🔬   Conducting usability studies
 
@@ -37,91 +38,87 @@ The project was created as part of a training course Google UX Design Profession
 
 - 🔄   Iterating on designs
 
-## Understanding the user
 
-### User research
+## Project Overview
 
-I conducted interviews and created empathy maps to understand the users I’m designing for and their needs. A primary user group identified through research was families with children, who have a busy work schedule and need to make an appointment to the hospital quickly. 
+The primary journey takes a user from finding a medical specialist to choosing an appointment time and confirming a booking.
 
-The creation of empathy maps and user journey maps showed that the main problem of the target group is the process of making a call and talking with an operator to schedule an appointment with a specialist.
+<figure class="research-figure research-hero">
+<img src="/images/projects/myhospital/03.webp" alt="MyHospital mobile app mockups showing medical search and appointment booking." width="1237" height="1173" />
+<figcaption>Mobile app concept &middot; Specialist discovery and appointment booking</figcaption>
+</figure>
 
-### User pain points
+## Understanding the User
 
-#### Time
+Interviews, empathy maps and journey mapping helped identify the difficulty of arranging appointments by phone, particularly for busy families with children.
 
-Families with children are too busy to make an appointment by phone
+### Research priorities
 
-#### Language
-
-Competitor products don’t offer different languages
-
-#### UI
-
-Navigation of competitor products is difficult and not very clear
-
-#### Accessibility
-
-Competitor products provide a limited amount of accessibility features
-
-### Persona
-
-![MyHospital — 04](/images/projects/myhospital/04.webp)
+- **Time:** reduce dependence on phone calls and waiting for an operator.
+- **Language:** consider users who need to book in a language they understand.
+- **Navigation:** make specialist information and appointment details easier to find.
+- **Accessibility:** consider different visual and navigation needs.
 
 ### Persona: Victoria
 
-Problem statement: Victoria is a mother of two children who has a busy work schedule, needs to make an appointment to the hospital quickly because operators who receive calls are often busy.
+Victoria is a mother of two with a busy work schedule. She needs a quick way to book an appointment when phone operators are unavailable.
 
-## Starting the design
+<figure class="research-figure ">
+<img src="/images/projects/myhospital/04.webp" alt="Victoria persona with goals, frustrations and a family appointment booking scenario." width="959" height="540" />
+<figcaption>Research persona &middot; Victoria</figcaption>
+</figure>
 
-![MyHospital — 05](/images/projects/myhospital/05.webp)
+## From Sketches to Prototype
 
-### Paper wireframes
+Paper iterations explored the home screen before moving into digital wireframes. Medical-area buttons and a quick search field were prioritised to help users find care.
 
-Taking the time to draft iterations of each screen of the app on paper ensured that the elements that made it to digital wireframes would be well-suited to address user pain points. 
+<figure class="research-figure research-portrait research-paper-preview">
+<img src="/images/projects/myhospital/05.webp" alt="Paper wireframe iterations exploring MyHospital home screen layouts." width="991" height="1469" />
+<figcaption>Paper wireframes &middot; Exploring home screen navigation</figcaption>
+</figure>
 
-For the home screen, I prioritized round buttons for selecting a medical area and an input field for quick search to help users save time.
+The low-fidelity prototype connected the specialist booking journey for usability testing.
 
-### Low-fidelity prototype
+<figure class="research-figure ">
+<img src="/images/projects/myhospital/06.webp" alt="Connected low-fidelity screens for medical specialist search and appointment booking." width="1285" height="578" />
+<figcaption>Low-fidelity prototype &middot; Appointment booking flow</figcaption>
+</figure>
 
-Using the completed set of digital wireframes, I created a low-fidelity prototype. The primary user flow I connected was making the appointment with a specialist so the prototype could be used in a usability study.
+## Usability Testing & Findings
 
-![MyHospital — 06](/images/projects/myhospital/06.webp)
+Two rounds of unmoderated usability testing involved five participants, with sessions lasting 30-40 minutes. The first round used the low-fidelity prototype; the second tested high-fidelity screens.
 
-## Usability study
+### Round 1
 
-I conducted two rounds of unmoderated usability studies with 5 participants, length of 30-40 min. 
+- Make specialist information more detailed.
+- Support users who want the earliest available appointment.
+- Make booked appointment details easier to find.
+- Clarify date and time selection.
 
-The first study used a low\-fidelity prototype. Findings from the first study helped guide the designs from wireframes to mockups. 
+### Round 2
 
-The second study used a high-fidelity prototype and revealed what aspects of the mockups needed refining.
+- Allow users to clear a selected appointment date and time.
+- Enable booking from a specialist saved in Favorites.
+- Make notifications visible on the home screen.
 
-### Participants
-
-![MyHospital — 07](/images/projects/myhospital/07.webp)
+<details class="research-details">
+<summary>Read participant feedback</summary>
 
 ### Participant A
 
 "Everything is simple and clear, except for the moment of choosing a hospital and a specialist"
 
-![MyHospital — 08](/images/projects/myhospital/08.webp)
-
 ### Participant B
 
 "The application is very simple. It is very easy to make an appointment with a doctor"
-
-![MyHospital — 09](/images/projects/myhospital/09.webp)
 
 ### Participant C
 
 "I did not like it. I don't see complete information. I want to make appointment not for myself, but for someone else, but I do not see how this can be done."
 
-![MyHospital — 10](/images/projects/myhospital/10.webp)
-
 ### Participant D
 
 "Maybe due to age, or due to some of my erroneous actions, I can’t understand how I can see my appointment. I go to Favorites, but there are a lot of erroneous appointments that I can't remove."
-
-![MyHospital — 11](/images/projects/myhospital/11.webp)
 
 ### Participant E
 
@@ -129,74 +126,35 @@ The second study used a high-fidelity prototype and revealed what aspects of the
 
 I would use such an application to make an appointment with the doctor. Often there are applications that are clogged with unnecessary information. And in this application, everything is clear."
 
-### Usability study: findings
 
-#### Round 1 findings
+</details>
 
-1.  Detailed information about specialists is necessary for most users
-    
-2.  Some users want to make an appointment with the doctor as soon as possible
-    
-3.  Appointment information is difficult to find for some users
-    
-4.  Date and time for appointment is difficult to choose for some users
+## Refined Design
 
-#### Round 2 findings
+The high-fidelity flow incorporates clearer appointment selection and a way to view a specialist in Favorites and book directly from there.
 
-1.  Users want to be able to cancel the selected date and time of appointment
-    
-2.  Inability to make an appointment with  a specialist from Favorites
-    
-3.  Users want to see notifications on the main screen
+<figure class="research-figure ">
+<img src="/images/projects/myhospital/12.webp" alt="MyHospital refined screens showing hospital search, a hospital profile, date selection and appointment confirmation." width="1026" height="480" />
+<figcaption>Key screens &middot; Search, selection and booking</figcaption>
+</figure>
 
-## Refining the design
+<figure class="research-figure ">
+<img src="/images/projects/myhospital/13.webp" alt="High-fidelity MyHospital screen connections including Favorites and appointment booking." width="1050" height="821" />
+<figcaption>High-fidelity prototype &middot; Connected screens and states</figcaption>
+</figure>
 
-### Key mockups
+### Prototype walkthrough
 
-![MyHospital — 12](/images/projects/myhospital/12.webp)
+The animation shows the main booking journey and additional app features.
 
-### High-fidelity prototype
-
-The final high-fidelity prototype presented a more detailed and consistent user flow, with viewing the specialist’s profile in Favorites and the ability to make an appointment directly from there.
-
-![MyHospital — 13](/images/projects/myhospital/13.webp)
-
-![MyHospital — 14](/images/projects/myhospital/14.gif)
-
-This video shows the main user flow and the additional features in the MyHospital app.
+![MyHospital appointment booking prototype walkthrough](/images/projects/myhospital/14.gif)
 
 ### Accessibility considerations
 
-#### 1
+The design explored a visually impaired mode and text-to-speech support, used navigation icons and checked colour combinations with WebAIM Contrast Checker. These are design considerations for the prototype rather than evidence of a fully accessible, released application.
 
-I provided interface for visually impaired and Text-to-Speech technology
+## Learnings & Next Steps
 
-#### 2
+Usability testing showed that a simple interface still needs clear information about specialists, booking states and saved appointments. Participant feedback guided the move from wireframes to a more detailed booking flow.
 
-I used icons to help make navigation easier
-
-#### 3
-
-I used WebAIM Contrast Checker for every color combination to comply with WCAG 2 requirements for contrast and color
-
-## Going forward
-
-### Takeaways
-
-The app makes users feel like My Hospital really thinks about how to meet their needs. 
-
-One quote from study participant:
-
-“I would use such an app to make an appointment with the doctor. Often there are apps that are clogged with unnecessary information. And in this application, everything is clear.”
-
-While designing the MyHospital app, I learned that the first ideas for the app are only the beginning of the process. Usability studies and peer feedback influenced each iteration of the app’s designs.
-
-### Next steps
-
-#### 1
-
-Conduct another round of usability studies to validate whether the pain points users experienced have been effectively addressed.
-
-#### 2
-
-Conduct more user research to determine any new areas of need.
+Next steps are to test the revised flow again and investigate additional user needs, including booking on behalf of family members.

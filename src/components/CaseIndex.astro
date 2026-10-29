@@ -1,0 +1,6 @@
+---
+interface Props { headings: { depth: number; slug: string; text: string }[] }
+const { headings } = Astro.props;
+const items = headings.filter(heading => heading.depth === 2 && !/^(About\b|My role\b)/i.test(heading.text));
+---
+{items.length > 1 && <details class="case-index"><summary>On this page</summary><nav aria-label="On this page">{items.map(heading => <a href={`#${heading.slug}`}>{heading.text}</a>)}</nav></details>}

@@ -30,7 +30,7 @@ $('img').each((_, element) => {
   img.attr({ src: withBase(src), loading: 'lazy', decoding: 'async' });
   if (asset && 'outputWidth' in asset && asset.outputWidth) img.attr('width', String(asset.outputWidth));
   if (asset && 'outputHeight' in asset && asset.outputHeight) img.attr('height', String(asset.outputHeight));
-  if (!img.closest('a').length) {
+  if (!img.closest('a, .course-note').length) {
     const media = $('<span>').addClass('case-media');
     const link = $('<a>').addClass('image-link').attr({ href: withBase(src), 'aria-label': `Open image: ${img.attr('alt') ?? ''}` });
     img.replaceWith(media);
@@ -84,6 +84,18 @@ if (splitRole) {
     section.append(element);
   }
   if (section.children().length) output.append(section);
+}
+// Keep the index after the complete introduction, before the case materials.
+const index = await Astro.slots.render('index');
+if (index) {
+  const intro = output.find('.tickeron-ui-intro').first();
+  if (intro.length) intro.after(index);
+  else if (splitRole) output.append(index);
+  else {
+    const first = output.children('.source-section').first();
+    if (/^About\b/i.test(first.children('h2').first().text())) first.after(index);
+    else output.prepend(index);
+  }
 }
 const html = output.html() ?? '';
 ---

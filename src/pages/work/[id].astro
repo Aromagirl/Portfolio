@@ -7,6 +7,7 @@ import { withBase } from '../../utils/paths';
 import CaseHeading from '../../components/theme/CaseHeading.astro';
 import CompanyOverview from '../../components/theme/CompanyOverview.astro';
 import MarkdownBody from '../../components/MarkdownBody.astro';
+import CaseIndex from '../../components/CaseIndex.astro';
 import { getWorkSections } from '../../utils/work';
 export async function getStaticPaths() {
   const projects = await getCollection('projects', ({ data }) => !data.casePage);
@@ -24,12 +25,12 @@ const contents = headings.filter(h => h.depth === 2 && h.text !== project.data.t
     {sections.length > 0 || splitRole ? <CompanyOverview project={project} sections={sections} splitRole={splitRole}>
       {project.filePath?.endsWith('.md') ? <MarkdownBody entryId={project.id} splitRole={splitRole} part={sections.length === 0 ? 'overview' : undefined}><Content /></MarkdownBody> : <Content components={{ img: CaseImage, a: ContentLink }} />}
     </CompanyOverview> : <>
-    {contents.length > 0 && <details class="case-index"><summary>On this page</summary><nav aria-label="On this page">{contents.map(h => <a href={`#${h.slug}`}>{h.text}</a>)}</nav></details>}
+    <CaseIndex headings={contents} />
     <article class="prose source-content case-content" data-source-content><Content components={{ img: CaseImage, a: ContentLink, h2: CaseHeading }} /></article>
     </>}
     {splitRole && sections.length === 0 && contents.some(h => !/^My role\b/i.test(h.text)) && <>
-      {contents.length > 1 && <details class="case-index"><summary>On this page</summary><nav aria-label="On this page">{contents.filter(h => !/^My role\b/i.test(h.text)).map(h => <a href={`#${h.slug}`}>{h.text}</a>)}</nav></details>}
-      <article class="prose source-content case-content" data-source-content><MarkdownBody entryId={project.id} part="case"><Content /></MarkdownBody></article>
+      <CaseIndex headings={contents} />
+      <article class:list={['prose', 'source-content', 'case-content', { 'research-case': ['myhospital', 'kidswearcycle'].includes(project.data.slug) }]} data-source-content><MarkdownBody entryId={project.id} part="case"><Content /></MarkdownBody></article>
     </>}
   </div>
 </BaseLayout>

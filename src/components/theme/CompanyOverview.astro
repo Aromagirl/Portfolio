@@ -10,7 +10,7 @@ const redirects = sections.flatMap(section => workSectionAnchors(section).map(an
   anchor, title: section.data.title, href: `${withBase(workSectionPath(project, section))}#${encodeURIComponent(anchor)}`,
 })));
 ---
-<header class="company-heading">
+<header class="company-heading" data-project={project.data.slug}>
   <p class="eyebrow">Project overview</p>
   <div class="company-identity">
     {project.data.logo && <img class="company-logo" src={withBase(project.data.logo)} alt="" width="64" height="64" />}
@@ -50,6 +50,7 @@ const redirects = sections.flatMap(section => workSectionAnchors(section).map(an
   .company-identity{display:flex;align-items:center;gap:1.25rem}
   .company-logo{width:4rem;height:4rem;object-fit:contain;border-radius:.75rem;flex-shrink:0}
   @media(max-width:639px){.company-identity{gap:1rem}.company-logo{width:3rem;height:3rem}}
+  .company-heading[data-project="kidswearcycle"] .company-logo{height:var(--text-headline);width:auto;border-radius:0}
   .company-role{font-size:.95rem;color:var(--body)}
   .company-role span{color:var(--muted);margin-right:.75rem}
   .company-work{padding-block:2rem 3rem;border-top:1px solid var(--line)}
@@ -61,6 +62,9 @@ const redirects = sections.flatMap(section => workSectionAnchors(section).map(an
   .company-context:is([data-project="myhospital"],[data-project="kidswearcycle"]) :global(.company-description > p:last-child){font-size:.875rem;line-height:1.6}
   .company-context-content:not(.company-context-plain) :global(.source-section:first-child){display:none}
   .company-context-content :global(img){max-width:12rem}
+  .company-context-content :global(.course-note){display:flex;align-items:center;gap:1rem;padding:1rem;margin-top:1.5rem;border:1px solid var(--line);border-radius:var(--radius-panel);background:var(--surface)}
+  .company-context-content :global(.course-note > img){flex:0 0 2rem;width:2rem;height:2rem;max-width:none;object-fit:contain;border-radius:.25rem;background:#fff;margin:0}
+  .company-context-content :global(.course-note > p){margin:0;font-size:.875rem;line-height:1.6;color:var(--body)}
   .company-context-content :global(.company-responsibilities > :is(h2,h3)){font-size:1.3rem;line-height:1.3;letter-spacing:-.02em}
   @media(min-width:900px){
     .company-context-columns{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:1rem 3rem;align-items:start}
