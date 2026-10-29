@@ -622,6 +622,35 @@ body{background-image:radial-gradient(ellipse at 95% 0%,color-mix(in srgb,var(--
 .source-content .document-embed p{display:flex;flex-wrap:wrap;gap:12px 24px;margin-top:14px;font-size:.85rem}
 
   /* Selected presentation slides, with the complete PDF available separately. */
+  .source-content.tickeron-ui-content{max-width:64rem;margin-inline:auto}
+  .tickeron-ui-content .tickeron-ui-intro{display:grid;gap:2rem;margin-bottom:2rem}
+  .tickeron-ui-content .tickeron-ui-description p:first-child{margin-top:0}
+  .tickeron-ui-content .tickeron-ui-responsibilities h3{font-size:1.3rem;line-height:1.3;letter-spacing:-.02em;margin-top:0}
+  @media(min-width:900px){
+    .tickeron-ui-content .tickeron-ui-intro{grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:3rem;align-items:start}
+  }
+  .source-content.tickeron-ui-content .source-section :is(p,h2,h3,h4,ul,ol){margin-inline:0;text-align:left}
+  .tickeron-ui-content .tickeron-ui-figure{margin:2rem 0 3rem;min-width:0}
+  .tickeron-ui-content .tickeron-ui-figure .case-media{display:block}
+  .tickeron-ui-content .tickeron-ui-figure .image-link{cursor:zoom-in;border:1px solid var(--line);border-radius:var(--radius-panel);overflow:hidden;background:var(--surface)}
+  .tickeron-ui-content .tickeron-ui-figure img{display:block;width:100%;height:auto;border-radius:0}
+  .tickeron-ui-content .tickeron-ui-figure figcaption{margin-top:.75rem;font-size:.85rem;line-height:1.5;color:var(--muted);text-align:left}
+  .tickeron-ui-content .tickeron-ui-hero{max-width:36rem}
+  .tickeron-ui-content .tickeron-ui-icons{max-width:52rem}
+  .tickeron-ui-content .tickeron-ui-banners{max-width:38rem}
+  .tickeron-ui-content :is(.tickeron-ui-role,.tickeron-ui-hint){font-size:.9rem;color:var(--muted)}
+  .tickeron-ui-content .tickeron-ui-overview{margin:2rem 0 3rem}
+  .tickeron-ui-content .tickeron-ui-overview>summary{cursor:pointer;width:fit-content;min-height:44px;padding:.75rem 1.25rem;border:1px solid var(--line-strong);border-radius:1.5rem;font-weight:600}
+  .tickeron-ui-content .tickeron-ui-overview>p{font-size:.9rem;color:var(--muted)}
+  .tickeron-ui-content .tickeron-ui-support{position:relative;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.5rem;margin:2rem 0 3rem;align-items:start}
+  .tickeron-ui-content .tickeron-ui-support>span[aria-hidden]{position:absolute;top:0}
+  .tickeron-ui-content .tickeron-ui-support .tickeron-ui-figure{margin:0}
+  .tickeron-ui-content .tickeron-ui-support .image-link{aspect-ratio:4/3;display:flex;align-items:center;padding:.5rem}
+  .tickeron-ui-content .tickeron-ui-support img{width:100%;height:100%;object-fit:contain}
+  @media(max-width:767px){
+    .tickeron-ui-content .tickeron-ui-support{grid-template-columns:minmax(0,1fr)}
+  }
+
   .source-content.expo-content{max-width:64rem;margin-inline:auto}
   .source-content.expo-content .source-section :is(p,h2,h3,h4,ul,ol){margin-inline:0;text-align:left}
   .expo-content .expo-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.5rem;margin:2rem 0 3rem;align-items:start}

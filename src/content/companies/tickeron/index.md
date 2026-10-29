@@ -25,7 +25,7 @@ For advisors and thought leaders in the investment community, Tickeron provides 
 
 ## My role as UI Designer:
 
-- 🔍   Designing mockups for the platform parts
+- 🎨   Designing mockups for the platform parts
 - 📱   Responsive design for tablet & mobile versions
 - 🔗   High-fidelity prototyping
 - ✒️   Icons design
