@@ -89,7 +89,7 @@ Mafia Game использует такой же верх страницы, бе�
 | Проект | Файлы направлений |
 | --- | --- |
 | Tickeron | `tickeron/projects/website-ui/website-ui.md`, `tickeron/projects/landing-pages/landing-pages.md`, `tickeron/projects/icons-banners/icons-banners.md` |
-| FraudScore | `fraudscore/projects/safeclick-website/safeclick-website.md`, `fraudscore/projects/fraudscore-website/fraudscore-website.md`, `fraudscore/projects/ux-ui-design/ux-ui-design.md`, `fraudscore/projects/social-media-blog/social-media-blog.md`, `fraudscore/projects/expo-design/expo-design.md`, `fraudscore/projects/presentations/presentations.md` |
+| FraudScore | `fraudscore/projects/safeclick-website/safeclick-website.md`, `fraudscore/projects/fraudscore-website/fraudscore-website.md`, `fraudscore/projects/fraudscore-platform/fraudscore-platform.md`, `fraudscore/projects/social-media-blog/social-media-blog.md`, `fraudscore/projects/expo-design/expo-design.md`, `fraudscore/projects/presentations/presentations.md` |
 | I-Jet Media | `ijet-media/projects/game-interfaces/game-interfaces.md`, `ijet-media/projects/mobile-versions/mobile-versions.md`, `ijet-media/projects/technical-specifications/technical-specifications.md` |
 
 Файлы направлений автоматически появляются на обзорной странице родительского проекта. Их адрес: `/work/<project-slug>/<section-slug>/`.
@@ -131,21 +131,21 @@ src/content/companies/
       safeclick-website/
         safeclick-website.md
         cover.png
-      ux-ui-design/
-        ux-ui-design.md
+      fraudscore-platform/
+        fraudscore-platform.md
         cover.png
 ```
 
 - Для замены изображения сохраните его имя и расширение.
 - Для изображения отдельного проекта используйте ссылку `/images/projects/<company>/<project>/<filename>`.
-- Например: `![Описание](/images/projects/fraudscore/ux-ui-design/cover.png)`.
+- Например: `![Описание](/images/projects/fraudscore/fraudscore-platform/cover.png)`.
 - Общие обложки и логотипы компании лежат рядом с её `index.md`; компании без отдельных проектов хранят там все изображения.
 - Обложки и логотипы задаются в метаданных `cover` и `logo`.
 - `cover: null` оставляет карточку каталога без изображения.
 - Изображения SafeClick: `fraudscore/projects/safeclick-website/`.
 - Изображения Mafia Game: `mafia-bot-mini-app/`, рядом с `index.md`.
 - Обложки Tickeron, MyHospital и KidswearCycle: `cover.webp` в папке каждой компании.
-- Обложка FraudScore в каталоге: `fraudscore/cover.png`; UX/UI Design: `fraudscore/projects/ux-ui-design/cover.png`.
+- Обложка FraudScore в каталоге: `fraudscore/cover.png`; FraudScore Platform: `fraudscore/projects/fraudscore-platform/cover.png`.
 - Компании без отдельных проектов не требуют пустой папки `projects/`.
 
 Интеграция `src/integrations/project-images.mjs` отдаёт изображения из новой структуры в режиме разработки и копирует их в сборку по прежним публичным URL. Markdown не публикуется как медиа. Дублировать изображения в `public` не нужно.

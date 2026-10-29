@@ -645,6 +645,20 @@ body{background-image:radial-gradient(ellipse at 95% 0%,color-mix(in srgb,var(--
   .research-case .research-details>summary{cursor:pointer;width:fit-content;padding:.75rem 1.25rem;min-height:44px;border:1px solid var(--line-strong);border-radius:1.5rem}
   @media(max-width:767px){.research-case .research-sketches{grid-template-columns:minmax(0,1fr)}}
   .source-content.tickeron-ui-content{max-width:64rem;margin-inline:auto}
+  .platform-case .platform-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.5rem;align-items:start;margin:2rem 0 3rem}
+  .platform-case .platform-smart-reject{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .platform-case .platform-grid .platform-figure{margin:0}
+  .platform-case .platform-grid .image-link{display:flex;align-items:center;justify-content:center;aspect-ratio:4/3;padding:.5rem}
+  .platform-case .platform-grid img{width:100%;height:100%;object-fit:contain}
+  .platform-case .platform-reference-grid .image-link{aspect-ratio:4/5}
+  .platform-case .platform-device-grid{grid-template-columns:minmax(0,2.2fr) minmax(0,1.25fr) minmax(0,.8fr);max-width:64rem}
+  .platform-case .platform-device-grid .image-link{aspect-ratio:auto;width:fit-content;max-width:100%;padding:0}
+  .platform-case .platform-device-grid img{width:auto;height:auto;max-width:100%;max-height:28rem}
+  .platform-case .platform-form-preview{max-width:30rem}
+  .platform-case .platform-full-screens .image-link{aspect-ratio:auto;padding:0}
+  .platform-case .platform-full-screens img{height:auto}
+  .platform-case .tickeron-ui-overview .platform-figure{margin-bottom:1rem}
+  @media(max-width:767px){.platform-case .platform-grid{grid-template-columns:minmax(0,1fr)}}
   .ijet-content .ijet-games,.ijet-content .ijet-pair{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.5rem;align-items:start}
   .ijet-content .ijet-games .tickeron-ui-figure,.ijet-content .ijet-pair .tickeron-ui-figure{margin:1rem 0 2rem}
   .ijet-content .tickeron-ui-figure .image-link{width:fit-content;max-width:100%}

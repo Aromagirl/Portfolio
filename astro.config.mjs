@@ -10,6 +10,7 @@ export default defineConfig({
   output: 'static',
   trailingSlash: 'always',
   redirects: {
+    '/work/fraudscore/ux-ui-design/': '/portfolio/work/fraudscore/fraudscore-platform/',
     '/work/myhospital/': '/portfolio/work/myhospital-app/',
     '/work/kidswearcycle/': '/portfolio/work/kidswearcycle-website/',
   },
