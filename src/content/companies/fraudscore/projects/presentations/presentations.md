@@ -2,7 +2,7 @@
 project: "fraudscore"
 slug: "presentations"
 title: "Presentations"
-summary: "Product and conference presentations for FraudScore."
+summary: "Product and conference presentations introducing FraudScore’s approach to advertising fraud detection, combining data visualisation, product workflows, interface examples and customer case studies into a clear visual story."
 cover: "/images/projects/fraudscore/presentations/2025-slide-01.webp"
 order: 1
 sourceHeading: "Presentations"

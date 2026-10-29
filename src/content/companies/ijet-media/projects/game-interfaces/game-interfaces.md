@@ -1,116 +1,81 @@
 ---
 project: "ijet-media"
 slug: "game-interfaces"
-title: "Game interface design"
-summary: "Social game interfaces and stages of the interface design process."
-cover: "/images/projects/ijet-media/game-interfaces/03.webp"
+title: "Game Interface Design"
+summary: "Interface design for social games, from early screen layouts and interaction flows to visual implementation, usability testing and iteration."
+cover: "/images/projects/ijet-media/game-interfaces/cover.webp"
 order: 0
 expertise: [ux-research, prototyping, quality-assurance, marketing-design, digital-analytics]
 industries: [gaming]
 ---
 
-## What is a social online game?
+## About i-Jet Media & my role
 
-![i-Jet Media — 03](/images/projects/ijet-media/game-interfaces/03.webp)
+<div class="tickeron-ui-intro">
+<div class="tickeron-ui-description">
+<p>i-Jet Media published and distributed social games developed for short sessions, ongoing progression and interaction between players.</p>
+<p>My work connected game design requirements with screen layouts, navigation and implementation. I collaborated with game designers, programmers and artists, and used testing and player feedback to guide interface updates.</p>
+</div>
+<section class="tickeron-ui-responsibilities" aria-labelledby="ijet-role">
+<h3 id="ijet-role">My role as Lead UX Designer:</h3>
+<ul><li>&#128161; Designing screen layouts and user flows</li><li>&#128279; Low-fidelity prototyping</li><li>&#129309; Coordinating with game designers, artists and developers</li><li>&#128221; Usability testing and analysing player feedback</li></ul>
+</section>
+</div>
 
-### Main features of social online games:
+## Games & Context
 
--   A casual game that does not require special knowledge or skills.
+Social games combine accessible gameplay and short sessions with long-term progression and social features. The examples below show the range of game environments in the original project materials.
 
-In this game, there is no need for deep knowledge or professional skills. It is designed to be accessible and appealing to all players, regardless of their level of experience or abilities.
+<div class="ijet-games">
+<figure class="tickeron-ui-figure ">
+<img src="/images/projects/ijet-media/game-interfaces/04.webp" alt="Happy Farmer game screen with farming actions and social navigation." width="359" height="359" />
+<figcaption>Happy Farmer</figcaption>
+</figure>
+<figure class="tickeron-ui-figure ">
+<img src="/images/projects/ijet-media/game-interfaces/05.webp" alt="City Gangs game interface with missions, resources and navigation." width="359" height="359" />
+<figcaption>City Gangs</figcaption>
+</figure>
+<figure class="tickeron-ui-figure ">
+<img src="/images/projects/ijet-media/game-interfaces/06.webp" alt="Farm Frenzy mobile game screen." width="351" height="351" />
+<figcaption>Farm Frenzy &middot; Mobile</figcaption>
+</figure>
+<figure class="tickeron-ui-figure ">
+<img src="/images/projects/ijet-media/game-interfaces/07.webp" alt="Caribbean Pirates game scene with navigation and action buttons." width="359" height="359" />
+<figcaption>Caribbean Pirates</figcaption>
+</figure>
+</div>
 
--   Short gaming sessions similar to using social networks. 
+<p class="tickeron-ui-hint">Game screenshots show the interface in its visual context. Select any image to view it in full size.</p>
 
-Gaming sessions in this game last a few minutes, making it similar to using social networks. It offers a quick and easy entertainment break in your day, which you can take anytime, anywhere.
+## Exploration & Wireframes
 
--   Asynchronous gameplay. 
+The process began with game design specifications, reference analysis and discussion of technical constraints. Paper layouts helped explore the main screens, logical relationships and navigation before detailed layouts were prepared.
 
-The game offers asynchronous gameplay, meaning that players can play at their own pace, regardless of the actions of other players. This allows playing at a convenient time, even if your friends are not available at the moment.
+<figure class="tickeron-ui-figure ">
+<img src="/images/projects/ijet-media/game-interfaces/08.webp" alt="Annotated paper layouts exploring game navigation, panels and screen relationships." width="1216" height="887" />
+<figcaption>Early exploration &middot; Screens, navigation and interaction notes</figcaption>
+</figure>
 
--   Conditionally free game. 
+## From Wireframe to Visual Interface
 
-The game is available for download and play for free, but may contain in-game purchases or advertising. It has free access, allowing players to try it before purchasing additional content.
+Detailed layouts described individual controls and their behaviour. Agreed layouts were passed to programmers and artists so the visual implementation could follow the interface structure.
 
--   Communication tabs allowing you to invite friends. 
+<div class="ijet-pair">
+<figure class="tickeron-ui-figure ">
+<img src="/images/projects/ijet-media/game-interfaces/10.webp" alt="Wireframe of an animal information window with resources and actions." width="651" height="651" />
+<figcaption>Wireframe &middot; Window structure and actions</figcaption>
+</figure>
+<figure class="tickeron-ui-figure ">
+<img src="/images/projects/ijet-media/game-interfaces/11.webp" alt="Visual implementation of an animal information window with icons, resources and action buttons." width="663" height="664" />
+<figcaption>Visual implementation &middot; Artwork applied to the layout</figcaption>
+</figure>
+</div>
 
-The game includes communication features, such as tabs for inviting friends, making the process of social interaction more convenient and straightforward. This allows players to share the joy of playing with friends and compete with them.
+## Implementation & Iteration
 
--   Long-term entertainment service. 
+Implementation involved coordinating screen elements with the art team, checking interactive objects and navigation, and reviewing the beta interface. Player feedback from forums and support channels informed further adjustments after release.
 
-The game is a long-term entertainment service that promises a long and engaging gaming experience. It is constantly updated and expanded, offering players new opportunities and content over an extended period of time.
-
-### Social online games of the development studio "Taran Studio"
-
-![i-Jet Media — 04](/images/projects/ijet-media/game-interfaces/04.webp)
-
-Happy Farmer
-
-![i-Jet Media — 05](/images/projects/ijet-media/game-interfaces/05.webp)
-
-City Gangs
-
-![i-Jet Media — 06](/images/projects/ijet-media/game-interfaces/06.webp)
-
-Farm Frenzy (mobile)
-
-![i-Jet Media — 07](/images/projects/ijet-media/game-interfaces/07.webp)
-
-Caribbean Pirates
-
-## Stages of work as an Interface designer
-
-![i-Jet Media — 08](/images/projects/ijet-media/game-interfaces/08.webp)
-
-## I.
-
-The first stage of the Interface designer’s work:
-
-1.  Analysis of Game designer's specifications
-    
-2.  Market monitoring, search and analysis of similar products, pros and cons of interface solutions
-    
-3.  Interaction with programmers, selection of technical solutions
-    
-4.  Drawing up logical diagrams, sketches of the main screens, coordinating them with the Game designer
-
-## II.
-
-The second stage:
-
-1.  Development of detailed layouts in graphic editors with a description of the operation of individual elements
-    
-2.  Creating a working prototype of the main screen(s) of the game if necessary, experiments with active objects
-    
-3.  Transferring agreed upon layouts to programmers to create the “skeleton” of the game and navigation
-
-![i-Jet Media — 09](/images/projects/ijet-media/game-interfaces/09.webp)
-
-![i-Jet Media — 10](/images/projects/ijet-media/game-interfaces/10.webp)
-
-![i-Jet Media — 11](/images/projects/ijet-media/game-interfaces/11.webp)
-
-## III.
-
-The third stage:
-
-1.  Interaction with artists and designers, transferring finished layouts to them
-    
-2.  “Extension” of the resulting software skeleton with a graphical interface according to the layouts: drawing and inserting icons, buttons, windows, panels, menus...
-    
-3.  Control of inserted graphics: active objects (animals, plants, factories, equipment, houses...), backgrounds, decors
-    
-4.  Navigation check
-
-## IV.
-
-The fourth stage:
-
-1.  Usability testing of the finished product in beta version
-    
-2.  Processing player feedback after release: forum, contacting technical support.
-    
-3.  Adjusting the interface in a running product, if necessary
-    
-4.  Further development of the finished product
-
-![i-Jet Media — 12](/images/projects/ijet-media/game-interfaces/12.webp)
+<figure class="tickeron-ui-figure ">
+<img src="/images/projects/ijet-media/game-interfaces/12.webp" alt="Finished game market window with item categories, products and purchase controls." width="731" height="681" />
+<figcaption>In-game market &middot; Categories, items and purchase actions</figcaption>
+</figure>
