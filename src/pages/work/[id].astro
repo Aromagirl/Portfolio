@@ -30,7 +30,7 @@ const contents = headings.filter(h => h.depth === 2 && h.text !== project.data.t
     </>}
     {splitRole && sections.length === 0 && contents.some(h => !/^My role\b/i.test(h.text)) && <>
       <CaseIndex headings={contents} />
-      <article class:list={['prose', 'source-content', 'case-content', { 'research-case': ['myhospital', 'kidswearcycle'].includes(project.data.slug) }]} data-source-content><MarkdownBody entryId={project.id} part="case"><Content /></MarkdownBody></article>
+      <article class:list={['prose', 'source-content', 'case-content', { 'research-case': ['myhospital', 'kidswearcycle', 'myhospital-app', 'kidswearcycle-website'].includes(project.data.slug) }]} data-source-content><MarkdownBody entryId={project.id} part="case"><Content /></MarkdownBody></article>
     </>}
   </div>
 </BaseLayout>

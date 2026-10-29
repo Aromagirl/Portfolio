@@ -23,7 +23,7 @@ const projects = (await Promise.all(companies.map(async company => {
     data: company.data,
     href: projectPath(company),
     companyName: undefined,
-    tint: projectPresentation[company.data.slug]?.tint,
+    tint: (projectPresentation[company.data.slug] ?? projectPresentation[company.id])?.tint,
   }];
   return sections.filter(section => section.data.visibility === 'public').map(section => ({
     data: {
@@ -33,7 +33,7 @@ const projects = (await Promise.all(companies.map(async company => {
     },
     href: workSectionPath(company, section),
     companyName: company.data.title,
-    tint: projectPresentation[company.data.slug]?.tint,
+    tint: (projectPresentation[company.data.slug] ?? projectPresentation[company.id])?.tint,
   }));
 }))).flat();
 ---

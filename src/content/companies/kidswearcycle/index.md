@@ -1,10 +1,10 @@
 ---
-title: "KidswearCycle"
-summary: "Online Resale Platform"
+title: "KidswearCycle Website"
+summary: "Responsive website design for buying and reselling children's clothing, covering information architecture, browsing, item details and checkout. A Google UX Design course project."
 sourceUrl: "https://sites.google.com/view/natalia-isakova/user-research/kidswearcycle"
 status: "published"
 featured: true
-slug: "kidswearcycle"
+slug: "kidswearcycle-website"
 order: 5
 cover: "/images/projects/kidswearcycle/cover.webp"
 visibility: "public"
@@ -27,15 +27,10 @@ The project explores browsing, item details and checkout across desktop, tablet 
 ## My role as UX Researcher & UX/UI Designer:
 
 - 🔬   Conducting usability studies 
-
 - 💡   Paper & digital wireframing
-
 - 🔗   Low and high-fidelity prototyping
-
 - 📱   Responsive design
-
 - 🦼   Accounting for accessibility
-
 - 🔄   Iterating on designs
 
 

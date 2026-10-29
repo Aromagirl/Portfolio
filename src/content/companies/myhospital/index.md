@@ -1,10 +1,10 @@
 ---
-title: "MyHospital"
-summary: "Medical Service Aggregator"
+title: "MyHospital App"
+summary: "UX research and mobile app design for finding medical specialists and booking appointments, developed through interviews, usability testing and prototype iterations. A Google UX Design course project."
 sourceUrl: "https://sites.google.com/view/natalia-isakova/user-research/myhospital"
 status: "published"
 featured: true
-slug: "myhospital"
+slug: "myhospital-app"
 order: 4
 cover: "/images/projects/myhospital/cover.webp"
 visibility: "public"

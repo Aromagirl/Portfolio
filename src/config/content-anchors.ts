@@ -49,7 +49,7 @@ export const contentAnchorAliases: Record<string, Record<string, string>> = {
   "fraudscore-safeclick-website": {
     "safeclick": "@start"
   },
-  "myhospital": {
+  "myhospital-app": {
     "h.hpytpn8x1xlj": "@start",
     "h.6925bv2hcn6d": "@start",
     "h.mt4nhri9jf4w": "@start",
@@ -89,7 +89,7 @@ export const contentAnchorAliases: Record<string, Record<string, string>> = {
     "h.efvm0shjw3t3": "1-1",
     "h.tgjtradjbb1l": "2-1"
   },
-  "kidswearcycle": {
+  "kidswearcycle-website": {
     "h.zeifpxtf9kpu": "@start",
     "h.4hre7j2gzwjp": "@start",
     "h.1olklviydreq": "@start",

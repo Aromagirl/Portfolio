@@ -10,7 +10,7 @@ const redirects = sections.flatMap(section => workSectionAnchors(section).map(an
   anchor, title: section.data.title, href: `${withBase(workSectionPath(project, section))}#${encodeURIComponent(anchor)}`,
 })));
 ---
-<header class="company-heading" data-project={project.data.slug}>
+<header class="company-heading" data-project={project.data.slug === 'myhospital-app' ? 'myhospital' : project.data.slug === 'kidswearcycle-website' ? 'kidswearcycle' : project.data.slug}>
   <p class="eyebrow">Project overview</p>
   <div class="company-identity">
     {project.data.logo && <img class="company-logo" src={withBase(project.data.logo)} alt="" width="64" height="64" />}
@@ -19,7 +19,7 @@ const redirects = sections.flatMap(section => workSectionAnchors(section).map(an
   {project.data.summary && <p class="text-lead text-body">{project.data.summary}</p>}
   {project.data.role && !splitRole && <p class="company-role"><span>My role</span> {project.data.role}</p>}
 </header>
-<section class="company-context" data-project={project.data.slug} aria-labelledby="company-context-title">
+<section class="company-context" data-project={project.data.slug === 'myhospital-app' ? 'myhospital' : project.data.slug === 'kidswearcycle-website' ? 'kidswearcycle' : project.data.slug} aria-labelledby="company-context-title">
   <h2 id="company-context-title" class="text-title text-ink">About {project.data.title} &amp; my role</h2>
   <div class:list={['prose', 'source-content', 'company-context-content', { 'company-context-columns': splitRole, 'company-context-plain': project.filePath?.endsWith('.md') }]} data-source-content><slot /></div>
 </section>
@@ -50,7 +50,10 @@ const redirects = sections.flatMap(section => workSectionAnchors(section).map(an
   .company-identity{display:flex;align-items:center;gap:1.25rem}
   .company-logo{width:4rem;height:4rem;object-fit:contain;border-radius:.75rem;flex-shrink:0}
   @media(max-width:639px){.company-identity{gap:1rem}.company-logo{width:3rem;height:3rem}}
-  .company-heading[data-project="kidswearcycle"] .company-logo{height:var(--text-headline);width:auto;border-radius:0}
+  .company-heading[data-project="kidswearcycle"]{--kidswear-heading-size:clamp(1.125rem,4.4vw,4.25rem);max-width:none}
+  .company-heading[data-project="kidswearcycle"] h1{font-size:var(--kidswear-heading-size);white-space:nowrap}
+  .company-heading[data-project="kidswearcycle"]>p{max-width:52rem}
+  .company-heading[data-project="kidswearcycle"] .company-logo{height:var(--kidswear-heading-size);width:auto;border-radius:0}
   .company-role{font-size:.95rem;color:var(--body)}
   .company-role span{color:var(--muted);margin-right:.75rem}
   .company-work{padding-block:2rem 3rem;border-top:1px solid var(--line)}

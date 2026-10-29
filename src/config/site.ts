@@ -14,8 +14,8 @@ export const workNavigation = [
 export const projectPresentation: Record<string, { tint: string }> = {
   'mafia-bot-mini-app': { tint: 'var(--tint-forest)' },
   tickeron: { tint: 'var(--tint-sage)' },
-  myhospital: { tint: 'var(--tint-lime)' },
-  kidswearcycle: { tint: 'var(--tint-sage)' },
+  'myhospital-app': { tint: 'var(--tint-lime)' },
+  'kidswearcycle-website': { tint: 'var(--tint-sage)' },
   'ijet-media': { tint: 'var(--tint-forest)' },
   fraudscore: { tint: 'var(--tint-lime)' },
 };

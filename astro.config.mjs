@@ -9,6 +9,10 @@ export default defineConfig({
   base: '/portfolio',
   output: 'static',
   trailingSlash: 'always',
+  redirects: {
+    '/work/myhospital/': '/portfolio/work/myhospital-app/',
+    '/work/kidswearcycle/': '/portfolio/work/kidswearcycle-website/',
+  },
   integrations: [mdx(), projectImages()],
   markdown: { processor: satteri({ features: { smartPunctuation: false } }) },
   vite: { plugins: [tailwindcss()] },
