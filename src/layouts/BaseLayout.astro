@@ -3,6 +3,7 @@ import '../styles/global.css';
 import { withBase } from '../utils/paths';
 import SiteHeader from '../components/theme/SiteHeader.astro';
 import SiteFooter from '../components/theme/SiteFooter.astro';
+import ScrollReveal from '../components/ScrollReveal.astro';
 interface Props { title: string; description?: string; home?: boolean }
 const previewImage = new URL(withBase('/images/brand/site-preview.png'), Astro.site).href;
 const { title, description = 'Product Designer & Builder — Natalia Isakova', home = false } = Astro.props;
@@ -63,5 +64,6 @@ const { title, description = 'Product Designer & Builder — Natalia Isakova', h
     <SiteHeader />
     <main id="main" class:list={['flex-1', { 'home-page': home }]}><slot /></main>
     <SiteFooter />
+    <ScrollReveal />
   </body>
 </html>

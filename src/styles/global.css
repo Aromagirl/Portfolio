@@ -482,6 +482,7 @@
 
 /* Portfolio content adapted to the Maria theme. Original MDX remains unchanged. */
 .home-content{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:4rem 2rem}
+@media(min-width:1024px){.home-content{grid-template-columns:repeat(3,minmax(0,1fr))}}
 .home-content>.source-section:first-child{grid-column:1/-1;display:grid;grid-template-columns:2.5rem minmax(0,1fr);align-items:center;gap:1.5rem .75rem;padding-top:5rem}
 .home-content>.source-section:first-child>p:has(img){grid-column:1;grid-row:1;margin:0}
 .home-content>.source-section:first-child img{width:2.5rem;height:2.5rem;object-fit:cover;border-radius:999px}
@@ -646,7 +647,11 @@ body{background-image:radial-gradient(ellipse at 95% 0%,color-mix(in srgb,var(--
   @media(max-width:767px){.research-case .research-sketches{grid-template-columns:minmax(0,1fr)}}
   .source-content.tickeron-ui-content{max-width:64rem;margin-inline:auto}
   .platform-case .platform-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.5rem;align-items:start;margin:2rem 0 3rem}
-  .platform-case .platform-smart-reject{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .platform-case .platform-smart-reject{grid-template-columns:minmax(0,1.6fr) minmax(0,1fr)}
+  .platform-case .platform-smart-reject.platform-grid .image-link{aspect-ratio:1531/1000;padding:0}
+  .platform-case .platform-smart-reject img{height:100%;object-fit:contain}
+  .platform-case .platform-smart-reject .platform-slider-details .image-link{aspect-ratio:1531/1600;width:100%}
+  .platform-case .platform-smart-reject .platform-slider-details img{width:auto;max-width:100%;height:100%;margin-inline:auto}
   .platform-case .platform-grid .platform-figure{margin:0}
   .platform-case .platform-grid .image-link{display:flex;align-items:center;justify-content:center;aspect-ratio:4/3;padding:.5rem}
   .platform-case .platform-grid img{width:100%;height:100%;object-fit:contain}

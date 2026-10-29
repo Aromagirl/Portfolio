@@ -1,0 +1,53 @@
+---
+import { readdir } from 'node:fs/promises';
+import { dirname, join } from 'node:path';
+import { withBase } from '../utils/paths';
+interface Props { filePath: string; title: string; mediaPath: string }
+const { filePath, title, mediaPath } = Astro.props;
+const brand = title.replace(/\s+Website$/i, '');
+const pdf = (await readdir(dirname(filePath))).find(name => /brand.*\.pdf$/i.test(name));
+let files: string[] = [];
+try { files = (await readdir(join(dirname(filePath), 'brand-foundations'))).filter(name => /\.webp$/i.test(name)).sort(); }
+catch (error) { if ((error as NodeJS.ErrnoException).code !== 'ENOENT') throw error; }
+const topics = [
+  { title: 'Logo & colour palette', description: 'Logo applications, brand colours and supporting surfaces.' },
+  { title: 'Typography', description: 'Type families, hierarchy and text styles.' },
+  { title: 'Semantics & usage', description: 'Colour roles, contrast pairs and usage guidelines.' },
+  { title: 'Marketing patterns', description: 'Composition principles and examples across marketing formats.' },
+];
+const description = brand === 'SafeClick'
+  ? 'Graphite surfaces, green accents and a Rubik–Roboto type system define the visual language of the redesigned website.'
+  : 'Teal and cyan surfaces, a Montserrat–Roboto type system and shared marketing patterns define the visual language of the redesigned website.';
+---
+{pdf && files.length > 0 && <section class="brand-foundations" aria-labelledby="brand-foundations-title">
+  <div class="brand-heading"><h3 id="brand-foundations-title">Brand Foundations</h3><p>{description}</p></div>
+  <div class="brand-grid">
+    {files.map((file, index) => {
+      const topic = topics[index];
+      const src = withBase(`${mediaPath}/brand-foundations/${file}`);
+      return <figure class="brand-card">
+        <a href={src} data-gallery-image data-title={`${brand} — ${topic.title}`} aria-label={`View ${brand}: ${topic.title}`}>
+          <img src={src} alt={`${brand} brand guidelines: ${topic.title}.`} width="1280" height="800" loading="lazy" decoding="async" />
+        </a>
+        <figcaption><h4>{topic.title}</h4><p>{topic.description}</p></figcaption>
+      </figure>;
+    })}
+  </div>
+  <a class="btn btn-ghost brand-document" href={withBase(`${mediaPath.replace('/images/projects/', '/documents/projects/')}/${encodeURIComponent(pdf)}`)} target="_blank" rel="noopener" aria-label={`Open the full ${brand} brand system PDF in a new tab`}>View full brand system · PDF ↗</a>
+</section>}
+<style>
+  .brand-foundations{margin-bottom:3rem;padding-bottom:2.5rem;border-bottom:1px solid var(--line)}
+  .brand-heading{max-width:48rem;margin-bottom:1.5rem}
+  h3{font-size:var(--text-title);line-height:1.2;letter-spacing:-.025em;color:var(--ink)}
+  .brand-heading p{margin-top:.75rem;color:var(--body);line-height:1.6}
+  .brand-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.5rem;align-items:start}
+  .brand-card{min-width:0;margin:0}
+  .brand-card a{display:block;aspect-ratio:8/5;overflow:hidden;border:1px solid var(--line);border-radius:var(--radius-panel);background:var(--surface);cursor:zoom-in}
+  .brand-card img{display:block;width:100%;height:100%;object-fit:cover;object-position:top}
+  figcaption{margin-top:1rem}
+  h4{font-size:1rem;font-weight:600;color:var(--ink)}
+  figcaption p{font-size:.875rem;line-height:1.5;color:var(--muted);margin-top:.35rem}
+  .brand-document{margin-top:1.5rem}
+  a:focus-visible{outline:2px solid var(--ink);outline-offset:4px}
+  @media(max-width:600px){.brand-grid{grid-template-columns:minmax(0,1fr)}}
+</style>

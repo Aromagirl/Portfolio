@@ -2,6 +2,7 @@
 import { readdir } from 'node:fs/promises';
 import { dirname, extname, join } from 'node:path';
 import ScreenshotPreview from './ScreenshotPreview.astro';
+import BrandFoundations from './BrandFoundations.astro';
 import { withBase } from '../utils/paths';
 
 interface Props { filePath: string; title: string; mediaPath: string }
@@ -47,11 +48,12 @@ const versions = await Promise.all([
     {versions.map(version => <a href={`#${version.folder}`}><span>{version.number}</span>{version.title}<span aria-hidden="true">↓</span></a>)}
   </nav>
   {versions.map(version => (
-    <section id={version.folder} class:list={['version', { 'version-after': version.folder === 'after' }]} aria-labelledby={`${version.folder}-title`}>
+    <section id={version.folder} class:list={['version', { 'version-after': version.folder === 'after', 'version-before': version.folder === 'before' }]} aria-labelledby={`${version.folder}-title`}>
       <header class="version-heading">
         <div class="version-title"><span class="version-number" aria-hidden="true">{version.number}</span><h2 id={`${version.folder}-title`}>{version.title}</h2></div>
         <p>{version.description}</p>
       </header>
+      {version.folder === 'after' && <BrandFoundations filePath={filePath} title={title} mediaPath={mediaPath} />}
       {version.featured.length > 0 && <div class:list={['featured-shots', { responsive: version.featured.some(image => image.mobile) }]}>{version.featured.map(image => <ScreenshotPreview image={image} version={version.title} project={title} featured />)}</div>}
       {version.pages.length > 0 && <div class="page-grid">{version.pages.map(image => <ScreenshotPreview image={image} version={version.title} project={title} />)}</div>}
       {!version.featured.length && !version.pages.length && <div class="empty-gallery"><p>Screenshots coming soon</p></div>}
@@ -133,6 +135,10 @@ const versions = await Promise.all([
   .featured-shots{display:grid;gap:1.5rem;margin-bottom:2rem;align-items:start}
   .featured-shots.responsive{grid-template-columns:minmax(0,1fr) minmax(0,25%)}
   .page-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.5rem}
+  .version-before .featured-shots{max-width:48rem}
+  .version-before .page-grid{grid-template-columns:repeat(3,minmax(0,1fr));max-width:64rem}
+  @media(max-width:900px){.version-before .page-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+  @media(max-width:600px){.version-before .page-grid{grid-template-columns:minmax(0,1fr);max-width:24rem}}
   .empty-gallery{display:grid;place-content:center;min-height:12rem;border:1px dashed var(--line-strong);border-radius:1rem;background:var(--sunken);color:var(--muted)}
   a:focus-visible,button:focus-visible,.viewer-scroll:focus-visible{outline:2px solid var(--ink);outline-offset:3px}
   .gallery-dialog{position:fixed;inset:0;margin:auto;width:min(1440px,96vw);max-width:none;height:94dvh;max-height:none;padding:0;border:1px solid var(--line-strong);border-radius:1rem;background:var(--canvas);color:var(--ink);overflow:hidden}

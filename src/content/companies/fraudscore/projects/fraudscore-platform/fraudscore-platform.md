@@ -21,10 +21,15 @@ cardDisabled: false
 <section class="tickeron-ui-responsibilities" aria-labelledby="platform-role">
 <h3 id="platform-role">My role as Product Designer:</h3>
 <ul>
-<li>&#128161; Defining screen structure and user flows</li>
-<li>&#127912; Designing platform screens and interaction states</li>
-<li>&#128279; High-fidelity prototyping</li>
-<li>&#128218; Defining UI foundations and components</li>
+<li>🔍 Analysis of existing design and architecture</li>
+<li>💡 Defining screen structure and user flows</li>
+<li>🦼 Accounting for accessibility</li>
+<li>📱 Responsive design</li>
+<li>🎨 Designing platform screens and interaction states</li>
+<li>🔗 High-fidelity prototyping</li>
+<li>📚 Defining UI foundations and components</li>
+<li>🔄 Iterating on designs</li>
+<li>🤝 Collaborating with the development team</li>
 </ul>
 </section>
 </div>
@@ -96,12 +101,12 @@ Reports combine traffic quality metrics, charts and detailed conversion records.
 </figure>
 
 <div class="platform-grid ">
-<figure class="tickeron-ui-figure platform-figure ">
-<a class="image-link" href="/images/projects/fraudscore/fraudscore-platform/previews/asset-19.webp" aria-label="Open image: Conversion report with an expanded filter panel and selected filter values."><img src="/images/projects/fraudscore/fraudscore-platform/previews/asset-19.webp" alt="Conversion report with an expanded filter panel and selected filter values." width="1800" height="1629" /></a>
+<figure class="tickeron-ui-figure platform-figure platform-full-screens">
+<a class="image-link" href="/images/projects/fraudscore/fraudscore-platform/previews/filtering-without-menu.webp" aria-label="Open image: Conversion report with an expanded filter panel and selected filter values."><img src="/images/projects/fraudscore/fraudscore-platform/previews/filtering-without-menu.webp" alt="Conversion report with an expanded filter panel and selected filter values." width="1531" height="1629" /></a>
 <figcaption>Filtering &middot; Expanded panel and selected values</figcaption>
 </figure>
-<figure class="tickeron-ui-figure platform-figure ">
-<a class="image-link" href="/images/projects/fraudscore/fraudscore-platform/previews/asset-18.webp" aria-label="Open image: Report date picker with a calendar and event period selection."><img src="/images/projects/fraudscore/fraudscore-platform/previews/asset-18.webp" alt="Report date picker with a calendar and event period selection." width="1800" height="1635" /></a>
+<figure class="tickeron-ui-figure platform-figure platform-full-screens">
+<a class="image-link" href="/images/projects/fraudscore/fraudscore-platform/previews/date-selection-without-menu.webp" aria-label="Open image: Report date picker with a calendar and event period selection."><img src="/images/projects/fraudscore/fraudscore-platform/previews/date-selection-without-menu.webp" alt="Report date picker with a calendar and event period selection." width="1531" height="1635" /></a>
 <figcaption>Date selection &middot; Calendar and events</figcaption>
 </figure>
 </div>
@@ -130,30 +135,26 @@ Integration settings bring together event configuration, traffic lists, fraud re
 <h3>Traffic lists</h3>
 <p>Blacklist and whitelist examples show entered values and contextual guidance within a shared layout.</p>
 <div class="platform-grid ">
-<figure class="tickeron-ui-figure platform-figure ">
-<a class="image-link" href="/images/projects/fraudscore/fraudscore-platform/previews/asset-07.webp" aria-label="Open image: Blacklist configuration with entered values and inline guidance."><img src="/images/projects/fraudscore/fraudscore-platform/previews/asset-07.webp" alt="Blacklist configuration with entered values and inline guidance." width="1800" height="804" /></a>
+<figure class="tickeron-ui-figure platform-figure platform-full-screens">
+<a class="image-link" href="/images/projects/fraudscore/fraudscore-platform/previews/asset-07-without-menu.webp" aria-label="Open image: Blacklist configuration with entered values and inline guidance."><img src="/images/projects/fraudscore/fraudscore-platform/previews/asset-07-without-menu.webp" alt="Blacklist configuration with entered values and inline guidance." width="1531" height="804" /></a>
 <figcaption>Blacklist &middot; Entered values</figcaption>
 </figure>
-<figure class="tickeron-ui-figure platform-figure ">
-<a class="image-link" href="/images/projects/fraudscore/fraudscore-platform/previews/asset-08.webp" aria-label="Open image: Whitelist configuration with populated fields and contextual guidance."><img src="/images/projects/fraudscore/fraudscore-platform/previews/asset-08.webp" alt="Whitelist configuration with populated fields and contextual guidance." width="1800" height="804" /></a>
+<figure class="tickeron-ui-figure platform-figure platform-full-screens">
+<a class="image-link" href="/images/projects/fraudscore/fraudscore-platform/previews/asset-08-without-menu.webp" aria-label="Open image: Whitelist configuration with populated fields and contextual guidance."><img src="/images/projects/fraudscore/fraudscore-platform/previews/asset-08-without-menu.webp" alt="Whitelist configuration with populated fields and contextual guidance." width="1531" height="804" /></a>
 <figcaption>Whitelist &middot; Populated fields</figcaption>
 </figure>
 </div>
 
 <h3>Smart reject</h3>
-<p>Disabled and enabled states show how the available controls change when traffic rejection is activated.</p>
+<p>The enabled configuration is shown alongside detailed fraud score slider states, including threshold ranges and disabled controls.</p>
 <div class="platform-grid platform-smart-reject">
 <figure class="tickeron-ui-figure platform-figure ">
-<a class="image-link" href="/images/projects/fraudscore/fraudscore-platform/previews/asset-12.webp" aria-label="Open image: Smart reject configuration in the off state."><img src="/images/projects/fraudscore/fraudscore-platform/previews/asset-12.webp" alt="Smart reject configuration in the off state." width="1800" height="839" /></a>
-<figcaption>Smart reject &middot; Off</figcaption>
-</figure>
-<figure class="tickeron-ui-figure platform-figure ">
-<a class="image-link" href="/images/projects/fraudscore/fraudscore-platform/previews/asset-14.webp" aria-label="Open image: Smart reject configuration in the on state with additional controls."><img src="/images/projects/fraudscore/fraudscore-platform/previews/asset-14.webp" alt="Smart reject configuration in the on state with additional controls." width="1800" height="1000" /></a>
+<a class="image-link" href="/images/projects/fraudscore/fraudscore-platform/previews/asset-14-without-menu.webp" aria-label="Open image: Smart reject configuration in the on state with additional controls."><img src="/images/projects/fraudscore/fraudscore-platform/previews/asset-14-without-menu.webp" alt="Smart reject configuration in the on state with additional controls." width="1531" height="1000" /></a>
 <figcaption>Smart reject &middot; On</figcaption>
 </figure>
-<figure class="tickeron-ui-figure platform-figure ">
-<a class="image-link" href="/images/projects/fraudscore/fraudscore-platform/previews/asset-13.webp" aria-label="Open image: Smart reject configuration showing available activation controls."><img src="/images/projects/fraudscore/fraudscore-platform/previews/asset-13.webp" alt="Smart reject configuration showing available activation controls." width="1800" height="995" /></a>
-<figcaption>Smart reject &middot; Activation state</figcaption>
+<figure class="tickeron-ui-figure platform-figure platform-slider-details">
+<a class="image-link" href="/images/projects/fraudscore/fraudscore-platform/previews/fraud-score-slider.webp" aria-label="Open image: Fraud score slider interaction states."><img src="/images/projects/fraudscore/fraudscore-platform/previews/fraud-score-slider.webp" alt="Fraud score slider states showing active handles, threshold ranges and disabled controls." width="519" height="988" /></a>
+<figcaption>Smart reject &middot; Fraud score slider states</figcaption>
 </figure>
 </div>
 
@@ -161,11 +162,11 @@ Integration settings bring together event configuration, traffic lists, fraud re
 <p>A detailed setup form brings fraud reason rules and configuration options together in one screen. Select the image to inspect the details in full size.</p>
 <div class="platform-grid platform-full-screens">
 <figure class="tickeron-ui-figure platform-figure ">
-<a class="image-link" href="/images/projects/fraudscore/fraudscore-platform/previews/asset-10.webp" aria-label="Open image: Full fraud reason configuration screen with grouped settings."><img src="/images/projects/fraudscore/fraudscore-platform/previews/asset-10.webp" alt="Full fraud reason configuration screen with grouped settings." width="1800" height="2124" /></a>
+<a class="image-link" href="/images/projects/fraudscore/fraudscore-platform/previews/asset-10-without-menu.webp" aria-label="Open image: Full fraud reason configuration screen with grouped settings."><img src="/images/projects/fraudscore/fraudscore-platform/previews/asset-10-without-menu.webp" alt="Full fraud reason configuration screen with grouped settings." width="1531" height="2124" /></a>
 <figcaption>Fraud reasons &middot; Configuration screen</figcaption>
 </figure>
 <figure class="tickeron-ui-figure platform-figure platform-form-preview">
-<a class="image-link" href="/images/projects/fraudscore/fraudscore-platform/previews/asset-09.webp" aria-label="Open image: Complete fraud reason setup form."><img src="/images/projects/fraudscore/fraudscore-platform/previews/asset-09.webp" alt="Complete fraud reason setup form with detailed configuration options." width="1800" height="3736" /></a>
+<a class="image-link" href="/images/projects/fraudscore/fraudscore-platform/previews/asset-09-without-menu.webp" aria-label="Open image: Complete fraud reason setup form."><img src="/images/projects/fraudscore/fraudscore-platform/previews/asset-09-without-menu.webp" alt="Complete fraud reason setup form with detailed configuration options." width="1531" height="3736" /></a>
 <figcaption>Fraud reason setup &middot; Complete configuration screen</figcaption>
 </figure>
 </div>
@@ -184,13 +185,13 @@ Integration settings bring together event configuration, traffic lists, fraud re
 Alert configuration and alert history support two related tasks: defining monitoring rules and reviewing recorded events.
 
 <div class="platform-grid ">
-<figure class="tickeron-ui-figure platform-figure ">
-<a class="image-link" href="/images/projects/fraudscore/fraudscore-platform/previews/asset-03.webp" aria-label="Open image: Alert rules screen with configured rules and rule controls."><img src="/images/projects/fraudscore/fraudscore-platform/previews/asset-03.webp" alt="Alert rules screen with configured rules and rule controls." width="1800" height="1317" /></a>
-<figcaption>Rules &middot; Configure monitoring</figcaption>
-</figure>
-<figure class="tickeron-ui-figure platform-figure ">
-<a class="image-link" href="/images/projects/fraudscore/fraudscore-platform/previews/asset-02.webp" aria-label="Open image: Alert history table showing recorded events and statuses."><img src="/images/projects/fraudscore/fraudscore-platform/previews/asset-02.webp" alt="Alert history table showing recorded events and statuses." width="1800" height="995" /></a>
+<figure class="tickeron-ui-figure platform-figure platform-full-screens">
+<a class="image-link" href="/images/projects/fraudscore/fraudscore-platform/previews/asset-02-without-menu.webp" aria-label="Open image: Alert history table showing recorded events and statuses."><img src="/images/projects/fraudscore/fraudscore-platform/previews/asset-02-without-menu.webp" alt="Alert history table showing recorded events and statuses." width="1531" height="995" /></a>
 <figcaption>History &middot; Review recorded alerts</figcaption>
+</figure>
+<figure class="tickeron-ui-figure platform-figure platform-full-screens">
+<a class="image-link" href="/images/projects/fraudscore/fraudscore-platform/previews/asset-03-without-menu.webp" aria-label="Open image: Alert rules screen with configured rules and rule controls."><img src="/images/projects/fraudscore/fraudscore-platform/previews/asset-03-without-menu.webp" alt="Alert rules screen with configured rules and rule controls." width="1531" height="1317" /></a>
+<figcaption>Rules &middot; Configure monitoring</figcaption>
 </figure>
 </div>
 
@@ -212,11 +213,11 @@ User administration connects the account list with user creation and integration
 
 <div class="platform-grid platform-full-screens">
 <figure class="tickeron-ui-figure platform-figure ">
-<a class="image-link" href="/images/projects/fraudscore/fraudscore-platform/previews/asset-25.webp" aria-label="Open image: Add user form with the limited user role selected."><img src="/images/projects/fraudscore/fraudscore-platform/previews/asset-25.webp" alt="Add user form with the limited user role selected." width="1800" height="938" /></a>
+<a class="image-link" href="/images/projects/fraudscore/fraudscore-platform/previews/asset-25-without-menu.webp" aria-label="Open image: Add user form with the limited user role selected."><img src="/images/projects/fraudscore/fraudscore-platform/previews/asset-25-without-menu.webp" alt="Add user form with the limited user role selected." width="1531" height="938" /></a>
 <figcaption>Create an account &middot; Limited user</figcaption>
 </figure>
 <figure class="tickeron-ui-figure platform-figure ">
-<a class="image-link" href="/images/projects/fraudscore/fraudscore-platform/previews/asset-24.webp" aria-label="Open image: Expanded integration permissions while adding a limited user."><img src="/images/projects/fraudscore/fraudscore-platform/previews/asset-24.webp" alt="Expanded integration permissions while adding a limited user." width="1800" height="2076" /></a>
+<a class="image-link" href="/images/projects/fraudscore/fraudscore-platform/previews/asset-24-without-menu.webp" aria-label="Open image: Expanded integration permissions while adding a limited user."><img src="/images/projects/fraudscore/fraudscore-platform/previews/asset-24-without-menu.webp" alt="Expanded integration permissions while adding a limited user." width="1531" height="2076" /></a>
 <figcaption>Set permissions &middot; Integration-level access</figcaption>
 </figure>
 </div>

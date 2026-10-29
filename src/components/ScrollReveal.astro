@@ -1,0 +1,51 @@
+<script>
+  const motion = window.matchMedia('(prefers-reduced-motion: reduce)');
+  const active = new Map<Element, Animation>();
+  const selector = [
+    'main > section', 'main .work-section-heading', 'main .company-heading', 'main .company-context',
+    'main .case-index', 'main .project-card', 'main .company-work-heading',
+    'main .home-content > .source-section', 'main .about-page > header',
+    'main .about-page > div', 'main .source-content > .source-section',
+    'main .website-comparison', '#contact', 'footer',
+  ].join(',');
+
+  if ('IntersectionObserver' in window && Element.prototype.animate) {
+    const observer = new IntersectionObserver(entries => {
+      for (const entry of entries) {
+        if (!entry.isIntersecting) continue;
+        observer.unobserve(entry.target);
+        if (motion.matches || entry.boundingClientRect.bottom <= 0) continue;
+        // Content remains visible without JS; animate only once as it enters view.
+        const animation = entry.target.animate([
+          { opacity: 0, transform: 'translateY(24px)' },
+          { opacity: 1, transform: 'translateY(0)' },
+        ], { duration: 650, easing: 'cubic-bezier(0.22, 1, 0.36, 1)' });
+        active.set(entry.target, animation);
+        animation.finished.then(() => active.delete(entry.target), () => active.delete(entry.target));
+      }
+    }, { threshold: 0, rootMargin: '0px 0px -16px 0px' });
+
+    const observeBlock = (element: Element) => {
+      const children = Array.from(element.children).filter(child =>
+        child instanceof HTMLElement && !['SCRIPT', 'STYLE', 'SPAN'].includes(child.tagName));
+      // Reveal long case sections in smaller pieces instead of moving the whole page.
+      if (element.getBoundingClientRect().height > innerHeight * 0.9 && children.length) {
+        children.forEach(observeBlock);
+      } else observer.observe(element);
+    };
+    const candidates = Array.from(document.querySelectorAll(selector));
+    candidates.filter(element => !candidates.some(parent => parent !== element && parent.contains(element)))
+      .forEach(observeBlock);
+
+    motion.addEventListener('change', () => {
+      if (motion.matches) active.forEach(animation => animation.cancel());
+    });
+    // Keyboard navigation should expose the focused content immediately.
+    document.addEventListener('focusin', event => {
+      if (!(event.target instanceof Element)) return;
+      for (const [element, animation] of active) {
+        if (element.contains(event.target)) animation.cancel();
+      }
+    });
+  }
+</script>

@@ -10,6 +10,7 @@ cover: "./photo.webp"
 homeProjects:
   - projectId: "fraudscore-safeclick-website"
   - projectId: "fraudscore-fraudscore-website"
+  - projectId: "fraudscore-fraudscore-platform"
 ---
 
 ![Natalia Isakova](./photo.webp)
